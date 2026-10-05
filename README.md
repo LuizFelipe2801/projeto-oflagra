@@ -1,4 +1,4 @@
-# Flagra
+# Projeto Oflagra
 
 `TIPO` Jogo diário de dedução lógica, no navegador
 

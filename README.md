@@ -5,14 +5,13 @@ Repositório central dos projetos próprios: a empresa de sites para comércio l
 | Projeto | Pasta | O que é | Status |
 |---|---|---|---|
 | Empresa de sites (nome a definir) | [`empresa/`](empresa/README.md) | Sites e presença digital para comércio local de BH e região | Em operação |
-| Flagra | [`SaS/oflagra/`](SaS/oflagra/README.md) | Jogo diário de dedução lógica, no navegador | Em especificação |
+| Flagra | [`oflagra/`](oflagra/README.md) | Jogo diário de dedução lógica, no navegador | Em especificação |
 
 ## Organização
 
 ```
 empresa/          documentação, modelos e materiais da empresa de sites
-SaS/              produtos de software, um por pasta
-  oflagra/        Flagra
+oflagra/          Flagra
 ```
 
 Cada projeto tem o próprio README, a própria documentação numerada e o próprio CHANGELOG.

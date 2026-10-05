@@ -1,5 +1,13 @@
 # Histórico de versões
 
+## [0.3.0] - 2026-10-05
+
+### Adicionado
+- Núcleo do jogo: grade, nove tipos de pista, verificador lógico e formato do caso.
+- Gerador de casos por dificuldade, com construção guiada e jogador perfeito que garante solução única sem chute.
+- Comandos `npm run gerar` e `npm run validar`.
+- Três cenários iniciais: firma, condomínio e escola.
+
 ## [0.2.0] - 2026-10-05
 
 ### Alterado

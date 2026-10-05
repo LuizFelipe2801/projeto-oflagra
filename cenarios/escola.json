@@ -1,0 +1,15 @@
+{
+  "id": "escola",
+  "nome": "A escola",
+  "travessuras": [
+    "Quem colou chiclete na cadeira da professora?",
+    "Quem escondeu o apagador?",
+    "Quem trocou os lanches da turma?"
+  ],
+  "profissoes": ["professora", "merendeira", "inspetor", "diretora", "aluno", "bibliotecária"],
+  "nomes": ["Pedrinho", "Laura", "Enzo", "Valentina", "Miguel", "Sofia", "Arthur", "Alice", "Davi", "Helena",
+    "Gael", "Maitê", "Theo", "Cecília", "Bento", "Lorena", "Caio", "Manu", "Heitor", "Isis",
+    "Murilo", "Lívia", "Benício", "Clara"],
+  "culpado": "culpado",
+  "inocente": "inocente"
+}

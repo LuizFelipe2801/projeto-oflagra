@@ -1,8 +1,10 @@
-# Quem foi? (nome provisório)
+# Flagra
 
 `TIPO` Jogo diário de dedução lógica, no navegador
 
 `STATUS` Em especificação
+
+`ENDEREÇO` oflagra.com.br (domínio ainda não registrado)
 
 `INÍCIO` 2026-10-05
 
@@ -36,9 +38,10 @@ Inspirado na mecânica do jogo finlandês *Clues by Sam*, com cenários, persona
 | Um cenário diferente por dia, como "pele" sobre a mesma lógica | Formato dos cenários e guia de texto (doc 06) |
 | Tom de travessura do dia a dia | Metas de validação (doc 03) |
 | O jogador escolhe a dificuldade: três casos por dia | Plano de testes (doc 07) |
-| Casos gerados com antecedência, site estático, sem servidor | Nome definitivo |
+| Casos gerados com antecedência, site estático, sem servidor | |
 | Sem login na primeira versão | |
 | Começa como portfólio publicado; vira negócio se a retenção for boa | |
+| Nome: Flagra, no endereço oflagra.com.br | |
 
 ## Histórico de versões
 

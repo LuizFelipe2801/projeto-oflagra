@@ -66,7 +66,7 @@ O critério é medido pelo verificador durante a geração (ver [05-Arquitetura]
 Ao terminar, o jogador pode copiar um texto como este:
 
 ```
-Quem foi? #34 · Médio
+Flagra #34 · Médio
 A firma: quem comeu o bolo?
 🟩🟩🟩🟨
 🟩🟥🟩🟩
@@ -74,7 +74,7 @@ A firma: quem comeu o bolo?
 🟨🟩🟩🟩
 🟩🟩🟩🟩
 1 erro, 2 dicas
-quemfoi.exemplo.com.br
+oflagra.com.br
 ```
 
 | Símbolo | Significado |

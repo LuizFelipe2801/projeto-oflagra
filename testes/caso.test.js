@@ -60,7 +60,7 @@ for (const dificuldade of DIFICULDADES) {
     for (const { pos, nome } of json.personagens) {
       const fala = json.pistas[pos].texto;
       assert.ok(fala.length > 10);
-      assert.ok(!new RegExp(`(^|[^\p{L}])${nome}([^\p{L}]|$)`, 'u').test(fala), `${pos}: ${fala}`);
+      assert.ok(!new RegExp(`(^|[^\\p{L}])${nome}([^\\p{L}]|$)`, 'u').test(fala), `${pos}: ${fala}`);
     }
 
     // Ida e volta pelo formato de arquivo
@@ -74,3 +74,12 @@ for (const dificuldade of DIFICULDADES) {
     assert.deepEqual(serializar(gerarCaso({ dia: 0, dificuldade, cenarios })), json);
   });
 }
+
+test('gera os três níveis em todos os dias de 1 a 6', LONGO, () => {
+  for (let dia = 1; dia <= 6; dia++) {
+    for (const dificuldade of DIFICULDADES) {
+      const caso = gerarCaso({ dia, dificuldade, cenarios });
+      assert.deepEqual(simular(caso), { resolvido: true, dificuldade: NIVEL[dificuldade] }, `dia ${dia}, ${dificuldade}`);
+    }
+  }
+});

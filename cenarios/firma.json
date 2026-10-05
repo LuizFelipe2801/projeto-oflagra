@@ -1,0 +1,14 @@
+{
+  "id": "firma",
+  "nome": "A firma",
+  "travessuras": [
+    "Quem comeu o bolo do chefe?",
+    "Quem deixou a impressora sem papel?",
+    "Quem esqueceu a marmita na geladeira?"
+  ],
+  "profissoes": ["copeira", "estagiário", "contador", "RH", "TI", "vendedora"],
+  "nomes": ["Cida", "Zé", "Bia", "Caio", "Lu", "Rosa", "Tião", "Duda", "Neide", "Beto", "Juju", "Marcão",
+    "Sil", "Rafa", "Lia", "Toninho", "Vera", "Gabi", "Nando", "Dani", "Fábio", "Kel", "Paulo", "Iva"],
+  "culpado": "culpado",
+  "inocente": "inocente"
+}

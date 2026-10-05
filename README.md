@@ -2,7 +2,7 @@
 
 `TIPO` Jogo diário de dedução lógica, no navegador
 
-`STATUS` Especificação aprovada; próximo passo é o plano de implementação
+`STATUS` Núcleo e gerador prontos; próximo passo é o site (Plano 2)
 
 `ENDEREÇO` oflagra.com.br (domínio ainda não registrado)
 
@@ -45,11 +45,12 @@ Inspirado na mecânica do jogo finlandês *Clues by Sam*, com cenários, persona
 ## Estrutura do repositório
 
 ```
-documentos/       especificação do jogo (esta é a fonte da verdade)
-nucleo/           lógica compartilhada: grade, pistas e verificador      (a criar)
-gerador/          linha de comando que gera os casos                      (a criar)
-cenarios/         cenários em JSON: nomes, profissões e travessuras       (a criar)
-site/             o jogo: HTML, CSS e JavaScript puro, com os casos       (a criar)
+documentos/       especificação do jogo e planos de implementação
+nucleo/           lógica compartilhada: grade, pistas, verificador e formato do caso
+gerador/          comandos que geram e validam os casos
+cenarios/         cenários em JSON: nomes, profissões e travessuras
+testes/           testes automatizados (npm test)
+site/             o jogo: HTML, CSS e JavaScript puro, com os casos       (Plano 2)
 ```
 
 ## Decisões
@@ -74,9 +75,27 @@ site/             o jogo: HTML, CSS e JavaScript puro, com os casos       (a cri
 ## Próximos passos
 
 1. ~~Revisar e aprovar a especificação.~~ Concluído em 2026-10-05.
-2. Escrever o plano de implementação.
-3. Construir o núcleo e o gerador, com testes.
+2. ~~Escrever o plano de implementação.~~ Concluído (Plano 1).
+3. ~~Construir o núcleo e o gerador, com testes.~~ Concluído.
 4. Construir o site e publicar o protótipo.
+
+## Como rodar
+
+Requer Node.js 24 ou mais recente. Não há dependências para instalar.
+
+```
+npm test                                  # todos os testes
+npm run gerar -- --dias 7 --saida medicao # gera 7 dias de casos
+npm run validar -- --pasta medicao        # confere os casos gerados
+```
+
+## Branches
+
+| Branch | Papel |
+|---|---|
+| `main` | Produção: só o que foi aprovado na homologação |
+| `hml` | Homologação: onde cada entrega é testada antes de ir para a `main` |
+| outras | Uma por funcionalidade, integrada primeiro na `hml` |
 
 ## Histórico de versões
 

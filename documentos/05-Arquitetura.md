@@ -26,7 +26,7 @@
 | `pistas.js` | Cada tipo de pista como uma função `(solucao) → verdadeiro/falso`, mais o texto da pista |
 | `verificador.js` | Dado um conjunto de pistas e de marcações conhecidas, diz quais personagens já são dedutíveis e com qual valor |
 
-**Como o verificador decide:** um personagem é dedutível quando **todas** as soluções compatíveis com as pistas reveladas concordam sobre ele. As soluções compatíveis são enumeradas por busca com retrocesso (backtracking), cortando cedo os ramos que já violam alguma pista. Com 20 personagens, no pior caso são 2²⁰ (cerca de 1 milhão) de combinações; o corte cedo reduz isso a uma fração.
+**Como o verificador decide:** um personagem é dedutível quando **todas** as soluções compatíveis com as pistas reveladas concordam sobre ele. As soluções compatíveis são enumeradas percorrendo todas as combinações dos personagens ainda não conhecidos e descartando as que violam alguma pista. Com 20 personagens, no pior caso são 2²⁰ (cerca de 1 milhão) de combinações, o que leva perto de 70 ms; cada personagem revelado corta esse número pela metade.
 
 ### `gerador/` — linha de comando (Node.js)
 
@@ -36,15 +36,17 @@ node gerador/gerar.js --dias 365
 
 Para cada dia do ciclo e cada dificuldade:
 
-1. Sorteia um cenário e a distribuição de culpados (entre 6 e 12, para não ficar óbvio).
+1. Escolhe o cenário do dia por rodízio (cada dificuldade começa num ponto diferente da lista) e sorteia os culpados (entre 6 e 12, para não ficar óbvio).
 2. Sorteia o personagem inicial.
-3. Cria candidatos a pista para cada personagem, todos verdadeiros para a solução.
-4. **Simula um jogador perfeito:** a partir da pista inicial, resolve tudo o que for dedutível, revela as pistas desses personagens e repete.
-5. Se o jogador simulado travar, troca pistas e tenta de novo. Se chegar ao fim, o caso tem **solução única e não exige chute**.
-6. Mede a dificuldade (abaixo) e guarda o caso só se ela bater com a pedida.
+3. Lista todas as pistas verdadeiras para a solução (as candidatas).
+4. **Construção guiada:** simula um jogador perfeito a partir do personagem inicial. A pista de cada personagem só é sorteada quando ele é revelado. A cada passo, o jogador resolve o que for dedutível com o menor número de pistas e revela as pistas desses personagens.
+5. Se um passo trava, ou exige mais pistas do que a dificuldade permite, sorteia-se de novo a pista de um personagem revelado no último lote (até 40 trocas por passo). Se ainda assim travar, a tentativa é abandonada e outra solução é sorteada. Chegando ao fim, o caso tem **solução única e não exige chute**.
+6. Mede a dificuldade (abaixo) e guarda o caso só se ela bater com a pedida; o caso final é conferido de novo pela simulação completa.
 7. Grava `casos/<dia do ciclo>-<dificuldade>.json`, por exemplo `casos/034-medio.json`.
 
-A semente do sorteio vem do dia do ciclo e da dificuldade, então rodar o gerador de novo produz exatamente os mesmos casos.
+> O sorteio cego das 20 pistas de uma vez, testado primeiro, acertava em 0,1% a 0,5% das tentativas, e o difícil falhava na maioria dos dias. A construção guiada gerou 180 casos seguidos sem falha.
+
+A semente do sorteio vem do dia do ciclo e da dificuldade, então rodar o gerador de novo produz exatamente os mesmos casos, **desde que os cenários e a versão do gerador sejam os mesmos**. Acrescentar um cenário muda o rodízio de todos os dias, e mudar pesos ou regras de sorteio muda os casos. Um ciclo publicado deve ser gerado e guardado de uma vez.
 
 ### Classificação de dificuldade
 
@@ -87,7 +89,7 @@ site/
 }
 ```
 
-**Solução embaralhada:** a solução é gravada codificada (por exemplo, com uma operação XOR com o dia do ciclo, em base64). Isso não é segurança; serve só para que ninguém veja a resposta sem querer ao abrir o arquivo. Para um passatempo sem prêmio, é suficiente.
+**Solução embaralhada:** a solução é gravada codificada (XOR com uma chave derivada do dia do ciclo, escrita em base 36; ver `nucleo/caso.js`). Isso não é segurança; serve só para que ninguém veja a resposta sem querer ao abrir o arquivo. Para um passatempo sem prêmio, é suficiente.
 
 ## Publicação dos casos
 

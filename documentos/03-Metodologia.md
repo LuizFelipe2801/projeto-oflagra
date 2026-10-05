@@ -37,7 +37,15 @@ Só se as metas de retorno forem atingidas. Fontes de receita possíveis, nessa 
 
 ## Processo de trabalho
 
-- Uma branch por funcionalidade, integrada na `main` por pull request, mesmo trabalhando sozinho, para manter o histórico legível.
+- Três níveis de branch:
+
+  | Branch | Papel |
+  |---|---|
+  | branch de trabalho | Uma por funcionalidade (por exemplo `nucleo-e-gerador`) |
+  | `hml` | Homologação: recebe as branches de trabalho para teste antes da produção |
+  | `main` | Produção: só recebe o que foi aprovado na `hml` |
+
+- Fluxo: branch de trabalho → `hml` → testes e aprovação → `main`. Nada vai direto para a `main`.
 - Mensagens de commit no imperativo, em português.
 - Toda alteração no gerador ou no verificador acompanha teste.
 - Os casos são gerados uma única vez, em lote, e publicados junto com o site (ver [05-Arquitetura](05-Arquitetura.md#publicação-dos-casos)). Não há tarefa diária nem semanal.

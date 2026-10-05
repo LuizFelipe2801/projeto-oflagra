@@ -1,0 +1,13 @@
+{
+  "name": "oflagra",
+  "version": "0.3.0",
+  "private": true,
+  "type": "module",
+  "description": "Flagra: jogo diário de dedução lógica",
+  "engines": { "node": ">=24" },
+  "scripts": {
+    "test": "node --test \"testes/**/*.test.js\"",
+    "gerar": "node gerador/gerar.js",
+    "validar": "node gerador/validar.js"
+  }
+}

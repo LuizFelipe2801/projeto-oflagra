@@ -3,7 +3,7 @@
 // dificuldade permite), sorteia-se de novo a pista de um personagem revelado no último lote, em vez de
 // descartar o caso inteiro. O caso final é conferido de novo por simular().
 import { CHEIA, TOTAL, mascara } from '../nucleo/grade.js';
-import { candidatas } from '../nucleo/pistas.js';
+import { candidatas, compilar } from '../nucleo/pistas.js';
 import { criarAleatorio, semente } from '../nucleo/aleatorio.js';
 import { escolherCenario, montarPersonagens } from './montar.js';
 import { passo, simular } from './simular.js';
@@ -89,7 +89,7 @@ export function gerarCaso({ dia, dificuldade, cenarios, maxTentativas = 200 }) {
     const pistas = construir({ solucao, inicial, alvo, sortear, rng });
     if (!pistas) continue;
     const r = simular({ solucao, inicial, pistas });
-    if (r.resolvido && r.dificuldade === alvo) {
+    if (r.resolvido && r.dificuldade === alvo && pistas.every((p) => compilar(p)(solucao))) {
       return {
         dia, dificuldade, cenario: cenario.id, titulo: rng.escolher(cenario.travessuras),
         personagens, solucao, inicial, pistas, tentativas: t + 1,

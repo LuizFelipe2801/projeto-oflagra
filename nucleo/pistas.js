@@ -165,7 +165,7 @@ export function candidatas(solucao, personagens) {
     }
   }
 
-  const porProfissao = {};
+  const porProfissao = Object.create(null);
   personagens.forEach((p, i) => (porProfissao[p.profissao] ??= []).push(i));
   for (const [profissao, membros] of Object.entries(porProfissao)) {
     if (membros.length >= 2) add('profissao', { profissao, membros, n: qtd(membros) });

@@ -29,7 +29,7 @@ export function montarPersonagens(cenario, rng) {
 export function escolherCenario(cenarios, dia, dificuldade) {
   const d = ORDEM.indexOf(dificuldade);
   if (d < 0) throw new Error(`Dificuldade inválida: ${dificuldade}`);
-  const lista = [...cenarios].sort((a, b) => a.id.localeCompare(b.id));
+  const lista = [...cenarios].sort((a, b) => (a.id < b.id ? -1 : a.id > b.id ? 1 : 0));
   const deslocamento = Math.floor((lista.length * d) / ORDEM.length);
   return lista[(dia + deslocamento) % lista.length];
 }

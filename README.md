@@ -75,7 +75,7 @@ site/             o jogo: HTML, CSS e JavaScript puro, com os casos       (Plano
 ## Próximos passos
 
 1. ~~Revisar e aprovar a especificação.~~ Concluído em 2026-10-05.
-2. Escrever o plano de implementação.
+2. ~~Escrever o plano de implementação.~~ Concluído (Plano 1).
 3. ~~Construir o núcleo e o gerador, com testes.~~ Concluído.
 4. Construir o site e publicar o protótipo.
 

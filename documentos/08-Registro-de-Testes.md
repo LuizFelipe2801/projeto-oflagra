@@ -11,11 +11,11 @@ Resultados da execução do [Plano de testes](07-Plano-de-Testes.md).
 | Caso de teste | Resultado | Observação |
 |---|---|---|
 | CT-01 Geometria da grade | Passou | `testes/grade.test.js` |
-| CT-02 Pistas verdadeiras | Passou | 50 soluções em `testes/pistas-candidatas.test.js`; 21 casos no validador |
-| CT-03 Solução única e sem chute | Passou | 21 casos no validador; 180 casos (dias 0 a 59) na medição |
-| CT-04 Classificação de dificuldade | Passou | 21 casos no validador; teste dos dias 1 a 6 em `testes/caso.test.js` |
+| CT-02 Pistas verdadeiras | Parcial | Critério reduzido: 50 soluções em `testes/pistas-candidatas.test.js` e 21 casos no validador (o plano pede 1.000; protocolo completo no Plano 2) |
+| CT-03 Solução única e sem chute | Parcial | Critério reduzido: 21 casos no validador e 180 na medição (o plano pede 1.000; protocolo completo no Plano 2) |
+| CT-04 Classificação de dificuldade | Parcial | Critério reduzido: 21 casos no validador e o teste dos dias 1 a 6 (o plano pede 300 por nível; protocolo completo no Plano 2) |
 | CT-05 Recusa de chute | Passou | `testes/verificador.test.js` |
-| CT-06 Reprodutibilidade | Passou | `testes/caso.test.js` |
+| CT-06 Reprodutibilidade | Parcial | Um caso por nível (dia 0) comparado no mesmo processo, mais uma checagem do dia 4 difícil em dois processos com o mesmo hash; o ciclo completo gerado duas vezes fica para o Plano 2 |
 | CT-07 Desempenho do verificador | Pendente | Medido no navegador, no Plano 2 |
 | CT-08 a CT-11 | Pendente | Dependem do site (Plano 2) |
 

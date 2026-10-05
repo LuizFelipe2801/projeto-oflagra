@@ -2,7 +2,7 @@
 
 `TIPO` Jogo diário de dedução lógica, no navegador
 
-`STATUS` Em especificação
+`STATUS` Especificação aprovada; próximo passo é o plano de implementação
 
 `ENDEREÇO` oflagra.com.br (domínio ainda não registrado)
 
@@ -65,17 +65,15 @@ site/             o jogo: HTML, CSS e JavaScript puro, com os casos       (a cri
 - Sem login na primeira versão.
 - Começa como portfólio publicado; vira negócio se a retenção for boa.
 - Nome: Flagra, no endereço oflagra.com.br.
-
-**Propostas, a revisar**
-
-- Detalhes da arquitetura ([05](documentos/05-Arquitetura.md)), exceto a publicação dos casos, já decidida.
-- Formato dos cenários e guia de texto ([06](documentos/06-Cenarios-e-Conteudo.md)).
-- Metas de validação ([03](documentos/03-Metodologia.md#validação)).
-- Plano de testes ([07](documentos/07-Plano-de-Testes.md)).
+- Público amplo: de adolescentes a idosos, sem limitar a um perfil.
+- Arquitetura com um verificador único, usado pelo gerador e pelo site ([05](documentos/05-Arquitetura.md)).
+- Banco de 20 cenários, com meta de 12 completos no lançamento ([06](documentos/06-Cenarios-e-Conteudo.md)).
+- Metas de validação como hipóteses iniciais ([03](documentos/03-Metodologia.md#validação)).
+- Plano de testes com 11 casos ([07](documentos/07-Plano-de-Testes.md)).
 
 ## Próximos passos
 
-1. Revisar e aprovar as propostas acima.
+1. ~~Revisar e aprovar a especificação.~~ Concluído em 2026-10-05.
 2. Escrever o plano de implementação.
 3. Construir o núcleo e o gerador, com testes.
 4. Construir o site e publicar o protótipo.

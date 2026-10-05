@@ -2,40 +2,85 @@
 
 ## Perfis de jogador
 
-Perfis fictícios, usados para orientar decisões.
+Perfis fictícios, usados para orientar decisões. Não representam pessoas reais.
 
-|Perfil | Jogadora de passatempo |
+|Perfil | Adolescente |
 |:---|:---|
-| Situação | Joga o Termo todo dia no ônibus, a caminho do trabalho. |
-| Necessidades | Um desafio que termine em até 15 minutos, no celular, com uma mão só. |
-| Frustração | Jogo que exige cadastro, que pede para baixar aplicativo ou que tem anúncio no meio da jogada. |
+| Situação | Tem 15 anos, joga no celular no recreio e manda tudo para o grupo da turma. |
+| Necessidades | Algo rápido, com cara de jogo, para provocar os amigos. |
+| Frustração | Jogo infantil demais ou cheio de anúncio. |
+
+|Perfil | Universitária |
+|:---|:---|
+| Situação | Estuda para o Enem e concursos e gosta de questões de lógica. |
+| Necessidades | O caso difícil, que exige combinar várias pistas. |
+| Frustração | Enigma que só se resolve no chute. |
+
+|Perfil | Profissional no intervalo |
+|:---|:---|
+| Situação | Trabalha em escritório e joga Termo no almoço. |
+| Necessidades | Terminar em até 15 minutos, com uma mão só. |
+| Frustração | Cadastro obrigatório ou pedido para baixar aplicativo. |
+
+|Perfil | Mãe que joga com o filho |
+|:---|:---|
+| Situação | Joga o caso fácil junto com o filho de 10 anos, à noite. |
+| Necessidades | Regras simples de explicar e nada impróprio para criança. |
+| Frustração | Texto com violência ou crime. |
+
+|Perfil | Aposentado |
+|:---|:---|
+| Situação | Tem 68 anos e faz palavras cruzadas todo dia para manter a cabeça ativa. |
+| Necessidades | Letra grande, botões grandes e nenhum relógio correndo. |
+| Frustração | Pressa, letra pequena e regra que só faz sentido para quem já joga. |
 
 |Perfil | Tio do grupo da família |
 |:---|:---|
 | Situação | Recebe o resultado dos sobrinhos no WhatsApp e clica para ver o que é. |
 | Necessidades | Entender as regras em um minuto, sem tutorial longo. |
-| Frustração | Letra pequena, botão pequeno, regra que só faz sentido para quem já joga. |
+| Frustração | Ter que instalar alguma coisa para jogar. |
 
-|Perfil | Estudante de concurso |
+|Perfil | Professora de matemática |
 |:---|:---|
-| Situação | Treina raciocínio lógico e gosta de desafio. |
-| Necessidades | O caso difícil, que exige combinar várias pistas. |
-| Frustração | Enigma que só se resolve no chute. |
+| Situação | Dá aula para o ensino médio e procura atividades de raciocínio lógico. |
+| Necessidades | Um caso que dê para resolver em grupo, projetado no quadro. |
+| Frustração | Ter que criar conta ou expor dados dos alunos. |
+
+|Perfil | Ex-apostador |
+|:---|:---|
+| Situação | Parou de apostar e quer algo para o tempo livre no celular. |
+| Necessidades | Um desafio diário que termina, sem dinheiro e sem recompensa sorteada. |
+| Frustração | Mecânicas que lembram cassino, como roleta, prêmio ou "quase ganhou". |
+
+|Perfil | Pessoa cega |
+|:---|:---|
+| Situação | Usa o celular com leitor de tela todos os dias. |
+| Necessidades | Grade e pistas lidas em ordem clara, com o estado de cada personagem anunciado. |
+| Frustração | Jogo que só funciona olhando cores. |
 
 ## Histórias de usuário
 
 |EU COMO... | QUERO/PRECISO ... | PARA ... |
 |---|---|---|
-| Jogadora | Abrir o link e jogar sem cadastro | Começar em segundos |
-| Jogadora | Escolher fácil, médio ou difícil | Jogar no nível do meu dia |
-| Jogadora | Ser impedida de marcar quando ainda não dá para ter certeza | Nunca resolver no chute |
-| Jogadora | Pedir uma dica quando travar | Não desistir do caso |
-| Jogadora | Compartilhar o resultado sem estragar a solução | Comparar com os amigos |
-| Jogadora | Ver minha sequência de dias | Ter motivo para voltar amanhã |
-| Tio do grupo | Entender as regras numa tela | Jogar já na primeira vez |
-| Estudante | Ter um caso difícil de verdade | Treinar dedução |
+| Jogador | Abrir o link e jogar sem cadastro | Começar em segundos |
+| Jogador | Escolher fácil, médio ou difícil | Jogar no nível do meu dia |
+| Jogador | Ser impedido de marcar quando ainda não dá para ter certeza | Nunca resolver no chute |
+| Jogador | Pedir uma dica quando travar | Não desistir do caso |
+| Jogador | Continuar de onde parei se fechar o navegador | Não perder o progresso |
+| Jogador | Compartilhar o resultado sem estragar a solução | Comparar com os amigos |
+| Jogador | Ver minha sequência de dias e minhas estatísticas | Ter motivo para voltar amanhã |
+| Adolescente | Mandar o resultado para o grupo da turma com um toque | Provocar quem errou mais |
+| Universitária | Ter um caso difícil de verdade | Treinar dedução para provas |
+| Profissional no intervalo | Terminar o caso em até 15 minutos | Caber no almoço |
+| Mãe que joga com o filho | Textos leves e sem violência | Jogar junto com a criança |
+| Aposentado | Letra e botões grandes, sem tempo correndo | Jogar com calma e conforto |
+| Tio do grupo da família | Entender as regras numa tela | Jogar já na primeira vez |
+| Professora de matemática | Abrir o caso do dia no projetor sem criar conta | Usar em sala de aula |
+| Ex-apostador | Um jogo sem dinheiro, sem prêmio e sem sorteio | Ocupar o tempo sem recair |
+| Pessoa cega | Ouvir a grade, as pistas e o resultado pelo leitor de tela | Jogar como qualquer pessoa |
 | Desenvolvedor | Gerar um ano de casos com um comando, uma única vez | Não ter trabalho diário nem semanal |
 | Desenvolvedor | Saber que todo caso publicado tem solução única | Não publicar caso quebrado |
+| Desenvolvedor | Criar um cenário novo editando um arquivo | Variar o jogo sem mexer no código |
 
 ## Requisitos do projeto
 

@@ -30,11 +30,19 @@ Criar um passatempo diário de dedução lógica, brasileiro, gratuito, que caib
 
 ## Público
 
-| Público | Por que joga |
+O Flagra é para **qualquer pessoa que goste de pensar**, sem limite de idade ou de perfil. As regras cabem numa tela, o caso fácil serve para quem nunca jogou nada parecido e o difícil desafia quem já é bom de lógica.
+
+| Grupo | O que busca no jogo |
 |---|---|
-| Adultos que gostam de passatempo (palavras cruzadas, sudoku, Termo) | Um desafio novo por dia, curto |
-| Grupos de família e de trabalho no WhatsApp | Comparar o resultado e zoar quem errou |
-| Quem quer ocupar o tempo que ia para as apostas | Um "só mais um" que termina, e sem dinheiro |
-| Estudantes | Raciocínio lógico de vestibular e concurso, de forma leve |
+| Jovens e adolescentes | Desafio rápido para mostrar aos amigos; alternativa a jogos com dinheiro e caixas de recompensa |
+| Estudantes | Raciocínio lógico de vestibular, Enem e concurso, de forma leve |
+| Adultos | Pausa curta no ônibus, no almoço ou antes de dormir |
+| Idosos | Exercício para a cabeça, em letra grande e sem pressa |
+| Famílias | Jogar junto e comparar o resultado no grupo |
+| Colegas de trabalho e amigos | Disputa diária e conversa no grupo |
+| Professores | Atividade de lógica pronta para a sala de aula |
+| Quem quer ocupar o tempo que ia para as apostas | Um "só mais um" que termina, sem dinheiro |
+| Pessoas com deficiência visual | Jogo pensado para leitor de tela desde o início |
 
 O jogo **não** é apresentado como tratamento nem como substituto de terapia. É um passatempo. Quem precisa de ajuda com apostas deve procurar o SUS (CAPS) ou um profissional de saúde.
+

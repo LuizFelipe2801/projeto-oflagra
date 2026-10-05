@@ -1,7 +1,5 @@
 # Plano de testes
 
-> Proposta, a revisar.
-
 ## Testes automatizados (Node, `node --test`)
 
 |Caso de teste | CT-01 Geometria da grade |

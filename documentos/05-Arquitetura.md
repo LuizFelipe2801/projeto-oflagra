@@ -1,7 +1,5 @@
 # Arquitetura
 
-> A escolha do caminho (casos gerados com antecedência, site estático) está **decidida**. Os detalhes abaixo são **proposta**, a revisar.
-
 ## Visão geral
 
 ```
@@ -92,8 +90,6 @@ site/
 **Solução embaralhada:** a solução é gravada codificada (por exemplo, com uma operação XOR com o dia do ciclo, em base64). Isso não é segurança; serve só para que ninguém veja a resposta sem querer ao abrir o arquivo. Para um passatempo sem prêmio, é suficiente.
 
 ## Publicação dos casos
-
-> Decidido: geração em lote. Nenhuma tarefa diária.
 
 1. Os cenários são escritos à mão, uma vez.
 2. Um comando gera o **ciclo** inteiro: 365 dias, com três casos por dia (1.095 arquivos).

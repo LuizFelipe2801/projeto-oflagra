@@ -4,7 +4,7 @@
 
 | Etapa | Objetivo | Termina quando |
 |---|---|---|
-| 1. Especificação | Esta documentação revisada e aprovada | Todas as seções marcadas como "proposta" forem aprovadas |
+| 1. Especificação | Esta documentação revisada e aprovada | Concluída em 2026-10-05 |
 | 2. Gerador e verificador | Gerar casos válidos e classificados por dificuldade, pela linha de comando | Gerar o ciclo completo (365 dias) com todos os casos passando nos testes |
 | 3. Protótipo jogável | Site estático com o caso do dia | Pessoas de fora conseguirem terminar um caso sem explicação |
 | 4. Publicação e validação | Publicar e medir | Quatro semanas de dados de retorno |
@@ -12,7 +12,7 @@
 
 ## Validação
 
-> Proposta, a revisar. As metas são hipóteses iniciais, não referências de mercado.
+> As metas são hipóteses iniciais, não referências de mercado. Serão revistas depois das primeiras quatro semanas.
 
 | Métrica | Como medir | Meta inicial |
 |---|---|---|

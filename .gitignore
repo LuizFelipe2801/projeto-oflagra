@@ -1,0 +1,14 @@
+# Dados que nunca entram no repositório
+.env
+*.env
+segredos/
+clientes-dados/
+
+# Sistema
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editores
+.vscode/
+.obsidian/

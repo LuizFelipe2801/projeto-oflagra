@@ -61,13 +61,14 @@ site/             o jogo: HTML, CSS e JavaScript puro, com os casos       (a cri
 - Tom de travessura do dia a dia.
 - O jogador escolhe a dificuldade: três casos por dia.
 - Casos gerados com antecedência e site estático, sem servidor.
+- Casos gerados em lote, num ciclo de 365 dias que recomeça sozinho: nenhuma tarefa diária.
 - Sem login na primeira versão.
 - Começa como portfólio publicado; vira negócio se a retenção for boa.
 - Nome: Flagra, no endereço oflagra.com.br.
 
 **Propostas, a revisar**
 
-- Detalhes da arquitetura ([05](documentos/05-Arquitetura.md)).
+- Detalhes da arquitetura ([05](documentos/05-Arquitetura.md)), exceto a publicação dos casos, já decidida.
 - Formato dos cenários e guia de texto ([06](documentos/06-Cenarios-e-Conteudo.md)).
 - Metas de validação ([03](documentos/03-Metodologia.md#validação)).
 - Plano de testes ([07](documentos/07-Plano-de-Testes.md)).

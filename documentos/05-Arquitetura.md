@@ -7,7 +7,7 @@
 ```
                 gerado com antecedência                        no navegador do jogador
 ┌────────────┐   ┌────────────┐   ┌──────────────────┐        ┌───────────────────────┐
-│ cenarios/  │──▶│  gerador   │──▶│ casos/2026-11-01 │──fetch─▶│ site (HTML/CSS/JS)    │
+│ cenarios/  │──▶│  gerador   │──▶│ casos/034        │──fetch─▶│ site (HTML/CSS/JS)    │
 │ (JSON)     │   │  (Node)    │   │   -facil.json    │        │  ├─ interface          │
 └────────────┘   └─────┬──────┘   │   -medio.json    │        │  ├─ estado e progresso │
                        │ usa      │   -dificil.json  │        │  └─ verificador ◀──┐   │
@@ -33,10 +33,10 @@
 ### `gerador/` — linha de comando (Node.js)
 
 ```
-node gerador/gerar.js --de 2026-11-01 --ate 2026-11-30
+node gerador/gerar.js --dias 365
 ```
 
-Para cada dia e cada dificuldade:
+Para cada dia do ciclo e cada dificuldade:
 
 1. Sorteia um cenário e a distribuição de culpados (entre 6 e 12, para não ficar óbvio).
 2. Sorteia o personagem inicial.
@@ -44,9 +44,9 @@ Para cada dia e cada dificuldade:
 4. **Simula um jogador perfeito:** a partir da pista inicial, resolve tudo o que for dedutível, revela as pistas desses personagens e repete.
 5. Se o jogador simulado travar, troca pistas e tenta de novo. Se chegar ao fim, o caso tem **solução única e não exige chute**.
 6. Mede a dificuldade (abaixo) e guarda o caso só se ela bater com a pedida.
-7. Grava `casos/AAAA-MM-DD-<dificuldade>.json`.
+7. Grava `casos/<dia do ciclo>-<dificuldade>.json`, por exemplo `casos/034-medio.json`.
 
-A semente do sorteio vem da data e da dificuldade, então rodar o gerador de novo produz exatamente os mesmos casos.
+A semente do sorteio vem do dia do ciclo e da dificuldade, então rodar o gerador de novo produz exatamente os mesmos casos.
 
 ### Classificação de dificuldade
 
@@ -76,8 +76,7 @@ site/
 ```json
 {
   "versao": 1,
-  "data": "2026-11-01",
-  "numero": 34,
+  "dia_do_ciclo": 34,
   "dificuldade": "medio",
   "cenario": "firma",
   "titulo": "Quem comeu o bolo do chefe?",
@@ -90,12 +89,33 @@ site/
 }
 ```
 
-**Solução embaralhada:** a solução é gravada codificada (por exemplo, com uma operação XOR sobre a data, em base64). Isso não é segurança; serve só para que ninguém veja a resposta sem querer ao abrir o arquivo. Para um passatempo sem prêmio, é suficiente.
+**Solução embaralhada:** a solução é gravada codificada (por exemplo, com uma operação XOR com o dia do ciclo, em base64). Isso não é segurança; serve só para que ninguém veja a resposta sem querer ao abrir o arquivo. Para um passatempo sem prêmio, é suficiente.
+
+## Publicação dos casos
+
+> Decidido: geração em lote. Nenhuma tarefa diária.
+
+1. Os cenários são escritos à mão, uma vez.
+2. Um comando gera o **ciclo** inteiro: 365 dias, com três casos por dia (1.095 arquivos).
+3. Os arquivos vão para `site/casos/` e são publicados junto com o site.
+4. O navegador calcula qual caso abrir:
+
+```
+dias desde o lançamento = hoje (horário de Brasília) − data de lançamento
+dia do ciclo            = dias desde o lançamento mod 365
+arquivo                 = casos/<dia do ciclo>-<dificuldade>.json
+```
+
+5. **Quando o ciclo termina, ele recomeça sozinho.** Depois de um ano, um caso só volta para quem jogou há um ano, o que não atrapalha um passatempo. O tamanho do ciclo é configurável; 182 dias (seis meses) também é aceitável.
+
+**O que fica exposto:** como todos os arquivos estão no site, um curioso consegue abrir o caso de amanhã. Num passatempo sem prêmio, isso não estraga o jogo de ninguém.
+
+**Evolução, se o jogo pegar:** uma rotina agendada do GitHub (GitHub Actions) passa a gerar e publicar só os casos do dia, de madrugada. Continua sem trabalho manual, e o caso de amanhã deixa de existir antes da hora.
 
 ## Horário e numeração
 
 - O caso do dia vale de 00h00 a 23h59 no horário de Brasília (`America/Sao_Paulo`), seja qual for o fuso do aparelho.
-- O número do caso conta os dias desde a data de lançamento.
+- O número do caso conta os dias desde a data de lançamento e **não volta para 1** quando o ciclo recomeça: o caso #400 usa o conteúdo do dia 35 do ciclo.
 
 ## Dados guardados no navegador
 

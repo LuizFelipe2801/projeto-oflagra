@@ -42,8 +42,8 @@
 |Caso de teste | CT-06 Reprodutibilidade |
 |:---|:---|
 | Requisitos associados | RF-013 |
-| Objetivo | Garantir que a mesma data gera o mesmo caso |
-| Passos | Rodar o gerador duas vezes para o mesmo intervalo |
+| Objetivo | Garantir que o mesmo dia do ciclo gera o mesmo caso |
+| Passos | Rodar o gerador duas vezes para o ciclo completo |
 | Critérios de êxito | Arquivos idênticos |
 
 |Caso de teste | CT-07 Desempenho do verificador |

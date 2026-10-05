@@ -1,5 +1,11 @@
 # Histórico de versões
 
+## [0.1.3] - 2026-10-05
+
+### Alterado
+- Publicação dos casos decidida: geração em lote de um ciclo de 365 dias, que recomeça sozinho. Sem tarefa diária nem semanal.
+- Arquivos de caso nomeados pelo dia do ciclo, não pela data.
+
 ## [0.1.2] - 2026-10-05
 
 ### Alterado

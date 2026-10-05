@@ -34,7 +34,7 @@ Perfis fictícios, usados para orientar decisões.
 | Jogadora | Ver minha sequência de dias | Ter motivo para voltar amanhã |
 | Tio do grupo | Entender as regras numa tela | Jogar já na primeira vez |
 | Estudante | Ter um caso difícil de verdade | Treinar dedução |
-| Desenvolvedor | Gerar semanas de casos com um comando | Não depender de trabalho diário |
+| Desenvolvedor | Gerar um ano de casos com um comando, uma única vez | Não ter trabalho diário nem semanal |
 | Desenvolvedor | Saber que todo caso publicado tem solução única | Não publicar caso quebrado |
 
 ## Requisitos do projeto
@@ -55,10 +55,11 @@ Perfis fictícios, usados para orientar decisões.
 |RF-010| Guardar no navegador o progresso do caso em andamento, para continuar depois | ALTA |
 |RF-011| Guardar no navegador a sequência de dias e as estatísticas por dificuldade | MÉDIA |
 |RF-012| Exibir as regras numa única tela, acessível a qualquer momento | ALTA |
-|RF-013| Gerar casos com um comando, para um intervalo de datas | ALTA |
+|RF-013| Gerar com um único comando todos os casos de um ciclo (padrão: 365 dias, três casos por dia) | ALTA |
 |RF-014| Recusar, na geração, casos sem solução única ou que exijam chute | ALTA |
 |RF-015| Classificar cada caso gerado como fácil, médio ou difícil por critério objetivo | ALTA |
-|RF-016| Permitir arquivo de casos antigos | BAIXA |
+|RF-016| Repetir o ciclo de casos automaticamente quando ele terminar, sem gerar nada novo | ALTA |
+|RF-017| Permitir arquivo de casos antigos | BAIXA |
 
 ### Requisitos não funcionais
 

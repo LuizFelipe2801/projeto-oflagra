@@ -89,6 +89,14 @@ npm run gerar -- --dias 7 --saida medicao # gera 7 dias de casos
 npm run validar -- --pasta medicao        # confere os casos gerados
 ```
 
+## Branches
+
+| Branch | Papel |
+|---|---|
+| `main` | Produção: só o que foi aprovado na homologação |
+| `hml` | Homologação: onde cada entrega é testada antes de ir para a `main` |
+| outras | Uma por funcionalidade, integrada primeiro na `hml` |
+
 ## Histórico de versões
 
 Ver [CHANGELOG.md](CHANGELOG.md).

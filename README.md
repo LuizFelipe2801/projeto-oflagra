@@ -1,4 +1,4 @@
-# Projetos do Luiz
+# Projeto Oflagra
 
 Repositório central dos projetos próprios: a empresa de sites para comércio local e os produtos de software.
 

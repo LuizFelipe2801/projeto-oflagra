@@ -123,3 +123,60 @@ export function texto(pista, personagens, falante) {
       throw new Error(`Tipo de pista desconhecido: ${pista.tipo}`);
   }
 }
+
+const AREAS = [
+  ...[1, 2, 3, 4, 5].map((valor) => ({ tipo: 'linha', valor })),
+  ...COLUNAS.map((valor) => ({ tipo: 'coluna', valor })),
+  { tipo: 'borda' },
+];
+
+/** Todas as pistas verdadeiras e úteis para a solução dada, sem repetição. */
+export function candidatas(solucao, personagens) {
+  const m = solucao >>> 0;
+  const lista = [];
+  const add = (tipo, params) => lista.push({ tipo, params });
+  const qtd = (indices) => contar(m & mascara(indices));
+
+  for (let i = 0; i < TOTAL; i++) add('vizinhos', { alvo: i, n: qtd(vizinhos(i)) });
+
+  for (const area of AREAS) {
+    const idx = indicesDaArea(area);
+    const n = qtd(idx);
+    add('contagem', { area, n });
+    add('paridade', { area, impar: n % 2 === 1 });
+    if (2 * n !== idx.length) add('maioria', { area, valor: 2 * n > idx.length ? 'culpado' : 'inocente' });
+    if (area.tipo !== 'borda' && n >= 2 && conectados(m & mascara(idx))) add('conexao', { area });
+  }
+
+  for (let i = 0; i < TOTAL; i++) {
+    for (const direcao of ['acima', 'abaixo', 'esquerda', 'direita']) {
+      const idx = naDirecao(i, direcao);
+      if (!idx.length) continue;
+      const n = qtd(idx);
+      if (n === 0) add('direcao', { alvo: i, direcao, valor: 'inocente' });
+      else if (n === idx.length) add('direcao', { alvo: i, direcao, valor: 'culpado' });
+    }
+  }
+
+  for (let a = 0; a < TOTAL; a++) {
+    for (let b = a + 1; b < TOTAL; b++) {
+      const e = entre(a, b);
+      if (e && e.length) add('entre', { a, b, n: qtd(e) });
+    }
+  }
+
+  const porProfissao = {};
+  personagens.forEach((p, i) => (porProfissao[p.profissao] ??= []).push(i));
+  for (const [profissao, membros] of Object.entries(porProfissao)) {
+    if (membros.length >= 2) add('profissao', { profissao, membros, n: qtd(membros) });
+  }
+
+  for (let a = 0; a < TOTAL; a++) {
+    for (let b = 0; b < TOTAL; b++) {
+      if (a === b || Math.abs(linha(a) - linha(b)) > 2 || Math.abs(coluna(a) - coluna(b)) > 2) continue;
+      if (qtd(vizinhos(a)) > qtd(vizinhos(b))) add('comparacao', { a, b });
+    }
+  }
+
+  return lista;
+}

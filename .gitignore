@@ -1,8 +1,10 @@
+# Dependências
+node_modules/
+
 # Dados que nunca entram no repositório
 .env
 *.env
 segredos/
-clientes-dados/
 
 # Sistema
 .DS_Store

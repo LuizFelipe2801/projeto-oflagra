@@ -15,7 +15,7 @@ Cada cenário é um arquivo em `cenarios/`:
     "Quem deixou a impressora sem papel?",
     "Quem esqueceu a marmita na geladeira?"
   ],
-  "profissoes": ["copeira", "estagiário", "contador", "RH", "TI", "vendedora", "gerente", "recepcionista"],
+  "profissoes": ["da copa", "do estágio", "da contabilidade", "do RH", "da TI", "de vendas"],
   "nomes": ["Cida", "Zé", "Bia", "Caio", "Lu", "Rosa", "Tião", "Duda"],
   "culpado": "culpado",
   "inocente": "inocente"
@@ -23,6 +23,8 @@ Cada cenário é um arquivo em `cenarios/`:
 ```
 
 O gerador sorteia 20 nomes sem repetir e distribui as profissões de forma que cada uma apareça de 2 a 4 vezes, para que as pistas de profissão funcionem.
+
+**Profissões em forma neutra.** Como o nome e a profissão são sorteados separadamente, uma profissão com gênero ("professora") podia cair num nome masculino. Por isso os cenários escrevem o grupo, não o cargo: "da copa", "do RH", "da turma A", "dos primos". A pista fica "Entre quem é da copa, há exatamente 1 culpado", e o crachá mostra "Cida · da copa".
 
 ## Banco de cenários
 
@@ -49,7 +51,7 @@ O gerador sorteia 20 nomes sem repetir e distribui as profissões de forma que c
 | A redação do jornal | Quem publicou a manchete com erro? | repórter, editora, fotógrafo, revisora, estagiário |
 | A excursão da escola | Quem trocou o lanche dos colegas? | professor, motorista, guia, aluna, monitora |
 
-São 20 cenários de partida. Meta para o lançamento: **12 escritos por completo** (nomes, profissões e pelo menos 3 travessuras cada), o bastante para não repetir na mesma semana em nenhuma dificuldade. Os demais entram aos poucos.
+São 20 cenários de partida. Os 12 primeiros da tabela já estão escritos em `cenarios/` (versão 0.4.0). Meta para o lançamento: **12 escritos por completo** (nomes, profissões e pelo menos 3 travessuras cada), o bastante para não repetir na mesma semana em nenhuma dificuldade. Os demais entram aos poucos.
 
 Todo cenário novo segue o guia de texto abaixo e é revisado uma vez, quando é criado.
 

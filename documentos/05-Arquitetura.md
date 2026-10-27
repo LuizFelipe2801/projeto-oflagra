@@ -25,6 +25,8 @@
 | `grade.js` | Posições, vizinhos, linhas, colunas, "entre", conexão |
 | `pistas.js` | Cada tipo de pista como uma função `(solucao) → verdadeiro/falso`, mais o texto da pista |
 | `verificador.js` | Dado um conjunto de pistas e de marcações conhecidas, diz quais personagens já são dedutíveis e com qual valor |
+| `deducao.js` | O menor conjunto de pistas reveladas que resolve alguém: usado pelo gerador para medir dificuldade e pelo site para dar a dica |
+| `caso.js` | Formato do arquivo: serialização e embaralhamento da solução |
 
 **Como o verificador decide:** um personagem é dedutível quando **todas** as soluções compatíveis com as pistas reveladas concordam sobre ele. As soluções compatíveis são enumeradas percorrendo todas as combinações dos personagens ainda não conhecidos e descartando as que violam alguma pista. Com 20 personagens, no pior caso são 2²⁰ (cerca de 1 milhão) de combinações, o que leva perto de 70 ms; cada personagem revelado corta esse número pela metade.
 
@@ -62,14 +64,22 @@ Durante a simulação, cada dedução é feita com o **menor conjunto de pistas 
 
 ```
 site/
-  index.html          tela única: escolha da dificuldade, grade, regras
-  css/style.css
-  js/app.js           liga interface, estado e verificador
-  js/estado.js        progresso do caso, sequência e estatísticas (localStorage)
+  index.html          tela única: dificuldade, grade, painel de marcação, pistas, regras, resultado
+  css/estilo.css      variáveis de cor, modo escuro e "reduzir movimento"
+  js/config.js        data de lançamento, tamanho do ciclo, endereço e fuso
+  js/calendario.js    data de hoje em Brasília, número do caso e nome do arquivo
+  js/partida.js       marcação sem chute, erros, dicas em dois níveis e desempenho por posição
+  js/estado.js        progresso do caso, histórico, sequência e estatísticas (localStorage)
   js/resultado.js     monta o texto com emojis
-  js/nucleo/          cópia de nucleo/, sem etapa de build
-  casos/              arquivos gerados
+  js/interface.js     tudo que toca no DOM
+  js/app.js           liga calendário, caso, partida, estado e interface
+  js/nucleo/          cópia de nucleo/ (npm run sincronizar; um teste garante que é idêntica)
+  casos/              o ciclo gerado
 ```
+
+Os módulos `calendario`, `partida`, `estado` e `resultado` não tocam no DOM e são testados no Node. A cópia de `nucleo/` é feita por `npm run sincronizar`; o teste `testes/site-nucleo.test.js` falha se ela estiver desatualizada.
+
+**Dica em dois níveis:** o site chama `deducao.passo` com as pistas reveladas. O primeiro pedido realça as pistas do menor conjunto que resolve alguém; o segundo realça o primeiro personagem desse conjunto e marca a posição dele como "com dica" no resultado. A cada acerto, a dica volta ao nível 1.
 
 ## Formato de um caso
 
@@ -95,7 +105,7 @@ site/
 
 1. Os cenários são escritos à mão, uma vez.
 2. Um comando gera o **ciclo** inteiro: 365 dias, com três casos por dia (1.095 arquivos).
-3. Os arquivos vão para `site/casos/` e são publicados junto com o site.
+3. Os arquivos vão para `site/casos/` e são publicados junto com o site. O workflow `.github/workflows/publicar.yml` roda os testes e o validador e publica `site/` no GitHub Pages a cada push na `main`.
 4. O navegador calcula qual caso abrir:
 
 ```
@@ -114,13 +124,16 @@ arquivo                 = casos/<dia do ciclo>-<dificuldade>.json
 
 - O caso do dia vale de 00h00 a 23h59 no horário de Brasília (`America/Sao_Paulo`), seja qual for o fuso do aparelho.
 - O número do caso conta os dias desde a data de lançamento e **não volta para 1** quando o ciclo recomeça: o caso #400 usa o conteúdo do dia 35 do ciclo.
+- Data de lançamento: **2026-10-27** (`DATA_LANCAMENTO` em `site/js/config.js`); esse dia é o caso #1 e usa o dia 0 do ciclo.
+- A data é calculada uma vez por carga da página: quem começa às 23h59 termina o mesmo caso; o caso novo aparece ao recarregar.
 
 ## Dados guardados no navegador
 
 | Chave | Conteúdo |
 |---|---|
-| `progresso:<data>:<dificuldade>` | Marcações, erros e dicas do caso em andamento |
-| `historico` | Por data: dificuldades concluídas, erros e dicas |
+| `progresso:<número>:<dificuldade>` | Personagens revelados, erros e dicas do caso em andamento (apagado ao terminar) |
+| `historico` | Por data: dificuldades concluídas, com número do caso, erros e dicas |
+| `pref:dificuldade`, `pref:regras-vistas` | Última dificuldade escolhida e se as regras já foram mostradas |
 
 Nada disso sai do aparelho, a não ser os eventos anônimos de estatística descritos em [03-Metodologia](03-Metodologia.md#validação). Toda leitura e gravação no `localStorage` é protegida, para que o jogo funcione mesmo em janela anônima ou com o armazenamento bloqueado.
 

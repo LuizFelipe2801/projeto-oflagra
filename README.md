@@ -2,7 +2,7 @@
 
 `TIPO` Jogo diário de dedução lógica, no navegador
 
-`STATUS` Núcleo e gerador prontos; próximo passo é o site (Plano 2)
+`STATUS` Protótipo jogável pronto em homologação (Plano 2); próximo passo é publicar e testar com pessoas de fora
 
 `ENDEREÇO` oflagra.com.br (domínio ainda não registrado)
 
@@ -50,7 +50,9 @@ nucleo/           lógica compartilhada: grade, pistas, verificador e formato do
 gerador/          comandos que geram e validam os casos
 cenarios/         cenários em JSON: nomes, profissões e travessuras
 testes/           testes automatizados (npm test)
-site/             o jogo: HTML, CSS e JavaScript puro, com os casos       (Plano 2)
+site/             o jogo: HTML, CSS e JavaScript puro, mais site/casos/ com o ciclo
+ferramentas/      servidor local e cópia do núcleo para o site
+.github/          testes em todo push e publicação do site no GitHub Pages
 ```
 
 ## Decisões
@@ -71,13 +73,18 @@ site/             o jogo: HTML, CSS e JavaScript puro, com os casos       (Plano
 - Banco de 20 cenários, com meta de 12 completos no lançamento ([06](documentos/06-Cenarios-e-Conteudo.md)).
 - Metas de validação como hipóteses iniciais ([03](documentos/03-Metodologia.md#validação)).
 - Plano de testes com 11 casos ([07](documentos/07-Plano-de-Testes.md)).
+- Profissões escritas em forma neutra ("da copa", "do RH"), para não brigar com o gênero do nome sorteado ([06](documentos/06-Cenarios-e-Conteudo.md)).
+- Data de lançamento 2026-10-27: o caso #1 é desse dia ([05](documentos/05-Arquitetura.md#horário-e-numeração)).
+- Publicação pelo GitHub Pages a cada push na `main` ([05](documentos/05-Arquitetura.md#publicação-dos-casos)).
 
 ## Próximos passos
 
 1. ~~Revisar e aprovar a especificação.~~ Concluído em 2026-10-05.
 2. ~~Escrever o plano de implementação.~~ Concluído (Plano 1).
 3. ~~Construir o núcleo e o gerador, com testes.~~ Concluído.
-4. Construir o site e publicar o protótipo.
+4. ~~Construir o site.~~ Concluído (Plano 2).
+5. Publicar o protótipo (aprovar a `hml` na `main` e ligar o GitHub Pages) e testar com cinco pessoas de fora (CT-11).
+6. Registrar o domínio e ligar a estatística anônima.
 
 ## Como rodar
 
@@ -87,7 +94,11 @@ Requer Node.js 24 ou mais recente. Não há dependências para instalar.
 npm test                                  # todos os testes
 npm run gerar -- --dias 7 --saida medicao # gera 7 dias de casos
 npm run validar -- --pasta medicao        # confere os casos gerados
+npm run sincronizar                       # copia nucleo/ para site/js/nucleo/
+npm run site                              # abre o jogo em http://localhost:8000
 ```
+
+O site é estático: qualquer servidor de arquivos serve a pasta `site/`. A publicação oficial sai do GitHub Pages pelo workflow `.github/workflows/publicar.yml`, que roda os testes e o validador antes de publicar.
 
 ## Branches
 

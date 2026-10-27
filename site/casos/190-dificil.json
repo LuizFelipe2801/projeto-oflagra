@@ -1,0 +1,307 @@
+{
+ "versao": 1,
+ "dia_do_ciclo": 190,
+ "dificuldade": "dificil",
+ "cenario": "firma",
+ "cenario_nome": "A firma",
+ "titulo": "Quem esqueceu a marmita na geladeira?",
+ "personagens": [
+  {
+   "pos": "A1",
+   "nome": "Nando",
+   "profissao": "do estágio"
+  },
+  {
+   "pos": "B1",
+   "nome": "Paulo",
+   "profissao": "da contabilidade"
+  },
+  {
+   "pos": "C1",
+   "nome": "Zé",
+   "profissao": "da TI"
+  },
+  {
+   "pos": "D1",
+   "nome": "Duda",
+   "profissao": "do RH"
+  },
+  {
+   "pos": "A2",
+   "nome": "Tião",
+   "profissao": "da copa"
+  },
+  {
+   "pos": "B2",
+   "nome": "Juju",
+   "profissao": "de vendas"
+  },
+  {
+   "pos": "C2",
+   "nome": "Lia",
+   "profissao": "do RH"
+  },
+  {
+   "pos": "D2",
+   "nome": "Beto",
+   "profissao": "do estágio"
+  },
+  {
+   "pos": "A3",
+   "nome": "Caio",
+   "profissao": "da contabilidade"
+  },
+  {
+   "pos": "B3",
+   "nome": "Kel",
+   "profissao": "da copa"
+  },
+  {
+   "pos": "C3",
+   "nome": "Marcão",
+   "profissao": "da TI"
+  },
+  {
+   "pos": "D3",
+   "nome": "Gabi",
+   "profissao": "de vendas"
+  },
+  {
+   "pos": "A4",
+   "nome": "Rosa",
+   "profissao": "da contabilidade"
+  },
+  {
+   "pos": "B4",
+   "nome": "Sil",
+   "profissao": "da contabilidade"
+  },
+  {
+   "pos": "C4",
+   "nome": "Neide",
+   "profissao": "do RH"
+  },
+  {
+   "pos": "D4",
+   "nome": "Rafa",
+   "profissao": "do estágio"
+  },
+  {
+   "pos": "A5",
+   "nome": "Iva",
+   "profissao": "da TI"
+  },
+  {
+   "pos": "B5",
+   "nome": "Dani",
+   "profissao": "de vendas"
+  },
+  {
+   "pos": "C5",
+   "nome": "Lu",
+   "profissao": "da copa"
+  },
+  {
+   "pos": "D5",
+   "nome": "Toninho",
+   "profissao": "do RH"
+  }
+ ],
+ "inicial": "C4",
+ "pistas": {
+  "A1": {
+   "tipo": "comparacao",
+   "params": {
+    "a": 17,
+    "b": 18
+   },
+   "texto": "Dani tem mais vizinhos culpados que Lu."
+  },
+  "B1": {
+   "tipo": "maioria",
+   "params": {
+    "area": {
+     "tipo": "coluna",
+     "valor": "D"
+    },
+    "valor": "inocente"
+   },
+   "texto": "Há mais inocentes que culpados na coluna D."
+  },
+  "C1": {
+   "tipo": "comparacao",
+   "params": {
+    "a": 6,
+    "b": 4
+   },
+   "texto": "Lia tem mais vizinhos culpados que Tião."
+  },
+  "D1": {
+   "tipo": "vizinhos",
+   "params": {
+    "alvo": 12,
+    "n": 2
+   },
+   "texto": "Rosa tem exatamente 2 culpados entre os vizinhos."
+  },
+  "A2": {
+   "tipo": "paridade",
+   "params": {
+    "area": {
+     "tipo": "coluna",
+     "valor": "C"
+    },
+    "impar": true
+   },
+   "texto": "Há um número ímpar de culpados na coluna C."
+  },
+  "B2": {
+   "tipo": "vizinhos",
+   "params": {
+    "alvo": 19,
+    "n": 2
+   },
+   "texto": "Toninho tem exatamente 2 culpados entre os vizinhos."
+  },
+  "C2": {
+   "tipo": "paridade",
+   "params": {
+    "area": {
+     "tipo": "linha",
+     "valor": 3
+    },
+    "impar": true
+   },
+   "texto": "Há um número ímpar de culpados na linha 3."
+  },
+  "D2": {
+   "tipo": "comparacao",
+   "params": {
+    "a": 9,
+    "b": 2
+   },
+   "texto": "Kel tem mais vizinhos culpados que Zé."
+  },
+  "A3": {
+   "tipo": "paridade",
+   "params": {
+    "area": {
+     "tipo": "coluna",
+     "valor": "A"
+    },
+    "impar": true
+   },
+   "texto": "Há um número ímpar de culpados na coluna A."
+  },
+  "B3": {
+   "tipo": "direcao",
+   "params": {
+    "alvo": 14,
+    "direcao": "esquerda",
+    "valor": "culpado"
+   },
+   "texto": "Todos à esquerda de Neide são culpados."
+  },
+  "C3": {
+   "tipo": "comparacao",
+   "params": {
+    "a": 6,
+    "b": 15
+   },
+   "texto": "Lia tem mais vizinhos culpados que Rafa."
+  },
+  "D3": {
+   "tipo": "maioria",
+   "params": {
+    "area": {
+     "tipo": "linha",
+     "valor": 5
+    },
+    "valor": "inocente"
+   },
+   "texto": "Há mais inocentes que culpados na linha 5."
+  },
+  "A4": {
+   "tipo": "paridade",
+   "params": {
+    "area": {
+     "tipo": "coluna",
+     "valor": "B"
+    },
+    "impar": true
+   },
+   "texto": "Há um número ímpar de culpados na coluna B."
+  },
+  "B4": {
+   "tipo": "vizinhos",
+   "params": {
+    "alvo": 0,
+    "n": 3
+   },
+   "texto": "Nando tem exatamente 3 culpados entre os vizinhos."
+  },
+  "C4": {
+   "tipo": "direcao",
+   "params": {
+    "alvo": 17,
+    "direcao": "esquerda",
+    "valor": "inocente"
+   },
+   "texto": "Todos à esquerda de Dani são inocentes."
+  },
+  "D4": {
+   "tipo": "comparacao",
+   "params": {
+    "a": 9,
+    "b": 16
+   },
+   "texto": "Kel tem mais vizinhos culpados que Iva."
+  },
+  "A5": {
+   "tipo": "entre",
+   "params": {
+    "a": 8,
+    "b": 10,
+    "n": 0
+   },
+   "texto": "Não há nenhum culpado entre Caio e Marcão."
+  },
+  "B5": {
+   "tipo": "profissao",
+   "params": {
+    "profissao": "da TI",
+    "membros": [
+     2,
+     10,
+     16
+    ],
+    "n": 0
+   },
+   "texto": "Entre quem é da TI, não há nenhum culpado."
+  },
+  "C5": {
+   "tipo": "entre",
+   "params": {
+    "a": 1,
+    "b": 17,
+    "n": 2
+   },
+   "texto": "Há exatamente 2 culpados entre Paulo e Dani."
+  },
+  "D5": {
+   "tipo": "profissao",
+   "params": {
+    "profissao": "da contabilidade",
+    "membros": [
+     1,
+     8,
+     12,
+     13
+    ],
+    "n": 4
+   },
+   "texto": "Entre quem é da contabilidade, há exatamente 4 culpados."
+  }
+ },
+ "solucao": "cbjg"
+}

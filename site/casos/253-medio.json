@@ -1,0 +1,303 @@
+{
+ "versao": 1,
+ "dia_do_ciclo": 253,
+ "dificuldade": "medio",
+ "cenario": "feira",
+ "cenario_nome": "A feira",
+ "titulo": "Quem levou o troco da banca errada?",
+ "personagens": [
+  {
+   "pos": "A1",
+   "nome": "Geraldo",
+   "profissao": "do pastel"
+  },
+  {
+   "pos": "B1",
+   "nome": "Nilton",
+   "profissao": "da pamonha"
+  },
+  {
+   "pos": "C1",
+   "nome": "Ademir",
+   "profissao": "da pamonha"
+  },
+  {
+   "pos": "D1",
+   "nome": "Edna",
+   "profissao": "do peixe"
+  },
+  {
+   "pos": "A2",
+   "nome": "Orlando",
+   "profissao": "do peixe"
+  },
+  {
+   "pos": "B2",
+   "nome": "Elias",
+   "profissao": "do peixe"
+  },
+  {
+   "pos": "C2",
+   "nome": "Neusa",
+   "profissao": "da freguesia"
+  },
+  {
+   "pos": "D2",
+   "nome": "Joaquim",
+   "profissao": "do pastel"
+  },
+  {
+   "pos": "A3",
+   "nome": "Rute",
+   "profissao": "da banca de frutas"
+  },
+  {
+   "pos": "B3",
+   "nome": "Célia",
+   "profissao": "da pamonha"
+  },
+  {
+   "pos": "C3",
+   "nome": "Zilda",
+   "profissao": "da banca de frutas"
+  },
+  {
+   "pos": "D3",
+   "nome": "Irene",
+   "profissao": "da freguesia"
+  },
+  {
+   "pos": "A4",
+   "nome": "Dona Marta",
+   "profissao": "do pastel"
+  },
+  {
+   "pos": "B4",
+   "nome": "Ivo",
+   "profissao": "da verdura"
+  },
+  {
+   "pos": "C4",
+   "nome": "Benedito",
+   "profissao": "da freguesia"
+  },
+  {
+   "pos": "D4",
+   "nome": "Olga",
+   "profissao": "da freguesia"
+  },
+  {
+   "pos": "A5",
+   "nome": "Graça",
+   "profissao": "da banca de frutas"
+  },
+  {
+   "pos": "B5",
+   "nome": "Jurandir",
+   "profissao": "da verdura"
+  },
+  {
+   "pos": "C5",
+   "nome": "Waldir",
+   "profissao": "do pastel"
+  },
+  {
+   "pos": "D5",
+   "nome": "Lúcia",
+   "profissao": "da verdura"
+  }
+ ],
+ "inicial": "C4",
+ "pistas": {
+  "A1": {
+   "tipo": "vizinhos",
+   "params": {
+    "alvo": 1,
+    "n": 2
+   },
+   "texto": "Nilton tem exatamente 2 culpados entre os vizinhos."
+  },
+  "B1": {
+   "tipo": "contagem",
+   "params": {
+    "area": {
+     "tipo": "coluna",
+     "valor": "D"
+    },
+    "n": 3
+   },
+   "texto": "Há exatamente 3 culpados na coluna D."
+  },
+  "C1": {
+   "tipo": "vizinhos",
+   "params": {
+    "alvo": 15,
+    "n": 3
+   },
+   "texto": "Olga tem exatamente 3 culpados entre os vizinhos."
+  },
+  "D1": {
+   "tipo": "vizinhos",
+   "params": {
+    "alvo": 16,
+    "n": 1
+   },
+   "texto": "Graça tem exatamente 1 culpado entre os vizinhos."
+  },
+  "A2": {
+   "tipo": "paridade",
+   "params": {
+    "area": {
+     "tipo": "borda"
+    },
+    "impar": true
+   },
+   "texto": "Há um número ímpar de culpados na borda."
+  },
+  "B2": {
+   "tipo": "profissao",
+   "params": {
+    "profissao": "da verdura",
+    "membros": [
+     13,
+     17,
+     19
+    ],
+    "n": 1
+   },
+   "texto": "Entre quem é da verdura, há exatamente 1 culpado."
+  },
+  "C2": {
+   "tipo": "direcao",
+   "params": {
+    "alvo": 9,
+    "direcao": "direita",
+    "valor": "culpado"
+   },
+   "texto": "Todos à direita de Célia são culpados."
+  },
+  "D2": {
+   "tipo": "vizinhos",
+   "params": {
+    "alvo": 7,
+    "n": 3
+   },
+   "texto": "Tenho exatamente 3 culpados entre os vizinhos."
+  },
+  "A3": {
+   "tipo": "entre",
+   "params": {
+    "a": 16,
+    "b": 18,
+    "n": 1
+   },
+   "texto": "Há exatamente 1 culpado entre Graça e Waldir."
+  },
+  "B3": {
+   "tipo": "vizinhos",
+   "params": {
+    "alvo": 9,
+    "n": 5
+   },
+   "texto": "Tenho exatamente 5 culpados entre os vizinhos."
+  },
+  "C3": {
+   "tipo": "contagem",
+   "params": {
+    "area": {
+     "tipo": "linha",
+     "valor": 3
+    },
+    "n": 3
+   },
+   "texto": "Há exatamente 3 culpados na linha 3."
+  },
+  "D3": {
+   "tipo": "entre",
+   "params": {
+    "a": 3,
+    "b": 11,
+    "n": 1
+   },
+   "texto": "Há exatamente 1 culpado entre mim e Edna."
+  },
+  "A4": {
+   "tipo": "contagem",
+   "params": {
+    "area": {
+     "tipo": "borda"
+    },
+    "n": 7
+   },
+   "texto": "Há exatamente 7 culpados na borda."
+  },
+  "B4": {
+   "tipo": "contagem",
+   "params": {
+    "area": {
+     "tipo": "coluna",
+     "valor": "B"
+    },
+    "n": 1
+   },
+   "texto": "Há exatamente 1 culpado na coluna B."
+  },
+  "C4": {
+   "tipo": "entre",
+   "params": {
+    "a": 2,
+    "b": 18,
+    "n": 3
+   },
+   "texto": "Há exatamente 3 culpados entre Ademir e Waldir."
+  },
+  "D4": {
+   "tipo": "comparacao",
+   "params": {
+    "a": 7,
+    "b": 3
+   },
+   "texto": "Joaquim tem mais vizinhos culpados que Edna."
+  },
+  "A5": {
+   "tipo": "comparacao",
+   "params": {
+    "a": 10,
+    "b": 16
+   },
+   "texto": "Zilda tem mais vizinhos culpados que eu."
+  },
+  "B5": {
+   "tipo": "conexao",
+   "params": {
+    "area": {
+     "tipo": "coluna",
+     "valor": "D"
+    }
+   },
+   "texto": "Todos os culpados da coluna D estão conectados."
+  },
+  "C5": {
+   "tipo": "conexao",
+   "params": {
+    "area": {
+     "tipo": "linha",
+     "valor": 4
+    }
+   },
+   "texto": "Todos os culpados da linha 4 estão conectados."
+  },
+  "D5": {
+   "tipo": "contagem",
+   "params": {
+    "area": {
+     "tipo": "linha",
+     "valor": 1
+    },
+    "n": 0
+   },
+   "texto": "Não há nenhum culpado na linha 1."
+  }
+ },
+ "solucao": "a29u"
+}

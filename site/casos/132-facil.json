@@ -1,0 +1,313 @@
+{
+ "versao": 1,
+ "dia_do_ciclo": 132,
+ "dificuldade": "facil",
+ "cenario": "academia",
+ "cenario_nome": "A academia",
+ "titulo": "Quem não limpou o aparelho depois de usar?",
+ "personagens": [
+  {
+   "pos": "A1",
+   "nome": "Márcio",
+   "profissao": "da musculação"
+  },
+  {
+   "pos": "B1",
+   "nome": "Yuri",
+   "profissao": "do spinning"
+  },
+  {
+   "pos": "C1",
+   "nome": "Thales",
+   "profissao": "da limpeza"
+  },
+  {
+   "pos": "D1",
+   "nome": "Fabrício",
+   "profissao": "do spinning"
+  },
+  {
+   "pos": "A2",
+   "nome": "Jéssica",
+   "profissao": "da limpeza"
+  },
+  {
+   "pos": "B2",
+   "nome": "Melissa",
+   "profissao": "da limpeza"
+  },
+  {
+   "pos": "C2",
+   "nome": "Elisa",
+   "profissao": "do spinning"
+  },
+  {
+   "pos": "D2",
+   "nome": "Taís",
+   "profissao": "da recepção"
+  },
+  {
+   "pos": "A3",
+   "nome": "Bruna",
+   "profissao": "da recepção"
+  },
+  {
+   "pos": "B3",
+   "nome": "Raíssa",
+   "profissao": "da nutrição"
+  },
+  {
+   "pos": "C3",
+   "nome": "Giovana",
+   "profissao": "da musculação"
+  },
+  {
+   "pos": "D3",
+   "nome": "Diogo",
+   "profissao": "da recepção"
+  },
+  {
+   "pos": "A4",
+   "nome": "Franciele",
+   "profissao": "da musculação"
+  },
+  {
+   "pos": "B4",
+   "nome": "Alex",
+   "profissao": "da esteira"
+  },
+  {
+   "pos": "C4",
+   "nome": "Everton",
+   "profissao": "da esteira"
+  },
+  {
+   "pos": "D4",
+   "nome": "Willian",
+   "profissao": "da nutrição"
+  },
+  {
+   "pos": "A5",
+   "nome": "Renata",
+   "profissao": "da limpeza"
+  },
+  {
+   "pos": "B5",
+   "nome": "Douglas",
+   "profissao": "da nutrição"
+  },
+  {
+   "pos": "C5",
+   "nome": "Caio",
+   "profissao": "da esteira"
+  },
+  {
+   "pos": "D5",
+   "nome": "Otávio",
+   "profissao": "da esteira"
+  }
+ ],
+ "inicial": "C2",
+ "pistas": {
+  "A1": {
+   "tipo": "entre",
+   "params": {
+    "a": 0,
+    "b": 8,
+    "n": 0
+   },
+   "texto": "Não há nenhum culpado entre mim e Bruna."
+  },
+  "B1": {
+   "tipo": "direcao",
+   "params": {
+    "alvo": 5,
+    "direcao": "direita",
+    "valor": "inocente"
+   },
+   "texto": "Todos à direita de Melissa são inocentes."
+  },
+  "C1": {
+   "tipo": "vizinhos",
+   "params": {
+    "alvo": 19,
+    "n": 0
+   },
+   "texto": "Otávio não tem nenhum culpado entre os vizinhos."
+  },
+  "D1": {
+   "tipo": "entre",
+   "params": {
+    "a": 9,
+    "b": 11,
+    "n": 0
+   },
+   "texto": "Não há nenhum culpado entre Raíssa e Diogo."
+  },
+  "A2": {
+   "tipo": "profissao",
+   "params": {
+    "profissao": "do spinning",
+    "membros": [
+     1,
+     3,
+     6
+    ],
+    "n": 0
+   },
+   "texto": "Entre quem é do spinning, não há nenhum culpado."
+  },
+  "B2": {
+   "tipo": "direcao",
+   "params": {
+    "alvo": 6,
+    "direcao": "direita",
+    "valor": "inocente"
+   },
+   "texto": "Todos à direita de Elisa são inocentes."
+  },
+  "C2": {
+   "tipo": "direcao",
+   "params": {
+    "alvo": 12,
+    "direcao": "abaixo",
+    "valor": "inocente"
+   },
+   "texto": "Todos abaixo de Franciele são inocentes."
+  },
+  "D2": {
+   "tipo": "vizinhos",
+   "params": {
+    "alvo": 5,
+    "n": 2
+   },
+   "texto": "Melissa tem exatamente 2 culpados entre os vizinhos."
+  },
+  "A3": {
+   "tipo": "contagem",
+   "params": {
+    "area": {
+     "tipo": "linha",
+     "valor": 5
+    },
+    "n": 2
+   },
+   "texto": "Há exatamente 2 culpados na linha 5."
+  },
+  "B3": {
+   "tipo": "contagem",
+   "params": {
+    "area": {
+     "tipo": "linha",
+     "valor": 3
+    },
+    "n": 1
+   },
+   "texto": "Há exatamente 1 culpado na linha 3."
+  },
+  "C3": {
+   "tipo": "profissao",
+   "params": {
+    "profissao": "da musculação",
+    "membros": [
+     0,
+     10,
+     12
+    ],
+    "n": 2
+   },
+   "texto": "Entre quem é da musculação, há exatamente 2 culpados."
+  },
+  "D3": {
+   "tipo": "contagem",
+   "params": {
+    "area": {
+     "tipo": "coluna",
+     "valor": "B"
+    },
+    "n": 2
+   },
+   "texto": "Há exatamente 2 culpados na coluna B."
+  },
+  "A4": {
+   "tipo": "entre",
+   "params": {
+    "a": 12,
+    "b": 14,
+    "n": 0
+   },
+   "texto": "Não há nenhum culpado entre mim e Everton."
+  },
+  "B4": {
+   "tipo": "profissao",
+   "params": {
+    "profissao": "da esteira",
+    "membros": [
+     13,
+     14,
+     18,
+     19
+    ],
+    "n": 1
+   },
+   "texto": "Entre quem é da esteira, há exatamente 1 culpado."
+  },
+  "C4": {
+   "tipo": "direcao",
+   "params": {
+    "alvo": 13,
+    "direcao": "abaixo",
+    "valor": "culpado"
+   },
+   "texto": "Todos abaixo de Alex são culpados."
+  },
+  "D4": {
+   "tipo": "entre",
+   "params": {
+    "a": 1,
+    "b": 3,
+    "n": 1
+   },
+   "texto": "Há exatamente 1 culpado entre Yuri e Fabrício."
+  },
+  "A5": {
+   "tipo": "direcao",
+   "params": {
+    "alvo": 14,
+    "direcao": "direita",
+    "valor": "inocente"
+   },
+   "texto": "Todos à direita de Everton são inocentes."
+  },
+  "B5": {
+   "tipo": "direcao",
+   "params": {
+    "alvo": 13,
+    "direcao": "esquerda",
+    "valor": "culpado"
+   },
+   "texto": "Todos à esquerda de Alex são culpados."
+  },
+  "C5": {
+   "tipo": "entre",
+   "params": {
+    "a": 3,
+    "b": 19,
+    "n": 1
+   },
+   "texto": "Há exatamente 1 culpado entre Fabrício e Otávio."
+  },
+  "D5": {
+   "tipo": "contagem",
+   "params": {
+    "area": {
+     "tipo": "coluna",
+     "valor": "C"
+    },
+    "n": 1
+   },
+   "texto": "Há exatamente 1 culpado na coluna C."
+  }
+ },
+ "solucao": "2jsn"
+}

@@ -1,0 +1,307 @@
+{
+ "versao": 1,
+ "dia_do_ciclo": 18,
+ "dificuldade": "medio",
+ "cenario": "republica",
+ "cenario_nome": "A república",
+ "titulo": "Quem deixou a louça na pia de novo?",
+ "personagens": [
+  {
+   "pos": "A1",
+   "nome": "Rafael",
+   "profissao": "da sala"
+  },
+  {
+   "pos": "B1",
+   "nome": "Bia",
+   "profissao": "da sala"
+  },
+  {
+   "pos": "C1",
+   "nome": "Letícia",
+   "profissao": "do quarto 2"
+  },
+  {
+   "pos": "D1",
+   "nome": "Diego",
+   "profissao": "do quarto 3"
+  },
+  {
+   "pos": "A2",
+   "nome": "Daniel",
+   "profissao": "da faxina"
+  },
+  {
+   "pos": "B2",
+   "nome": "Vítor",
+   "profissao": "de intercâmbio"
+  },
+  {
+   "pos": "C2",
+   "nome": "Henrique",
+   "profissao": "do quarto 3"
+  },
+  {
+   "pos": "D2",
+   "nome": "Larissa",
+   "profissao": "do quarto 1"
+  },
+  {
+   "pos": "A3",
+   "nome": "Camila",
+   "profissao": "de intercâmbio"
+  },
+  {
+   "pos": "B3",
+   "nome": "Paula",
+   "profissao": "de intercâmbio"
+  },
+  {
+   "pos": "C3",
+   "nome": "Leandro",
+   "profissao": "da sala"
+  },
+  {
+   "pos": "D3",
+   "nome": "Marina",
+   "profissao": "do quarto 1"
+  },
+  {
+   "pos": "A4",
+   "nome": "Gustavo",
+   "profissao": "do quarto 2"
+  },
+  {
+   "pos": "B4",
+   "nome": "Felipe",
+   "profissao": "da faxina"
+  },
+  {
+   "pos": "C4",
+   "nome": "Lucas",
+   "profissao": "do quarto 1"
+  },
+  {
+   "pos": "D4",
+   "nome": "Rodrigo",
+   "profissao": "da faxina"
+  },
+  {
+   "pos": "A5",
+   "nome": "Fernando",
+   "profissao": "de intercâmbio"
+  },
+  {
+   "pos": "B5",
+   "nome": "Amanda",
+   "profissao": "do quarto 2"
+  },
+  {
+   "pos": "C5",
+   "nome": "Carla",
+   "profissao": "do quarto 3"
+  },
+  {
+   "pos": "D5",
+   "nome": "Natália",
+   "profissao": "do quarto 1"
+  }
+ ],
+ "inicial": "B3",
+ "pistas": {
+  "A1": {
+   "tipo": "entre",
+   "params": {
+    "a": 3,
+    "b": 15,
+    "n": 1
+   },
+   "texto": "Há exatamente 1 culpado entre Diego e Rodrigo."
+  },
+  "B1": {
+   "tipo": "entre",
+   "params": {
+    "a": 13,
+    "b": 15,
+    "n": 0
+   },
+   "texto": "Não há nenhum culpado entre Felipe e Rodrigo."
+  },
+  "C1": {
+   "tipo": "comparacao",
+   "params": {
+    "a": 10,
+    "b": 1
+   },
+   "texto": "Leandro tem mais vizinhos culpados que Bia."
+  },
+  "D1": {
+   "tipo": "maioria",
+   "params": {
+    "area": {
+     "tipo": "coluna",
+     "valor": "C"
+    },
+    "valor": "culpado"
+   },
+   "texto": "Há mais culpados que inocentes na coluna C."
+  },
+  "A2": {
+   "tipo": "vizinhos",
+   "params": {
+    "alvo": 0,
+    "n": 0
+   },
+   "texto": "Rafael não tem nenhum culpado entre os vizinhos."
+  },
+  "B2": {
+   "tipo": "paridade",
+   "params": {
+    "area": {
+     "tipo": "linha",
+     "valor": 2
+    },
+    "impar": false
+   },
+   "texto": "Há um número par de culpados na linha 2."
+  },
+  "C2": {
+   "tipo": "contagem",
+   "params": {
+    "area": {
+     "tipo": "borda"
+    },
+    "n": 8
+   },
+   "texto": "Há exatamente 8 culpados na borda."
+  },
+  "D2": {
+   "tipo": "conexao",
+   "params": {
+    "area": {
+     "tipo": "linha",
+     "valor": 2
+    }
+   },
+   "texto": "Todos os culpados da linha 2 estão conectados."
+  },
+  "A3": {
+   "tipo": "vizinhos",
+   "params": {
+    "alvo": 6,
+    "n": 3
+   },
+   "texto": "Henrique tem exatamente 3 culpados entre os vizinhos."
+  },
+  "B3": {
+   "tipo": "contagem",
+   "params": {
+    "area": {
+     "tipo": "linha",
+     "valor": 5
+    },
+    "n": 4
+   },
+   "texto": "Há exatamente 4 culpados na linha 5."
+  },
+  "C3": {
+   "tipo": "profissao",
+   "params": {
+    "profissao": "do quarto 1",
+    "membros": [
+     7,
+     11,
+     14,
+     19
+    ],
+    "n": 2
+   },
+   "texto": "Entre quem é do quarto 1, há exatamente 2 culpados."
+  },
+  "D3": {
+   "tipo": "direcao",
+   "params": {
+    "alvo": 15,
+    "direcao": "abaixo",
+    "valor": "culpado"
+   },
+   "texto": "Todos abaixo de Rodrigo são culpados."
+  },
+  "A4": {
+   "tipo": "direcao",
+   "params": {
+    "alvo": 6,
+    "direcao": "direita",
+    "valor": "culpado"
+   },
+   "texto": "Todos à direita de Henrique são culpados."
+  },
+  "B4": {
+   "tipo": "entre",
+   "params": {
+    "a": 0,
+    "b": 12,
+    "n": 1
+   },
+   "texto": "Há exatamente 1 culpado entre Rafael e Gustavo."
+  },
+  "C4": {
+   "tipo": "direcao",
+   "params": {
+    "alvo": 2,
+    "direcao": "direita",
+    "valor": "culpado"
+   },
+   "texto": "Todos à direita de Letícia são culpados."
+  },
+  "D4": {
+   "tipo": "vizinhos",
+   "params": {
+    "alvo": 16,
+    "n": 1
+   },
+   "texto": "Fernando tem exatamente 1 culpado entre os vizinhos."
+  },
+  "A5": {
+   "tipo": "entre",
+   "params": {
+    "a": 4,
+    "b": 7,
+    "n": 1
+   },
+   "texto": "Há exatamente 1 culpado entre Daniel e Larissa."
+  },
+  "B5": {
+   "tipo": "profissao",
+   "params": {
+    "profissao": "do quarto 2",
+    "membros": [
+     2,
+     12,
+     17
+    ],
+    "n": 1
+   },
+   "texto": "Entre quem é do quarto 2, há exatamente 1 culpado."
+  },
+  "C5": {
+   "tipo": "vizinhos",
+   "params": {
+    "alvo": 5,
+    "n": 3
+   },
+   "texto": "Vítor tem exatamente 3 culpados entre os vizinhos."
+  },
+  "D5": {
+   "tipo": "conexao",
+   "params": {
+    "area": {
+     "tipo": "linha",
+     "valor": 5
+    }
+   },
+   "texto": "Todos os culpados da linha 5 estão conectados."
+  }
+ },
+ "solucao": "knul"
+}

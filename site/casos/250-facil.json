@@ -1,0 +1,309 @@
+{
+ "versao": 1,
+ "dia_do_ciclo": 250,
+ "dificuldade": "facil",
+ "cenario": "republica",
+ "cenario_nome": "A república",
+ "titulo": "Quem comeu o pudim com nome na geladeira?",
+ "personagens": [
+  {
+   "pos": "A1",
+   "nome": "Rodrigo",
+   "profissao": "do quarto 2"
+  },
+  {
+   "pos": "B1",
+   "nome": "Felipe",
+   "profissao": "do quarto 3"
+  },
+  {
+   "pos": "C1",
+   "nome": "Lucas",
+   "profissao": "da faxina"
+  },
+  {
+   "pos": "D1",
+   "nome": "Leandro",
+   "profissao": "de intercâmbio"
+  },
+  {
+   "pos": "A2",
+   "nome": "Diego",
+   "profissao": "do quarto 2"
+  },
+  {
+   "pos": "B2",
+   "nome": "Isabela",
+   "profissao": "da faxina"
+  },
+  {
+   "pos": "C2",
+   "nome": "Rafael",
+   "profissao": "da sala"
+  },
+  {
+   "pos": "D2",
+   "nome": "Camila",
+   "profissao": "de intercâmbio"
+  },
+  {
+   "pos": "A3",
+   "nome": "Carla",
+   "profissao": "da sala"
+  },
+  {
+   "pos": "B3",
+   "nome": "Letícia",
+   "profissao": "do quarto 3"
+  },
+  {
+   "pos": "C3",
+   "nome": "Bia",
+   "profissao": "de intercâmbio"
+  },
+  {
+   "pos": "D3",
+   "nome": "Fernando",
+   "profissao": "do quarto 2"
+  },
+  {
+   "pos": "A4",
+   "nome": "Amanda",
+   "profissao": "do quarto 2"
+  },
+  {
+   "pos": "B4",
+   "nome": "Tainá",
+   "profissao": "do quarto 3"
+  },
+  {
+   "pos": "C4",
+   "nome": "Gustavo",
+   "profissao": "do quarto 1"
+  },
+  {
+   "pos": "D4",
+   "nome": "Larissa",
+   "profissao": "do quarto 1"
+  },
+  {
+   "pos": "A5",
+   "nome": "Daniel",
+   "profissao": "da faxina"
+  },
+  {
+   "pos": "B5",
+   "nome": "Henrique",
+   "profissao": "do quarto 1"
+  },
+  {
+   "pos": "C5",
+   "nome": "Pati",
+   "profissao": "da sala"
+  },
+  {
+   "pos": "D5",
+   "nome": "Vítor",
+   "profissao": "da faxina"
+  }
+ ],
+ "inicial": "B2",
+ "pistas": {
+  "A1": {
+   "tipo": "direcao",
+   "params": {
+    "alvo": 13,
+    "direcao": "abaixo",
+    "valor": "inocente"
+   },
+   "texto": "Todos abaixo de Tainá são inocentes."
+  },
+  "B1": {
+   "tipo": "contagem",
+   "params": {
+    "area": {
+     "tipo": "coluna",
+     "valor": "A"
+    },
+    "n": 2
+   },
+   "texto": "Há exatamente 2 culpados na coluna A."
+  },
+  "C1": {
+   "tipo": "profissao",
+   "params": {
+    "profissao": "do quarto 2",
+    "membros": [
+     0,
+     4,
+     11,
+     12
+    ],
+    "n": 1
+   },
+   "texto": "Entre quem é do quarto 2, há exatamente 1 culpado."
+  },
+  "D1": {
+   "tipo": "direcao",
+   "params": {
+    "alvo": 3,
+    "direcao": "abaixo",
+    "valor": "culpado"
+   },
+   "texto": "Todos abaixo de mim são culpados."
+  },
+  "A2": {
+   "tipo": "direcao",
+   "params": {
+    "alvo": 14,
+    "direcao": "abaixo",
+    "valor": "culpado"
+   },
+   "texto": "Todos abaixo de Gustavo são culpados."
+  },
+  "B2": {
+   "tipo": "direcao",
+   "params": {
+    "alvo": 2,
+    "direcao": "direita",
+    "valor": "culpado"
+   },
+   "texto": "Todos à direita de Lucas são culpados."
+  },
+  "C2": {
+   "tipo": "vizinhos",
+   "params": {
+    "alvo": 15,
+    "n": 3
+   },
+   "texto": "Larissa tem exatamente 3 culpados entre os vizinhos."
+  },
+  "D2": {
+   "tipo": "conexao",
+   "params": {
+    "area": {
+     "tipo": "coluna",
+     "valor": "D"
+    }
+   },
+   "texto": "Todos os culpados da coluna D estão conectados."
+  },
+  "A3": {
+   "tipo": "entre",
+   "params": {
+    "a": 3,
+    "b": 11,
+    "n": 1
+   },
+   "texto": "Há exatamente 1 culpado entre Leandro e Fernando."
+  },
+  "B3": {
+   "tipo": "profissao",
+   "params": {
+    "profissao": "da sala",
+    "membros": [
+     6,
+     8,
+     18
+    ],
+    "n": 2
+   },
+   "texto": "Entre quem é da sala, há exatamente 2 culpados."
+  },
+  "C3": {
+   "tipo": "profissao",
+   "params": {
+    "profissao": "da faxina",
+    "membros": [
+     2,
+     5,
+     16,
+     19
+    ],
+    "n": 2
+   },
+   "texto": "Entre quem é da faxina, há exatamente 2 culpados."
+  },
+  "D3": {
+   "tipo": "entre",
+   "params": {
+    "a": 8,
+    "b": 10,
+    "n": 1
+   },
+   "texto": "Há exatamente 1 culpado entre Carla e Bia."
+  },
+  "A4": {
+   "tipo": "direcao",
+   "params": {
+    "alvo": 7,
+    "direcao": "acima",
+    "valor": "culpado"
+   },
+   "texto": "Todos acima de Camila são culpados."
+  },
+  "B4": {
+   "tipo": "vizinhos",
+   "params": {
+    "alvo": 13,
+    "n": 4
+   },
+   "texto": "Tenho exatamente 4 culpados entre os vizinhos."
+  },
+  "C4": {
+   "tipo": "vizinhos",
+   "params": {
+    "alvo": 3,
+    "n": 1
+   },
+   "texto": "Leandro tem exatamente 1 culpado entre os vizinhos."
+  },
+  "D4": {
+   "tipo": "vizinhos",
+   "params": {
+    "alvo": 14,
+    "n": 6
+   },
+   "texto": "Gustavo tem exatamente 6 culpados entre os vizinhos."
+  },
+  "A5": {
+   "tipo": "profissao",
+   "params": {
+    "profissao": "de intercâmbio",
+    "membros": [
+     3,
+     7,
+     10
+    ],
+    "n": 2
+   },
+   "texto": "Entre quem é de intercâmbio, há exatamente 2 culpados."
+  },
+  "B5": {
+   "tipo": "vizinhos",
+   "params": {
+    "alvo": 16,
+    "n": 1
+   },
+   "texto": "Daniel tem exatamente 1 culpado entre os vizinhos."
+  },
+  "C5": {
+   "tipo": "vizinhos",
+   "params": {
+    "alvo": 6,
+    "n": 4
+   },
+   "texto": "Rafael tem exatamente 4 culpados entre os vizinhos."
+  },
+  "D5": {
+   "tipo": "direcao",
+   "params": {
+    "alvo": 12,
+    "direcao": "abaixo",
+    "valor": "culpado"
+   },
+   "texto": "Todos abaixo de Amanda são culpados."
+  }
+ },
+ "solucao": "d2gn"
+}

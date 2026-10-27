@@ -1,0 +1,313 @@
+{
+ "versao": 1,
+ "dia_do_ciclo": 255,
+ "dificuldade": "medio",
+ "cenario": "junina",
+ "cenario_nome": "A festa junina",
+ "titulo": "Quem apagou a fogueira antes da hora?",
+ "personagens": [
+  {
+   "pos": "A1",
+   "nome": "Dita",
+   "profissao": "da fogueira"
+  },
+  {
+   "pos": "B1",
+   "nome": "Zito",
+   "profissao": "do som"
+  },
+  {
+   "pos": "C1",
+   "nome": "Dedé",
+   "profissao": "da barraca de pamonha"
+  },
+  {
+   "pos": "D1",
+   "nome": "Ritinha",
+   "profissao": "da quadrilha"
+  },
+  {
+   "pos": "A2",
+   "nome": "Dona Benta",
+   "profissao": "do correio elegante"
+  },
+  {
+   "pos": "B2",
+   "nome": "Nenê",
+   "profissao": "do correio elegante"
+  },
+  {
+   "pos": "C2",
+   "nome": "Nico",
+   "profissao": "do som"
+  },
+  {
+   "pos": "D2",
+   "nome": "Dorinha",
+   "profissao": "da quadrilha"
+  },
+  {
+   "pos": "A3",
+   "nome": "Quinzinho",
+   "profissao": "da barraca de pamonha"
+  },
+  {
+   "pos": "B3",
+   "nome": "Juvenal",
+   "profissao": "do som"
+  },
+  {
+   "pos": "C3",
+   "nome": "Rosinha",
+   "profissao": "da fogueira"
+  },
+  {
+   "pos": "D3",
+   "nome": "Zé Pedro",
+   "profissao": "da quadrilha"
+  },
+  {
+   "pos": "A4",
+   "nome": "Fia",
+   "profissao": "da barraca de pamonha"
+  },
+  {
+   "pos": "B4",
+   "nome": "Mariquinha",
+   "profissao": "da pescaria"
+  },
+  {
+   "pos": "C4",
+   "nome": "Tonico",
+   "profissao": "da pescaria"
+  },
+  {
+   "pos": "D4",
+   "nome": "Jacó",
+   "profissao": "da fogueira"
+  },
+  {
+   "pos": "A5",
+   "nome": "Bastião",
+   "profissao": "do correio elegante"
+  },
+  {
+   "pos": "B5",
+   "nome": "Bia",
+   "profissao": "da barraca de pamonha"
+  },
+  {
+   "pos": "C5",
+   "nome": "Ciro",
+   "profissao": "da pescaria"
+  },
+  {
+   "pos": "D5",
+   "nome": "Seu Chico",
+   "profissao": "da quadrilha"
+  }
+ ],
+ "inicial": "C3",
+ "pistas": {
+  "A1": {
+   "tipo": "profissao",
+   "params": {
+    "profissao": "do correio elegante",
+    "membros": [
+     4,
+     5,
+     16
+    ],
+    "n": 0
+   },
+   "texto": "Entre quem é do correio elegante, não há nenhum culpado."
+  },
+  "B1": {
+   "tipo": "contagem",
+   "params": {
+    "area": {
+     "tipo": "linha",
+     "valor": 5
+    },
+    "n": 2
+   },
+   "texto": "Há exatamente 2 culpados na linha 5."
+  },
+  "C1": {
+   "tipo": "direcao",
+   "params": {
+    "alvo": 5,
+    "direcao": "acima",
+    "valor": "inocente"
+   },
+   "texto": "Todos acima de Nenê são inocentes."
+  },
+  "D1": {
+   "tipo": "entre",
+   "params": {
+    "a": 12,
+    "b": 15,
+    "n": 2
+   },
+   "texto": "Há exatamente 2 culpados entre Fia e Jacó."
+  },
+  "A2": {
+   "tipo": "paridade",
+   "params": {
+    "area": {
+     "tipo": "coluna",
+     "valor": "B"
+    },
+    "impar": false
+   },
+   "texto": "Há um número par de culpados na coluna B."
+  },
+  "B2": {
+   "tipo": "direcao",
+   "params": {
+    "alvo": 18,
+    "direcao": "direita",
+    "valor": "culpado"
+   },
+   "texto": "Todos à direita de Ciro são culpados."
+  },
+  "C2": {
+   "tipo": "vizinhos",
+   "params": {
+    "alvo": 8,
+    "n": 2
+   },
+   "texto": "Quinzinho tem exatamente 2 culpados entre os vizinhos."
+  },
+  "D2": {
+   "tipo": "entre",
+   "params": {
+    "a": 0,
+    "b": 12,
+    "n": 1
+   },
+   "texto": "Há exatamente 1 culpado entre Dita e Fia."
+  },
+  "A3": {
+   "tipo": "contagem",
+   "params": {
+    "area": {
+     "tipo": "linha",
+     "valor": 2
+    },
+    "n": 2
+   },
+   "texto": "Há exatamente 2 culpados na linha 2."
+  },
+  "B3": {
+   "tipo": "direcao",
+   "params": {
+    "alvo": 5,
+    "direcao": "esquerda",
+    "valor": "inocente"
+   },
+   "texto": "Todos à esquerda de Nenê são inocentes."
+  },
+  "C3": {
+   "tipo": "direcao",
+   "params": {
+    "alvo": 13,
+    "direcao": "esquerda",
+    "valor": "culpado"
+   },
+   "texto": "Todos à esquerda de Mariquinha são culpados."
+  },
+  "D3": {
+   "tipo": "comparacao",
+   "params": {
+    "a": 14,
+    "b": 7
+   },
+   "texto": "Tonico tem mais vizinhos culpados que Dorinha."
+  },
+  "A4": {
+   "tipo": "profissao",
+   "params": {
+    "profissao": "da fogueira",
+    "membros": [
+     0,
+     10,
+     15
+    ],
+    "n": 2
+   },
+   "texto": "Entre quem é da fogueira, há exatamente 2 culpados."
+  },
+  "B4": {
+   "tipo": "vizinhos",
+   "params": {
+    "alvo": 1,
+    "n": 2
+   },
+   "texto": "Zito tem exatamente 2 culpados entre os vizinhos."
+  },
+  "C4": {
+   "tipo": "maioria",
+   "params": {
+    "area": {
+     "tipo": "coluna",
+     "valor": "C"
+    },
+    "valor": "inocente"
+   },
+   "texto": "Há mais inocentes que culpados na coluna C."
+  },
+  "D4": {
+   "tipo": "conexao",
+   "params": {
+    "area": {
+     "tipo": "linha",
+     "valor": 2
+    }
+   },
+   "texto": "Todos os culpados da linha 2 estão conectados."
+  },
+  "A5": {
+   "tipo": "profissao",
+   "params": {
+    "profissao": "da quadrilha",
+    "membros": [
+     3,
+     7,
+     11,
+     19
+    ],
+    "n": 3
+   },
+   "texto": "Entre quem é da quadrilha, há exatamente 3 culpados."
+  },
+  "B5": {
+   "tipo": "direcao",
+   "params": {
+    "alvo": 8,
+    "direcao": "direita",
+    "valor": "inocente"
+   },
+   "texto": "Todos à direita de Quinzinho são inocentes."
+  },
+  "C5": {
+   "tipo": "vizinhos",
+   "params": {
+    "alvo": 3,
+    "n": 2
+   },
+   "texto": "Ritinha tem exatamente 2 culpados entre os vizinhos."
+  },
+  "D5": {
+   "tipo": "conexao",
+   "params": {
+    "area": {
+     "tipo": "linha",
+     "valor": 4
+    }
+   },
+   "texto": "Todos os culpados da linha 4 estão conectados."
+  }
+ },
+ "solucao": "jxd5"
+}

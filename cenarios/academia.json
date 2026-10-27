@@ -1,0 +1,45 @@
+{
+  "id": "academia",
+  "nome": "A academia",
+  "travessuras": [
+    "Quem largou os pesos no chão?",
+    "Quem não limpou o aparelho depois de usar?",
+    "Quem trocou a música do som?"
+  ],
+  "profissoes": [
+    "da musculação",
+    "da recepção",
+    "da esteira",
+    "da nutrição",
+    "da limpeza",
+    "do spinning"
+  ],
+  "nomes": [
+    "Diogo",
+    "Renata",
+    "Thales",
+    "Bruna",
+    "Alex",
+    "Sabrina",
+    "Otávio",
+    "Melissa",
+    "Kevin",
+    "Jéssica",
+    "Yuri",
+    "Raíssa",
+    "Willian",
+    "Bárbara",
+    "Caio",
+    "Giovana",
+    "Everton",
+    "Taís",
+    "Fabrício",
+    "Elisa",
+    "Márcio",
+    "Franciele",
+    "Douglas",
+    "Ingrid"
+  ],
+  "culpado": "culpado",
+  "inocente": "inocente"
+}

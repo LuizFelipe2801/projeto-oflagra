@@ -1,0 +1,309 @@
+{
+ "versao": 1,
+ "dia_do_ciclo": 237,
+ "dificuldade": "medio",
+ "cenario": "churrasco",
+ "cenario_nome": "O churrasco",
+ "titulo": "Quem queimou a picanha?",
+ "personagens": [
+  {
+   "pos": "A1",
+   "nome": "Pepê",
+   "profissao": "da cozinha"
+  },
+  {
+   "pos": "B1",
+   "nome": "Kiko",
+   "profissao": "do som"
+  },
+  {
+   "pos": "C1",
+   "nome": "Bebeto",
+   "profissao": "da churrasqueira"
+  },
+  {
+   "pos": "D1",
+   "nome": "Juca",
+   "profissao": "da vizinhança"
+  },
+  {
+   "pos": "A2",
+   "nome": "Vini",
+   "profissao": "da mesa de doces"
+  },
+  {
+   "pos": "B2",
+   "nome": "Dinho",
+   "profissao": "da piscina"
+  },
+  {
+   "pos": "C2",
+   "nome": "Lalá",
+   "profissao": "da vizinhança"
+  },
+  {
+   "pos": "D2",
+   "nome": "Teté",
+   "profissao": "da cozinha"
+  },
+  {
+   "pos": "A3",
+   "nome": "Carol",
+   "profissao": "da cozinha"
+  },
+  {
+   "pos": "B3",
+   "nome": "Ciça",
+   "profissao": "da cozinha"
+  },
+  {
+   "pos": "C3",
+   "nome": "Dedé",
+   "profissao": "da piscina"
+  },
+  {
+   "pos": "D3",
+   "nome": "Tia Zélia",
+   "profissao": "da vizinhança"
+  },
+  {
+   "pos": "A4",
+   "nome": "Mel",
+   "profissao": "da churrasqueira"
+  },
+  {
+   "pos": "B4",
+   "nome": "Nina",
+   "profissao": "do som"
+  },
+  {
+   "pos": "C4",
+   "nome": "Tio Beto",
+   "profissao": "da mesa de doces"
+  },
+  {
+   "pos": "D4",
+   "nome": "Lili",
+   "profissao": "do som"
+  },
+  {
+   "pos": "A5",
+   "nome": "Rose",
+   "profissao": "da churrasqueira"
+  },
+  {
+   "pos": "B5",
+   "nome": "Léo",
+   "profissao": "da piscina"
+  },
+  {
+   "pos": "C5",
+   "nome": "Bela",
+   "profissao": "da mesa de doces"
+  },
+  {
+   "pos": "D5",
+   "nome": "Guto",
+   "profissao": "da churrasqueira"
+  }
+ ],
+ "inicial": "A1",
+ "pistas": {
+  "A1": {
+   "tipo": "entre",
+   "params": {
+    "a": 8,
+    "b": 16,
+    "n": 1
+   },
+   "texto": "Há exatamente 1 culpado entre Carol e Rose."
+  },
+  "B1": {
+   "tipo": "paridade",
+   "params": {
+    "area": {
+     "tipo": "linha",
+     "valor": 2
+    },
+    "impar": false
+   },
+   "texto": "Há um número par de culpados na linha 2."
+  },
+  "C1": {
+   "tipo": "conexao",
+   "params": {
+    "area": {
+     "tipo": "linha",
+     "valor": 4
+    }
+   },
+   "texto": "Todos os culpados da linha 4 estão conectados."
+  },
+  "D1": {
+   "tipo": "paridade",
+   "params": {
+    "area": {
+     "tipo": "coluna",
+     "valor": "C"
+    },
+    "impar": true
+   },
+   "texto": "Há um número ímpar de culpados na coluna C."
+  },
+  "A2": {
+   "tipo": "profissao",
+   "params": {
+    "profissao": "da cozinha",
+    "membros": [
+     0,
+     7,
+     8,
+     9
+    ],
+    "n": 3
+   },
+   "texto": "Entre quem é da cozinha, há exatamente 3 culpados."
+  },
+  "B2": {
+   "tipo": "entre",
+   "params": {
+    "a": 1,
+    "b": 3,
+    "n": 1
+   },
+   "texto": "Há exatamente 1 culpado entre Kiko e Juca."
+  },
+  "C2": {
+   "tipo": "vizinhos",
+   "params": {
+    "alvo": 5,
+    "n": 5
+   },
+   "texto": "Dinho tem exatamente 5 culpados entre os vizinhos."
+  },
+  "D2": {
+   "tipo": "paridade",
+   "params": {
+    "area": {
+     "tipo": "coluna",
+     "valor": "D"
+    },
+    "impar": false
+   },
+   "texto": "Há um número par de culpados na coluna D."
+  },
+  "A3": {
+   "tipo": "direcao",
+   "params": {
+    "alvo": 14,
+    "direcao": "abaixo",
+    "valor": "inocente"
+   },
+   "texto": "Todos abaixo de Tio Beto são inocentes."
+  },
+  "B3": {
+   "tipo": "vizinhos",
+   "params": {
+    "alvo": 0,
+    "n": 1
+   },
+   "texto": "Pepê tem exatamente 1 culpado entre os vizinhos."
+  },
+  "C3": {
+   "tipo": "direcao",
+   "params": {
+    "alvo": 5,
+    "direcao": "direita",
+    "valor": "culpado"
+   },
+   "texto": "Todos à direita de Dinho são culpados."
+  },
+  "D3": {
+   "tipo": "conexao",
+   "params": {
+    "area": {
+     "tipo": "coluna",
+     "valor": "D"
+    }
+   },
+   "texto": "Todos os culpados da coluna D estão conectados."
+  },
+  "A4": {
+   "tipo": "contagem",
+   "params": {
+    "area": {
+     "tipo": "linha",
+     "valor": 5
+    },
+    "n": 0
+   },
+   "texto": "Não há nenhum culpado na linha 5."
+  },
+  "B4": {
+   "tipo": "vizinhos",
+   "params": {
+    "alvo": 8,
+    "n": 3
+   },
+   "texto": "Carol tem exatamente 3 culpados entre os vizinhos."
+  },
+  "C4": {
+   "tipo": "vizinhos",
+   "params": {
+    "alvo": 11,
+    "n": 3
+   },
+   "texto": "Tia Zélia tem exatamente 3 culpados entre os vizinhos."
+  },
+  "D4": {
+   "tipo": "contagem",
+   "params": {
+    "area": {
+     "tipo": "coluna",
+     "valor": "B"
+    },
+    "n": 3
+   },
+   "texto": "Há exatamente 3 culpados na coluna B."
+  },
+  "A5": {
+   "tipo": "vizinhos",
+   "params": {
+    "alvo": 12,
+    "n": 2
+   },
+   "texto": "Mel tem exatamente 2 culpados entre os vizinhos."
+  },
+  "B5": {
+   "tipo": "vizinhos",
+   "params": {
+    "alvo": 14,
+    "n": 3
+   },
+   "texto": "Tio Beto tem exatamente 3 culpados entre os vizinhos."
+  },
+  "C5": {
+   "tipo": "maioria",
+   "params": {
+    "area": {
+     "tipo": "coluna",
+     "valor": "A"
+    },
+    "valor": "inocente"
+   },
+   "texto": "Há mais inocentes que culpados na coluna A."
+  },
+  "D5": {
+   "tipo": "contagem",
+   "params": {
+    "area": {
+     "tipo": "coluna",
+     "valor": "D"
+    },
+    "n": 2
+   },
+   "texto": "Há exatamente 2 culpados na coluna D."
+  }
+ },
+ "solucao": "7yuz"
+}

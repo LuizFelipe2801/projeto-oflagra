@@ -1,0 +1,320 @@
+{
+ "versao": 1,
+ "dia_do_ciclo": 328,
+ "dificuldade": "dificil",
+ "cenario": "academia",
+ "cenario_nome": "A academia",
+ "titulo": "Quem não limpou o aparelho depois de usar?",
+ "personagens": [
+  {
+   "pos": "A1",
+   "nome": "Douglas",
+   "profissao": "do spinning"
+  },
+  {
+   "pos": "B1",
+   "nome": "Raíssa",
+   "profissao": "da nutrição"
+  },
+  {
+   "pos": "C1",
+   "nome": "Diogo",
+   "profissao": "da recepção"
+  },
+  {
+   "pos": "D1",
+   "nome": "Willian",
+   "profissao": "da nutrição"
+  },
+  {
+   "pos": "A2",
+   "nome": "Yuri",
+   "profissao": "do spinning"
+  },
+  {
+   "pos": "B2",
+   "nome": "Fabrício",
+   "profissao": "do spinning"
+  },
+  {
+   "pos": "C2",
+   "nome": "Kevin",
+   "profissao": "da limpeza"
+  },
+  {
+   "pos": "D2",
+   "nome": "Márcio",
+   "profissao": "da esteira"
+  },
+  {
+   "pos": "A3",
+   "nome": "Thales",
+   "profissao": "da esteira"
+  },
+  {
+   "pos": "B3",
+   "nome": "Sabrina",
+   "profissao": "da recepção"
+  },
+  {
+   "pos": "C3",
+   "nome": "Taís",
+   "profissao": "da limpeza"
+  },
+  {
+   "pos": "D3",
+   "nome": "Alex",
+   "profissao": "da esteira"
+  },
+  {
+   "pos": "A4",
+   "nome": "Caio",
+   "profissao": "da nutrição"
+  },
+  {
+   "pos": "B4",
+   "nome": "Elisa",
+   "profissao": "da musculação"
+  },
+  {
+   "pos": "C4",
+   "nome": "Renata",
+   "profissao": "da recepção"
+  },
+  {
+   "pos": "D4",
+   "nome": "Franciele",
+   "profissao": "da nutrição"
+  },
+  {
+   "pos": "A5",
+   "nome": "Giovana",
+   "profissao": "da esteira"
+  },
+  {
+   "pos": "B5",
+   "nome": "Ingrid",
+   "profissao": "da musculação"
+  },
+  {
+   "pos": "C5",
+   "nome": "Melissa",
+   "profissao": "da musculação"
+  },
+  {
+   "pos": "D5",
+   "nome": "Bruna",
+   "profissao": "da limpeza"
+  }
+ ],
+ "inicial": "B1",
+ "pistas": {
+  "A1": {
+   "tipo": "profissao",
+   "params": {
+    "profissao": "da limpeza",
+    "membros": [
+     6,
+     10,
+     19
+    ],
+    "n": 1
+   },
+   "texto": "Entre quem é da limpeza, há exatamente 1 culpado."
+  },
+  "B1": {
+   "tipo": "entre",
+   "params": {
+    "a": 4,
+    "b": 12,
+    "n": 1
+   },
+   "texto": "Há exatamente 1 culpado entre Yuri e Caio."
+  },
+  "C1": {
+   "tipo": "paridade",
+   "params": {
+    "area": {
+     "tipo": "coluna",
+     "valor": "C"
+    },
+    "impar": true
+   },
+   "texto": "Há um número ímpar de culpados na coluna C."
+  },
+  "D1": {
+   "tipo": "profissao",
+   "params": {
+    "profissao": "da recepção",
+    "membros": [
+     2,
+     9,
+     14
+    ],
+    "n": 1
+   },
+   "texto": "Entre quem é da recepção, há exatamente 1 culpado."
+  },
+  "A2": {
+   "tipo": "maioria",
+   "params": {
+    "area": {
+     "tipo": "linha",
+     "valor": 2
+    },
+    "valor": "inocente"
+   },
+   "texto": "Há mais inocentes que culpados na linha 2."
+  },
+  "B2": {
+   "tipo": "maioria",
+   "params": {
+    "area": {
+     "tipo": "coluna",
+     "valor": "D"
+    },
+    "valor": "inocente"
+   },
+   "texto": "Há mais inocentes que culpados na coluna D."
+  },
+  "C2": {
+   "tipo": "paridade",
+   "params": {
+    "area": {
+     "tipo": "coluna",
+     "valor": "B"
+    },
+    "impar": false
+   },
+   "texto": "Há um número par de culpados na coluna B."
+  },
+  "D2": {
+   "tipo": "vizinhos",
+   "params": {
+    "alvo": 12,
+    "n": 1
+   },
+   "texto": "Caio tem exatamente 1 culpado entre os vizinhos."
+  },
+  "A3": {
+   "tipo": "profissao",
+   "params": {
+    "profissao": "da esteira",
+    "membros": [
+     7,
+     8,
+     11,
+     16
+    ],
+    "n": 1
+   },
+   "texto": "Entre quem é da esteira, há exatamente 1 culpado."
+  },
+  "B3": {
+   "tipo": "comparacao",
+   "params": {
+    "a": 13,
+    "b": 6
+   },
+   "texto": "Elisa tem mais vizinhos culpados que Kevin."
+  },
+  "C3": {
+   "tipo": "maioria",
+   "params": {
+    "area": {
+     "tipo": "linha",
+     "valor": 3
+    },
+    "valor": "inocente"
+   },
+   "texto": "Há mais inocentes que culpados na linha 3."
+  },
+  "D3": {
+   "tipo": "paridade",
+   "params": {
+    "area": {
+     "tipo": "linha",
+     "valor": 1
+    },
+    "impar": true
+   },
+   "texto": "Há um número ímpar de culpados na linha 1."
+  },
+  "A4": {
+   "tipo": "entre",
+   "params": {
+    "a": 9,
+    "b": 11,
+    "n": 0
+   },
+   "texto": "Não há nenhum culpado entre Sabrina e Alex."
+  },
+  "B4": {
+   "tipo": "profissao",
+   "params": {
+    "profissao": "do spinning",
+    "membros": [
+     0,
+     4,
+     5
+    ],
+    "n": 1
+   },
+   "texto": "Entre quem é do spinning, há exatamente 1 culpado."
+  },
+  "C4": {
+   "tipo": "comparacao",
+   "params": {
+    "a": 17,
+    "b": 11
+   },
+   "texto": "Ingrid tem mais vizinhos culpados que Alex."
+  },
+  "D4": {
+   "tipo": "comparacao",
+   "params": {
+    "a": 9,
+    "b": 15
+   },
+   "texto": "Sabrina tem mais vizinhos culpados que eu."
+  },
+  "A5": {
+   "tipo": "contagem",
+   "params": {
+    "area": {
+     "tipo": "borda"
+    },
+    "n": 4
+   },
+   "texto": "Há exatamente 4 culpados na borda."
+  },
+  "B5": {
+   "tipo": "paridade",
+   "params": {
+    "area": {
+     "tipo": "borda"
+    },
+    "impar": false
+   },
+   "texto": "Há um número par de culpados na borda."
+  },
+  "C5": {
+   "tipo": "entre",
+   "params": {
+    "a": 6,
+    "b": 18,
+    "n": 1
+   },
+   "texto": "Há exatamente 1 culpado entre mim e Kevin."
+  },
+  "D5": {
+   "tipo": "comparacao",
+   "params": {
+    "a": 4,
+    "b": 12
+   },
+   "texto": "Yuri tem mais vizinhos culpados que Caio."
+  }
+ },
+ "solucao": "i4at"
+}

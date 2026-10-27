@@ -1,0 +1,303 @@
+{
+ "versao": 1,
+ "dia_do_ciclo": 28,
+ "dificuldade": "facil",
+ "cenario": "familia",
+ "cenario_nome": "O grupo da família",
+ "titulo": "Quem mandou o áudio de cinco minutos?",
+ "personagens": [
+  {
+   "pos": "A1",
+   "nome": "Priscila",
+   "profissao": "dos cunhados"
+  },
+  {
+   "pos": "B1",
+   "nome": "Jorge",
+   "profissao": "dos tios"
+  },
+  {
+   "pos": "C1",
+   "nome": "Tio Nelson",
+   "profissao": "dos netos"
+  },
+  {
+   "pos": "D1",
+   "nome": "Andréia",
+   "profissao": "dos avós"
+  },
+  {
+   "pos": "A2",
+   "nome": "Tia Cleusa",
+   "profissao": "dos primos"
+  },
+  {
+   "pos": "B2",
+   "nome": "Tetê",
+   "profissao": "dos cunhados"
+  },
+  {
+   "pos": "C2",
+   "nome": "Lenita",
+   "profissao": "dos avós"
+  },
+  {
+   "pos": "D2",
+   "nome": "Cadu",
+   "profissao": "dos avós"
+  },
+  {
+   "pos": "A3",
+   "nome": "Gil",
+   "profissao": "dos sobrinhos"
+  },
+  {
+   "pos": "B3",
+   "nome": "Vânia",
+   "profissao": "dos sobrinhos"
+  },
+  {
+   "pos": "C3",
+   "nome": "Vô Zeca",
+   "profissao": "dos tios"
+  },
+  {
+   "pos": "D3",
+   "nome": "Sérgio",
+   "profissao": "dos tios"
+  },
+  {
+   "pos": "A4",
+   "nome": "Vó Dirce",
+   "profissao": "dos cunhados"
+  },
+  {
+   "pos": "B4",
+   "nome": "Pedro",
+   "profissao": "dos sobrinhos"
+  },
+  {
+   "pos": "C4",
+   "nome": "Carmem",
+   "profissao": "dos sobrinhos"
+  },
+  {
+   "pos": "D4",
+   "nome": "Nando",
+   "profissao": "dos netos"
+  },
+  {
+   "pos": "A5",
+   "nome": "Mila",
+   "profissao": "dos netos"
+  },
+  {
+   "pos": "B5",
+   "nome": "Júnior",
+   "profissao": "dos primos"
+  },
+  {
+   "pos": "C5",
+   "nome": "Eduardo",
+   "profissao": "dos primos"
+  },
+  {
+   "pos": "D5",
+   "nome": "Marcelo",
+   "profissao": "dos avós"
+  }
+ ],
+ "inicial": "A2",
+ "pistas": {
+  "A1": {
+   "tipo": "direcao",
+   "params": {
+    "alvo": 9,
+    "direcao": "acima",
+    "valor": "culpado"
+   },
+   "texto": "Todos acima de Vânia são culpados."
+  },
+  "B1": {
+   "tipo": "contagem",
+   "params": {
+    "area": {
+     "tipo": "linha",
+     "valor": 2
+    },
+    "n": 2
+   },
+   "texto": "Há exatamente 2 culpados na linha 2."
+  },
+  "C1": {
+   "tipo": "direcao",
+   "params": {
+    "alvo": 10,
+    "direcao": "abaixo",
+    "valor": "inocente"
+   },
+   "texto": "Todos abaixo de Vô Zeca são inocentes."
+  },
+  "D1": {
+   "tipo": "direcao",
+   "params": {
+    "alvo": 11,
+    "direcao": "acima",
+    "valor": "inocente"
+   },
+   "texto": "Todos acima de Sérgio são inocentes."
+  },
+  "A2": {
+   "tipo": "direcao",
+   "params": {
+    "alvo": 10,
+    "direcao": "acima",
+    "valor": "inocente"
+   },
+   "texto": "Todos acima de Vô Zeca são inocentes."
+  },
+  "B2": {
+   "tipo": "direcao",
+   "params": {
+    "alvo": 14,
+    "direcao": "direita",
+    "valor": "culpado"
+   },
+   "texto": "Todos à direita de Carmem são culpados."
+  },
+  "C2": {
+   "tipo": "direcao",
+   "params": {
+    "alvo": 1,
+    "direcao": "direita",
+    "valor": "inocente"
+   },
+   "texto": "Todos à direita de Jorge são inocentes."
+  },
+  "D2": {
+   "tipo": "direcao",
+   "params": {
+    "alvo": 4,
+    "direcao": "acima",
+    "valor": "culpado"
+   },
+   "texto": "Todos acima de Tia Cleusa são culpados."
+  },
+  "A3": {
+   "tipo": "direcao",
+   "params": {
+    "alvo": 12,
+    "direcao": "abaixo",
+    "valor": "culpado"
+   },
+   "texto": "Todos abaixo de Vó Dirce são culpados."
+  },
+  "B3": {
+   "tipo": "profissao",
+   "params": {
+    "profissao": "dos sobrinhos",
+    "membros": [
+     8,
+     9,
+     13,
+     14
+    ],
+    "n": 1
+   },
+   "texto": "Entre quem é dos sobrinhos, há exatamente 1 culpado."
+  },
+  "C3": {
+   "tipo": "contagem",
+   "params": {
+    "area": {
+     "tipo": "coluna",
+     "valor": "D"
+    },
+    "n": 2
+   },
+   "texto": "Há exatamente 2 culpados na coluna D."
+  },
+  "D3": {
+   "tipo": "contagem",
+   "params": {
+    "area": {
+     "tipo": "coluna",
+     "valor": "A"
+    },
+    "n": 3
+   },
+   "texto": "Há exatamente 3 culpados na coluna A."
+  },
+  "A4": {
+   "tipo": "entre",
+   "params": {
+    "a": 6,
+    "b": 18,
+    "n": 1
+   },
+   "texto": "Há exatamente 1 culpado entre Lenita e Eduardo."
+  },
+  "B4": {
+   "tipo": "vizinhos",
+   "params": {
+    "alvo": 11,
+    "n": 2
+   },
+   "texto": "Sérgio tem exatamente 2 culpados entre os vizinhos."
+  },
+  "C4": {
+   "tipo": "vizinhos",
+   "params": {
+    "alvo": 10,
+    "n": 3
+   },
+   "texto": "Vô Zeca tem exatamente 3 culpados entre os vizinhos."
+  },
+  "D4": {
+   "tipo": "entre",
+   "params": {
+    "a": 0,
+    "b": 12,
+    "n": 1
+   },
+   "texto": "Há exatamente 1 culpado entre Priscila e Vó Dirce."
+  },
+  "A5": {
+   "tipo": "direcao",
+   "params": {
+    "alvo": 15,
+    "direcao": "acima",
+    "valor": "inocente"
+   },
+   "texto": "Todos acima de Nando são inocentes."
+  },
+  "B5": {
+   "tipo": "vizinhos",
+   "params": {
+    "alvo": 16,
+    "n": 1
+   },
+   "texto": "Mila tem exatamente 1 culpado entre os vizinhos."
+  },
+  "C5": {
+   "tipo": "entre",
+   "params": {
+    "a": 13,
+    "b": 15,
+    "n": 0
+   },
+   "texto": "Não há nenhum culpado entre Pedro e Nando."
+  },
+  "D5": {
+   "tipo": "contagem",
+   "params": {
+    "area": {
+     "tipo": "borda"
+    },
+    "n": 6
+   },
+   "texto": "Há exatamente 6 culpados na borda."
+  }
+ },
+ "solucao": "j18d"
+}

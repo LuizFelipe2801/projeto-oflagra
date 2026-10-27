@@ -1,0 +1,303 @@
+{
+ "versao": 1,
+ "dia_do_ciclo": 348,
+ "dificuldade": "facil",
+ "cenario": "academia",
+ "cenario_nome": "A academia",
+ "titulo": "Quem largou os pesos no chão?",
+ "personagens": [
+  {
+   "pos": "A1",
+   "nome": "Elisa",
+   "profissao": "da esteira"
+  },
+  {
+   "pos": "B1",
+   "nome": "Thales",
+   "profissao": "da limpeza"
+  },
+  {
+   "pos": "C1",
+   "nome": "Alex",
+   "profissao": "da esteira"
+  },
+  {
+   "pos": "D1",
+   "nome": "Ingrid",
+   "profissao": "da musculação"
+  },
+  {
+   "pos": "A2",
+   "nome": "Renata",
+   "profissao": "da limpeza"
+  },
+  {
+   "pos": "B2",
+   "nome": "Franciele",
+   "profissao": "do spinning"
+  },
+  {
+   "pos": "C2",
+   "nome": "Jéssica",
+   "profissao": "da nutrição"
+  },
+  {
+   "pos": "D2",
+   "nome": "Sabrina",
+   "profissao": "da musculação"
+  },
+  {
+   "pos": "A3",
+   "nome": "Raíssa",
+   "profissao": "do spinning"
+  },
+  {
+   "pos": "B3",
+   "nome": "Bárbara",
+   "profissao": "da recepção"
+  },
+  {
+   "pos": "C3",
+   "nome": "Willian",
+   "profissao": "da musculação"
+  },
+  {
+   "pos": "D3",
+   "nome": "Kevin",
+   "profissao": "da musculação"
+  },
+  {
+   "pos": "A4",
+   "nome": "Otávio",
+   "profissao": "da recepção"
+  },
+  {
+   "pos": "B4",
+   "nome": "Melissa",
+   "profissao": "da recepção"
+  },
+  {
+   "pos": "C4",
+   "nome": "Bruna",
+   "profissao": "da esteira"
+  },
+  {
+   "pos": "D4",
+   "nome": "Caio",
+   "profissao": "da limpeza"
+  },
+  {
+   "pos": "A5",
+   "nome": "Douglas",
+   "profissao": "da esteira"
+  },
+  {
+   "pos": "B5",
+   "nome": "Everton",
+   "profissao": "da nutrição"
+  },
+  {
+   "pos": "C5",
+   "nome": "Fabrício",
+   "profissao": "do spinning"
+  },
+  {
+   "pos": "D5",
+   "nome": "Márcio",
+   "profissao": "da nutrição"
+  }
+ ],
+ "inicial": "C5",
+ "pistas": {
+  "A1": {
+   "tipo": "vizinhos",
+   "params": {
+    "alvo": 8,
+    "n": 2
+   },
+   "texto": "Raíssa tem exatamente 2 culpados entre os vizinhos."
+  },
+  "B1": {
+   "tipo": "vizinhos",
+   "params": {
+    "alvo": 11,
+    "n": 1
+   },
+   "texto": "Kevin tem exatamente 1 culpado entre os vizinhos."
+  },
+  "C1": {
+   "tipo": "entre",
+   "params": {
+    "a": 11,
+    "b": 19,
+    "n": 0
+   },
+   "texto": "Não há nenhum culpado entre Kevin e Márcio."
+  },
+  "D1": {
+   "tipo": "vizinhos",
+   "params": {
+    "alvo": 12,
+    "n": 1
+   },
+   "texto": "Otávio tem exatamente 1 culpado entre os vizinhos."
+  },
+  "A2": {
+   "tipo": "contagem",
+   "params": {
+    "area": {
+     "tipo": "linha",
+     "valor": 3
+    },
+    "n": 0
+   },
+   "texto": "Não há nenhum culpado na linha 3."
+  },
+  "B2": {
+   "tipo": "vizinhos",
+   "params": {
+    "alvo": 6,
+    "n": 3
+   },
+   "texto": "Jéssica tem exatamente 3 culpados entre os vizinhos."
+  },
+  "C2": {
+   "tipo": "contagem",
+   "params": {
+    "area": {
+     "tipo": "linha",
+     "valor": 1
+    },
+    "n": 2
+   },
+   "texto": "Há exatamente 2 culpados na linha 1."
+  },
+  "D2": {
+   "tipo": "contagem",
+   "params": {
+    "area": {
+     "tipo": "coluna",
+     "valor": "C"
+    },
+    "n": 0
+   },
+   "texto": "Não há nenhum culpado na coluna C."
+  },
+  "A3": {
+   "tipo": "conexao",
+   "params": {
+    "area": {
+     "tipo": "coluna",
+     "valor": "A"
+    }
+   },
+   "texto": "Todos os culpados da coluna A estão conectados."
+  },
+  "B3": {
+   "tipo": "vizinhos",
+   "params": {
+    "alvo": 17,
+    "n": 0
+   },
+   "texto": "Everton não tem nenhum culpado entre os vizinhos."
+  },
+  "C3": {
+   "tipo": "vizinhos",
+   "params": {
+    "alvo": 19,
+    "n": 0
+   },
+   "texto": "Márcio não tem nenhum culpado entre os vizinhos."
+  },
+  "D3": {
+   "tipo": "contagem",
+   "params": {
+    "area": {
+     "tipo": "linha",
+     "valor": 2
+    },
+    "n": 3
+   },
+   "texto": "Há exatamente 3 culpados na linha 2."
+  },
+  "A4": {
+   "tipo": "direcao",
+   "params": {
+    "alvo": 6,
+    "direcao": "esquerda",
+    "valor": "culpado"
+   },
+   "texto": "Todos à esquerda de Jéssica são culpados."
+  },
+  "B4": {
+   "tipo": "entre",
+   "params": {
+    "a": 16,
+    "b": 19,
+    "n": 1
+   },
+   "texto": "Há exatamente 1 culpado entre Douglas e Márcio."
+  },
+  "C4": {
+   "tipo": "profissao",
+   "params": {
+    "profissao": "do spinning",
+    "membros": [
+     5,
+     8,
+     18
+    ],
+    "n": 1
+   },
+   "texto": "Entre quem é do spinning, há exatamente 1 culpado."
+  },
+  "D4": {
+   "tipo": "contagem",
+   "params": {
+    "area": {
+     "tipo": "coluna",
+     "valor": "D"
+    },
+    "n": 3
+   },
+   "texto": "Há exatamente 3 culpados na coluna D."
+  },
+  "A5": {
+   "tipo": "contagem",
+   "params": {
+    "area": {
+     "tipo": "coluna",
+     "valor": "B"
+    },
+    "n": 2
+   },
+   "texto": "Há exatamente 2 culpados na coluna B."
+  },
+  "B5": {
+   "tipo": "vizinhos",
+   "params": {
+    "alvo": 14,
+    "n": 2
+   },
+   "texto": "Bruna tem exatamente 2 culpados entre os vizinhos."
+  },
+  "C5": {
+   "tipo": "entre",
+   "params": {
+    "a": 8,
+    "b": 10,
+    "n": 0
+   },
+   "texto": "Não há nenhum culpado entre Raíssa e Willian."
+  },
+  "D5": {
+   "tipo": "vizinhos",
+   "params": {
+    "alvo": 4,
+    "n": 2
+   },
+   "texto": "Renata tem exatamente 2 culpados entre os vizinhos."
+  }
+ },
+ "solucao": "lzc8"
+}

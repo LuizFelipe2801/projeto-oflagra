@@ -1,0 +1,302 @@
+{
+ "versao": 1,
+ "dia_do_ciclo": 183,
+ "dificuldade": "facil",
+ "cenario": "escola",
+ "cenario_nome": "A escola",
+ "titulo": "Quem colou chiclete na cadeira da professora?",
+ "personagens": [
+  {
+   "pos": "A1",
+   "nome": "Laura",
+   "profissao": "da cozinha"
+  },
+  {
+   "pos": "B1",
+   "nome": "Caio",
+   "profissao": "da cozinha"
+  },
+  {
+   "pos": "C1",
+   "nome": "Maitê",
+   "profissao": "da turma B"
+  },
+  {
+   "pos": "D1",
+   "nome": "Enzo",
+   "profissao": "do pátio"
+  },
+  {
+   "pos": "A2",
+   "nome": "Davi",
+   "profissao": "da turma B"
+  },
+  {
+   "pos": "B2",
+   "nome": "Gael",
+   "profissao": "da cozinha"
+  },
+  {
+   "pos": "C2",
+   "nome": "Helena",
+   "profissao": "da diretoria"
+  },
+  {
+   "pos": "D2",
+   "nome": "Bento",
+   "profissao": "do pátio"
+  },
+  {
+   "pos": "A3",
+   "nome": "Lorena",
+   "profissao": "do pátio"
+  },
+  {
+   "pos": "B3",
+   "nome": "Cecília",
+   "profissao": "da turma A"
+  },
+  {
+   "pos": "C3",
+   "nome": "Benício",
+   "profissao": "da biblioteca"
+  },
+  {
+   "pos": "D3",
+   "nome": "Murilo",
+   "profissao": "da turma A"
+  },
+  {
+   "pos": "A4",
+   "nome": "Lívia",
+   "profissao": "da diretoria"
+  },
+  {
+   "pos": "B4",
+   "nome": "Clara",
+   "profissao": "da biblioteca"
+  },
+  {
+   "pos": "C4",
+   "nome": "Arthur",
+   "profissao": "do pátio"
+  },
+  {
+   "pos": "D4",
+   "nome": "Alice",
+   "profissao": "da diretoria"
+  },
+  {
+   "pos": "A5",
+   "nome": "Pedrinho",
+   "profissao": "da turma A"
+  },
+  {
+   "pos": "B5",
+   "nome": "Manu",
+   "profissao": "da cozinha"
+  },
+  {
+   "pos": "C5",
+   "nome": "Sofia",
+   "profissao": "da biblioteca"
+  },
+  {
+   "pos": "D5",
+   "nome": "Theo",
+   "profissao": "da turma B"
+  }
+ ],
+ "inicial": "B5",
+ "pistas": {
+  "A1": {
+   "tipo": "direcao",
+   "params": {
+    "alvo": 6,
+    "direcao": "esquerda",
+    "valor": "inocente"
+   },
+   "texto": "Todos à esquerda de Helena são inocentes."
+  },
+  "B1": {
+   "tipo": "direcao",
+   "params": {
+    "alvo": 17,
+    "direcao": "esquerda",
+    "valor": "inocente"
+   },
+   "texto": "Todos à esquerda de Manu são inocentes."
+  },
+  "C1": {
+   "tipo": "direcao",
+   "params": {
+    "alvo": 6,
+    "direcao": "acima",
+    "valor": "inocente"
+   },
+   "texto": "Todos acima de Helena são inocentes."
+  },
+  "D1": {
+   "tipo": "direcao",
+   "params": {
+    "alvo": 11,
+    "direcao": "acima",
+    "valor": "culpado"
+   },
+   "texto": "Todos acima de Murilo são culpados."
+  },
+  "A2": {
+   "tipo": "direcao",
+   "params": {
+    "alvo": 18,
+    "direcao": "esquerda",
+    "valor": "inocente"
+   },
+   "texto": "Todos à esquerda de Sofia são inocentes."
+  },
+  "B2": {
+   "tipo": "direcao",
+   "params": {
+    "alvo": 14,
+    "direcao": "direita",
+    "valor": "culpado"
+   },
+   "texto": "Todos à direita de Arthur são culpados."
+  },
+  "C2": {
+   "tipo": "profissao",
+   "params": {
+    "profissao": "da turma B",
+    "membros": [
+     2,
+     4,
+     19
+    ],
+    "n": 0
+   },
+   "texto": "Entre quem é da turma B, não há nenhum culpado."
+  },
+  "D2": {
+   "tipo": "direcao",
+   "params": {
+    "alvo": 1,
+    "direcao": "esquerda",
+    "valor": "culpado"
+   },
+   "texto": "Todos à esquerda de Caio são culpados."
+  },
+  "A3": {
+   "tipo": "direcao",
+   "params": {
+    "alvo": 13,
+    "direcao": "abaixo",
+    "valor": "inocente"
+   },
+   "texto": "Todos abaixo de Clara são inocentes."
+  },
+  "B3": {
+   "tipo": "direcao",
+   "params": {
+    "alvo": 8,
+    "direcao": "abaixo",
+    "valor": "inocente"
+   },
+   "texto": "Todos abaixo de Lorena são inocentes."
+  },
+  "C3": {
+   "tipo": "direcao",
+   "params": {
+    "alvo": 11,
+    "direcao": "esquerda",
+    "valor": "culpado"
+   },
+   "texto": "Todos à esquerda de Murilo são culpados."
+  },
+  "D3": {
+   "tipo": "direcao",
+   "params": {
+    "alvo": 5,
+    "direcao": "acima",
+    "valor": "culpado"
+   },
+   "texto": "Todos acima de Gael são culpados."
+  },
+  "A4": {
+   "tipo": "entre",
+   "params": {
+    "a": 3,
+    "b": 11,
+    "n": 1
+   },
+   "texto": "Há exatamente 1 culpado entre Enzo e Murilo."
+  },
+  "B4": {
+   "tipo": "direcao",
+   "params": {
+    "alvo": 10,
+    "direcao": "direita",
+    "valor": "inocente"
+   },
+   "texto": "Todos à direita de Benício são inocentes."
+  },
+  "C4": {
+   "tipo": "vizinhos",
+   "params": {
+    "alvo": 9,
+    "n": 2
+   },
+   "texto": "Cecília tem exatamente 2 culpados entre os vizinhos."
+  },
+  "D4": {
+   "tipo": "direcao",
+   "params": {
+    "alvo": 13,
+    "direcao": "esquerda",
+    "valor": "inocente"
+   },
+   "texto": "Todos à esquerda de Clara são inocentes."
+  },
+  "A5": {
+   "tipo": "profissao",
+   "params": {
+    "profissao": "da biblioteca",
+    "membros": [
+     10,
+     13,
+     18
+    ],
+    "n": 2
+   },
+   "texto": "Entre quem é da biblioteca, há exatamente 2 culpados."
+  },
+  "B5": {
+   "tipo": "direcao",
+   "params": {
+    "alvo": 9,
+    "direcao": "abaixo",
+    "valor": "inocente"
+   },
+   "texto": "Todos abaixo de Cecília são inocentes."
+  },
+  "C5": {
+   "tipo": "contagem",
+   "params": {
+    "area": {
+     "tipo": "linha",
+     "valor": 4
+    },
+    "n": 1
+   },
+   "texto": "Há exatamente 1 culpado na linha 4."
+  },
+  "D5": {
+   "tipo": "vizinhos",
+   "params": {
+    "alvo": 6,
+    "n": 5
+   },
+   "texto": "Helena tem exatamente 5 culpados entre os vizinhos."
+  }
+ },
+ "solucao": "epq1"
+}

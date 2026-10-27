@@ -1,0 +1,312 @@
+{
+ "versao": 1,
+ "dia_do_ciclo": 318,
+ "dificuldade": "medio",
+ "cenario": "republica",
+ "cenario_nome": "A república",
+ "titulo": "Quem usou a toalha dos outros?",
+ "personagens": [
+  {
+   "pos": "A1",
+   "nome": "Bia",
+   "profissao": "da faxina"
+  },
+  {
+   "pos": "B1",
+   "nome": "Diego",
+   "profissao": "do quarto 2"
+  },
+  {
+   "pos": "C1",
+   "nome": "Rodrigo",
+   "profissao": "da faxina"
+  },
+  {
+   "pos": "D1",
+   "nome": "Henrique",
+   "profissao": "do quarto 1"
+  },
+  {
+   "pos": "A2",
+   "nome": "Bruno",
+   "profissao": "de intercâmbio"
+  },
+  {
+   "pos": "B2",
+   "nome": "Tainá",
+   "profissao": "do quarto 3"
+  },
+  {
+   "pos": "C2",
+   "nome": "Letícia",
+   "profissao": "do quarto 1"
+  },
+  {
+   "pos": "D2",
+   "nome": "Fernando",
+   "profissao": "da faxina"
+  },
+  {
+   "pos": "A3",
+   "nome": "Lucas",
+   "profissao": "da sala"
+  },
+  {
+   "pos": "B3",
+   "nome": "Pati",
+   "profissao": "do quarto 1"
+  },
+  {
+   "pos": "C3",
+   "nome": "Natália",
+   "profissao": "do quarto 3"
+  },
+  {
+   "pos": "D3",
+   "nome": "Gustavo",
+   "profissao": "do quarto 2"
+  },
+  {
+   "pos": "A4",
+   "nome": "Vítor",
+   "profissao": "de intercâmbio"
+  },
+  {
+   "pos": "B4",
+   "nome": "Felipe",
+   "profissao": "do quarto 2"
+  },
+  {
+   "pos": "C4",
+   "nome": "Larissa",
+   "profissao": "de intercâmbio"
+  },
+  {
+   "pos": "D4",
+   "nome": "Isabela",
+   "profissao": "do quarto 3"
+  },
+  {
+   "pos": "A5",
+   "nome": "Carla",
+   "profissao": "da sala"
+  },
+  {
+   "pos": "B5",
+   "nome": "Leandro",
+   "profissao": "da sala"
+  },
+  {
+   "pos": "C5",
+   "nome": "Rafael",
+   "profissao": "do quarto 3"
+  },
+  {
+   "pos": "D5",
+   "nome": "Camila",
+   "profissao": "da sala"
+  }
+ ],
+ "inicial": "D3",
+ "pistas": {
+  "A1": {
+   "tipo": "maioria",
+   "params": {
+    "area": {
+     "tipo": "coluna",
+     "valor": "D"
+    },
+    "valor": "inocente"
+   },
+   "texto": "Há mais inocentes que culpados na coluna D."
+  },
+  "B1": {
+   "tipo": "maioria",
+   "params": {
+    "area": {
+     "tipo": "linha",
+     "valor": 4
+    },
+    "valor": "culpado"
+   },
+   "texto": "Há mais culpados que inocentes na linha 4."
+  },
+  "C1": {
+   "tipo": "vizinhos",
+   "params": {
+    "alvo": 11,
+    "n": 2
+   },
+   "texto": "Gustavo tem exatamente 2 culpados entre os vizinhos."
+  },
+  "D1": {
+   "tipo": "vizinhos",
+   "params": {
+    "alvo": 14,
+    "n": 2
+   },
+   "texto": "Larissa tem exatamente 2 culpados entre os vizinhos."
+  },
+  "A2": {
+   "tipo": "conexao",
+   "params": {
+    "area": {
+     "tipo": "linha",
+     "valor": 4
+    }
+   },
+   "texto": "Todos os culpados da linha 4 estão conectados."
+  },
+  "B2": {
+   "tipo": "direcao",
+   "params": {
+    "alvo": 13,
+    "direcao": "esquerda",
+    "valor": "culpado"
+   },
+   "texto": "Todos à esquerda de Felipe são culpados."
+  },
+  "C2": {
+   "tipo": "vizinhos",
+   "params": {
+    "alvo": 5,
+    "n": 6
+   },
+   "texto": "Tainá tem exatamente 6 culpados entre os vizinhos."
+  },
+  "D2": {
+   "tipo": "profissao",
+   "params": {
+    "profissao": "da faxina",
+    "membros": [
+     0,
+     2,
+     7
+    ],
+    "n": 2
+   },
+   "texto": "Entre quem é da faxina, há exatamente 2 culpados."
+  },
+  "A3": {
+   "tipo": "maioria",
+   "params": {
+    "area": {
+     "tipo": "coluna",
+     "valor": "B"
+    },
+    "valor": "culpado"
+   },
+   "texto": "Há mais culpados que inocentes na coluna B."
+  },
+  "B3": {
+   "tipo": "vizinhos",
+   "params": {
+    "alvo": 15,
+    "n": 1
+   },
+   "texto": "Isabela tem exatamente 1 culpado entre os vizinhos."
+  },
+  "C3": {
+   "tipo": "profissao",
+   "params": {
+    "profissao": "de intercâmbio",
+    "membros": [
+     4,
+     12,
+     14
+    ],
+    "n": 3
+   },
+   "texto": "Entre quem é de intercâmbio, há exatamente 3 culpados."
+  },
+  "D3": {
+   "tipo": "entre",
+   "params": {
+    "a": 4,
+    "b": 7,
+    "n": 2
+   },
+   "texto": "Há exatamente 2 culpados entre Bruno e Fernando."
+  },
+  "A4": {
+   "tipo": "entre",
+   "params": {
+    "a": 12,
+    "b": 15,
+    "n": 2
+   },
+   "texto": "Há exatamente 2 culpados entre mim e Isabela."
+  },
+  "B4": {
+   "tipo": "contagem",
+   "params": {
+    "area": {
+     "tipo": "linha",
+     "valor": 3
+    },
+    "n": 1
+   },
+   "texto": "Há exatamente 1 culpado na linha 3."
+  },
+  "C4": {
+   "tipo": "conexao",
+   "params": {
+    "area": {
+     "tipo": "linha",
+     "valor": 2
+    }
+   },
+   "texto": "Todos os culpados da linha 2 estão conectados."
+  },
+  "D4": {
+   "tipo": "vizinhos",
+   "params": {
+    "alvo": 9,
+    "n": 6
+   },
+   "texto": "Pati tem exatamente 6 culpados entre os vizinhos."
+  },
+  "A5": {
+   "tipo": "maioria",
+   "params": {
+    "area": {
+     "tipo": "linha",
+     "valor": 5
+    },
+    "valor": "inocente"
+   },
+   "texto": "Há mais inocentes que culpados na linha 5."
+  },
+  "B5": {
+   "tipo": "contagem",
+   "params": {
+    "area": {
+     "tipo": "borda"
+    },
+    "n": 7
+   },
+   "texto": "Há exatamente 7 culpados na borda."
+  },
+  "C5": {
+   "tipo": "contagem",
+   "params": {
+    "area": {
+     "tipo": "linha",
+     "valor": 1
+    },
+    "n": 4
+   },
+   "texto": "Há exatamente 4 culpados na linha 1."
+  },
+  "D5": {
+   "tipo": "entre",
+   "params": {
+    "a": 5,
+    "b": 7,
+    "n": 1
+   },
+   "texto": "Há exatamente 1 culpado entre Tainá e Fernando."
+  }
+ },
+ "solucao": "hd37"
+}

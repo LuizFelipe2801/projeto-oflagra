@@ -1,0 +1,314 @@
+{
+ "versao": 1,
+ "dia_do_ciclo": 8,
+ "dificuldade": "medio",
+ "cenario": "academia",
+ "cenario_nome": "A academia",
+ "titulo": "Quem não limpou o aparelho depois de usar?",
+ "personagens": [
+  {
+   "pos": "A1",
+   "nome": "Bárbara",
+   "profissao": "da limpeza"
+  },
+  {
+   "pos": "B1",
+   "nome": "Thales",
+   "profissao": "do spinning"
+  },
+  {
+   "pos": "C1",
+   "nome": "Ingrid",
+   "profissao": "da musculação"
+  },
+  {
+   "pos": "D1",
+   "nome": "Márcio",
+   "profissao": "da esteira"
+  },
+  {
+   "pos": "A2",
+   "nome": "Caio",
+   "profissao": "da nutrição"
+  },
+  {
+   "pos": "B2",
+   "nome": "Elisa",
+   "profissao": "da limpeza"
+  },
+  {
+   "pos": "C2",
+   "nome": "Raíssa",
+   "profissao": "da limpeza"
+  },
+  {
+   "pos": "D2",
+   "nome": "Franciele",
+   "profissao": "da musculação"
+  },
+  {
+   "pos": "A3",
+   "nome": "Fabrício",
+   "profissao": "da recepção"
+  },
+  {
+   "pos": "B3",
+   "nome": "Everton",
+   "profissao": "do spinning"
+  },
+  {
+   "pos": "C3",
+   "nome": "Renata",
+   "profissao": "do spinning"
+  },
+  {
+   "pos": "D3",
+   "nome": "Melissa",
+   "profissao": "da nutrição"
+  },
+  {
+   "pos": "A4",
+   "nome": "Willian",
+   "profissao": "da recepção"
+  },
+  {
+   "pos": "B4",
+   "nome": "Kevin",
+   "profissao": "da recepção"
+  },
+  {
+   "pos": "C4",
+   "nome": "Jéssica",
+   "profissao": "da esteira"
+  },
+  {
+   "pos": "D4",
+   "nome": "Taís",
+   "profissao": "da recepção"
+  },
+  {
+   "pos": "A5",
+   "nome": "Yuri",
+   "profissao": "da musculação"
+  },
+  {
+   "pos": "B5",
+   "nome": "Diogo",
+   "profissao": "da nutrição"
+  },
+  {
+   "pos": "C5",
+   "nome": "Douglas",
+   "profissao": "da esteira"
+  },
+  {
+   "pos": "D5",
+   "nome": "Giovana",
+   "profissao": "da nutrição"
+  }
+ ],
+ "inicial": "B4",
+ "pistas": {
+  "A1": {
+   "tipo": "paridade",
+   "params": {
+    "area": {
+     "tipo": "coluna",
+     "valor": "C"
+    },
+    "impar": true
+   },
+   "texto": "Há um número ímpar de culpados na coluna C."
+  },
+  "B1": {
+   "tipo": "comparacao",
+   "params": {
+    "a": 2,
+    "b": 11
+   },
+   "texto": "Ingrid tem mais vizinhos culpados que Melissa."
+  },
+  "C1": {
+   "tipo": "direcao",
+   "params": {
+    "alvo": 12,
+    "direcao": "abaixo",
+    "valor": "culpado"
+   },
+   "texto": "Todos abaixo de Willian são culpados."
+  },
+  "D1": {
+   "tipo": "maioria",
+   "params": {
+    "area": {
+     "tipo": "coluna",
+     "valor": "C"
+    },
+    "valor": "culpado"
+   },
+   "texto": "Há mais culpados que inocentes na coluna C."
+  },
+  "A2": {
+   "tipo": "vizinhos",
+   "params": {
+    "alvo": 18,
+    "n": 2
+   },
+   "texto": "Douglas tem exatamente 2 culpados entre os vizinhos."
+  },
+  "B2": {
+   "tipo": "contagem",
+   "params": {
+    "area": {
+     "tipo": "coluna",
+     "valor": "C"
+    },
+    "n": 3
+   },
+   "texto": "Há exatamente 3 culpados na coluna C."
+  },
+  "C2": {
+   "tipo": "paridade",
+   "params": {
+    "area": {
+     "tipo": "coluna",
+     "valor": "D"
+    },
+    "impar": true
+   },
+   "texto": "Há um número ímpar de culpados na coluna D."
+  },
+  "D2": {
+   "tipo": "profissao",
+   "params": {
+    "profissao": "da recepção",
+    "membros": [
+     8,
+     12,
+     13,
+     15
+    ],
+    "n": 1
+   },
+   "texto": "Entre quem é da recepção, há exatamente 1 culpado."
+  },
+  "A3": {
+   "tipo": "contagem",
+   "params": {
+    "area": {
+     "tipo": "linha",
+     "valor": 4
+    },
+    "n": 1
+   },
+   "texto": "Há exatamente 1 culpado na linha 4."
+  },
+  "B3": {
+   "tipo": "paridade",
+   "params": {
+    "area": {
+     "tipo": "borda"
+    },
+    "impar": true
+   },
+   "texto": "Há um número ímpar de culpados na borda."
+  },
+  "C3": {
+   "tipo": "profissao",
+   "params": {
+    "profissao": "da esteira",
+    "membros": [
+     3,
+     14,
+     18
+    ],
+    "n": 2
+   },
+   "texto": "Entre quem é da esteira, há exatamente 2 culpados."
+  },
+  "D3": {
+   "tipo": "conexao",
+   "params": {
+    "area": {
+     "tipo": "linha",
+     "valor": 5
+    }
+   },
+   "texto": "Todos os culpados da linha 5 estão conectados."
+  },
+  "A4": {
+   "tipo": "entre",
+   "params": {
+    "a": 2,
+    "b": 10,
+    "n": 1
+   },
+   "texto": "Há exatamente 1 culpado entre Ingrid e Renata."
+  },
+  "B4": {
+   "tipo": "entre",
+   "params": {
+    "a": 3,
+    "b": 15,
+    "n": 0
+   },
+   "texto": "Não há nenhum culpado entre Márcio e Taís."
+  },
+  "C4": {
+   "tipo": "contagem",
+   "params": {
+    "area": {
+     "tipo": "linha",
+     "valor": 5
+    },
+    "n": 3
+   },
+   "texto": "Há exatamente 3 culpados na linha 5."
+  },
+  "D4": {
+   "tipo": "contagem",
+   "params": {
+    "area": {
+     "tipo": "coluna",
+     "valor": "B"
+    },
+    "n": 3
+   },
+   "texto": "Há exatamente 3 culpados na coluna B."
+  },
+  "A5": {
+   "tipo": "vizinhos",
+   "params": {
+    "alvo": 14,
+    "n": 4
+   },
+   "texto": "Jéssica tem exatamente 4 culpados entre os vizinhos."
+  },
+  "B5": {
+   "tipo": "vizinhos",
+   "params": {
+    "alvo": 9,
+    "n": 3
+   },
+   "texto": "Everton tem exatamente 3 culpados entre os vizinhos."
+  },
+  "C5": {
+   "tipo": "direcao",
+   "params": {
+    "alvo": 15,
+    "direcao": "abaixo",
+    "valor": "inocente"
+   },
+   "texto": "Todos abaixo de Taís são inocentes."
+  },
+  "D5": {
+   "tipo": "vizinhos",
+   "params": {
+    "alvo": 2,
+    "n": 3
+   },
+   "texto": "Ingrid tem exatamente 3 culpados entre os vizinhos."
+  }
+ },
+ "solucao": "62f2"
+}

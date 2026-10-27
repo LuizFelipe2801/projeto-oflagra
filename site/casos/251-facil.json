@@ -1,0 +1,310 @@
+{
+ "versao": 1,
+ "dia_do_ciclo": 251,
+ "dificuldade": "facil",
+ "cenario": "salao",
+ "cenario_nome": "O salão",
+ "titulo": "Quem trocou a cor da tinta?",
+ "personagens": [
+  {
+   "pos": "A1",
+   "nome": "Vanessa",
+   "profissao": "da tintura"
+  },
+  {
+   "pos": "B1",
+   "nome": "Simone",
+   "profissao": "da clientela"
+  },
+  {
+   "pos": "C1",
+   "nome": "Aline",
+   "profissao": "da recepção"
+  },
+  {
+   "pos": "D1",
+   "nome": "Cláudia",
+   "profissao": "da tintura"
+  },
+  {
+   "pos": "A2",
+   "nome": "Elaine",
+   "profissao": "da clientela"
+  },
+  {
+   "pos": "B2",
+   "nome": "Soraia",
+   "profissao": "do corte"
+  },
+  {
+   "pos": "C2",
+   "nome": "Adriana",
+   "profissao": "da tintura"
+  },
+  {
+   "pos": "D2",
+   "nome": "Pri",
+   "profissao": "das unhas"
+  },
+  {
+   "pos": "A3",
+   "nome": "Marcela",
+   "profissao": "da recepção"
+  },
+  {
+   "pos": "B3",
+   "nome": "Vivi",
+   "profissao": "da escova"
+  },
+  {
+   "pos": "C3",
+   "nome": "Jaque",
+   "profissao": "da recepção"
+  },
+  {
+   "pos": "D3",
+   "nome": "Rebeca",
+   "profissao": "da clientela"
+  },
+  {
+   "pos": "A4",
+   "nome": "Ju",
+   "profissao": "das unhas"
+  },
+  {
+   "pos": "B4",
+   "nome": "Nádia",
+   "profissao": "da tintura"
+  },
+  {
+   "pos": "C4",
+   "nome": "Mari",
+   "profissao": "da clientela"
+  },
+  {
+   "pos": "D4",
+   "nome": "Dona Lê",
+   "profissao": "da escova"
+  },
+  {
+   "pos": "A5",
+   "nome": "Michele",
+   "profissao": "da escova"
+  },
+  {
+   "pos": "B5",
+   "nome": "Gleice",
+   "profissao": "do corte"
+  },
+  {
+   "pos": "C5",
+   "nome": "Rosana",
+   "profissao": "do corte"
+  },
+  {
+   "pos": "D5",
+   "nome": "Regina",
+   "profissao": "das unhas"
+  }
+ ],
+ "inicial": "C1",
+ "pistas": {
+  "A1": {
+   "tipo": "conexao",
+   "params": {
+    "area": {
+     "tipo": "linha",
+     "valor": 1
+    }
+   },
+   "texto": "Todos os culpados da linha 1 estão conectados."
+  },
+  "B1": {
+   "tipo": "profissao",
+   "params": {
+    "profissao": "da clientela",
+    "membros": [
+     1,
+     4,
+     11,
+     14
+    ],
+    "n": 1
+   },
+   "texto": "Entre quem é da clientela, há exatamente 1 culpado."
+  },
+  "C1": {
+   "tipo": "entre",
+   "params": {
+    "a": 9,
+    "b": 17,
+    "n": 0
+   },
+   "texto": "Não há nenhum culpado entre Vivi e Gleice."
+  },
+  "D1": {
+   "tipo": "vizinhos",
+   "params": {
+    "alvo": 8,
+    "n": 0
+   },
+   "texto": "Marcela não tem nenhum culpado entre os vizinhos."
+  },
+  "A2": {
+   "tipo": "profissao",
+   "params": {
+    "profissao": "das unhas",
+    "membros": [
+     7,
+     12,
+     19
+    ],
+    "n": 0
+   },
+   "texto": "Entre quem é das unhas, não há nenhum culpado."
+  },
+  "B2": {
+   "tipo": "profissao",
+   "params": {
+    "profissao": "da tintura",
+    "membros": [
+     0,
+     3,
+     6,
+     13
+    ],
+    "n": 2
+   },
+   "texto": "Entre quem é da tintura, há exatamente 2 culpados."
+  },
+  "C2": {
+   "tipo": "profissao",
+   "params": {
+    "profissao": "do corte",
+    "membros": [
+     5,
+     17,
+     18
+    ],
+    "n": 2
+   },
+   "texto": "Entre quem é do corte, há exatamente 2 culpados."
+  },
+  "D2": {
+   "tipo": "contagem",
+   "params": {
+    "area": {
+     "tipo": "linha",
+     "valor": 4
+    },
+    "n": 0
+   },
+   "texto": "Não há nenhum culpado na linha 4."
+  },
+  "A3": {
+   "tipo": "vizinhos",
+   "params": {
+    "alvo": 0,
+    "n": 1
+   },
+   "texto": "Vanessa tem exatamente 1 culpado entre os vizinhos."
+  },
+  "B3": {
+   "tipo": "direcao",
+   "params": {
+    "alvo": 1,
+    "direcao": "esquerda",
+    "valor": "culpado"
+   },
+   "texto": "Todos à esquerda de Simone são culpados."
+  },
+  "C3": {
+   "tipo": "vizinhos",
+   "params": {
+    "alvo": 4,
+    "n": 3
+   },
+   "texto": "Elaine tem exatamente 3 culpados entre os vizinhos."
+  },
+  "D3": {
+   "tipo": "entre",
+   "params": {
+    "a": 1,
+    "b": 3,
+    "n": 0
+   },
+   "texto": "Não há nenhum culpado entre Simone e Cláudia."
+  },
+  "A4": {
+   "tipo": "vizinhos",
+   "params": {
+    "alvo": 5,
+    "n": 4
+   },
+   "texto": "Soraia tem exatamente 4 culpados entre os vizinhos."
+  },
+  "B4": {
+   "tipo": "direcao",
+   "params": {
+    "alvo": 5,
+    "direcao": "acima",
+    "valor": "culpado"
+   },
+   "texto": "Todos acima de Soraia são culpados."
+  },
+  "C4": {
+   "tipo": "vizinhos",
+   "params": {
+    "alvo": 10,
+    "n": 1
+   },
+   "texto": "Jaque tem exatamente 1 culpado entre os vizinhos."
+  },
+  "D4": {
+   "tipo": "direcao",
+   "params": {
+    "alvo": 19,
+    "direcao": "acima",
+    "valor": "inocente"
+   },
+   "texto": "Todos acima de Regina são inocentes."
+  },
+  "A5": {
+   "tipo": "vizinhos",
+   "params": {
+    "alvo": 15,
+    "n": 1
+   },
+   "texto": "Dona Lê tem exatamente 1 culpado entre os vizinhos."
+  },
+  "B5": {
+   "tipo": "direcao",
+   "params": {
+    "alvo": 15,
+    "direcao": "abaixo",
+    "valor": "inocente"
+   },
+   "texto": "Todos abaixo de Dona Lê são inocentes."
+  },
+  "C5": {
+   "tipo": "vizinhos",
+   "params": {
+    "alvo": 2,
+    "n": 2
+   },
+   "texto": "Aline tem exatamente 2 culpados entre os vizinhos."
+  },
+  "D5": {
+   "tipo": "contagem",
+   "params": {
+    "area": {
+     "tipo": "linha",
+     "valor": 5
+    },
+    "n": 2
+   },
+   "texto": "Há exatamente 2 culpados na linha 5."
+  }
+ },
+ "solucao": "42jz"
+}

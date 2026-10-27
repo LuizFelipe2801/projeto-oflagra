@@ -1,0 +1,309 @@
+{
+ "versao": 1,
+ "dia_do_ciclo": 295,
+ "dificuldade": "dificil",
+ "cenario": "escola",
+ "cenario_nome": "A escola",
+ "titulo": "Quem trocou os lanches da turma?",
+ "personagens": [
+  {
+   "pos": "A1",
+   "nome": "Lorena",
+   "profissao": "da turma B"
+  },
+  {
+   "pos": "B1",
+   "nome": "Davi",
+   "profissao": "da biblioteca"
+  },
+  {
+   "pos": "C1",
+   "nome": "Theo",
+   "profissao": "da cozinha"
+  },
+  {
+   "pos": "D1",
+   "nome": "Lívia",
+   "profissao": "do pátio"
+  },
+  {
+   "pos": "A2",
+   "nome": "Maitê",
+   "profissao": "da turma B"
+  },
+  {
+   "pos": "B2",
+   "nome": "Murilo",
+   "profissao": "do pátio"
+  },
+  {
+   "pos": "C2",
+   "nome": "Valentina",
+   "profissao": "da turma A"
+  },
+  {
+   "pos": "D2",
+   "nome": "Miguel",
+   "profissao": "da biblioteca"
+  },
+  {
+   "pos": "A3",
+   "nome": "Gael",
+   "profissao": "da turma A"
+  },
+  {
+   "pos": "B3",
+   "nome": "Alice",
+   "profissao": "da cozinha"
+  },
+  {
+   "pos": "C3",
+   "nome": "Benício",
+   "profissao": "da biblioteca"
+  },
+  {
+   "pos": "D3",
+   "nome": "Arthur",
+   "profissao": "do pátio"
+  },
+  {
+   "pos": "A4",
+   "nome": "Laura",
+   "profissao": "da turma B"
+  },
+  {
+   "pos": "B4",
+   "nome": "Cecília",
+   "profissao": "da cozinha"
+  },
+  {
+   "pos": "C4",
+   "nome": "Sofia",
+   "profissao": "da turma A"
+  },
+  {
+   "pos": "D4",
+   "nome": "Manu",
+   "profissao": "da turma A"
+  },
+  {
+   "pos": "A5",
+   "nome": "Helena",
+   "profissao": "do pátio"
+  },
+  {
+   "pos": "B5",
+   "nome": "Enzo",
+   "profissao": "da diretoria"
+  },
+  {
+   "pos": "C5",
+   "nome": "Bento",
+   "profissao": "da diretoria"
+  },
+  {
+   "pos": "D5",
+   "nome": "Pedrinho",
+   "profissao": "da diretoria"
+  }
+ ],
+ "inicial": "B5",
+ "pistas": {
+  "A1": {
+   "tipo": "direcao",
+   "params": {
+    "alvo": 10,
+    "direcao": "direita",
+    "valor": "inocente"
+   },
+   "texto": "Todos à direita de Benício são inocentes."
+  },
+  "B1": {
+   "tipo": "profissao",
+   "params": {
+    "profissao": "do pátio",
+    "membros": [
+     3,
+     5,
+     11,
+     16
+    ],
+    "n": 2
+   },
+   "texto": "Entre quem é do pátio, há exatamente 2 culpados."
+  },
+  "C1": {
+   "tipo": "entre",
+   "params": {
+    "a": 7,
+    "b": 19,
+    "n": 1
+   },
+   "texto": "Há exatamente 1 culpado entre Miguel e Pedrinho."
+  },
+  "D1": {
+   "tipo": "maioria",
+   "params": {
+    "area": {
+     "tipo": "coluna",
+     "valor": "B"
+    },
+    "valor": "culpado"
+   },
+   "texto": "Há mais culpados que inocentes na coluna B."
+  },
+  "A2": {
+   "tipo": "paridade",
+   "params": {
+    "area": {
+     "tipo": "linha",
+     "valor": 3
+    },
+    "impar": true
+   },
+   "texto": "Há um número ímpar de culpados na linha 3."
+  },
+  "B2": {
+   "tipo": "comparacao",
+   "params": {
+    "a": 1,
+    "b": 0
+   },
+   "texto": "Davi tem mais vizinhos culpados que Lorena."
+  },
+  "C2": {
+   "tipo": "contagem",
+   "params": {
+    "area": {
+     "tipo": "coluna",
+     "valor": "C"
+    },
+    "n": 2
+   },
+   "texto": "Há exatamente 2 culpados na coluna C."
+  },
+  "D2": {
+   "tipo": "direcao",
+   "params": {
+    "alvo": 14,
+    "direcao": "abaixo",
+    "valor": "inocente"
+   },
+   "texto": "Todos abaixo de Sofia são inocentes."
+  },
+  "A3": {
+   "tipo": "entre",
+   "params": {
+    "a": 0,
+    "b": 12,
+    "n": 1
+   },
+   "texto": "Há exatamente 1 culpado entre Lorena e Laura."
+  },
+  "B3": {
+   "tipo": "direcao",
+   "params": {
+    "alvo": 3,
+    "direcao": "esquerda",
+    "valor": "culpado"
+   },
+   "texto": "Todos à esquerda de Lívia são culpados."
+  },
+  "C3": {
+   "tipo": "vizinhos",
+   "params": {
+    "alvo": 13,
+    "n": 3
+   },
+   "texto": "Cecília tem exatamente 3 culpados entre os vizinhos."
+  },
+  "D3": {
+   "tipo": "conexao",
+   "params": {
+    "area": {
+     "tipo": "linha",
+     "valor": 4
+    }
+   },
+   "texto": "Todos os culpados da linha 4 estão conectados."
+  },
+  "A4": {
+   "tipo": "paridade",
+   "params": {
+    "area": {
+     "tipo": "linha",
+     "valor": 2
+    },
+    "impar": false
+   },
+   "texto": "Há um número par de culpados na linha 2."
+  },
+  "B4": {
+   "tipo": "paridade",
+   "params": {
+    "area": {
+     "tipo": "coluna",
+     "valor": "C"
+    },
+    "impar": false
+   },
+   "texto": "Há um número par de culpados na coluna C."
+  },
+  "C4": {
+   "tipo": "direcao",
+   "params": {
+    "alvo": 9,
+    "direcao": "esquerda",
+    "valor": "inocente"
+   },
+   "texto": "Todos à esquerda de Alice são inocentes."
+  },
+  "D4": {
+   "tipo": "comparacao",
+   "params": {
+    "a": 14,
+    "b": 4
+   },
+   "texto": "Sofia tem mais vizinhos culpados que Maitê."
+  },
+  "A5": {
+   "tipo": "direcao",
+   "params": {
+    "alvo": 17,
+    "direcao": "esquerda",
+    "valor": "culpado"
+   },
+   "texto": "Todos à esquerda de Enzo são culpados."
+  },
+  "B5": {
+   "tipo": "profissao",
+   "params": {
+    "profissao": "da cozinha",
+    "membros": [
+     2,
+     9,
+     13
+    ],
+    "n": 3
+   },
+   "texto": "Entre quem é da cozinha, há exatamente 3 culpados."
+  },
+  "C5": {
+   "tipo": "comparacao",
+   "params": {
+    "a": 8,
+    "b": 16
+   },
+   "texto": "Gael tem mais vizinhos culpados que Helena."
+  },
+  "D5": {
+   "tipo": "comparacao",
+   "params": {
+    "a": 10,
+    "b": 11
+   },
+   "texto": "Benício tem mais vizinhos culpados que Arthur."
+  }
+ },
+ "solucao": "a6qr"
+}

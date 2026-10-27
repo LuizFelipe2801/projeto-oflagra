@@ -1,0 +1,317 @@
+{
+ "versao": 1,
+ "dia_do_ciclo": 32,
+ "dificuldade": "medio",
+ "cenario": "academia",
+ "cenario_nome": "A academia",
+ "titulo": "Quem largou os pesos no chão?",
+ "personagens": [
+  {
+   "pos": "A1",
+   "nome": "Everton",
+   "profissao": "do spinning"
+  },
+  {
+   "pos": "B1",
+   "nome": "Renata",
+   "profissao": "da musculação"
+  },
+  {
+   "pos": "C1",
+   "nome": "Yuri",
+   "profissao": "da musculação"
+  },
+  {
+   "pos": "D1",
+   "nome": "Sabrina",
+   "profissao": "da recepção"
+  },
+  {
+   "pos": "A2",
+   "nome": "Otávio",
+   "profissao": "da esteira"
+  },
+  {
+   "pos": "B2",
+   "nome": "Willian",
+   "profissao": "da recepção"
+  },
+  {
+   "pos": "C2",
+   "nome": "Márcio",
+   "profissao": "da limpeza"
+  },
+  {
+   "pos": "D2",
+   "nome": "Taís",
+   "profissao": "da esteira"
+  },
+  {
+   "pos": "A3",
+   "nome": "Elisa",
+   "profissao": "da esteira"
+  },
+  {
+   "pos": "B3",
+   "nome": "Bruna",
+   "profissao": "da musculação"
+  },
+  {
+   "pos": "C3",
+   "nome": "Bárbara",
+   "profissao": "da nutrição"
+  },
+  {
+   "pos": "D3",
+   "nome": "Jéssica",
+   "profissao": "da nutrição"
+  },
+  {
+   "pos": "A4",
+   "nome": "Giovana",
+   "profissao": "da limpeza"
+  },
+  {
+   "pos": "B4",
+   "nome": "Kevin",
+   "profissao": "da musculação"
+  },
+  {
+   "pos": "C4",
+   "nome": "Douglas",
+   "profissao": "da limpeza"
+  },
+  {
+   "pos": "D4",
+   "nome": "Franciele",
+   "profissao": "do spinning"
+  },
+  {
+   "pos": "A5",
+   "nome": "Caio",
+   "profissao": "da recepção"
+  },
+  {
+   "pos": "B5",
+   "nome": "Alex",
+   "profissao": "da esteira"
+  },
+  {
+   "pos": "C5",
+   "nome": "Raíssa",
+   "profissao": "do spinning"
+  },
+  {
+   "pos": "D5",
+   "nome": "Ingrid",
+   "profissao": "da nutrição"
+  }
+ ],
+ "inicial": "C1",
+ "pistas": {
+  "A1": {
+   "tipo": "comparacao",
+   "params": {
+    "a": 8,
+    "b": 13
+   },
+   "texto": "Elisa tem mais vizinhos culpados que Kevin."
+  },
+  "B1": {
+   "tipo": "entre",
+   "params": {
+    "a": 11,
+    "b": 19,
+    "n": 1
+   },
+   "texto": "Há exatamente 1 culpado entre Jéssica e Ingrid."
+  },
+  "C1": {
+   "tipo": "entre",
+   "params": {
+    "a": 1,
+    "b": 17,
+    "n": 3
+   },
+   "texto": "Há exatamente 3 culpados entre Renata e Alex."
+  },
+  "D1": {
+   "tipo": "vizinhos",
+   "params": {
+    "alvo": 7,
+    "n": 2
+   },
+   "texto": "Taís tem exatamente 2 culpados entre os vizinhos."
+  },
+  "A2": {
+   "tipo": "conexao",
+   "params": {
+    "area": {
+     "tipo": "linha",
+     "valor": 4
+    }
+   },
+   "texto": "Todos os culpados da linha 4 estão conectados."
+  },
+  "B2": {
+   "tipo": "entre",
+   "params": {
+    "a": 0,
+    "b": 3,
+    "n": 1
+   },
+   "texto": "Há exatamente 1 culpado entre Everton e Sabrina."
+  },
+  "C2": {
+   "tipo": "maioria",
+   "params": {
+    "area": {
+     "tipo": "coluna",
+     "valor": "D"
+    },
+    "valor": "inocente"
+   },
+   "texto": "Há mais inocentes que culpados na coluna D."
+  },
+  "D2": {
+   "tipo": "profissao",
+   "params": {
+    "profissao": "do spinning",
+    "membros": [
+     0,
+     15,
+     18
+    ],
+    "n": 1
+   },
+   "texto": "Entre quem é do spinning, há exatamente 1 culpado."
+  },
+  "A3": {
+   "tipo": "paridade",
+   "params": {
+    "area": {
+     "tipo": "coluna",
+     "valor": "B"
+    },
+    "impar": true
+   },
+   "texto": "Há um número ímpar de culpados na coluna B."
+  },
+  "B3": {
+   "tipo": "conexao",
+   "params": {
+    "area": {
+     "tipo": "coluna",
+     "valor": "D"
+    }
+   },
+   "texto": "Todos os culpados da coluna D estão conectados."
+  },
+  "C3": {
+   "tipo": "profissao",
+   "params": {
+    "profissao": "da limpeza",
+    "membros": [
+     6,
+     12,
+     14
+    ],
+    "n": 2
+   },
+   "texto": "Entre quem é da limpeza, há exatamente 2 culpados."
+  },
+  "D3": {
+   "tipo": "vizinhos",
+   "params": {
+    "alvo": 11,
+    "n": 2
+   },
+   "texto": "Tenho exatamente 2 culpados entre os vizinhos."
+  },
+  "A4": {
+   "tipo": "conexao",
+   "params": {
+    "area": {
+     "tipo": "coluna",
+     "valor": "B"
+    }
+   },
+   "texto": "Todos os culpados da coluna B estão conectados."
+  },
+  "B4": {
+   "tipo": "comparacao",
+   "params": {
+    "a": 13,
+    "b": 15
+   },
+   "texto": "Tenho mais vizinhos culpados que Franciele."
+  },
+  "C4": {
+   "tipo": "profissao",
+   "params": {
+    "profissao": "da recepção",
+    "membros": [
+     3,
+     5,
+     16
+    ],
+    "n": 2
+   },
+   "texto": "Entre quem é da recepção, há exatamente 2 culpados."
+  },
+  "D4": {
+   "tipo": "vizinhos",
+   "params": {
+    "alvo": 4,
+    "n": 2
+   },
+   "texto": "Otávio tem exatamente 2 culpados entre os vizinhos."
+  },
+  "A5": {
+   "tipo": "entre",
+   "params": {
+    "a": 9,
+    "b": 11,
+    "n": 0
+   },
+   "texto": "Não há nenhum culpado entre Bruna e Jéssica."
+  },
+  "B5": {
+   "tipo": "contagem",
+   "params": {
+    "area": {
+     "tipo": "coluna",
+     "valor": "D"
+    },
+    "n": 2
+   },
+   "texto": "Há exatamente 2 culpados na coluna D."
+  },
+  "C5": {
+   "tipo": "contagem",
+   "params": {
+    "area": {
+     "tipo": "linha",
+     "valor": 4
+    },
+    "n": 4
+   },
+   "texto": "Há exatamente 4 culpados na linha 4."
+  },
+  "D5": {
+   "tipo": "profissao",
+   "params": {
+    "profissao": "da esteira",
+    "membros": [
+     4,
+     7,
+     8,
+     17
+    ],
+    "n": 1
+   },
+   "texto": "Entre quem é da esteira, há exatamente 1 culpado."
+  }
+ },
+ "solucao": "ap1t"
+}

@@ -29,7 +29,7 @@ test('passo que exige combinar duas pistas', () => {
     paridade(area('linha', 4), false),
     contagem(area('coluna', 'A'), 0),
   ];
-  assert.deepEqual(passo(pistas, conhecidos), { novos: m('D1'), k: 2 });
+  assert.deepEqual(passo(pistas, conhecidos), { novos: m('D1'), k: 2, usadas: [0, 1] });
 });
 
 test('passo que exige combinar três pistas', () => {
@@ -41,5 +41,5 @@ test('passo que exige combinar três pistas', () => {
     paridade(area('coluna', 'D'), true),
     paridade(area('borda'), false),
   ];
-  assert.deepEqual(passo(pistas, conhecidos), { novos: m('A5'), k: 3 });
+  assert.deepEqual(passo(pistas, conhecidos), { novos: m('A5'), k: 3, usadas: [0, 1, 2] });
 });

@@ -1,0 +1,299 @@
+{
+ "versao": 1,
+ "dia_do_ciclo": 340,
+ "dificuldade": "facil",
+ "cenario": "familia",
+ "cenario_nome": "O grupo da família",
+ "titulo": "Quem mandou o áudio de cinco minutos?",
+ "personagens": [
+  {
+   "pos": "A1",
+   "nome": "Betinho",
+   "profissao": "dos avós"
+  },
+  {
+   "pos": "B1",
+   "nome": "Tio Nelson",
+   "profissao": "dos netos"
+  },
+  {
+   "pos": "C1",
+   "nome": "Vó Dirce",
+   "profissao": "dos sobrinhos"
+  },
+  {
+   "pos": "D1",
+   "nome": "Cadu",
+   "profissao": "dos avós"
+  },
+  {
+   "pos": "A2",
+   "nome": "Sérgio",
+   "profissao": "dos tios"
+  },
+  {
+   "pos": "B2",
+   "nome": "Tetê",
+   "profissao": "dos avós"
+  },
+  {
+   "pos": "C2",
+   "nome": "Tia Cleusa",
+   "profissao": "dos tios"
+  },
+  {
+   "pos": "D2",
+   "nome": "Jorge",
+   "profissao": "dos netos"
+  },
+  {
+   "pos": "A3",
+   "nome": "Júnior",
+   "profissao": "dos tios"
+  },
+  {
+   "pos": "B3",
+   "nome": "Luana",
+   "profissao": "dos cunhados"
+  },
+  {
+   "pos": "C3",
+   "nome": "Pedro",
+   "profissao": "dos primos"
+  },
+  {
+   "pos": "D3",
+   "nome": "Priscila",
+   "profissao": "dos sobrinhos"
+  },
+  {
+   "pos": "A4",
+   "nome": "Andréia",
+   "profissao": "dos primos"
+  },
+  {
+   "pos": "B4",
+   "nome": "Mila",
+   "profissao": "dos netos"
+  },
+  {
+   "pos": "C4",
+   "nome": "Bruninha",
+   "profissao": "dos cunhados"
+  },
+  {
+   "pos": "D4",
+   "nome": "Gil",
+   "profissao": "dos cunhados"
+  },
+  {
+   "pos": "A5",
+   "nome": "Lara",
+   "profissao": "dos sobrinhos"
+  },
+  {
+   "pos": "B5",
+   "nome": "Vô Zeca",
+   "profissao": "dos primos"
+  },
+  {
+   "pos": "C5",
+   "nome": "Nando",
+   "profissao": "dos sobrinhos"
+  },
+  {
+   "pos": "D5",
+   "nome": "Vânia",
+   "profissao": "dos primos"
+  }
+ ],
+ "inicial": "B4",
+ "pistas": {
+  "A1": {
+   "tipo": "profissao",
+   "params": {
+    "profissao": "dos sobrinhos",
+    "membros": [
+     2,
+     11,
+     16,
+     18
+    ],
+    "n": 0
+   },
+   "texto": "Entre quem é dos sobrinhos, não há nenhum culpado."
+  },
+  "B1": {
+   "tipo": "entre",
+   "params": {
+    "a": 7,
+    "b": 15,
+    "n": 0
+   },
+   "texto": "Não há nenhum culpado entre Jorge e Gil."
+  },
+  "C1": {
+   "tipo": "contagem",
+   "params": {
+    "area": {
+     "tipo": "linha",
+     "valor": 3
+    },
+    "n": 2
+   },
+   "texto": "Há exatamente 2 culpados na linha 3."
+  },
+  "D1": {
+   "tipo": "vizinhos",
+   "params": {
+    "alvo": 13,
+    "n": 3
+   },
+   "texto": "Mila tem exatamente 3 culpados entre os vizinhos."
+  },
+  "A2": {
+   "tipo": "direcao",
+   "params": {
+    "alvo": 18,
+    "direcao": "direita",
+    "valor": "culpado"
+   },
+   "texto": "Todos à direita de Nando são culpados."
+  },
+  "B2": {
+   "tipo": "profissao",
+   "params": {
+    "profissao": "dos cunhados",
+    "membros": [
+     9,
+     14,
+     15
+    ],
+    "n": 0
+   },
+   "texto": "Entre quem é dos cunhados, não há nenhum culpado."
+  },
+  "C2": {
+   "tipo": "contagem",
+   "params": {
+    "area": {
+     "tipo": "borda"
+    },
+    "n": 5
+   },
+   "texto": "Há exatamente 5 culpados na borda."
+  },
+  "D2": {
+   "tipo": "vizinhos",
+   "params": {
+    "alvo": 12,
+    "n": 3
+   },
+   "texto": "Andréia tem exatamente 3 culpados entre os vizinhos."
+  },
+  "A3": {
+   "tipo": "contagem",
+   "params": {
+    "area": {
+     "tipo": "coluna",
+     "valor": "B"
+    },
+    "n": 2
+   },
+   "texto": "Há exatamente 2 culpados na coluna B."
+  },
+  "B3": {
+   "tipo": "vizinhos",
+   "params": {
+    "alvo": 0,
+    "n": 0
+   },
+   "texto": "Betinho não tem nenhum culpado entre os vizinhos."
+  },
+  "C3": {
+   "tipo": "direcao",
+   "params": {
+    "alvo": 13,
+    "direcao": "acima",
+    "valor": "inocente"
+   },
+   "texto": "Todos acima de Mila são inocentes."
+  },
+  "D3": {
+   "tipo": "entre",
+   "params": {
+    "a": 0,
+    "b": 8,
+    "n": 0
+   },
+   "texto": "Não há nenhum culpado entre Betinho e Júnior."
+  },
+  "A4": {
+   "tipo": "vizinhos",
+   "params": {
+    "alvo": 8,
+    "n": 1
+   },
+   "texto": "Júnior tem exatamente 1 culpado entre os vizinhos."
+  },
+  "B4": {
+   "tipo": "vizinhos",
+   "params": {
+    "alvo": 19,
+    "n": 0
+   },
+   "texto": "Vânia não tem nenhum culpado entre os vizinhos."
+  },
+  "C4": {
+   "tipo": "vizinhos",
+   "params": {
+    "alvo": 7,
+    "n": 2
+   },
+   "texto": "Jorge tem exatamente 2 culpados entre os vizinhos."
+  },
+  "D4": {
+   "tipo": "entre",
+   "params": {
+    "a": 8,
+    "b": 16,
+    "n": 0
+   },
+   "texto": "Não há nenhum culpado entre Júnior e Lara."
+  },
+  "A5": {
+   "tipo": "vizinhos",
+   "params": {
+    "alvo": 15,
+    "n": 2
+   },
+   "texto": "Gil tem exatamente 2 culpados entre os vizinhos."
+  },
+  "B5": {
+   "tipo": "vizinhos",
+   "params": {
+    "alvo": 6,
+    "n": 3
+   },
+   "texto": "Tia Cleusa tem exatamente 3 culpados entre os vizinhos."
+  },
+  "C5": {
+   "tipo": "vizinhos",
+   "params": {
+    "alvo": 10,
+    "n": 2
+   },
+   "texto": "Pedro tem exatamente 2 culpados entre os vizinhos."
+  },
+  "D5": {
+   "tipo": "direcao",
+   "params": {
+    "alvo": 8,
+    "direcao": "acima",
+    "valor": "inocente"
+   },
+   "texto": "Todos acima de Júnior são inocentes."
+  }
+ },
+ "solucao": "m3qp"
+}

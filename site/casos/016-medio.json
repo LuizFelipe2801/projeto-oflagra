@@ -1,0 +1,300 @@
+{
+ "versao": 1,
+ "dia_do_ciclo": 16,
+ "dificuldade": "medio",
+ "cenario": "onibus",
+ "cenario_nome": "O ônibus",
+ "titulo": "Quem deixou a janela aberta na chuva?",
+ "personagens": [
+  {
+   "pos": "A1",
+   "nome": "Creusa",
+   "profissao": "da catraca"
+  },
+  {
+   "pos": "B1",
+   "nome": "Nivaldo",
+   "profissao": "do corredor"
+  },
+  {
+   "pos": "C1",
+   "nome": "Ieda",
+   "profissao": "do ponto final"
+  },
+  {
+   "pos": "D1",
+   "nome": "Zenaide",
+   "profissao": "do fundão"
+  },
+  {
+   "pos": "A2",
+   "nome": "Terezinha",
+   "profissao": "do corredor"
+  },
+  {
+   "pos": "B2",
+   "nome": "Valmir",
+   "profissao": "da janela"
+  },
+  {
+   "pos": "C2",
+   "nome": "Conceição",
+   "profissao": "da catraca"
+  },
+  {
+   "pos": "D2",
+   "nome": "Eliane",
+   "profissao": "do fundão"
+  },
+  {
+   "pos": "A3",
+   "nome": "Cícero",
+   "profissao": "do banco da frente"
+  },
+  {
+   "pos": "B3",
+   "nome": "Josué",
+   "profissao": "da catraca"
+  },
+  {
+   "pos": "C3",
+   "nome": "Edmilson",
+   "profissao": "do fundão"
+  },
+  {
+   "pos": "D3",
+   "nome": "Dalila",
+   "profissao": "do banco da frente"
+  },
+  {
+   "pos": "A4",
+   "nome": "Leila",
+   "profissao": "da janela"
+  },
+  {
+   "pos": "B4",
+   "nome": "Dona Rita",
+   "profissao": "do banco da frente"
+  },
+  {
+   "pos": "C4",
+   "nome": "Denílson",
+   "profissao": "do corredor"
+  },
+  {
+   "pos": "D4",
+   "nome": "Seu Manoel",
+   "profissao": "da janela"
+  },
+  {
+   "pos": "A5",
+   "nome": "Marlúcia",
+   "profissao": "da catraca"
+  },
+  {
+   "pos": "B5",
+   "nome": "Jaílson",
+   "profissao": "do ponto final"
+  },
+  {
+   "pos": "C5",
+   "nome": "Ronaldo",
+   "profissao": "do fundão"
+  },
+  {
+   "pos": "D5",
+   "nome": "Rosângela",
+   "profissao": "do ponto final"
+  }
+ ],
+ "inicial": "A3",
+ "pistas": {
+  "A1": {
+   "tipo": "vizinhos",
+   "params": {
+    "alvo": 12,
+    "n": 4
+   },
+   "texto": "Leila tem exatamente 4 culpados entre os vizinhos."
+  },
+  "B1": {
+   "tipo": "profissao",
+   "params": {
+    "profissao": "do ponto final",
+    "membros": [
+     2,
+     17,
+     19
+    ],
+    "n": 3
+   },
+   "texto": "Entre quem é do ponto final, há exatamente 3 culpados."
+  },
+  "C1": {
+   "tipo": "vizinhos",
+   "params": {
+    "alvo": 3,
+    "n": 2
+   },
+   "texto": "Zenaide tem exatamente 2 culpados entre os vizinhos."
+  },
+  "D1": {
+   "tipo": "vizinhos",
+   "params": {
+    "alvo": 10,
+    "n": 5
+   },
+   "texto": "Edmilson tem exatamente 5 culpados entre os vizinhos."
+  },
+  "A2": {
+   "tipo": "direcao",
+   "params": {
+    "alvo": 1,
+    "direcao": "esquerda",
+    "valor": "inocente"
+   },
+   "texto": "Todos à esquerda de Nivaldo são inocentes."
+  },
+  "B2": {
+   "tipo": "conexao",
+   "params": {
+    "area": {
+     "tipo": "coluna",
+     "valor": "A"
+    }
+   },
+   "texto": "Todos os culpados da coluna A estão conectados."
+  },
+  "C2": {
+   "tipo": "direcao",
+   "params": {
+    "alvo": 9,
+    "direcao": "abaixo",
+    "valor": "culpado"
+   },
+   "texto": "Todos abaixo de Josué são culpados."
+  },
+  "D2": {
+   "tipo": "conexao",
+   "params": {
+    "area": {
+     "tipo": "coluna",
+     "valor": "B"
+    }
+   },
+   "texto": "Todos os culpados da coluna B estão conectados."
+  },
+  "A3": {
+   "tipo": "direcao",
+   "params": {
+    "alvo": 10,
+    "direcao": "abaixo",
+    "valor": "inocente"
+   },
+   "texto": "Todos abaixo de Edmilson são inocentes."
+  },
+  "B3": {
+   "tipo": "entre",
+   "params": {
+    "a": 13,
+    "b": 15,
+    "n": 0
+   },
+   "texto": "Não há nenhum culpado entre Dona Rita e Seu Manoel."
+  },
+  "C3": {
+   "tipo": "direcao",
+   "params": {
+    "alvo": 7,
+    "direcao": "acima",
+    "valor": "culpado"
+   },
+   "texto": "Todos acima de Eliane são culpados."
+  },
+  "D3": {
+   "tipo": "contagem",
+   "params": {
+    "area": {
+     "tipo": "linha",
+     "valor": 4
+    },
+    "n": 2
+   },
+   "texto": "Há exatamente 2 culpados na linha 4."
+  },
+  "A4": {
+   "tipo": "comparacao",
+   "params": {
+    "a": 13,
+    "b": 17
+   },
+   "texto": "Dona Rita tem mais vizinhos culpados que Jaílson."
+  },
+  "B4": {
+   "tipo": "vizinhos",
+   "params": {
+    "alvo": 17,
+    "n": 1
+   },
+   "texto": "Jaílson tem exatamente 1 culpado entre os vizinhos."
+  },
+  "C4": {
+   "tipo": "profissao",
+   "params": {
+    "profissao": "do banco da frente",
+    "membros": [
+     8,
+     11,
+     13
+    ],
+    "n": 3
+   },
+   "texto": "Entre quem é do banco da frente, há exatamente 3 culpados."
+  },
+  "D4": {
+   "tipo": "vizinhos",
+   "params": {
+    "alvo": 1,
+    "n": 3
+   },
+   "texto": "Nivaldo tem exatamente 3 culpados entre os vizinhos."
+  },
+  "A5": {
+   "tipo": "vizinhos",
+   "params": {
+    "alvo": 13,
+    "n": 4
+   },
+   "texto": "Dona Rita tem exatamente 4 culpados entre os vizinhos."
+  },
+  "B5": {
+   "tipo": "vizinhos",
+   "params": {
+    "alvo": 11,
+    "n": 3
+   },
+   "texto": "Dalila tem exatamente 3 culpados entre os vizinhos."
+  },
+  "C5": {
+   "tipo": "maioria",
+   "params": {
+    "area": {
+     "tipo": "coluna",
+     "valor": "D"
+    },
+    "valor": "culpado"
+   },
+   "texto": "Há mais culpados que inocentes na coluna D."
+  },
+  "D5": {
+   "tipo": "entre",
+   "params": {
+    "a": 16,
+    "b": 19,
+    "n": 1
+   },
+   "texto": "Há exatamente 1 culpado entre mim e Marlúcia."
+  }
+ },
+ "solucao": "gb7r"
+}

@@ -1,0 +1,295 @@
+{
+ "versao": 1,
+ "dia_do_ciclo": 68,
+ "dificuldade": "facil",
+ "cenario": "onibus",
+ "cenario_nome": "O ônibus",
+ "titulo": "Quem esqueceu de dar o sinal?",
+ "personagens": [
+  {
+   "pos": "A1",
+   "nome": "Eliane",
+   "profissao": "da catraca"
+  },
+  {
+   "pos": "B1",
+   "nome": "Dona Rita",
+   "profissao": "do banco da frente"
+  },
+  {
+   "pos": "C1",
+   "nome": "Adilson",
+   "profissao": "do banco da frente"
+  },
+  {
+   "pos": "D1",
+   "nome": "Denílson",
+   "profissao": "do corredor"
+  },
+  {
+   "pos": "A2",
+   "nome": "Dalila",
+   "profissao": "da janela"
+  },
+  {
+   "pos": "B2",
+   "nome": "Agnaldo",
+   "profissao": "do ponto final"
+  },
+  {
+   "pos": "C2",
+   "nome": "Rosângela",
+   "profissao": "do fundão"
+  },
+  {
+   "pos": "D2",
+   "nome": "Nivaldo",
+   "profissao": "do corredor"
+  },
+  {
+   "pos": "A3",
+   "nome": "Josué",
+   "profissao": "da catraca"
+  },
+  {
+   "pos": "B3",
+   "nome": "Valmir",
+   "profissao": "do ponto final"
+  },
+  {
+   "pos": "C3",
+   "nome": "Creusa",
+   "profissao": "do fundão"
+  },
+  {
+   "pos": "D3",
+   "nome": "Conceição",
+   "profissao": "do ponto final"
+  },
+  {
+   "pos": "A4",
+   "nome": "Zenaide",
+   "profissao": "da janela"
+  },
+  {
+   "pos": "B4",
+   "nome": "Seu Manoel",
+   "profissao": "da catraca"
+  },
+  {
+   "pos": "C4",
+   "nome": "Terezinha",
+   "profissao": "do corredor"
+  },
+  {
+   "pos": "D4",
+   "nome": "Ieda",
+   "profissao": "do banco da frente"
+  },
+  {
+   "pos": "A5",
+   "nome": "Hélio",
+   "profissao": "da janela"
+  },
+  {
+   "pos": "B5",
+   "nome": "Ronaldo",
+   "profissao": "do fundão"
+  },
+  {
+   "pos": "C5",
+   "nome": "Edmilson",
+   "profissao": "da janela"
+  },
+  {
+   "pos": "D5",
+   "nome": "Leila",
+   "profissao": "do ponto final"
+  }
+ ],
+ "inicial": "D5",
+ "pistas": {
+  "A1": {
+   "tipo": "direcao",
+   "params": {
+    "alvo": 5,
+    "direcao": "esquerda",
+    "valor": "culpado"
+   },
+   "texto": "Todos à esquerda de Agnaldo são culpados."
+  },
+  "B1": {
+   "tipo": "direcao",
+   "params": {
+    "alvo": 9,
+    "direcao": "esquerda",
+    "valor": "inocente"
+   },
+   "texto": "Todos à esquerda de Valmir são inocentes."
+  },
+  "C1": {
+   "tipo": "contagem",
+   "params": {
+    "area": {
+     "tipo": "linha",
+     "valor": 2
+    },
+    "n": 2
+   },
+   "texto": "Há exatamente 2 culpados na linha 2."
+  },
+  "D1": {
+   "tipo": "vizinhos",
+   "params": {
+    "alvo": 1,
+    "n": 1
+   },
+   "texto": "Dona Rita tem exatamente 1 culpado entre os vizinhos."
+  },
+  "A2": {
+   "tipo": "direcao",
+   "params": {
+    "alvo": 13,
+    "direcao": "esquerda",
+    "valor": "inocente"
+   },
+   "texto": "Todos à esquerda de Seu Manoel são inocentes."
+  },
+  "B2": {
+   "tipo": "direcao",
+   "params": {
+    "alvo": 12,
+    "direcao": "abaixo",
+    "valor": "inocente"
+   },
+   "texto": "Todos abaixo de Zenaide são inocentes."
+  },
+  "C2": {
+   "tipo": "vizinhos",
+   "params": {
+    "alvo": 15,
+    "n": 2
+   },
+   "texto": "Ieda tem exatamente 2 culpados entre os vizinhos."
+  },
+  "D2": {
+   "tipo": "vizinhos",
+   "params": {
+    "alvo": 11,
+    "n": 2
+   },
+   "texto": "Conceição tem exatamente 2 culpados entre os vizinhos."
+  },
+  "A3": {
+   "tipo": "contagem",
+   "params": {
+    "area": {
+     "tipo": "linha",
+     "valor": 3
+    },
+    "n": 1
+   },
+   "texto": "Há exatamente 1 culpado na linha 3."
+  },
+  "B3": {
+   "tipo": "direcao",
+   "params": {
+    "alvo": 1,
+    "direcao": "direita",
+    "valor": "inocente"
+   },
+   "texto": "Todos à direita de Dona Rita são inocentes."
+  },
+  "C3": {
+   "tipo": "vizinhos",
+   "params": {
+    "alvo": 14,
+    "n": 4
+   },
+   "texto": "Terezinha tem exatamente 4 culpados entre os vizinhos."
+  },
+  "D3": {
+   "tipo": "vizinhos",
+   "params": {
+    "alvo": 4,
+    "n": 1
+   },
+   "texto": "Dalila tem exatamente 1 culpado entre os vizinhos."
+  },
+  "A4": {
+   "tipo": "direcao",
+   "params": {
+    "alvo": 14,
+    "direcao": "esquerda",
+    "valor": "inocente"
+   },
+   "texto": "Todos à esquerda de Terezinha são inocentes."
+  },
+  "B4": {
+   "tipo": "direcao",
+   "params": {
+    "alvo": 6,
+    "direcao": "direita",
+    "valor": "culpado"
+   },
+   "texto": "Todos à direita de Rosângela são culpados."
+  },
+  "C4": {
+   "tipo": "conexao",
+   "params": {
+    "area": {
+     "tipo": "coluna",
+     "valor": "D"
+    }
+   },
+   "texto": "Todos os culpados da coluna D estão conectados."
+  },
+  "D4": {
+   "tipo": "direcao",
+   "params": {
+    "alvo": 1,
+    "direcao": "esquerda",
+    "valor": "inocente"
+   },
+   "texto": "Todos à esquerda de Dona Rita são inocentes."
+  },
+  "A5": {
+   "tipo": "vizinhos",
+   "params": {
+    "alvo": 18,
+    "n": 2
+   },
+   "texto": "Edmilson tem exatamente 2 culpados entre os vizinhos."
+  },
+  "B5": {
+   "tipo": "contagem",
+   "params": {
+    "area": {
+     "tipo": "coluna",
+     "valor": "A"
+    },
+    "n": 1
+   },
+   "texto": "Há exatamente 1 culpado na coluna A."
+  },
+  "C5": {
+   "tipo": "direcao",
+   "params": {
+    "alvo": 14,
+    "direcao": "acima",
+    "valor": "inocente"
+   },
+   "texto": "Todos acima de Terezinha são inocentes."
+  },
+  "D5": {
+   "tipo": "direcao",
+   "params": {
+    "alvo": 14,
+    "direcao": "direita",
+    "valor": "culpado"
+   },
+   "texto": "Todos à direita de Terezinha são culpados."
+  }
+ },
+ "solucao": "l8yg"
+}

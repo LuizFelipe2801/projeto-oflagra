@@ -1,0 +1,312 @@
+{
+ "versao": 1,
+ "dia_do_ciclo": 304,
+ "dificuldade": "medio",
+ "cenario": "onibus",
+ "cenario_nome": "O ônibus",
+ "titulo": "Quem passou de novo com o cartão do amigo?",
+ "personagens": [
+  {
+   "pos": "A1",
+   "nome": "Marlúcia",
+   "profissao": "do fundão"
+  },
+  {
+   "pos": "B1",
+   "nome": "Hélio",
+   "profissao": "do corredor"
+  },
+  {
+   "pos": "C1",
+   "nome": "Denílson",
+   "profissao": "da janela"
+  },
+  {
+   "pos": "D1",
+   "nome": "Josefa",
+   "profissao": "da catraca"
+  },
+  {
+   "pos": "A2",
+   "nome": "Adilson",
+   "profissao": "do fundão"
+  },
+  {
+   "pos": "B2",
+   "nome": "Terezinha",
+   "profissao": "do corredor"
+  },
+  {
+   "pos": "C2",
+   "nome": "Leila",
+   "profissao": "do banco da frente"
+  },
+  {
+   "pos": "D2",
+   "nome": "Valmir",
+   "profissao": "do corredor"
+  },
+  {
+   "pos": "A3",
+   "nome": "Josué",
+   "profissao": "do banco da frente"
+  },
+  {
+   "pos": "B3",
+   "nome": "Dona Rita",
+   "profissao": "da catraca"
+  },
+  {
+   "pos": "C3",
+   "nome": "Eliane",
+   "profissao": "do ponto final"
+  },
+  {
+   "pos": "D3",
+   "nome": "Nivaldo",
+   "profissao": "da janela"
+  },
+  {
+   "pos": "A4",
+   "nome": "Dalila",
+   "profissao": "da catraca"
+  },
+  {
+   "pos": "B4",
+   "nome": "Cícero",
+   "profissao": "do fundão"
+  },
+  {
+   "pos": "C4",
+   "nome": "Creusa",
+   "profissao": "da catraca"
+  },
+  {
+   "pos": "D4",
+   "nome": "Zenaide",
+   "profissao": "do banco da frente"
+  },
+  {
+   "pos": "A5",
+   "nome": "Agnaldo",
+   "profissao": "da janela"
+  },
+  {
+   "pos": "B5",
+   "nome": "Seu Manoel",
+   "profissao": "do ponto final"
+  },
+  {
+   "pos": "C5",
+   "nome": "Ieda",
+   "profissao": "do ponto final"
+  },
+  {
+   "pos": "D5",
+   "nome": "Ronaldo",
+   "profissao": "do corredor"
+  }
+ ],
+ "inicial": "C4",
+ "pistas": {
+  "A1": {
+   "tipo": "entre",
+   "params": {
+    "a": 1,
+    "b": 3,
+    "n": 1
+   },
+   "texto": "Há exatamente 1 culpado entre Hélio e Josefa."
+  },
+  "B1": {
+   "tipo": "contagem",
+   "params": {
+    "area": {
+     "tipo": "borda"
+    },
+    "n": 9
+   },
+   "texto": "Há exatamente 9 culpados na borda."
+  },
+  "C1": {
+   "tipo": "profissao",
+   "params": {
+    "profissao": "da catraca",
+    "membros": [
+     3,
+     9,
+     12,
+     14
+    ],
+    "n": 2
+   },
+   "texto": "Entre quem é da catraca, há exatamente 2 culpados."
+  },
+  "D1": {
+   "tipo": "entre",
+   "params": {
+    "a": 17,
+    "b": 19,
+    "n": 1
+   },
+   "texto": "Há exatamente 1 culpado entre Seu Manoel e Ronaldo."
+  },
+  "A2": {
+   "tipo": "direcao",
+   "params": {
+    "alvo": 14,
+    "direcao": "abaixo",
+    "valor": "culpado"
+   },
+   "texto": "Todos abaixo de Creusa são culpados."
+  },
+  "B2": {
+   "tipo": "vizinhos",
+   "params": {
+    "alvo": 16,
+    "n": 2
+   },
+   "texto": "Agnaldo tem exatamente 2 culpados entre os vizinhos."
+  },
+  "C2": {
+   "tipo": "conexao",
+   "params": {
+    "area": {
+     "tipo": "coluna",
+     "valor": "D"
+    }
+   },
+   "texto": "Todos os culpados da coluna D estão conectados."
+  },
+  "D2": {
+   "tipo": "direcao",
+   "params": {
+    "alvo": 10,
+    "direcao": "direita",
+    "valor": "culpado"
+   },
+   "texto": "Todos à direita de Eliane são culpados."
+  },
+  "A3": {
+   "tipo": "entre",
+   "params": {
+    "a": 6,
+    "b": 18,
+    "n": 1
+   },
+   "texto": "Há exatamente 1 culpado entre Leila e Ieda."
+  },
+  "B3": {
+   "tipo": "contagem",
+   "params": {
+    "area": {
+     "tipo": "coluna",
+     "valor": "D"
+    },
+    "n": 3
+   },
+   "texto": "Há exatamente 3 culpados na coluna D."
+  },
+  "C3": {
+   "tipo": "conexao",
+   "params": {
+    "area": {
+     "tipo": "linha",
+     "valor": 2
+    }
+   },
+   "texto": "Todos os culpados da linha 2 estão conectados."
+  },
+  "D3": {
+   "tipo": "entre",
+   "params": {
+    "a": 12,
+    "b": 14,
+    "n": 1
+   },
+   "texto": "Há exatamente 1 culpado entre Dalila e Creusa."
+  },
+  "A4": {
+   "tipo": "conexao",
+   "params": {
+    "area": {
+     "tipo": "linha",
+     "valor": 4
+    }
+   },
+   "texto": "Todos os culpados da linha 4 estão conectados."
+  },
+  "B4": {
+   "tipo": "vizinhos",
+   "params": {
+    "alvo": 11,
+    "n": 2
+   },
+   "texto": "Nivaldo tem exatamente 2 culpados entre os vizinhos."
+  },
+  "C4": {
+   "tipo": "entre",
+   "params": {
+    "a": 0,
+    "b": 8,
+    "n": 1
+   },
+   "texto": "Há exatamente 1 culpado entre Marlúcia e Josué."
+  },
+  "D4": {
+   "tipo": "vizinhos",
+   "params": {
+    "alvo": 10,
+    "n": 5
+   },
+   "texto": "Eliane tem exatamente 5 culpados entre os vizinhos."
+  },
+  "A5": {
+   "tipo": "profissao",
+   "params": {
+    "profissao": "do fundão",
+    "membros": [
+     0,
+     4,
+     13
+    ],
+    "n": 3
+   },
+   "texto": "Entre quem é do fundão, há exatamente 3 culpados."
+  },
+  "B5": {
+   "tipo": "profissao",
+   "params": {
+    "profissao": "do corredor",
+    "membros": [
+     1,
+     5,
+     7,
+     19
+    ],
+    "n": 2
+   },
+   "texto": "Entre quem é do corredor, há exatamente 2 culpados."
+  },
+  "C5": {
+   "tipo": "vizinhos",
+   "params": {
+    "alvo": 17,
+    "n": 5
+   },
+   "texto": "Seu Manoel tem exatamente 5 culpados entre os vizinhos."
+  },
+  "D5": {
+   "tipo": "contagem",
+   "params": {
+    "area": {
+     "tipo": "coluna",
+     "valor": "A"
+    },
+    "n": 4
+   },
+   "texto": "Há exatamente 4 culpados na coluna A."
+  }
+ },
+ "solucao": "3jhg"
+}

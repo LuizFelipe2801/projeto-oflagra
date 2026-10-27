@@ -1,0 +1,309 @@
+{
+ "versao": 1,
+ "dia_do_ciclo": 50,
+ "dificuldade": "facil",
+ "cenario": "condominio",
+ "cenario_nome": "O condomínio",
+ "titulo": "Quem largou o lixo no corredor?",
+ "personagens": [
+  {
+   "pos": "A1",
+   "nome": "Cleide",
+   "profissao": "de entregas"
+  },
+  {
+   "pos": "B1",
+   "nome": "Fernanda",
+   "profissao": "do térreo"
+  },
+  {
+   "pos": "C1",
+   "nome": "Marlene",
+   "profissao": "da portaria"
+  },
+  {
+   "pos": "D1",
+   "nome": "Lurdes",
+   "profissao": "do conselho"
+  },
+  {
+   "pos": "A2",
+   "nome": "Thiago",
+   "profissao": "do conselho"
+  },
+  {
+   "pos": "B2",
+   "nome": "Antônio",
+   "profissao": "de entregas"
+  },
+  {
+   "pos": "C2",
+   "nome": "Tânia",
+   "profissao": "de entregas"
+  },
+  {
+   "pos": "D2",
+   "nome": "Osvaldo",
+   "profissao": "da limpeza"
+  },
+  {
+   "pos": "A3",
+   "nome": "Sônia",
+   "profissao": "da portaria"
+  },
+  {
+   "pos": "B3",
+   "nome": "Gilberto",
+   "profissao": "da cobertura"
+  },
+  {
+   "pos": "C3",
+   "nome": "Márcio",
+   "profissao": "do térreo"
+  },
+  {
+   "pos": "D3",
+   "nome": "Helena",
+   "profissao": "da cobertura"
+  },
+  {
+   "pos": "A4",
+   "nome": "Valdir",
+   "profissao": "da portaria"
+  },
+  {
+   "pos": "B4",
+   "nome": "Robson",
+   "profissao": "da limpeza"
+  },
+  {
+   "pos": "C4",
+   "nome": "Jéssica",
+   "profissao": "da limpeza"
+  },
+  {
+   "pos": "D4",
+   "nome": "Kátia",
+   "profissao": "da cobertura"
+  },
+  {
+   "pos": "A5",
+   "nome": "Patrícia",
+   "profissao": "do conselho"
+  },
+  {
+   "pos": "B5",
+   "nome": "Bruna",
+   "profissao": "da limpeza"
+  },
+  {
+   "pos": "C5",
+   "nome": "Renan",
+   "profissao": "do térreo"
+  },
+  {
+   "pos": "D5",
+   "nome": "Sueli",
+   "profissao": "do conselho"
+  }
+ ],
+ "inicial": "C3",
+ "pistas": {
+  "A1": {
+   "tipo": "profissao",
+   "params": {
+    "profissao": "da portaria",
+    "membros": [
+     2,
+     8,
+     12
+    ],
+    "n": 1
+   },
+   "texto": "Entre quem é da portaria, há exatamente 1 culpado."
+  },
+  "B1": {
+   "tipo": "vizinhos",
+   "params": {
+    "alvo": 10,
+    "n": 3
+   },
+   "texto": "Márcio tem exatamente 3 culpados entre os vizinhos."
+  },
+  "C1": {
+   "tipo": "profissao",
+   "params": {
+    "profissao": "de entregas",
+    "membros": [
+     0,
+     5,
+     6
+    ],
+    "n": 2
+   },
+   "texto": "Entre quem é de entregas, há exatamente 2 culpados."
+  },
+  "D1": {
+   "tipo": "profissao",
+   "params": {
+    "profissao": "do conselho",
+    "membros": [
+     3,
+     4,
+     16,
+     19
+    ],
+    "n": 3
+   },
+   "texto": "Entre quem é do conselho, há exatamente 3 culpados."
+  },
+  "A2": {
+   "tipo": "vizinhos",
+   "params": {
+    "alvo": 13,
+    "n": 5
+   },
+   "texto": "Robson tem exatamente 5 culpados entre os vizinhos."
+  },
+  "B2": {
+   "tipo": "vizinhos",
+   "params": {
+    "alvo": 9,
+    "n": 5
+   },
+   "texto": "Gilberto tem exatamente 5 culpados entre os vizinhos."
+  },
+  "C2": {
+   "tipo": "contagem",
+   "params": {
+    "area": {
+     "tipo": "linha",
+     "valor": 3
+    },
+    "n": 1
+   },
+   "texto": "Há exatamente 1 culpado na linha 3."
+  },
+  "D2": {
+   "tipo": "direcao",
+   "params": {
+    "alvo": 10,
+    "direcao": "direita",
+    "valor": "inocente"
+   },
+   "texto": "Todos à direita de Márcio são inocentes."
+  },
+  "A3": {
+   "tipo": "entre",
+   "params": {
+    "a": 16,
+    "b": 19,
+    "n": 2
+   },
+   "texto": "Há exatamente 2 culpados entre Patrícia e Sueli."
+  },
+  "B3": {
+   "tipo": "vizinhos",
+   "params": {
+    "alvo": 17,
+    "n": 4
+   },
+   "texto": "Bruna tem exatamente 4 culpados entre os vizinhos."
+  },
+  "C3": {
+   "tipo": "entre",
+   "params": {
+    "a": 12,
+    "b": 15,
+    "n": 2
+   },
+   "texto": "Há exatamente 2 culpados entre Valdir e Kátia."
+  },
+  "D3": {
+   "tipo": "vizinhos",
+   "params": {
+    "alvo": 12,
+    "n": 3
+   },
+   "texto": "Valdir tem exatamente 3 culpados entre os vizinhos."
+  },
+  "A4": {
+   "tipo": "direcao",
+   "params": {
+    "alvo": 3,
+    "direcao": "esquerda",
+    "valor": "culpado"
+   },
+   "texto": "Todos à esquerda de Lurdes são culpados."
+  },
+  "B4": {
+   "tipo": "vizinhos",
+   "params": {
+    "alvo": 6,
+    "n": 4
+   },
+   "texto": "Tânia tem exatamente 4 culpados entre os vizinhos."
+  },
+  "C4": {
+   "tipo": "direcao",
+   "params": {
+    "alvo": 7,
+    "direcao": "acima",
+    "valor": "inocente"
+   },
+   "texto": "Todos acima de Osvaldo são inocentes."
+  },
+  "D4": {
+   "tipo": "contagem",
+   "params": {
+    "area": {
+     "tipo": "coluna",
+     "valor": "A"
+    },
+    "n": 3
+   },
+   "texto": "Há exatamente 3 culpados na coluna A."
+  },
+  "A5": {
+   "tipo": "vizinhos",
+   "params": {
+    "alvo": 7,
+    "n": 2
+   },
+   "texto": "Osvaldo tem exatamente 2 culpados entre os vizinhos."
+  },
+  "B5": {
+   "tipo": "contagem",
+   "params": {
+    "area": {
+     "tipo": "borda"
+    },
+    "n": 8
+   },
+   "texto": "Há exatamente 8 culpados na borda."
+  },
+  "C5": {
+   "tipo": "contagem",
+   "params": {
+    "area": {
+     "tipo": "linha",
+     "valor": 2
+    },
+    "n": 2
+   },
+   "texto": "Há exatamente 2 culpados na linha 2."
+  },
+  "D5": {
+   "tipo": "contagem",
+   "params": {
+    "area": {
+     "tipo": "linha",
+     "valor": 5
+    },
+    "n": 4
+   },
+   "texto": "Há exatamente 4 culpados na linha 5."
+  }
+ },
+ "solucao": "bjha"
+}

@@ -1,0 +1,308 @@
+{
+ "versao": 1,
+ "dia_do_ciclo": 44,
+ "dificuldade": "facil",
+ "cenario": "onibus",
+ "cenario_nome": "O ônibus",
+ "titulo": "Quem passou de novo com o cartão do amigo?",
+ "personagens": [
+  {
+   "pos": "A1",
+   "nome": "Hélio",
+   "profissao": "da catraca"
+  },
+  {
+   "pos": "B1",
+   "nome": "Conceição",
+   "profissao": "do banco da frente"
+  },
+  {
+   "pos": "C1",
+   "nome": "Edmilson",
+   "profissao": "da janela"
+  },
+  {
+   "pos": "D1",
+   "nome": "Eliane",
+   "profissao": "do corredor"
+  },
+  {
+   "pos": "A2",
+   "nome": "Rosângela",
+   "profissao": "da catraca"
+  },
+  {
+   "pos": "B2",
+   "nome": "Dona Rita",
+   "profissao": "do corredor"
+  },
+  {
+   "pos": "C2",
+   "nome": "Marlúcia",
+   "profissao": "do fundão"
+  },
+  {
+   "pos": "D2",
+   "nome": "Nivaldo",
+   "profissao": "do fundão"
+  },
+  {
+   "pos": "A3",
+   "nome": "Terezinha",
+   "profissao": "do corredor"
+  },
+  {
+   "pos": "B3",
+   "nome": "Ronaldo",
+   "profissao": "da catraca"
+  },
+  {
+   "pos": "C3",
+   "nome": "Josué",
+   "profissao": "do banco da frente"
+  },
+  {
+   "pos": "D3",
+   "nome": "Cícero",
+   "profissao": "do ponto final"
+  },
+  {
+   "pos": "A4",
+   "nome": "Jaílson",
+   "profissao": "do fundão"
+  },
+  {
+   "pos": "B4",
+   "nome": "Leila",
+   "profissao": "da janela"
+  },
+  {
+   "pos": "C4",
+   "nome": "Agnaldo",
+   "profissao": "do ponto final"
+  },
+  {
+   "pos": "D4",
+   "nome": "Zenaide",
+   "profissao": "da janela"
+  },
+  {
+   "pos": "A5",
+   "nome": "Valmir",
+   "profissao": "do banco da frente"
+  },
+  {
+   "pos": "B5",
+   "nome": "Denílson",
+   "profissao": "do ponto final"
+  },
+  {
+   "pos": "C5",
+   "nome": "Seu Manoel",
+   "profissao": "do fundão"
+  },
+  {
+   "pos": "D5",
+   "nome": "Dalila",
+   "profissao": "da catraca"
+  }
+ ],
+ "inicial": "D5",
+ "pistas": {
+  "A1": {
+   "tipo": "profissao",
+   "params": {
+    "profissao": "do corredor",
+    "membros": [
+     3,
+     5,
+     8
+    ],
+    "n": 0
+   },
+   "texto": "Entre quem é do corredor, não há nenhum culpado."
+  },
+  "B1": {
+   "tipo": "direcao",
+   "params": {
+    "alvo": 11,
+    "direcao": "abaixo",
+    "valor": "culpado"
+   },
+   "texto": "Todos abaixo de Cícero são culpados."
+  },
+  "C1": {
+   "tipo": "direcao",
+   "params": {
+    "alvo": 6,
+    "direcao": "esquerda",
+    "valor": "inocente"
+   },
+   "texto": "Todos à esquerda de Marlúcia são inocentes."
+  },
+  "D1": {
+   "tipo": "direcao",
+   "params": {
+    "alvo": 2,
+    "direcao": "direita",
+    "valor": "inocente"
+   },
+   "texto": "Todos à direita de Edmilson são inocentes."
+  },
+  "A2": {
+   "tipo": "direcao",
+   "params": {
+    "alvo": 1,
+    "direcao": "esquerda",
+    "valor": "inocente"
+   },
+   "texto": "Todos à esquerda de Conceição são inocentes."
+  },
+  "B2": {
+   "tipo": "direcao",
+   "params": {
+    "alvo": 10,
+    "direcao": "direita",
+    "valor": "inocente"
+   },
+   "texto": "Todos à direita de Josué são inocentes."
+  },
+  "C2": {
+   "tipo": "vizinhos",
+   "params": {
+    "alvo": 12,
+    "n": 2
+   },
+   "texto": "Jaílson tem exatamente 2 culpados entre os vizinhos."
+  },
+  "D2": {
+   "tipo": "direcao",
+   "params": {
+    "alvo": 13,
+    "direcao": "esquerda",
+    "valor": "culpado"
+   },
+   "texto": "Todos à esquerda de Leila são culpados."
+  },
+  "A3": {
+   "tipo": "vizinhos",
+   "params": {
+    "alvo": 2,
+    "n": 1
+   },
+   "texto": "Edmilson tem exatamente 1 culpado entre os vizinhos."
+  },
+  "B3": {
+   "tipo": "contagem",
+   "params": {
+    "area": {
+     "tipo": "coluna",
+     "valor": "C"
+    },
+    "n": 2
+   },
+   "texto": "Há exatamente 2 culpados na coluna C."
+  },
+  "C3": {
+   "tipo": "profissao",
+   "params": {
+    "profissao": "do fundão",
+    "membros": [
+     6,
+     7,
+     12,
+     18
+    ],
+    "n": 2
+   },
+   "texto": "Entre quem é do fundão, há exatamente 2 culpados."
+  },
+  "D3": {
+   "tipo": "vizinhos",
+   "params": {
+    "alvo": 7,
+    "n": 1
+   },
+   "texto": "Nivaldo tem exatamente 1 culpado entre os vizinhos."
+  },
+  "A4": {
+   "tipo": "direcao",
+   "params": {
+    "alvo": 8,
+    "direcao": "abaixo",
+    "valor": "culpado"
+   },
+   "texto": "Todos abaixo de Terezinha são culpados."
+  },
+  "B4": {
+   "tipo": "direcao",
+   "params": {
+    "alvo": 9,
+    "direcao": "acima",
+    "valor": "inocente"
+   },
+   "texto": "Todos acima de Ronaldo são inocentes."
+  },
+  "C4": {
+   "tipo": "vizinhos",
+   "params": {
+    "alvo": 15,
+    "n": 2
+   },
+   "texto": "Zenaide tem exatamente 2 culpados entre os vizinhos."
+  },
+  "D4": {
+   "tipo": "entre",
+   "params": {
+    "a": 9,
+    "b": 11,
+    "n": 0
+   },
+   "texto": "Não há nenhum culpado entre Ronaldo e Cícero."
+  },
+  "A5": {
+   "tipo": "direcao",
+   "params": {
+    "alvo": 7,
+    "direcao": "esquerda",
+    "valor": "inocente"
+   },
+   "texto": "Todos à esquerda de Nivaldo são inocentes."
+  },
+  "B5": {
+   "tipo": "contagem",
+   "params": {
+    "area": {
+     "tipo": "linha",
+     "valor": 3
+    },
+    "n": 1
+   },
+   "texto": "Há exatamente 1 culpado na linha 3."
+  },
+  "C5": {
+   "tipo": "profissao",
+   "params": {
+    "profissao": "da catraca",
+    "membros": [
+     0,
+     4,
+     9,
+     19
+    ],
+    "n": 2
+   },
+   "texto": "Entre quem é da catraca, há exatamente 2 culpados."
+  },
+  "D5": {
+   "tipo": "direcao",
+   "params": {
+    "alvo": 6,
+    "direcao": "direita",
+    "valor": "culpado"
+   },
+   "texto": "Todos à direita de Marlúcia são culpados."
+  }
+ },
+ "solucao": "hxd4"
+}

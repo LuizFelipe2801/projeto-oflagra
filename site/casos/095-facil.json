@@ -1,0 +1,315 @@
+{
+ "versao": 1,
+ "dia_do_ciclo": 95,
+ "dificuldade": "facil",
+ "cenario": "salao",
+ "cenario_nome": "O salão",
+ "titulo": "Quem deixou a chapinha ligada?",
+ "personagens": [
+  {
+   "pos": "A1",
+   "nome": "Jaque",
+   "profissao": "da recepção"
+  },
+  {
+   "pos": "B1",
+   "nome": "Rosana",
+   "profissao": "da escova"
+  },
+  {
+   "pos": "C1",
+   "nome": "Regina",
+   "profissao": "do corte"
+  },
+  {
+   "pos": "D1",
+   "nome": "Pri",
+   "profissao": "da recepção"
+  },
+  {
+   "pos": "A2",
+   "nome": "Nádia",
+   "profissao": "da recepção"
+  },
+  {
+   "pos": "B2",
+   "nome": "Ju",
+   "profissao": "das unhas"
+  },
+  {
+   "pos": "C2",
+   "nome": "Rebeca",
+   "profissao": "do corte"
+  },
+  {
+   "pos": "D2",
+   "nome": "Dona Lê",
+   "profissao": "da clientela"
+  },
+  {
+   "pos": "A3",
+   "nome": "Michele",
+   "profissao": "das unhas"
+  },
+  {
+   "pos": "B3",
+   "nome": "Simone",
+   "profissao": "da tintura"
+  },
+  {
+   "pos": "C3",
+   "nome": "Cláudia",
+   "profissao": "da escova"
+  },
+  {
+   "pos": "D3",
+   "nome": "Marcela",
+   "profissao": "da escova"
+  },
+  {
+   "pos": "A4",
+   "nome": "Aline",
+   "profissao": "da clientela"
+  },
+  {
+   "pos": "B4",
+   "nome": "Mônica",
+   "profissao": "da tintura"
+  },
+  {
+   "pos": "C4",
+   "nome": "Gleice",
+   "profissao": "da clientela"
+  },
+  {
+   "pos": "D4",
+   "nome": "Mari",
+   "profissao": "do corte"
+  },
+  {
+   "pos": "A5",
+   "nome": "Débora",
+   "profissao": "da escova"
+  },
+  {
+   "pos": "B5",
+   "nome": "Adriana",
+   "profissao": "da recepção"
+  },
+  {
+   "pos": "C5",
+   "nome": "Elaine",
+   "profissao": "da tintura"
+  },
+  {
+   "pos": "D5",
+   "nome": "Vivi",
+   "profissao": "das unhas"
+  }
+ ],
+ "inicial": "C2",
+ "pistas": {
+  "A1": {
+   "tipo": "entre",
+   "params": {
+    "a": 16,
+    "b": 19,
+    "n": 0
+   },
+   "texto": "Não há nenhum culpado entre Débora e Vivi."
+  },
+  "B1": {
+   "tipo": "vizinhos",
+   "params": {
+    "alvo": 9,
+    "n": 2
+   },
+   "texto": "Simone tem exatamente 2 culpados entre os vizinhos."
+  },
+  "C1": {
+   "tipo": "profissao",
+   "params": {
+    "profissao": "da recepção",
+    "membros": [
+     0,
+     3,
+     4,
+     17
+    ],
+    "n": 1
+   },
+   "texto": "Entre quem é da recepção, há exatamente 1 culpado."
+  },
+  "D1": {
+   "tipo": "direcao",
+   "params": {
+    "alvo": 18,
+    "direcao": "direita",
+    "valor": "inocente"
+   },
+   "texto": "Todos à direita de Elaine são inocentes."
+  },
+  "A2": {
+   "tipo": "conexao",
+   "params": {
+    "area": {
+     "tipo": "coluna",
+     "valor": "B"
+    }
+   },
+   "texto": "Todos os culpados da coluna B estão conectados."
+  },
+  "B2": {
+   "tipo": "contagem",
+   "params": {
+    "area": {
+     "tipo": "linha",
+     "valor": 1
+    },
+    "n": 2
+   },
+   "texto": "Há exatamente 2 culpados na linha 1."
+  },
+  "C2": {
+   "tipo": "direcao",
+   "params": {
+    "alvo": 12,
+    "direcao": "acima",
+    "valor": "inocente"
+   },
+   "texto": "Todos acima de Aline são inocentes."
+  },
+  "D2": {
+   "tipo": "direcao",
+   "params": {
+    "alvo": 14,
+    "direcao": "abaixo",
+    "valor": "inocente"
+   },
+   "texto": "Todos abaixo de Gleice são inocentes."
+  },
+  "A3": {
+   "tipo": "direcao",
+   "params": {
+    "alvo": 10,
+    "direcao": "acima",
+    "valor": "inocente"
+   },
+   "texto": "Todos acima de Cláudia são inocentes."
+  },
+  "B3": {
+   "tipo": "profissao",
+   "params": {
+    "profissao": "da escova",
+    "membros": [
+     1,
+     10,
+     11,
+     16
+    ],
+    "n": 4
+   },
+   "texto": "Entre quem é da escova, há exatamente 4 culpados."
+  },
+  "C3": {
+   "tipo": "vizinhos",
+   "params": {
+    "alvo": 3,
+    "n": 0
+   },
+   "texto": "Pri não tem nenhum culpado entre os vizinhos."
+  },
+  "D3": {
+   "tipo": "vizinhos",
+   "params": {
+    "alvo": 14,
+    "n": 2
+   },
+   "texto": "Gleice tem exatamente 2 culpados entre os vizinhos."
+  },
+  "A4": {
+   "tipo": "direcao",
+   "params": {
+    "alvo": 5,
+    "direcao": "abaixo",
+    "valor": "inocente"
+   },
+   "texto": "Todos abaixo de Ju são inocentes."
+  },
+  "B4": {
+   "tipo": "vizinhos",
+   "params": {
+    "alvo": 6,
+    "n": 5
+   },
+   "texto": "Rebeca tem exatamente 5 culpados entre os vizinhos."
+  },
+  "C4": {
+   "tipo": "profissao",
+   "params": {
+    "profissao": "do corte",
+    "membros": [
+     2,
+     6,
+     15
+    ],
+    "n": 0
+   },
+   "texto": "Entre quem é do corte, não há nenhum culpado."
+  },
+  "D4": {
+   "tipo": "profissao",
+   "params": {
+    "profissao": "da tintura",
+    "membros": [
+     9,
+     13,
+     18
+    ],
+    "n": 0
+   },
+   "texto": "Entre quem é da tintura, não há nenhum culpado."
+  },
+  "A5": {
+   "tipo": "entre",
+   "params": {
+    "a": 6,
+    "b": 14,
+    "n": 1
+   },
+   "texto": "Há exatamente 1 culpado entre Rebeca e Gleice."
+  },
+  "B5": {
+   "tipo": "vizinhos",
+   "params": {
+    "alvo": 4,
+    "n": 2
+   },
+   "texto": "Nádia tem exatamente 2 culpados entre os vizinhos."
+  },
+  "C5": {
+   "tipo": "conexao",
+   "params": {
+    "area": {
+     "tipo": "linha",
+     "valor": 3
+    }
+   },
+   "texto": "Todos os culpados da linha 3 estão conectados."
+  },
+  "D5": {
+   "tipo": "profissao",
+   "params": {
+    "profissao": "das unhas",
+    "membros": [
+     5,
+     8,
+     19
+    ],
+    "n": 1
+   },
+   "texto": "Entre quem é das unhas, há exatamente 1 culpado."
+  }
+ },
+ "solucao": "65gc"
+}

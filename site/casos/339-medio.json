@@ -1,0 +1,304 @@
+{
+ "versao": 1,
+ "dia_do_ciclo": 339,
+ "dificuldade": "medio",
+ "cenario": "junina",
+ "cenario_nome": "A festa junina",
+ "titulo": "Quem apagou a fogueira antes da hora?",
+ "personagens": [
+  {
+   "pos": "A1",
+   "nome": "Seu Chico",
+   "profissao": "do som"
+  },
+  {
+   "pos": "B1",
+   "nome": "Fia",
+   "profissao": "da pescaria"
+  },
+  {
+   "pos": "C1",
+   "nome": "Bia",
+   "profissao": "da pescaria"
+  },
+  {
+   "pos": "D1",
+   "nome": "Juvenal",
+   "profissao": "do som"
+  },
+  {
+   "pos": "A2",
+   "nome": "Dita",
+   "profissao": "do correio elegante"
+  },
+  {
+   "pos": "B2",
+   "nome": "Dorinha",
+   "profissao": "da pescaria"
+  },
+  {
+   "pos": "C2",
+   "nome": "Zito",
+   "profissao": "da quadrilha"
+  },
+  {
+   "pos": "D2",
+   "nome": "Zefa",
+   "profissao": "do correio elegante"
+  },
+  {
+   "pos": "A3",
+   "nome": "Quinzinho",
+   "profissao": "da fogueira"
+  },
+  {
+   "pos": "B3",
+   "nome": "Ciro",
+   "profissao": "da quadrilha"
+  },
+  {
+   "pos": "C3",
+   "nome": "Dedé",
+   "profissao": "da fogueira"
+  },
+  {
+   "pos": "D3",
+   "nome": "Nico",
+   "profissao": "do som"
+  },
+  {
+   "pos": "A4",
+   "nome": "Dona Benta",
+   "profissao": "da pescaria"
+  },
+  {
+   "pos": "B4",
+   "nome": "Luzia",
+   "profissao": "do correio elegante"
+  },
+  {
+   "pos": "C4",
+   "nome": "Ritinha",
+   "profissao": "da barraca de pamonha"
+  },
+  {
+   "pos": "D4",
+   "nome": "Jacó",
+   "profissao": "da quadrilha"
+  },
+  {
+   "pos": "A5",
+   "nome": "Zé Pedro",
+   "profissao": "da fogueira"
+  },
+  {
+   "pos": "B5",
+   "nome": "Tonico",
+   "profissao": "da barraca de pamonha"
+  },
+  {
+   "pos": "C5",
+   "nome": "Rosinha",
+   "profissao": "da barraca de pamonha"
+  },
+  {
+   "pos": "D5",
+   "nome": "Nenê",
+   "profissao": "da fogueira"
+  }
+ ],
+ "inicial": "D4",
+ "pistas": {
+  "A1": {
+   "tipo": "entre",
+   "params": {
+    "a": 3,
+    "b": 15,
+    "n": 0
+   },
+   "texto": "Não há nenhum culpado entre Juvenal e Jacó."
+  },
+  "B1": {
+   "tipo": "contagem",
+   "params": {
+    "area": {
+     "tipo": "coluna",
+     "valor": "D"
+    },
+    "n": 1
+   },
+   "texto": "Há exatamente 1 culpado na coluna D."
+  },
+  "C1": {
+   "tipo": "entre",
+   "params": {
+    "a": 4,
+    "b": 16,
+    "n": 1
+   },
+   "texto": "Há exatamente 1 culpado entre Dita e Zé Pedro."
+  },
+  "D1": {
+   "tipo": "contagem",
+   "params": {
+    "area": {
+     "tipo": "coluna",
+     "valor": "C"
+    },
+    "n": 3
+   },
+   "texto": "Há exatamente 3 culpados na coluna C."
+  },
+  "A2": {
+   "tipo": "vizinhos",
+   "params": {
+    "alvo": 2,
+    "n": 0
+   },
+   "texto": "Bia não tem nenhum culpado entre os vizinhos."
+  },
+  "B2": {
+   "tipo": "maioria",
+   "params": {
+    "area": {
+     "tipo": "coluna",
+     "valor": "A"
+    },
+    "valor": "inocente"
+   },
+   "texto": "Há mais inocentes que culpados na coluna A."
+  },
+  "C2": {
+   "tipo": "maioria",
+   "params": {
+    "area": {
+     "tipo": "borda"
+    },
+    "valor": "inocente"
+   },
+   "texto": "Há mais inocentes que culpados na borda."
+  },
+  "D2": {
+   "tipo": "vizinhos",
+   "params": {
+    "alvo": 1,
+    "n": 1
+   },
+   "texto": "Fia tem exatamente 1 culpado entre os vizinhos."
+  },
+  "A3": {
+   "tipo": "contagem",
+   "params": {
+    "area": {
+     "tipo": "borda"
+    },
+    "n": 5
+   },
+   "texto": "Há exatamente 5 culpados na borda."
+  },
+  "B3": {
+   "tipo": "vizinhos",
+   "params": {
+    "alvo": 19,
+    "n": 2
+   },
+   "texto": "Nenê tem exatamente 2 culpados entre os vizinhos."
+  },
+  "C3": {
+   "tipo": "contagem",
+   "params": {
+    "area": {
+     "tipo": "linha",
+     "valor": 3
+    },
+    "n": 1
+   },
+   "texto": "Há exatamente 1 culpado na linha 3."
+  },
+  "D3": {
+   "tipo": "maioria",
+   "params": {
+    "area": {
+     "tipo": "linha",
+     "valor": 1
+    },
+    "valor": "inocente"
+   },
+   "texto": "Há mais inocentes que culpados na linha 1."
+  },
+  "A4": {
+   "tipo": "vizinhos",
+   "params": {
+    "alvo": 13,
+    "n": 5
+   },
+   "texto": "Luzia tem exatamente 5 culpados entre os vizinhos."
+  },
+  "B4": {
+   "tipo": "contagem",
+   "params": {
+    "area": {
+     "tipo": "linha",
+     "valor": 2
+    },
+    "n": 0
+   },
+   "texto": "Não há nenhum culpado na linha 2."
+  },
+  "C4": {
+   "tipo": "comparacao",
+   "params": {
+    "a": 18,
+    "b": 16
+   },
+   "texto": "Rosinha tem mais vizinhos culpados que Zé Pedro."
+  },
+  "D4": {
+   "tipo": "entre",
+   "params": {
+    "a": 0,
+    "b": 2,
+    "n": 0
+   },
+   "texto": "Não há nenhum culpado entre Seu Chico e Bia."
+  },
+  "A5": {
+   "tipo": "vizinhos",
+   "params": {
+    "alvo": 6,
+    "n": 2
+   },
+   "texto": "Zito tem exatamente 2 culpados entre os vizinhos."
+  },
+  "B5": {
+   "tipo": "vizinhos",
+   "params": {
+    "alvo": 8,
+    "n": 1
+   },
+   "texto": "Quinzinho tem exatamente 1 culpado entre os vizinhos."
+  },
+  "C5": {
+   "tipo": "profissao",
+   "params": {
+    "profissao": "do som",
+    "membros": [
+     0,
+     3,
+     11
+    ],
+    "n": 0
+   },
+   "texto": "Entre quem é do som, não há nenhum culpado."
+  },
+  "D5": {
+   "tipo": "vizinhos",
+   "params": {
+    "alvo": 7,
+    "n": 2
+   },
+   "texto": "Zefa tem exatamente 2 culpados entre os vizinhos."
+  }
+ },
+ "solucao": "2b5h"
+}

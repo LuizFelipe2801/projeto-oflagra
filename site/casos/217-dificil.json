@@ -1,0 +1,309 @@
+{
+ "versao": 1,
+ "dia_do_ciclo": 217,
+ "dificuldade": "dificil",
+ "cenario": "pelada",
+ "cenario_nome": "A pelada",
+ "titulo": "Quem furou a rede do gol?",
+ "personagens": [
+  {
+   "pos": "A1",
+   "nome": "Jota",
+   "profissao": "do gol"
+  },
+  {
+   "pos": "B1",
+   "nome": "Dino",
+   "profissao": "da arbitragem"
+  },
+  {
+   "pos": "C1",
+   "nome": "Betão",
+   "profissao": "do ataque"
+  },
+  {
+   "pos": "D1",
+   "nome": "Dodô",
+   "profissao": "do banco"
+  },
+  {
+   "pos": "A2",
+   "nome": "Baixinho",
+   "profissao": "da arquibancada"
+  },
+  {
+   "pos": "B2",
+   "nome": "Fê",
+   "profissao": "do gol"
+  },
+  {
+   "pos": "C2",
+   "nome": "Dudinha",
+   "profissao": "do ataque"
+  },
+  {
+   "pos": "D2",
+   "nome": "Bola",
+   "profissao": "do banco"
+  },
+  {
+   "pos": "A3",
+   "nome": "Nando",
+   "profissao": "da arbitragem"
+  },
+  {
+   "pos": "B3",
+   "nome": "Vitão",
+   "profissao": "do gol"
+  },
+  {
+   "pos": "C3",
+   "nome": "Peixe",
+   "profissao": "da defesa"
+  },
+  {
+   "pos": "D3",
+   "nome": "Ivan",
+   "profissao": "do ataque"
+  },
+  {
+   "pos": "A4",
+   "nome": "Mano",
+   "profissao": "da arbitragem"
+  },
+  {
+   "pos": "B4",
+   "nome": "Cris",
+   "profissao": "da defesa"
+  },
+  {
+   "pos": "C4",
+   "nome": "Tonho",
+   "profissao": "do banco"
+  },
+  {
+   "pos": "D4",
+   "nome": "Russo",
+   "profissao": "do ataque"
+  },
+  {
+   "pos": "A5",
+   "nome": "Magrão",
+   "profissao": "da defesa"
+  },
+  {
+   "pos": "B5",
+   "nome": "Jonas",
+   "profissao": "do banco"
+  },
+  {
+   "pos": "C5",
+   "nome": "Serginho",
+   "profissao": "da arquibancada"
+  },
+  {
+   "pos": "D5",
+   "nome": "Xande",
+   "profissao": "da arquibancada"
+  }
+ ],
+ "inicial": "D5",
+ "pistas": {
+  "A1": {
+   "tipo": "comparacao",
+   "params": {
+    "a": 8,
+    "b": 2
+   },
+   "texto": "Nando tem mais vizinhos culpados que Betão."
+  },
+  "B1": {
+   "tipo": "comparacao",
+   "params": {
+    "a": 10,
+    "b": 9
+   },
+   "texto": "Peixe tem mais vizinhos culpados que Vitão."
+  },
+  "C1": {
+   "tipo": "comparacao",
+   "params": {
+    "a": 10,
+    "b": 5
+   },
+   "texto": "Peixe tem mais vizinhos culpados que Fê."
+  },
+  "D1": {
+   "tipo": "contagem",
+   "params": {
+    "area": {
+     "tipo": "coluna",
+     "valor": "A"
+    },
+    "n": 2
+   },
+   "texto": "Há exatamente 2 culpados na coluna A."
+  },
+  "A2": {
+   "tipo": "maioria",
+   "params": {
+    "area": {
+     "tipo": "coluna",
+     "valor": "D"
+    },
+    "valor": "culpado"
+   },
+   "texto": "Há mais culpados que inocentes na coluna D."
+  },
+  "B2": {
+   "tipo": "entre",
+   "params": {
+    "a": 8,
+    "b": 16,
+    "n": 1
+   },
+   "texto": "Há exatamente 1 culpado entre Nando e Magrão."
+  },
+  "C2": {
+   "tipo": "comparacao",
+   "params": {
+    "a": 9,
+    "b": 7
+   },
+   "texto": "Vitão tem mais vizinhos culpados que Bola."
+  },
+  "D2": {
+   "tipo": "profissao",
+   "params": {
+    "profissao": "da arquibancada",
+    "membros": [
+     4,
+     18,
+     19
+    ],
+    "n": 1
+   },
+   "texto": "Entre quem é da arquibancada, há exatamente 1 culpado."
+  },
+  "A3": {
+   "tipo": "profissao",
+   "params": {
+    "profissao": "da defesa",
+    "membros": [
+     10,
+     13,
+     16
+    ],
+    "n": 2
+   },
+   "texto": "Entre quem é da defesa, há exatamente 2 culpados."
+  },
+  "B3": {
+   "tipo": "contagem",
+   "params": {
+    "area": {
+     "tipo": "coluna",
+     "valor": "C"
+    },
+    "n": 1
+   },
+   "texto": "Há exatamente 1 culpado na coluna C."
+  },
+  "C3": {
+   "tipo": "vizinhos",
+   "params": {
+    "alvo": 9,
+    "n": 4
+   },
+   "texto": "Vitão tem exatamente 4 culpados entre os vizinhos."
+  },
+  "D3": {
+   "tipo": "comparacao",
+   "params": {
+    "a": 4,
+    "b": 12
+   },
+   "texto": "Baixinho tem mais vizinhos culpados que Mano."
+  },
+  "A4": {
+   "tipo": "maioria",
+   "params": {
+    "area": {
+     "tipo": "coluna",
+     "valor": "B"
+    },
+    "valor": "inocente"
+   },
+   "texto": "Há mais inocentes que culpados na coluna B."
+  },
+  "B4": {
+   "tipo": "maioria",
+   "params": {
+    "area": {
+     "tipo": "linha",
+     "valor": 4
+    },
+    "valor": "culpado"
+   },
+   "texto": "Há mais culpados que inocentes na linha 4."
+  },
+  "C4": {
+   "tipo": "entre",
+   "params": {
+    "a": 9,
+    "b": 17,
+    "n": 1
+   },
+   "texto": "Há exatamente 1 culpado entre Vitão e Jonas."
+  },
+  "D4": {
+   "tipo": "maioria",
+   "params": {
+    "area": {
+     "tipo": "linha",
+     "valor": 5
+    },
+    "valor": "inocente"
+   },
+   "texto": "Há mais inocentes que culpados na linha 5."
+  },
+  "A5": {
+   "tipo": "paridade",
+   "params": {
+    "area": {
+     "tipo": "linha",
+     "valor": 4
+    },
+    "impar": true
+   },
+   "texto": "Há um número ímpar de culpados na linha 4."
+  },
+  "B5": {
+   "tipo": "entre",
+   "params": {
+    "a": 13,
+    "b": 15,
+    "n": 0
+   },
+   "texto": "Não há nenhum culpado entre Cris e Russo."
+  },
+  "C5": {
+   "tipo": "vizinhos",
+   "params": {
+    "alvo": 15,
+    "n": 3
+   },
+   "texto": "Russo tem exatamente 3 culpados entre os vizinhos."
+  },
+  "D5": {
+   "tipo": "entre",
+   "params": {
+    "a": 16,
+    "b": 18,
+    "n": 0
+   },
+   "texto": "Não há nenhum culpado entre Magrão e Serginho."
+  }
+ },
+ "solucao": "4z23"
+}

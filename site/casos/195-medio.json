@@ -1,0 +1,304 @@
+{
+ "versao": 1,
+ "dia_do_ciclo": 195,
+ "dificuldade": "medio",
+ "cenario": "junina",
+ "cenario_nome": "A festa junina",
+ "titulo": "Quem comeu a pamonha da quermesse?",
+ "personagens": [
+  {
+   "pos": "A1",
+   "nome": "Zé Pedro",
+   "profissao": "da fogueira"
+  },
+  {
+   "pos": "B1",
+   "nome": "Dorinha",
+   "profissao": "do correio elegante"
+  },
+  {
+   "pos": "C1",
+   "nome": "Rosinha",
+   "profissao": "da barraca de pamonha"
+  },
+  {
+   "pos": "D1",
+   "nome": "Nenê",
+   "profissao": "do correio elegante"
+  },
+  {
+   "pos": "A2",
+   "nome": "Dedé",
+   "profissao": "da pescaria"
+  },
+  {
+   "pos": "B2",
+   "nome": "Ritinha",
+   "profissao": "da quadrilha"
+  },
+  {
+   "pos": "C2",
+   "nome": "Zito",
+   "profissao": "do som"
+  },
+  {
+   "pos": "D2",
+   "nome": "Ciro",
+   "profissao": "da pescaria"
+  },
+  {
+   "pos": "A3",
+   "nome": "Bastião",
+   "profissao": "da fogueira"
+  },
+  {
+   "pos": "B3",
+   "nome": "Bia",
+   "profissao": "da quadrilha"
+  },
+  {
+   "pos": "C3",
+   "nome": "Zefa",
+   "profissao": "da quadrilha"
+  },
+  {
+   "pos": "D3",
+   "nome": "Lourival",
+   "profissao": "da barraca de pamonha"
+  },
+  {
+   "pos": "A4",
+   "nome": "Cotinha",
+   "profissao": "da barraca de pamonha"
+  },
+  {
+   "pos": "B4",
+   "nome": "Tonico",
+   "profissao": "do som"
+  },
+  {
+   "pos": "C4",
+   "nome": "Seu Chico",
+   "profissao": "do correio elegante"
+  },
+  {
+   "pos": "D4",
+   "nome": "Mariquinha",
+   "profissao": "do som"
+  },
+  {
+   "pos": "A5",
+   "nome": "Jacó",
+   "profissao": "do som"
+  },
+  {
+   "pos": "B5",
+   "nome": "Dona Benta",
+   "profissao": "da fogueira"
+  },
+  {
+   "pos": "C5",
+   "nome": "Nico",
+   "profissao": "da barraca de pamonha"
+  },
+  {
+   "pos": "D5",
+   "nome": "Luzia",
+   "profissao": "da pescaria"
+  }
+ ],
+ "inicial": "A3",
+ "pistas": {
+  "A1": {
+   "tipo": "entre",
+   "params": {
+    "a": 7,
+    "b": 15,
+    "n": 0
+   },
+   "texto": "Não há nenhum culpado entre Ciro e Mariquinha."
+  },
+  "B1": {
+   "tipo": "direcao",
+   "params": {
+    "alvo": 2,
+    "direcao": "esquerda",
+    "valor": "inocente"
+   },
+   "texto": "Todos à esquerda de Rosinha são inocentes."
+  },
+  "C1": {
+   "tipo": "maioria",
+   "params": {
+    "area": {
+     "tipo": "coluna",
+     "valor": "C"
+    },
+    "valor": "inocente"
+   },
+   "texto": "Há mais inocentes que culpados na coluna C."
+  },
+  "D1": {
+   "tipo": "vizinhos",
+   "params": {
+    "alvo": 18,
+    "n": 3
+   },
+   "texto": "Nico tem exatamente 3 culpados entre os vizinhos."
+  },
+  "A2": {
+   "tipo": "entre",
+   "params": {
+    "a": 1,
+    "b": 3,
+    "n": 1
+   },
+   "texto": "Há exatamente 1 culpado entre Dorinha e Nenê."
+  },
+  "B2": {
+   "tipo": "profissao",
+   "params": {
+    "profissao": "do som",
+    "membros": [
+     6,
+     13,
+     15,
+     16
+    ],
+    "n": 2
+   },
+   "texto": "Entre quem é do som, há exatamente 2 culpados."
+  },
+  "C2": {
+   "tipo": "direcao",
+   "params": {
+    "alvo": 4,
+    "direcao": "acima",
+    "valor": "inocente"
+   },
+   "texto": "Todos acima de Dedé são inocentes."
+  },
+  "D2": {
+   "tipo": "contagem",
+   "params": {
+    "area": {
+     "tipo": "borda"
+    },
+    "n": 5
+   },
+   "texto": "Há exatamente 5 culpados na borda."
+  },
+  "A3": {
+   "tipo": "entre",
+   "params": {
+    "a": 5,
+    "b": 13,
+    "n": 0
+   },
+   "texto": "Não há nenhum culpado entre Ritinha e Tonico."
+  },
+  "B3": {
+   "tipo": "direcao",
+   "params": {
+    "alvo": 17,
+    "direcao": "esquerda",
+    "valor": "culpado"
+   },
+   "texto": "Todos à esquerda de Dona Benta são culpados."
+  },
+  "C3": {
+   "tipo": "contagem",
+   "params": {
+    "area": {
+     "tipo": "coluna",
+     "valor": "D"
+    },
+    "n": 2
+   },
+   "texto": "Há exatamente 2 culpados na coluna D."
+  },
+  "D3": {
+   "tipo": "direcao",
+   "params": {
+    "alvo": 13,
+    "direcao": "abaixo",
+    "valor": "culpado"
+   },
+   "texto": "Todos abaixo de Tonico são culpados."
+  },
+  "A4": {
+   "tipo": "direcao",
+   "params": {
+    "alvo": 12,
+    "direcao": "acima",
+    "valor": "inocente"
+   },
+   "texto": "Todos acima de mim são inocentes."
+  },
+  "B4": {
+   "tipo": "direcao",
+   "params": {
+    "alvo": 13,
+    "direcao": "esquerda",
+    "valor": "inocente"
+   },
+   "texto": "Todos à esquerda de mim são inocentes."
+  },
+  "C4": {
+   "tipo": "conexao",
+   "params": {
+    "area": {
+     "tipo": "coluna",
+     "valor": "D"
+    }
+   },
+   "texto": "Todos os culpados da coluna D estão conectados."
+  },
+  "D4": {
+   "tipo": "direcao",
+   "params": {
+    "alvo": 1,
+    "direcao": "esquerda",
+    "valor": "inocente"
+   },
+   "texto": "Todos à esquerda de Dorinha são inocentes."
+  },
+  "A5": {
+   "tipo": "direcao",
+   "params": {
+    "alvo": 17,
+    "direcao": "direita",
+    "valor": "inocente"
+   },
+   "texto": "Todos à direita de Dona Benta são inocentes."
+  },
+  "B5": {
+   "tipo": "direcao",
+   "params": {
+    "alvo": 2,
+    "direcao": "direita",
+    "valor": "culpado"
+   },
+   "texto": "Todos à direita de Rosinha são culpados."
+  },
+  "C5": {
+   "tipo": "conexao",
+   "params": {
+    "area": {
+     "tipo": "coluna",
+     "valor": "B"
+    }
+   },
+   "texto": "Todos os culpados da coluna B estão conectados."
+  },
+  "D5": {
+   "tipo": "vizinhos",
+   "params": {
+    "alvo": 4,
+    "n": 0
+   },
+   "texto": "Dedé não tem nenhum culpado entre os vizinhos."
+  }
+ },
+ "solucao": "ma61"
+}

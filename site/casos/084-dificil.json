@@ -1,0 +1,320 @@
+{
+ "versao": 1,
+ "dia_do_ciclo": 84,
+ "dificuldade": "dificil",
+ "cenario": "onibus",
+ "cenario_nome": "O ônibus",
+ "titulo": "Quem esqueceu de dar o sinal?",
+ "personagens": [
+  {
+   "pos": "A1",
+   "nome": "Jaílson",
+   "profissao": "da catraca"
+  },
+  {
+   "pos": "B1",
+   "nome": "Josefa",
+   "profissao": "da catraca"
+  },
+  {
+   "pos": "C1",
+   "nome": "Valmir",
+   "profissao": "do fundão"
+  },
+  {
+   "pos": "D1",
+   "nome": "Cícero",
+   "profissao": "do corredor"
+  },
+  {
+   "pos": "A2",
+   "nome": "Eliane",
+   "profissao": "do ponto final"
+  },
+  {
+   "pos": "B2",
+   "nome": "Dalila",
+   "profissao": "do banco da frente"
+  },
+  {
+   "pos": "C2",
+   "nome": "Ieda",
+   "profissao": "do corredor"
+  },
+  {
+   "pos": "D2",
+   "nome": "Creusa",
+   "profissao": "do ponto final"
+  },
+  {
+   "pos": "A3",
+   "nome": "Dona Rita",
+   "profissao": "da janela"
+  },
+  {
+   "pos": "B3",
+   "nome": "Josué",
+   "profissao": "do banco da frente"
+  },
+  {
+   "pos": "C3",
+   "nome": "Seu Manoel",
+   "profissao": "do fundão"
+  },
+  {
+   "pos": "D3",
+   "nome": "Adilson",
+   "profissao": "do ponto final"
+  },
+  {
+   "pos": "A4",
+   "nome": "Terezinha",
+   "profissao": "da janela"
+  },
+  {
+   "pos": "B4",
+   "nome": "Rosângela",
+   "profissao": "do banco da frente"
+  },
+  {
+   "pos": "C4",
+   "nome": "Edmilson",
+   "profissao": "da janela"
+  },
+  {
+   "pos": "D4",
+   "nome": "Denílson",
+   "profissao": "do corredor"
+  },
+  {
+   "pos": "A5",
+   "nome": "Zenaide",
+   "profissao": "do corredor"
+  },
+  {
+   "pos": "B5",
+   "nome": "Marlúcia",
+   "profissao": "do fundão"
+  },
+  {
+   "pos": "C5",
+   "nome": "Agnaldo",
+   "profissao": "da catraca"
+  },
+  {
+   "pos": "D5",
+   "nome": "Hélio",
+   "profissao": "do fundão"
+  }
+ ],
+ "inicial": "B4",
+ "pistas": {
+  "A1": {
+   "tipo": "contagem",
+   "params": {
+    "area": {
+     "tipo": "linha",
+     "valor": 3
+    },
+    "n": 3
+   },
+   "texto": "Há exatamente 3 culpados na linha 3."
+  },
+  "B1": {
+   "tipo": "paridade",
+   "params": {
+    "area": {
+     "tipo": "linha",
+     "valor": 1
+    },
+    "impar": true
+   },
+   "texto": "Há um número ímpar de culpados na linha 1."
+  },
+  "C1": {
+   "tipo": "contagem",
+   "params": {
+    "area": {
+     "tipo": "linha",
+     "valor": 4
+    },
+    "n": 2
+   },
+   "texto": "Há exatamente 2 culpados na linha 4."
+  },
+  "D1": {
+   "tipo": "profissao",
+   "params": {
+    "profissao": "da catraca",
+    "membros": [
+     0,
+     1,
+     18
+    ],
+    "n": 0
+   },
+   "texto": "Entre quem é da catraca, não há nenhum culpado."
+  },
+  "A2": {
+   "tipo": "conexao",
+   "params": {
+    "area": {
+     "tipo": "coluna",
+     "valor": "C"
+    }
+   },
+   "texto": "Todos os culpados da coluna C estão conectados."
+  },
+  "B2": {
+   "tipo": "vizinhos",
+   "params": {
+    "alvo": 14,
+    "n": 4
+   },
+   "texto": "Edmilson tem exatamente 4 culpados entre os vizinhos."
+  },
+  "C2": {
+   "tipo": "maioria",
+   "params": {
+    "area": {
+     "tipo": "coluna",
+     "valor": "A"
+    },
+    "valor": "inocente"
+   },
+   "texto": "Há mais inocentes que culpados na coluna A."
+  },
+  "D2": {
+   "tipo": "vizinhos",
+   "params": {
+    "alvo": 19,
+    "n": 2
+   },
+   "texto": "Hélio tem exatamente 2 culpados entre os vizinhos."
+  },
+  "A3": {
+   "tipo": "contagem",
+   "params": {
+    "area": {
+     "tipo": "coluna",
+     "valor": "C"
+    },
+    "n": 3
+   },
+   "texto": "Há exatamente 3 culpados na coluna C."
+  },
+  "B3": {
+   "tipo": "comparacao",
+   "params": {
+    "a": 12,
+    "b": 8
+   },
+   "texto": "Terezinha tem mais vizinhos culpados que Dona Rita."
+  },
+  "C3": {
+   "tipo": "entre",
+   "params": {
+    "a": 2,
+    "b": 18,
+    "n": 3
+   },
+   "texto": "Há exatamente 3 culpados entre Valmir e Agnaldo."
+  },
+  "D3": {
+   "tipo": "profissao",
+   "params": {
+    "profissao": "do ponto final",
+    "membros": [
+     4,
+     7,
+     11
+    ],
+    "n": 2
+   },
+   "texto": "Entre quem é do ponto final, há exatamente 2 culpados."
+  },
+  "A4": {
+   "tipo": "paridade",
+   "params": {
+    "area": {
+     "tipo": "coluna",
+     "valor": "C"
+    },
+    "impar": true
+   },
+   "texto": "Há um número ímpar de culpados na coluna C."
+  },
+  "B4": {
+   "tipo": "direcao",
+   "params": {
+    "alvo": 3,
+    "direcao": "esquerda",
+    "valor": "inocente"
+   },
+   "texto": "Todos à esquerda de Cícero são inocentes."
+  },
+  "C4": {
+   "tipo": "maioria",
+   "params": {
+    "area": {
+     "tipo": "linha",
+     "valor": 2
+    },
+    "valor": "culpado"
+   },
+   "texto": "Há mais culpados que inocentes na linha 2."
+  },
+  "D4": {
+   "tipo": "entre",
+   "params": {
+    "a": 4,
+    "b": 7,
+    "n": 1
+   },
+   "texto": "Há exatamente 1 culpado entre Eliane e Creusa."
+  },
+  "A5": {
+   "tipo": "profissao",
+   "params": {
+    "profissao": "da janela",
+    "membros": [
+     8,
+     12,
+     14
+    ],
+    "n": 2
+   },
+   "texto": "Entre quem é da janela, há exatamente 2 culpados."
+  },
+  "B5": {
+   "tipo": "paridade",
+   "params": {
+    "area": {
+     "tipo": "linha",
+     "valor": 3
+    },
+    "impar": true
+   },
+   "texto": "Há um número ímpar de culpados na linha 3."
+  },
+  "C5": {
+   "tipo": "conexao",
+   "params": {
+    "area": {
+     "tipo": "linha",
+     "valor": 3
+    }
+   },
+   "texto": "Todos os culpados da linha 3 estão conectados."
+  },
+  "D5": {
+   "tipo": "vizinhos",
+   "params": {
+    "alvo": 17,
+    "n": 1
+   },
+   "texto": "Marlúcia tem exatamente 1 culpado entre os vizinhos."
+  }
+ },
+ "solucao": "ujc"
+}

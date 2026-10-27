@@ -1,0 +1,305 @@
+{
+ "versao": 1,
+ "dia_do_ciclo": 354,
+ "dificuldade": "dificil",
+ "cenario": "condominio",
+ "cenario_nome": "O condomínio",
+ "titulo": "Quem deixou o portão da garagem aberto?",
+ "personagens": [
+  {
+   "pos": "A1",
+   "nome": "Patrícia",
+   "profissao": "do conselho"
+  },
+  {
+   "pos": "B1",
+   "nome": "Robson",
+   "profissao": "do conselho"
+  },
+  {
+   "pos": "C1",
+   "nome": "Helena",
+   "profissao": "do térreo"
+  },
+  {
+   "pos": "D1",
+   "nome": "Sônia",
+   "profissao": "da portaria"
+  },
+  {
+   "pos": "A2",
+   "nome": "Cleide",
+   "profissao": "do térreo"
+  },
+  {
+   "pos": "B2",
+   "nome": "Jéssica",
+   "profissao": "da limpeza"
+  },
+  {
+   "pos": "C2",
+   "nome": "Thiago",
+   "profissao": "de entregas"
+  },
+  {
+   "pos": "D2",
+   "nome": "Fernanda",
+   "profissao": "da portaria"
+  },
+  {
+   "pos": "A3",
+   "nome": "Renan",
+   "profissao": "do térreo"
+  },
+  {
+   "pos": "B3",
+   "nome": "Nair",
+   "profissao": "de entregas"
+  },
+  {
+   "pos": "C3",
+   "nome": "Sueli",
+   "profissao": "da cobertura"
+  },
+  {
+   "pos": "D3",
+   "nome": "Edson",
+   "profissao": "da cobertura"
+  },
+  {
+   "pos": "A4",
+   "nome": "Wesley",
+   "profissao": "da cobertura"
+  },
+  {
+   "pos": "B4",
+   "nome": "Igor",
+   "profissao": "da limpeza"
+  },
+  {
+   "pos": "C4",
+   "nome": "Lurdes",
+   "profissao": "do conselho"
+  },
+  {
+   "pos": "D4",
+   "nome": "Valdir",
+   "profissao": "da limpeza"
+  },
+  {
+   "pos": "A5",
+   "nome": "Osvaldo",
+   "profissao": "do conselho"
+  },
+  {
+   "pos": "B5",
+   "nome": "Bruna",
+   "profissao": "da portaria"
+  },
+  {
+   "pos": "C5",
+   "nome": "Gilberto",
+   "profissao": "da cobertura"
+  },
+  {
+   "pos": "D5",
+   "nome": "Márcio",
+   "profissao": "de entregas"
+  }
+ ],
+ "inicial": "C5",
+ "pistas": {
+  "A1": {
+   "tipo": "entre",
+   "params": {
+    "a": 2,
+    "b": 10,
+    "n": 0
+   },
+   "texto": "Não há nenhum culpado entre Helena e Sueli."
+  },
+  "B1": {
+   "tipo": "maioria",
+   "params": {
+    "area": {
+     "tipo": "linha",
+     "valor": 4
+    },
+    "valor": "culpado"
+   },
+   "texto": "Há mais culpados que inocentes na linha 4."
+  },
+  "C1": {
+   "tipo": "vizinhos",
+   "params": {
+    "alvo": 8,
+    "n": 2
+   },
+   "texto": "Renan tem exatamente 2 culpados entre os vizinhos."
+  },
+  "D1": {
+   "tipo": "conexao",
+   "params": {
+    "area": {
+     "tipo": "coluna",
+     "valor": "D"
+    }
+   },
+   "texto": "Todos os culpados da coluna D estão conectados."
+  },
+  "A2": {
+   "tipo": "vizinhos",
+   "params": {
+    "alvo": 1,
+    "n": 0
+   },
+   "texto": "Robson não tem nenhum culpado entre os vizinhos."
+  },
+  "B2": {
+   "tipo": "vizinhos",
+   "params": {
+    "alvo": 19,
+    "n": 3
+   },
+   "texto": "Márcio tem exatamente 3 culpados entre os vizinhos."
+  },
+  "C2": {
+   "tipo": "maioria",
+   "params": {
+    "area": {
+     "tipo": "linha",
+     "valor": 5
+    },
+    "valor": "inocente"
+   },
+   "texto": "Há mais inocentes que culpados na linha 5."
+  },
+  "D2": {
+   "tipo": "comparacao",
+   "params": {
+    "a": 10,
+    "b": 6
+   },
+   "texto": "Sueli tem mais vizinhos culpados que Thiago."
+  },
+  "A3": {
+   "tipo": "maioria",
+   "params": {
+    "area": {
+     "tipo": "coluna",
+     "valor": "A"
+    },
+    "valor": "inocente"
+   },
+   "texto": "Há mais inocentes que culpados na coluna A."
+  },
+  "B3": {
+   "tipo": "maioria",
+   "params": {
+    "area": {
+     "tipo": "linha",
+     "valor": 3
+    },
+    "valor": "culpado"
+   },
+   "texto": "Há mais culpados que inocentes na linha 3."
+  },
+  "C3": {
+   "tipo": "entre",
+   "params": {
+    "a": 1,
+    "b": 9,
+    "n": 0
+   },
+   "texto": "Não há nenhum culpado entre Robson e Nair."
+  },
+  "D3": {
+   "tipo": "comparacao",
+   "params": {
+    "a": 3,
+    "b": 1
+   },
+   "texto": "Sônia tem mais vizinhos culpados que Robson."
+  },
+  "A4": {
+   "tipo": "comparacao",
+   "params": {
+    "a": 14,
+    "b": 11
+   },
+   "texto": "Lurdes tem mais vizinhos culpados que Edson."
+  },
+  "B4": {
+   "tipo": "maioria",
+   "params": {
+    "area": {
+     "tipo": "coluna",
+     "valor": "C"
+    },
+    "valor": "inocente"
+   },
+   "texto": "Há mais inocentes que culpados na coluna C."
+  },
+  "C4": {
+   "tipo": "entre",
+   "params": {
+    "a": 4,
+    "b": 12,
+    "n": 1
+   },
+   "texto": "Há exatamente 1 culpado entre Cleide e Wesley."
+  },
+  "D4": {
+   "tipo": "entre",
+   "params": {
+    "a": 13,
+    "b": 15,
+    "n": 1
+   },
+   "texto": "Há exatamente 1 culpado entre mim e Igor."
+  },
+  "A5": {
+   "tipo": "contagem",
+   "params": {
+    "area": {
+     "tipo": "linha",
+     "valor": 1
+    },
+    "n": 0
+   },
+   "texto": "Não há nenhum culpado na linha 1."
+  },
+  "B5": {
+   "tipo": "paridade",
+   "params": {
+    "area": {
+     "tipo": "coluna",
+     "valor": "B"
+    },
+    "impar": false
+   },
+   "texto": "Há um número par de culpados na coluna B."
+  },
+  "C5": {
+   "tipo": "direcao",
+   "params": {
+    "alvo": 1,
+    "direcao": "esquerda",
+    "valor": "inocente"
+   },
+   "texto": "Todos à esquerda de Robson são inocentes."
+  },
+  "D5": {
+   "tipo": "paridade",
+   "params": {
+    "area": {
+     "tipo": "coluna",
+     "valor": "D"
+    },
+    "impar": true
+   },
+   "texto": "Há um número ímpar de culpados na coluna D."
+  }
+ },
+ "solucao": "ath8"
+}

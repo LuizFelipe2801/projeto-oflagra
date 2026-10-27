@@ -1,0 +1,300 @@
+{
+ "versao": 1,
+ "dia_do_ciclo": 0,
+ "dificuldade": "facil",
+ "cenario": "academia",
+ "cenario_nome": "A academia",
+ "titulo": "Quem trocou a música do som?",
+ "personagens": [
+  {
+   "pos": "A1",
+   "nome": "Everton",
+   "profissao": "da nutrição"
+  },
+  {
+   "pos": "B1",
+   "nome": "Ingrid",
+   "profissao": "da nutrição"
+  },
+  {
+   "pos": "C1",
+   "nome": "Fabrício",
+   "profissao": "da musculação"
+  },
+  {
+   "pos": "D1",
+   "nome": "Alex",
+   "profissao": "da nutrição"
+  },
+  {
+   "pos": "A2",
+   "nome": "Otávio",
+   "profissao": "da musculação"
+  },
+  {
+   "pos": "B2",
+   "nome": "Elisa",
+   "profissao": "da limpeza"
+  },
+  {
+   "pos": "C2",
+   "nome": "Sabrina",
+   "profissao": "da esteira"
+  },
+  {
+   "pos": "D2",
+   "nome": "Caio",
+   "profissao": "do spinning"
+  },
+  {
+   "pos": "A3",
+   "nome": "Yuri",
+   "profissao": "da musculação"
+  },
+  {
+   "pos": "B3",
+   "nome": "Kevin",
+   "profissao": "da esteira"
+  },
+  {
+   "pos": "C3",
+   "nome": "Diogo",
+   "profissao": "da limpeza"
+  },
+  {
+   "pos": "D3",
+   "nome": "Thales",
+   "profissao": "do spinning"
+  },
+  {
+   "pos": "A4",
+   "nome": "Franciele",
+   "profissao": "da recepção"
+  },
+  {
+   "pos": "B4",
+   "nome": "Bruna",
+   "profissao": "do spinning"
+  },
+  {
+   "pos": "C4",
+   "nome": "Willian",
+   "profissao": "da limpeza"
+  },
+  {
+   "pos": "D4",
+   "nome": "Taís",
+   "profissao": "da limpeza"
+  },
+  {
+   "pos": "A5",
+   "nome": "Renata",
+   "profissao": "da recepção"
+  },
+  {
+   "pos": "B5",
+   "nome": "Douglas",
+   "profissao": "da esteira"
+  },
+  {
+   "pos": "C5",
+   "nome": "Jéssica",
+   "profissao": "da recepção"
+  },
+  {
+   "pos": "D5",
+   "nome": "Bárbara",
+   "profissao": "do spinning"
+  }
+ ],
+ "inicial": "C3",
+ "pistas": {
+  "A1": {
+   "tipo": "direcao",
+   "params": {
+    "alvo": 7,
+    "direcao": "abaixo",
+    "valor": "culpado"
+   },
+   "texto": "Todos abaixo de Caio são culpados."
+  },
+  "B1": {
+   "tipo": "direcao",
+   "params": {
+    "alvo": 18,
+    "direcao": "esquerda",
+    "valor": "culpado"
+   },
+   "texto": "Todos à esquerda de Jéssica são culpados."
+  },
+  "C1": {
+   "tipo": "entre",
+   "params": {
+    "a": 13,
+    "b": 15,
+    "n": 1
+   },
+   "texto": "Há exatamente 1 culpado entre Bruna e Taís."
+  },
+  "D1": {
+   "tipo": "profissao",
+   "params": {
+    "profissao": "do spinning",
+    "membros": [
+     7,
+     11,
+     13,
+     19
+    ],
+    "n": 2
+   },
+   "texto": "Entre quem é do spinning, há exatamente 2 culpados."
+  },
+  "A2": {
+   "tipo": "vizinhos",
+   "params": {
+    "alvo": 14,
+    "n": 4
+   },
+   "texto": "Willian tem exatamente 4 culpados entre os vizinhos."
+  },
+  "B2": {
+   "tipo": "direcao",
+   "params": {
+    "alvo": 4,
+    "direcao": "acima",
+    "valor": "culpado"
+   },
+   "texto": "Todos acima de Otávio são culpados."
+  },
+  "C2": {
+   "tipo": "entre",
+   "params": {
+    "a": 1,
+    "b": 3,
+    "n": 1
+   },
+   "texto": "Há exatamente 1 culpado entre Ingrid e Alex."
+  },
+  "D2": {
+   "tipo": "vizinhos",
+   "params": {
+    "alvo": 7,
+    "n": 3
+   },
+   "texto": "Tenho exatamente 3 culpados entre os vizinhos."
+  },
+  "A3": {
+   "tipo": "direcao",
+   "params": {
+    "alvo": 17,
+    "direcao": "esquerda",
+    "valor": "culpado"
+   },
+   "texto": "Todos à esquerda de Douglas são culpados."
+  },
+  "B3": {
+   "tipo": "direcao",
+   "params": {
+    "alvo": 14,
+    "direcao": "abaixo",
+    "valor": "inocente"
+   },
+   "texto": "Todos abaixo de Willian são inocentes."
+  },
+  "C3": {
+   "tipo": "direcao",
+   "params": {
+    "alvo": 11,
+    "direcao": "abaixo",
+    "valor": "culpado"
+   },
+   "texto": "Todos abaixo de Thales são culpados."
+  },
+  "D3": {
+   "tipo": "direcao",
+   "params": {
+    "alvo": 6,
+    "direcao": "direita",
+    "valor": "inocente"
+   },
+   "texto": "Todos à direita de Sabrina são inocentes."
+  },
+  "A4": {
+   "tipo": "vizinhos",
+   "params": {
+    "alvo": 9,
+    "n": 4
+   },
+   "texto": "Kevin tem exatamente 4 culpados entre os vizinhos."
+  },
+  "B4": {
+   "tipo": "direcao",
+   "params": {
+    "alvo": 9,
+    "direcao": "esquerda",
+    "valor": "culpado"
+   },
+   "texto": "Todos à esquerda de Kevin são culpados."
+  },
+  "C4": {
+   "tipo": "profissao",
+   "params": {
+    "profissao": "da musculação",
+    "membros": [
+     2,
+     4,
+     8
+    ],
+    "n": 3
+   },
+   "texto": "Entre quem é da musculação, há exatamente 3 culpados."
+  },
+  "D4": {
+   "tipo": "entre",
+   "params": {
+    "a": 2,
+    "b": 10,
+    "n": 0
+   },
+   "texto": "Não há nenhum culpado entre Fabrício e Diogo."
+  },
+  "A5": {
+   "tipo": "contagem",
+   "params": {
+    "area": {
+     "tipo": "linha",
+     "valor": 4
+    },
+    "n": 2
+   },
+   "texto": "Há exatamente 2 culpados na linha 4."
+  },
+  "B5": {
+   "tipo": "vizinhos",
+   "params": {
+    "alvo": 17,
+    "n": 2
+   },
+   "texto": "Tenho exatamente 2 culpados entre os vizinhos."
+  },
+  "C5": {
+   "tipo": "direcao",
+   "params": {
+    "alvo": 10,
+    "direcao": "direita",
+    "valor": "culpado"
+   },
+   "texto": "Todos à direita de Diogo são culpados."
+  },
+  "D5": {
+   "tipo": "vizinhos",
+   "params": {
+    "alvo": 2,
+    "n": 2
+   },
+   "texto": "Fabrício tem exatamente 2 culpados entre os vizinhos."
+  }
+ },
+ "solucao": "c481"
+}

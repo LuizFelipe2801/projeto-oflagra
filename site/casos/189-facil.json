@@ -1,0 +1,312 @@
+{
+ "versao": 1,
+ "dia_do_ciclo": 189,
+ "dificuldade": "facil",
+ "cenario": "pelada",
+ "cenario_nome": "A pelada",
+ "titulo": "Quem levou o colete errado para casa?",
+ "personagens": [
+  {
+   "pos": "A1",
+   "nome": "Tonho",
+   "profissao": "do ataque"
+  },
+  {
+   "pos": "B1",
+   "nome": "Jota",
+   "profissao": "da defesa"
+  },
+  {
+   "pos": "C1",
+   "nome": "Baixinho",
+   "profissao": "do ataque"
+  },
+  {
+   "pos": "D1",
+   "nome": "Mateus",
+   "profissao": "da arbitragem"
+  },
+  {
+   "pos": "A2",
+   "nome": "Dodô",
+   "profissao": "do banco"
+  },
+  {
+   "pos": "B2",
+   "nome": "Russo",
+   "profissao": "da defesa"
+  },
+  {
+   "pos": "C2",
+   "nome": "Peixe",
+   "profissao": "da arbitragem"
+  },
+  {
+   "pos": "D2",
+   "nome": "Dino",
+   "profissao": "do gol"
+  },
+  {
+   "pos": "A3",
+   "nome": "Betão",
+   "profissao": "da arquibancada"
+  },
+  {
+   "pos": "B3",
+   "nome": "Jonas",
+   "profissao": "da arquibancada"
+  },
+  {
+   "pos": "C3",
+   "nome": "Magrão",
+   "profissao": "do gol"
+  },
+  {
+   "pos": "D3",
+   "nome": "Xande",
+   "profissao": "da arbitragem"
+  },
+  {
+   "pos": "A4",
+   "nome": "Lelê",
+   "profissao": "do ataque"
+  },
+  {
+   "pos": "B4",
+   "nome": "Ivan",
+   "profissao": "da arquibancada"
+  },
+  {
+   "pos": "C4",
+   "nome": "Nando",
+   "profissao": "do banco"
+  },
+  {
+   "pos": "D4",
+   "nome": "Bola",
+   "profissao": "do gol"
+  },
+  {
+   "pos": "A5",
+   "nome": "Mano",
+   "profissao": "da defesa"
+  },
+  {
+   "pos": "B5",
+   "nome": "Careca",
+   "profissao": "do banco"
+  },
+  {
+   "pos": "C5",
+   "nome": "Paulinho",
+   "profissao": "do gol"
+  },
+  {
+   "pos": "D5",
+   "nome": "Cris",
+   "profissao": "da defesa"
+  }
+ ],
+ "inicial": "B1",
+ "pistas": {
+  "A1": {
+   "tipo": "direcao",
+   "params": {
+    "alvo": 1,
+    "direcao": "esquerda",
+    "valor": "culpado"
+   },
+   "texto": "Todos à esquerda de Jota são culpados."
+  },
+  "B1": {
+   "tipo": "entre",
+   "params": {
+    "a": 11,
+    "b": 19,
+    "n": 0
+   },
+   "texto": "Não há nenhum culpado entre Xande e Cris."
+  },
+  "C1": {
+   "tipo": "contagem",
+   "params": {
+    "area": {
+     "tipo": "linha",
+     "valor": 4
+    },
+    "n": 2
+   },
+   "texto": "Há exatamente 2 culpados na linha 4."
+  },
+  "D1": {
+   "tipo": "profissao",
+   "params": {
+    "profissao": "do banco",
+    "membros": [
+     4,
+     14,
+     17
+    ],
+    "n": 2
+   },
+   "texto": "Entre quem é do banco, há exatamente 2 culpados."
+  },
+  "A2": {
+   "tipo": "entre",
+   "params": {
+    "a": 0,
+    "b": 2,
+    "n": 1
+   },
+   "texto": "Há exatamente 1 culpado entre Tonho e Baixinho."
+  },
+  "B2": {
+   "tipo": "direcao",
+   "params": {
+    "alvo": 18,
+    "direcao": "direita",
+    "valor": "inocente"
+   },
+   "texto": "Todos à direita de Paulinho são inocentes."
+  },
+  "C2": {
+   "tipo": "profissao",
+   "params": {
+    "profissao": "da arbitragem",
+    "membros": [
+     3,
+     6,
+     11
+    ],
+    "n": 1
+   },
+   "texto": "Entre quem é da arbitragem, há exatamente 1 culpado."
+  },
+  "D2": {
+   "tipo": "profissao",
+   "params": {
+    "profissao": "do gol",
+    "membros": [
+     7,
+     10,
+     15,
+     18
+    ],
+    "n": 0
+   },
+   "texto": "Entre quem é do gol, não há nenhum culpado."
+  },
+  "A3": {
+   "tipo": "direcao",
+   "params": {
+    "alvo": 17,
+    "direcao": "esquerda",
+    "valor": "inocente"
+   },
+   "texto": "Todos à esquerda de Careca são inocentes."
+  },
+  "B3": {
+   "tipo": "entre",
+   "params": {
+    "a": 9,
+    "b": 11,
+    "n": 0
+   },
+   "texto": "Não há nenhum culpado entre mim e Xande."
+  },
+  "C3": {
+   "tipo": "entre",
+   "params": {
+    "a": 5,
+    "b": 7,
+    "n": 0
+   },
+   "texto": "Não há nenhum culpado entre Russo e Dino."
+  },
+  "D3": {
+   "tipo": "entre",
+   "params": {
+    "a": 4,
+    "b": 12,
+    "n": 1
+   },
+   "texto": "Há exatamente 1 culpado entre Dodô e Lelê."
+  },
+  "A4": {
+   "tipo": "profissao",
+   "params": {
+    "profissao": "da arquibancada",
+    "membros": [
+     8,
+     9,
+     13
+    ],
+    "n": 2
+   },
+   "texto": "Entre quem é da arquibancada, há exatamente 2 culpados."
+  },
+  "B4": {
+   "tipo": "vizinhos",
+   "params": {
+    "alvo": 5,
+    "n": 4
+   },
+   "texto": "Russo tem exatamente 4 culpados entre os vizinhos."
+  },
+  "C4": {
+   "tipo": "vizinhos",
+   "params": {
+    "alvo": 11,
+    "n": 1
+   },
+   "texto": "Xande tem exatamente 1 culpado entre os vizinhos."
+  },
+  "D4": {
+   "tipo": "entre",
+   "params": {
+    "a": 12,
+    "b": 15,
+    "n": 2
+   },
+   "texto": "Há exatamente 2 culpados entre mim e Lelê."
+  },
+  "A5": {
+   "tipo": "contagem",
+   "params": {
+    "area": {
+     "tipo": "linha",
+     "valor": 1
+    },
+    "n": 3
+   },
+   "texto": "Há exatamente 3 culpados na linha 1."
+  },
+  "B5": {
+   "tipo": "vizinhos",
+   "params": {
+    "alvo": 2,
+    "n": 2
+   },
+   "texto": "Baixinho tem exatamente 2 culpados entre os vizinhos."
+  },
+  "C5": {
+   "tipo": "direcao",
+   "params": {
+    "alvo": 7,
+    "direcao": "acima",
+    "valor": "inocente"
+   },
+   "texto": "Todos acima de Dino são inocentes."
+  },
+  "D5": {
+   "tipo": "direcao",
+   "params": {
+    "alvo": 6,
+    "direcao": "acima",
+    "valor": "culpado"
+   },
+   "texto": "Todos acima de Peixe são culpados."
+  }
+ },
+ "solucao": "iv7n"
+}

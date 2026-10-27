@@ -1,0 +1,316 @@
+{
+ "versao": 1,
+ "dia_do_ciclo": 159,
+ "dificuldade": "medio",
+ "cenario": "junina",
+ "cenario_nome": "A festa junina",
+ "titulo": "Quem apagou a fogueira antes da hora?",
+ "personagens": [
+  {
+   "pos": "A1",
+   "nome": "Ritinha",
+   "profissao": "da pescaria"
+  },
+  {
+   "pos": "B1",
+   "nome": "Dona Benta",
+   "profissao": "da pescaria"
+  },
+  {
+   "pos": "C1",
+   "nome": "Dita",
+   "profissao": "da quadrilha"
+  },
+  {
+   "pos": "D1",
+   "nome": "Ciro",
+   "profissao": "da quadrilha"
+  },
+  {
+   "pos": "A2",
+   "nome": "Bastião",
+   "profissao": "da barraca de pamonha"
+  },
+  {
+   "pos": "B2",
+   "nome": "Seu Chico",
+   "profissao": "do som"
+  },
+  {
+   "pos": "C2",
+   "nome": "Nico",
+   "profissao": "da fogueira"
+  },
+  {
+   "pos": "D2",
+   "nome": "Mariquinha",
+   "profissao": "da fogueira"
+  },
+  {
+   "pos": "A3",
+   "nome": "Zefa",
+   "profissao": "da barraca de pamonha"
+  },
+  {
+   "pos": "B3",
+   "nome": "Dorinha",
+   "profissao": "da fogueira"
+  },
+  {
+   "pos": "C3",
+   "nome": "Juvenal",
+   "profissao": "do correio elegante"
+  },
+  {
+   "pos": "D3",
+   "nome": "Quinzinho",
+   "profissao": "da barraca de pamonha"
+  },
+  {
+   "pos": "A4",
+   "nome": "Lourival",
+   "profissao": "da quadrilha"
+  },
+  {
+   "pos": "B4",
+   "nome": "Nenê",
+   "profissao": "do som"
+  },
+  {
+   "pos": "C4",
+   "nome": "Jacó",
+   "profissao": "da pescaria"
+  },
+  {
+   "pos": "D4",
+   "nome": "Luzia",
+   "profissao": "do correio elegante"
+  },
+  {
+   "pos": "A5",
+   "nome": "Zito",
+   "profissao": "do correio elegante"
+  },
+  {
+   "pos": "B5",
+   "nome": "Dedé",
+   "profissao": "do som"
+  },
+  {
+   "pos": "C5",
+   "nome": "Rosinha",
+   "profissao": "da pescaria"
+  },
+  {
+   "pos": "D5",
+   "nome": "Fia",
+   "profissao": "do correio elegante"
+  }
+ ],
+ "inicial": "A3",
+ "pistas": {
+  "A1": {
+   "tipo": "direcao",
+   "params": {
+    "alvo": 6,
+    "direcao": "acima",
+    "valor": "inocente"
+   },
+   "texto": "Todos acima de Nico são inocentes."
+  },
+  "B1": {
+   "tipo": "profissao",
+   "params": {
+    "profissao": "da barraca de pamonha",
+    "membros": [
+     4,
+     8,
+     11
+    ],
+    "n": 1
+   },
+   "texto": "Entre quem é da barraca de pamonha, há exatamente 1 culpado."
+  },
+  "C1": {
+   "tipo": "contagem",
+   "params": {
+    "area": {
+     "tipo": "linha",
+     "valor": 1
+    },
+    "n": 1
+   },
+   "texto": "Há exatamente 1 culpado na linha 1."
+  },
+  "D1": {
+   "tipo": "entre",
+   "params": {
+    "a": 2,
+    "b": 14,
+    "n": 1
+   },
+   "texto": "Há exatamente 1 culpado entre Dita e Jacó."
+  },
+  "A2": {
+   "tipo": "maioria",
+   "params": {
+    "area": {
+     "tipo": "linha",
+     "valor": 2
+    },
+    "valor": "inocente"
+   },
+   "texto": "Há mais inocentes que culpados na linha 2."
+  },
+  "B2": {
+   "tipo": "vizinhos",
+   "params": {
+    "alvo": 12,
+    "n": 2
+   },
+   "texto": "Lourival tem exatamente 2 culpados entre os vizinhos."
+  },
+  "C2": {
+   "tipo": "direcao",
+   "params": {
+    "alvo": 5,
+    "direcao": "acima",
+    "valor": "inocente"
+   },
+   "texto": "Todos acima de Seu Chico são inocentes."
+  },
+  "D2": {
+   "tipo": "vizinhos",
+   "params": {
+    "alvo": 0,
+    "n": 0
+   },
+   "texto": "Ritinha não tem nenhum culpado entre os vizinhos."
+  },
+  "A3": {
+   "tipo": "direcao",
+   "params": {
+    "alvo": 7,
+    "direcao": "esquerda",
+    "valor": "inocente"
+   },
+   "texto": "Todos à esquerda de Mariquinha são inocentes."
+  },
+  "B3": {
+   "tipo": "profissao",
+   "params": {
+    "profissao": "da fogueira",
+    "membros": [
+     6,
+     7,
+     9
+    ],
+    "n": 1
+   },
+   "texto": "Entre quem é da fogueira, há exatamente 1 culpado."
+  },
+  "C3": {
+   "tipo": "paridade",
+   "params": {
+    "area": {
+     "tipo": "coluna",
+     "valor": "B"
+    },
+    "impar": true
+   },
+   "texto": "Há um número ímpar de culpados na coluna B."
+  },
+  "D3": {
+   "tipo": "vizinhos",
+   "params": {
+    "alvo": 11,
+    "n": 4
+   },
+   "texto": "Tenho exatamente 4 culpados entre os vizinhos."
+  },
+  "A4": {
+   "tipo": "conexao",
+   "params": {
+    "area": {
+     "tipo": "linha",
+     "valor": 5
+    }
+   },
+   "texto": "Todos os culpados da linha 5 estão conectados."
+  },
+  "B4": {
+   "tipo": "profissao",
+   "params": {
+    "profissao": "do correio elegante",
+    "membros": [
+     10,
+     15,
+     16,
+     19
+    ],
+    "n": 3
+   },
+   "texto": "Entre quem é do correio elegante, há exatamente 3 culpados."
+  },
+  "C4": {
+   "tipo": "comparacao",
+   "params": {
+    "a": 13,
+    "b": 5
+   },
+   "texto": "Nenê tem mais vizinhos culpados que Seu Chico."
+  },
+  "D4": {
+   "tipo": "contagem",
+   "params": {
+    "area": {
+     "tipo": "linha",
+     "valor": 3
+    },
+    "n": 2
+   },
+   "texto": "Há exatamente 2 culpados na linha 3."
+  },
+  "A5": {
+   "tipo": "entre",
+   "params": {
+    "a": 12,
+    "b": 14,
+    "n": 1
+   },
+   "texto": "Há exatamente 1 culpado entre Lourival e Jacó."
+  },
+  "B5": {
+   "tipo": "comparacao",
+   "params": {
+    "a": 14,
+    "b": 9
+   },
+   "texto": "Jacó tem mais vizinhos culpados que Dorinha."
+  },
+  "C5": {
+   "tipo": "profissao",
+   "params": {
+    "profissao": "da pescaria",
+    "membros": [
+     0,
+     1,
+     14,
+     18
+    ],
+    "n": 2
+   },
+   "texto": "Entre quem é da pescaria, há exatamente 2 culpados."
+  },
+  "D5": {
+   "tipo": "entre",
+   "params": {
+    "a": 0,
+    "b": 12,
+    "n": 1
+   },
+   "texto": "Há exatamente 1 culpado entre Ritinha e Lourival."
+  }
+ },
+ "solucao": "ep4t"
+}

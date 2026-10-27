@@ -1,0 +1,320 @@
+{
+ "versao": 1,
+ "dia_do_ciclo": 0,
+ "dificuldade": "dificil",
+ "cenario": "onibus",
+ "cenario_nome": "O ônibus",
+ "titulo": "Quem esqueceu de dar o sinal?",
+ "personagens": [
+  {
+   "pos": "A1",
+   "nome": "Nivaldo",
+   "profissao": "da janela"
+  },
+  {
+   "pos": "B1",
+   "nome": "Seu Manoel",
+   "profissao": "do corredor"
+  },
+  {
+   "pos": "C1",
+   "nome": "Agnaldo",
+   "profissao": "da janela"
+  },
+  {
+   "pos": "D1",
+   "nome": "Josué",
+   "profissao": "do corredor"
+  },
+  {
+   "pos": "A2",
+   "nome": "Creusa",
+   "profissao": "do ponto final"
+  },
+  {
+   "pos": "B2",
+   "nome": "Cícero",
+   "profissao": "do fundão"
+  },
+  {
+   "pos": "C2",
+   "nome": "Hélio",
+   "profissao": "da catraca"
+  },
+  {
+   "pos": "D2",
+   "nome": "Ronaldo",
+   "profissao": "do ponto final"
+  },
+  {
+   "pos": "A3",
+   "nome": "Jaílson",
+   "profissao": "do banco da frente"
+  },
+  {
+   "pos": "B3",
+   "nome": "Zenaide",
+   "profissao": "do fundão"
+  },
+  {
+   "pos": "C3",
+   "nome": "Marlúcia",
+   "profissao": "da janela"
+  },
+  {
+   "pos": "D3",
+   "nome": "Conceição",
+   "profissao": "da catraca"
+  },
+  {
+   "pos": "A4",
+   "nome": "Dona Rita",
+   "profissao": "do corredor"
+  },
+  {
+   "pos": "B4",
+   "nome": "Rosângela",
+   "profissao": "do banco da frente"
+  },
+  {
+   "pos": "C4",
+   "nome": "Josefa",
+   "profissao": "do fundão"
+  },
+  {
+   "pos": "D4",
+   "nome": "Eliane",
+   "profissao": "da janela"
+  },
+  {
+   "pos": "A5",
+   "nome": "Ieda",
+   "profissao": "do ponto final"
+  },
+  {
+   "pos": "B5",
+   "nome": "Denílson",
+   "profissao": "do banco da frente"
+  },
+  {
+   "pos": "C5",
+   "nome": "Leila",
+   "profissao": "do fundão"
+  },
+  {
+   "pos": "D5",
+   "nome": "Dalila",
+   "profissao": "da catraca"
+  }
+ ],
+ "inicial": "D1",
+ "pistas": {
+  "A1": {
+   "tipo": "profissao",
+   "params": {
+    "profissao": "da catraca",
+    "membros": [
+     6,
+     11,
+     19
+    ],
+    "n": 0
+   },
+   "texto": "Entre quem é da catraca, não há nenhum culpado."
+  },
+  "B1": {
+   "tipo": "entre",
+   "params": {
+    "a": 6,
+    "b": 18,
+    "n": 1
+   },
+   "texto": "Há exatamente 1 culpado entre Hélio e Leila."
+  },
+  "C1": {
+   "tipo": "comparacao",
+   "params": {
+    "a": 6,
+    "b": 8
+   },
+   "texto": "Hélio tem mais vizinhos culpados que Jaílson."
+  },
+  "D1": {
+   "tipo": "entre",
+   "params": {
+    "a": 3,
+    "b": 19,
+    "n": 0
+   },
+   "texto": "Não há nenhum culpado entre mim e Dalila."
+  },
+  "A2": {
+   "tipo": "direcao",
+   "params": {
+    "alvo": 13,
+    "direcao": "direita",
+    "valor": "inocente"
+   },
+   "texto": "Todos à direita de Rosângela são inocentes."
+  },
+  "B2": {
+   "tipo": "comparacao",
+   "params": {
+    "a": 7,
+    "b": 2
+   },
+   "texto": "Ronaldo tem mais vizinhos culpados que Agnaldo."
+  },
+  "C2": {
+   "tipo": "comparacao",
+   "params": {
+    "a": 9,
+    "b": 15
+   },
+   "texto": "Zenaide tem mais vizinhos culpados que Eliane."
+  },
+  "D2": {
+   "tipo": "profissao",
+   "params": {
+    "profissao": "do banco da frente",
+    "membros": [
+     8,
+     13,
+     17
+    ],
+    "n": 0
+   },
+   "texto": "Entre quem é do banco da frente, não há nenhum culpado."
+  },
+  "A3": {
+   "tipo": "contagem",
+   "params": {
+    "area": {
+     "tipo": "coluna",
+     "valor": "B"
+    },
+    "n": 0
+   },
+   "texto": "Não há nenhum culpado na coluna B."
+  },
+  "B3": {
+   "tipo": "paridade",
+   "params": {
+    "area": {
+     "tipo": "linha",
+     "valor": 5
+    },
+    "impar": true
+   },
+   "texto": "Há um número ímpar de culpados na linha 5."
+  },
+  "C3": {
+   "tipo": "paridade",
+   "params": {
+    "area": {
+     "tipo": "linha",
+     "valor": 4
+    },
+    "impar": true
+   },
+   "texto": "Há um número ímpar de culpados na linha 4."
+  },
+  "D3": {
+   "tipo": "contagem",
+   "params": {
+    "area": {
+     "tipo": "linha",
+     "valor": 1
+    },
+    "n": 3
+   },
+   "texto": "Há exatamente 3 culpados na linha 1."
+  },
+  "A4": {
+   "tipo": "vizinhos",
+   "params": {
+    "alvo": 18,
+    "n": 0
+   },
+   "texto": "Leila não tem nenhum culpado entre os vizinhos."
+  },
+  "B4": {
+   "tipo": "maioria",
+   "params": {
+    "area": {
+     "tipo": "linha",
+     "valor": 5
+    },
+    "valor": "inocente"
+   },
+   "texto": "Há mais inocentes que culpados na linha 5."
+  },
+  "C4": {
+   "tipo": "profissao",
+   "params": {
+    "profissao": "do fundão",
+    "membros": [
+     5,
+     9,
+     14,
+     18
+    ],
+    "n": 0
+   },
+   "texto": "Entre quem é do fundão, não há nenhum culpado."
+  },
+  "D4": {
+   "tipo": "comparacao",
+   "params": {
+    "a": 5,
+    "b": 11
+   },
+   "texto": "Cícero tem mais vizinhos culpados que Conceição."
+  },
+  "A5": {
+   "tipo": "maioria",
+   "params": {
+    "area": {
+     "tipo": "coluna",
+     "valor": "B"
+    },
+    "valor": "inocente"
+   },
+   "texto": "Há mais inocentes que culpados na coluna B."
+  },
+  "B5": {
+   "tipo": "maioria",
+   "params": {
+    "area": {
+     "tipo": "linha",
+     "valor": 3
+    },
+    "valor": "inocente"
+   },
+   "texto": "Há mais inocentes que culpados na linha 3."
+  },
+  "C5": {
+   "tipo": "entre",
+   "params": {
+    "a": 0,
+    "b": 8,
+    "n": 0
+   },
+   "texto": "Não há nenhum culpado entre Nivaldo e Jaílson."
+  },
+  "D5": {
+   "tipo": "profissao",
+   "params": {
+    "profissao": "do ponto final",
+    "membros": [
+     4,
+     7,
+     16
+    ],
+    "n": 1
+   },
+   "texto": "Entre quem é do ponto final, há exatamente 1 culpado."
+  }
+ },
+ "solucao": "3hw1"
+}

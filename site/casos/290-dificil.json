@@ -1,0 +1,305 @@
+{
+ "versao": 1,
+ "dia_do_ciclo": 290,
+ "dificuldade": "dificil",
+ "cenario": "republica",
+ "cenario_nome": "A república",
+ "titulo": "Quem usou a toalha dos outros?",
+ "personagens": [
+  {
+   "pos": "A1",
+   "nome": "Bia",
+   "profissao": "de intercâmbio"
+  },
+  {
+   "pos": "B1",
+   "nome": "Natália",
+   "profissao": "do quarto 2"
+  },
+  {
+   "pos": "C1",
+   "nome": "Leandro",
+   "profissao": "da faxina"
+  },
+  {
+   "pos": "D1",
+   "nome": "Paula",
+   "profissao": "do quarto 2"
+  },
+  {
+   "pos": "A2",
+   "nome": "Felipe",
+   "profissao": "do quarto 3"
+  },
+  {
+   "pos": "B2",
+   "nome": "Marina",
+   "profissao": "da faxina"
+  },
+  {
+   "pos": "C2",
+   "nome": "Isabela",
+   "profissao": "da faxina"
+  },
+  {
+   "pos": "D2",
+   "nome": "Henrique",
+   "profissao": "do quarto 3"
+  },
+  {
+   "pos": "A3",
+   "nome": "Camila",
+   "profissao": "da sala"
+  },
+  {
+   "pos": "B3",
+   "nome": "Diego",
+   "profissao": "do quarto 3"
+  },
+  {
+   "pos": "C3",
+   "nome": "Tainá",
+   "profissao": "da sala"
+  },
+  {
+   "pos": "D3",
+   "nome": "Rafael",
+   "profissao": "do quarto 1"
+  },
+  {
+   "pos": "A4",
+   "nome": "Vítor",
+   "profissao": "de intercâmbio"
+  },
+  {
+   "pos": "B4",
+   "nome": "Carla",
+   "profissao": "do quarto 1"
+  },
+  {
+   "pos": "C4",
+   "nome": "Amanda",
+   "profissao": "de intercâmbio"
+  },
+  {
+   "pos": "D4",
+   "nome": "Daniel",
+   "profissao": "da sala"
+  },
+  {
+   "pos": "A5",
+   "nome": "Gustavo",
+   "profissao": "do quarto 2"
+  },
+  {
+   "pos": "B5",
+   "nome": "Larissa",
+   "profissao": "do quarto 3"
+  },
+  {
+   "pos": "C5",
+   "nome": "Rodrigo",
+   "profissao": "do quarto 1"
+  },
+  {
+   "pos": "D5",
+   "nome": "Fernando",
+   "profissao": "do quarto 1"
+  }
+ ],
+ "inicial": "B4",
+ "pistas": {
+  "A1": {
+   "tipo": "maioria",
+   "params": {
+    "area": {
+     "tipo": "borda"
+    },
+    "valor": "inocente"
+   },
+   "texto": "Há mais inocentes que culpados na borda."
+  },
+  "B1": {
+   "tipo": "paridade",
+   "params": {
+    "area": {
+     "tipo": "borda"
+    },
+    "impar": false
+   },
+   "texto": "Há um número par de culpados na borda."
+  },
+  "C1": {
+   "tipo": "conexao",
+   "params": {
+    "area": {
+     "tipo": "linha",
+     "valor": 4
+    }
+   },
+   "texto": "Todos os culpados da linha 4 estão conectados."
+  },
+  "D1": {
+   "tipo": "paridade",
+   "params": {
+    "area": {
+     "tipo": "linha",
+     "valor": 1
+    },
+    "impar": false
+   },
+   "texto": "Há um número par de culpados na linha 1."
+  },
+  "A2": {
+   "tipo": "paridade",
+   "params": {
+    "area": {
+     "tipo": "coluna",
+     "valor": "D"
+    },
+    "impar": true
+   },
+   "texto": "Há um número ímpar de culpados na coluna D."
+  },
+  "B2": {
+   "tipo": "paridade",
+   "params": {
+    "area": {
+     "tipo": "linha",
+     "valor": 3
+    },
+    "impar": false
+   },
+   "texto": "Há um número par de culpados na linha 3."
+  },
+  "C2": {
+   "tipo": "comparacao",
+   "params": {
+    "a": 17,
+    "b": 12
+   },
+   "texto": "Larissa tem mais vizinhos culpados que Vítor."
+  },
+  "D2": {
+   "tipo": "comparacao",
+   "params": {
+    "a": 8,
+    "b": 18
+   },
+   "texto": "Camila tem mais vizinhos culpados que Rodrigo."
+  },
+  "A3": {
+   "tipo": "vizinhos",
+   "params": {
+    "alvo": 14,
+    "n": 4
+   },
+   "texto": "Amanda tem exatamente 4 culpados entre os vizinhos."
+  },
+  "B3": {
+   "tipo": "profissao",
+   "params": {
+    "profissao": "do quarto 2",
+    "membros": [
+     1,
+     3,
+     16
+    ],
+    "n": 3
+   },
+   "texto": "Entre quem é do quarto 2, há exatamente 3 culpados."
+  },
+  "C3": {
+   "tipo": "direcao",
+   "params": {
+    "alvo": 15,
+    "direcao": "acima",
+    "valor": "culpado"
+   },
+   "texto": "Todos acima de Daniel são culpados."
+  },
+  "D3": {
+   "tipo": "profissao",
+   "params": {
+    "profissao": "da sala",
+    "membros": [
+     8,
+     10,
+     15
+    ],
+    "n": 0
+   },
+   "texto": "Entre quem é da sala, não há nenhum culpado."
+  },
+  "A4": {
+   "tipo": "comparacao",
+   "params": {
+    "a": 14,
+    "b": 5
+   },
+   "texto": "Amanda tem mais vizinhos culpados que Marina."
+  },
+  "B4": {
+   "tipo": "entre",
+   "params": {
+    "a": 9,
+    "b": 11,
+    "n": 0
+   },
+   "texto": "Não há nenhum culpado entre Diego e Rafael."
+  },
+  "C4": {
+   "tipo": "comparacao",
+   "params": {
+    "a": 10,
+    "b": 16
+   },
+   "texto": "Tainá tem mais vizinhos culpados que Gustavo."
+  },
+  "D4": {
+   "tipo": "entre",
+   "params": {
+    "a": 0,
+    "b": 3,
+    "n": 1
+   },
+   "texto": "Há exatamente 1 culpado entre Bia e Paula."
+  },
+  "A5": {
+   "tipo": "entre",
+   "params": {
+    "a": 8,
+    "b": 11,
+    "n": 1
+   },
+   "texto": "Há exatamente 1 culpado entre Camila e Rafael."
+  },
+  "B5": {
+   "tipo": "entre",
+   "params": {
+    "a": 5,
+    "b": 13,
+    "n": 1
+   },
+   "texto": "Há exatamente 1 culpado entre Marina e Carla."
+  },
+  "C5": {
+   "tipo": "direcao",
+   "params": {
+    "alvo": 8,
+    "direcao": "acima",
+    "valor": "inocente"
+   },
+   "texto": "Todos acima de Camila são inocentes."
+  },
+  "D5": {
+   "tipo": "comparacao",
+   "params": {
+    "a": 15,
+    "b": 5
+   },
+   "texto": "Daniel tem mais vizinhos culpados que Marina."
+  }
+ },
+ "solucao": "gt2h"
+}

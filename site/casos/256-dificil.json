@@ -1,0 +1,312 @@
+{
+ "versao": 1,
+ "dia_do_ciclo": 256,
+ "dificuldade": "dificil",
+ "cenario": "academia",
+ "cenario_nome": "A academia",
+ "titulo": "Quem trocou a música do som?",
+ "personagens": [
+  {
+   "pos": "A1",
+   "nome": "Elisa",
+   "profissao": "da limpeza"
+  },
+  {
+   "pos": "B1",
+   "nome": "Jéssica",
+   "profissao": "do spinning"
+  },
+  {
+   "pos": "C1",
+   "nome": "Ingrid",
+   "profissao": "da recepção"
+  },
+  {
+   "pos": "D1",
+   "nome": "Bruna",
+   "profissao": "da musculação"
+  },
+  {
+   "pos": "A2",
+   "nome": "Diogo",
+   "profissao": "da nutrição"
+  },
+  {
+   "pos": "B2",
+   "nome": "Bárbara",
+   "profissao": "da esteira"
+  },
+  {
+   "pos": "C2",
+   "nome": "Giovana",
+   "profissao": "da recepção"
+  },
+  {
+   "pos": "D2",
+   "nome": "Alex",
+   "profissao": "da musculação"
+  },
+  {
+   "pos": "A3",
+   "nome": "Márcio",
+   "profissao": "da recepção"
+  },
+  {
+   "pos": "B3",
+   "nome": "Caio",
+   "profissao": "do spinning"
+  },
+  {
+   "pos": "C3",
+   "nome": "Franciele",
+   "profissao": "da musculação"
+  },
+  {
+   "pos": "D3",
+   "nome": "Thales",
+   "profissao": "da limpeza"
+  },
+  {
+   "pos": "A4",
+   "nome": "Melissa",
+   "profissao": "do spinning"
+  },
+  {
+   "pos": "B4",
+   "nome": "Renata",
+   "profissao": "da esteira"
+  },
+  {
+   "pos": "C4",
+   "nome": "Everton",
+   "profissao": "da esteira"
+  },
+  {
+   "pos": "D4",
+   "nome": "Taís",
+   "profissao": "da limpeza"
+  },
+  {
+   "pos": "A5",
+   "nome": "Otávio",
+   "profissao": "do spinning"
+  },
+  {
+   "pos": "B5",
+   "nome": "Douglas",
+   "profissao": "da nutrição"
+  },
+  {
+   "pos": "C5",
+   "nome": "Raíssa",
+   "profissao": "da limpeza"
+  },
+  {
+   "pos": "D5",
+   "nome": "Yuri",
+   "profissao": "da nutrição"
+  }
+ ],
+ "inicial": "D1",
+ "pistas": {
+  "A1": {
+   "tipo": "profissao",
+   "params": {
+    "profissao": "do spinning",
+    "membros": [
+     1,
+     9,
+     12,
+     16
+    ],
+    "n": 3
+   },
+   "texto": "Entre quem é do spinning, há exatamente 3 culpados."
+  },
+  "B1": {
+   "tipo": "comparacao",
+   "params": {
+    "a": 13,
+    "b": 4
+   },
+   "texto": "Renata tem mais vizinhos culpados que Diogo."
+  },
+  "C1": {
+   "tipo": "vizinhos",
+   "params": {
+    "alvo": 15,
+    "n": 2
+   },
+   "texto": "Taís tem exatamente 2 culpados entre os vizinhos."
+  },
+  "D1": {
+   "tipo": "direcao",
+   "params": {
+    "alvo": 8,
+    "direcao": "abaixo",
+    "valor": "culpado"
+   },
+   "texto": "Todos abaixo de Márcio são culpados."
+  },
+  "A2": {
+   "tipo": "paridade",
+   "params": {
+    "area": {
+     "tipo": "coluna",
+     "valor": "B"
+    },
+    "impar": false
+   },
+   "texto": "Há um número par de culpados na coluna B."
+  },
+  "B2": {
+   "tipo": "direcao",
+   "params": {
+    "alvo": 8,
+    "direcao": "acima",
+    "valor": "inocente"
+   },
+   "texto": "Todos acima de Márcio são inocentes."
+  },
+  "C2": {
+   "tipo": "contagem",
+   "params": {
+    "area": {
+     "tipo": "coluna",
+     "valor": "C"
+    },
+    "n": 3
+   },
+   "texto": "Há exatamente 3 culpados na coluna C."
+  },
+  "D2": {
+   "tipo": "maioria",
+   "params": {
+    "area": {
+     "tipo": "coluna",
+     "valor": "B"
+    },
+    "valor": "inocente"
+   },
+   "texto": "Há mais inocentes que culpados na coluna B."
+  },
+  "A3": {
+   "tipo": "paridade",
+   "params": {
+    "area": {
+     "tipo": "linha",
+     "valor": 4
+    },
+    "impar": false
+   },
+   "texto": "Há um número par de culpados na linha 4."
+  },
+  "B3": {
+   "tipo": "entre",
+   "params": {
+    "a": 7,
+    "b": 15,
+    "n": 0
+   },
+   "texto": "Não há nenhum culpado entre Alex e Taís."
+  },
+  "C3": {
+   "tipo": "vizinhos",
+   "params": {
+    "alvo": 5,
+    "n": 4
+   },
+   "texto": "Bárbara tem exatamente 4 culpados entre os vizinhos."
+  },
+  "D3": {
+   "tipo": "profissao",
+   "params": {
+    "profissao": "da esteira",
+    "membros": [
+     5,
+     13,
+     14
+    ],
+    "n": 0
+   },
+   "texto": "Entre quem é da esteira, não há nenhum culpado."
+  },
+  "A4": {
+   "tipo": "vizinhos",
+   "params": {
+    "alvo": 0,
+    "n": 0
+   },
+   "texto": "Elisa não tem nenhum culpado entre os vizinhos."
+  },
+  "B4": {
+   "tipo": "comparacao",
+   "params": {
+    "a": 5,
+    "b": 15
+   },
+   "texto": "Bárbara tem mais vizinhos culpados que Taís."
+  },
+  "C4": {
+   "tipo": "paridade",
+   "params": {
+    "area": {
+     "tipo": "coluna",
+     "valor": "A"
+    },
+    "impar": false
+   },
+   "texto": "Há um número par de culpados na coluna A."
+  },
+  "D4": {
+   "tipo": "entre",
+   "params": {
+    "a": 1,
+    "b": 3,
+    "n": 1
+   },
+   "texto": "Há exatamente 1 culpado entre Jéssica e Bruna."
+  },
+  "A5": {
+   "tipo": "maioria",
+   "params": {
+    "area": {
+     "tipo": "coluna",
+     "valor": "D"
+    },
+    "valor": "inocente"
+   },
+   "texto": "Há mais inocentes que culpados na coluna D."
+  },
+  "B5": {
+   "tipo": "profissao",
+   "params": {
+    "profissao": "da musculação",
+    "membros": [
+     3,
+     7,
+     10
+    ],
+    "n": 1
+   },
+   "texto": "Entre quem é da musculação, há exatamente 1 culpado."
+  },
+  "C5": {
+   "tipo": "comparacao",
+   "params": {
+    "a": 7,
+    "b": 2
+   },
+   "texto": "Alex tem mais vizinhos culpados que Ingrid."
+  },
+  "D5": {
+   "tipo": "comparacao",
+   "params": {
+    "a": 6,
+    "b": 2
+   },
+   "texto": "Giovana tem mais vizinhos culpados que Ingrid."
+  }
+ },
+ "solucao": "lpp9"
+}

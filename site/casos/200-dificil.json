@@ -1,0 +1,307 @@
+{
+ "versao": 1,
+ "dia_do_ciclo": 200,
+ "dificuldade": "dificil",
+ "cenario": "familia",
+ "cenario_nome": "O grupo da família",
+ "titulo": "Quem mandou o áudio de cinco minutos?",
+ "personagens": [
+  {
+   "pos": "A1",
+   "nome": "Nando",
+   "profissao": "dos avós"
+  },
+  {
+   "pos": "B1",
+   "nome": "Júnior",
+   "profissao": "dos sobrinhos"
+  },
+  {
+   "pos": "C1",
+   "nome": "Betinho",
+   "profissao": "dos cunhados"
+  },
+  {
+   "pos": "D1",
+   "nome": "Priscila",
+   "profissao": "dos avós"
+  },
+  {
+   "pos": "A2",
+   "nome": "Marcelo",
+   "profissao": "dos netos"
+  },
+  {
+   "pos": "B2",
+   "nome": "Sérgio",
+   "profissao": "dos primos"
+  },
+  {
+   "pos": "C2",
+   "nome": "Luana",
+   "profissao": "dos sobrinhos"
+  },
+  {
+   "pos": "D2",
+   "nome": "Tia Cleusa",
+   "profissao": "dos tios"
+  },
+  {
+   "pos": "A3",
+   "nome": "Tio Nelson",
+   "profissao": "dos avós"
+  },
+  {
+   "pos": "B3",
+   "nome": "Carmem",
+   "profissao": "dos netos"
+  },
+  {
+   "pos": "C3",
+   "nome": "Vô Zeca",
+   "profissao": "dos cunhados"
+  },
+  {
+   "pos": "D3",
+   "nome": "Vânia",
+   "profissao": "dos primos"
+  },
+  {
+   "pos": "A4",
+   "nome": "Gil",
+   "profissao": "dos tios"
+  },
+  {
+   "pos": "B4",
+   "nome": "Eduardo",
+   "profissao": "dos avós"
+  },
+  {
+   "pos": "C4",
+   "nome": "Andréia",
+   "profissao": "dos tios"
+  },
+  {
+   "pos": "D4",
+   "nome": "Vó Dirce",
+   "profissao": "dos netos"
+  },
+  {
+   "pos": "A5",
+   "nome": "Cadu",
+   "profissao": "dos tios"
+  },
+  {
+   "pos": "B5",
+   "nome": "Lenita",
+   "profissao": "dos cunhados"
+  },
+  {
+   "pos": "C5",
+   "nome": "Jorge",
+   "profissao": "dos sobrinhos"
+  },
+  {
+   "pos": "D5",
+   "nome": "Bruninha",
+   "profissao": "dos primos"
+  }
+ ],
+ "inicial": "D2",
+ "pistas": {
+  "A1": {
+   "tipo": "comparacao",
+   "params": {
+    "a": 0,
+    "b": 2
+   },
+   "texto": "Tenho mais vizinhos culpados que Betinho."
+  },
+  "B1": {
+   "tipo": "vizinhos",
+   "params": {
+    "alvo": 10,
+    "n": 3
+   },
+   "texto": "Vô Zeca tem exatamente 3 culpados entre os vizinhos."
+  },
+  "C1": {
+   "tipo": "profissao",
+   "params": {
+    "profissao": "dos cunhados",
+    "membros": [
+     2,
+     10,
+     17
+    ],
+    "n": 1
+   },
+   "texto": "Entre quem é dos cunhados, há exatamente 1 culpado."
+  },
+  "D1": {
+   "tipo": "direcao",
+   "params": {
+    "alvo": 1,
+    "direcao": "esquerda",
+    "valor": "inocente"
+   },
+   "texto": "Todos à esquerda de Júnior são inocentes."
+  },
+  "A2": {
+   "tipo": "paridade",
+   "params": {
+    "area": {
+     "tipo": "borda"
+    },
+    "impar": false
+   },
+   "texto": "Há um número par de culpados na borda."
+  },
+  "B2": {
+   "tipo": "maioria",
+   "params": {
+    "area": {
+     "tipo": "coluna",
+     "valor": "D"
+    },
+    "valor": "inocente"
+   },
+   "texto": "Há mais inocentes que culpados na coluna D."
+  },
+  "C2": {
+   "tipo": "vizinhos",
+   "params": {
+    "alvo": 2,
+    "n": 2
+   },
+   "texto": "Betinho tem exatamente 2 culpados entre os vizinhos."
+  },
+  "D2": {
+   "tipo": "profissao",
+   "params": {
+    "profissao": "dos tios",
+    "membros": [
+     7,
+     12,
+     14,
+     16
+    ],
+    "n": 0
+   },
+   "texto": "Entre quem é dos tios, não há nenhum culpado."
+  },
+  "A3": {
+   "tipo": "direcao",
+   "params": {
+    "alvo": 11,
+    "direcao": "esquerda",
+    "valor": "inocente"
+   },
+   "texto": "Todos à esquerda de Vânia são inocentes."
+  },
+  "B3": {
+   "tipo": "paridade",
+   "params": {
+    "area": {
+     "tipo": "linha",
+     "valor": 2
+    },
+    "impar": false
+   },
+   "texto": "Há um número par de culpados na linha 2."
+  },
+  "C3": {
+   "tipo": "entre",
+   "params": {
+    "a": 0,
+    "b": 3,
+    "n": 2
+   },
+   "texto": "Há exatamente 2 culpados entre Nando e Priscila."
+  },
+  "D3": {
+   "tipo": "comparacao",
+   "params": {
+    "a": 6,
+    "b": 11
+   },
+   "texto": "Luana tem mais vizinhos culpados que eu."
+  },
+  "A4": {
+   "tipo": "direcao",
+   "params": {
+    "alvo": 10,
+    "direcao": "abaixo",
+    "valor": "inocente"
+   },
+   "texto": "Todos abaixo de Vô Zeca são inocentes."
+  },
+  "B4": {
+   "tipo": "vizinhos",
+   "params": {
+    "alvo": 17,
+    "n": 1
+   },
+   "texto": "Lenita tem exatamente 1 culpado entre os vizinhos."
+  },
+  "C4": {
+   "tipo": "comparacao",
+   "params": {
+    "a": 11,
+    "b": 15
+   },
+   "texto": "Vânia tem mais vizinhos culpados que Vó Dirce."
+  },
+  "D4": {
+   "tipo": "profissao",
+   "params": {
+    "profissao": "dos primos",
+    "membros": [
+     5,
+     11,
+     19
+    ],
+    "n": 1
+   },
+   "texto": "Entre quem é dos primos, há exatamente 1 culpado."
+  },
+  "A5": {
+   "tipo": "entre",
+   "params": {
+    "a": 1,
+    "b": 17,
+    "n": 2
+   },
+   "texto": "Há exatamente 2 culpados entre Júnior e Lenita."
+  },
+  "B5": {
+   "tipo": "entre",
+   "params": {
+    "a": 7,
+    "b": 19,
+    "n": 1
+   },
+   "texto": "Há exatamente 1 culpado entre Tia Cleusa e Bruninha."
+  },
+  "C5": {
+   "tipo": "vizinhos",
+   "params": {
+    "alvo": 14,
+    "n": 2
+   },
+   "texto": "Andréia tem exatamente 2 culpados entre os vizinhos."
+  },
+  "D5": {
+   "tipo": "paridade",
+   "params": {
+    "area": {
+     "tipo": "linha",
+     "valor": 5
+    },
+    "impar": false
+   },
+   "texto": "Há um número par de culpados na linha 5."
+  }
+ },
+ "solucao": "c9xg"
+}

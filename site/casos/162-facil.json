@@ -1,0 +1,306 @@
+{
+ "versao": 1,
+ "dia_do_ciclo": 162,
+ "dificuldade": "facil",
+ "cenario": "firma",
+ "cenario_nome": "A firma",
+ "titulo": "Quem esqueceu a marmita na geladeira?",
+ "personagens": [
+  {
+   "pos": "A1",
+   "nome": "Marcão",
+   "profissao": "da TI"
+  },
+  {
+   "pos": "B1",
+   "nome": "Lia",
+   "profissao": "do estágio"
+  },
+  {
+   "pos": "C1",
+   "nome": "Nando",
+   "profissao": "do RH"
+  },
+  {
+   "pos": "D1",
+   "nome": "Zé",
+   "profissao": "da contabilidade"
+  },
+  {
+   "pos": "A2",
+   "nome": "Cida",
+   "profissao": "da contabilidade"
+  },
+  {
+   "pos": "B2",
+   "nome": "Rafa",
+   "profissao": "do estágio"
+  },
+  {
+   "pos": "C2",
+   "nome": "Dani",
+   "profissao": "de vendas"
+  },
+  {
+   "pos": "D2",
+   "nome": "Caio",
+   "profissao": "da TI"
+  },
+  {
+   "pos": "A3",
+   "nome": "Gabi",
+   "profissao": "do RH"
+  },
+  {
+   "pos": "B3",
+   "nome": "Duda",
+   "profissao": "da copa"
+  },
+  {
+   "pos": "C3",
+   "nome": "Bia",
+   "profissao": "da TI"
+  },
+  {
+   "pos": "D3",
+   "nome": "Tião",
+   "profissao": "da copa"
+  },
+  {
+   "pos": "A4",
+   "nome": "Fábio",
+   "profissao": "de vendas"
+  },
+  {
+   "pos": "B4",
+   "nome": "Neide",
+   "profissao": "da TI"
+  },
+  {
+   "pos": "C4",
+   "nome": "Juju",
+   "profissao": "de vendas"
+  },
+  {
+   "pos": "D4",
+   "nome": "Rosa",
+   "profissao": "de vendas"
+  },
+  {
+   "pos": "A5",
+   "nome": "Lu",
+   "profissao": "do estágio"
+  },
+  {
+   "pos": "B5",
+   "nome": "Iva",
+   "profissao": "do RH"
+  },
+  {
+   "pos": "C5",
+   "nome": "Kel",
+   "profissao": "da copa"
+  },
+  {
+   "pos": "D5",
+   "nome": "Vera",
+   "profissao": "da contabilidade"
+  }
+ ],
+ "inicial": "A5",
+ "pistas": {
+  "A1": {
+   "tipo": "contagem",
+   "params": {
+    "area": {
+     "tipo": "coluna",
+     "valor": "C"
+    },
+    "n": 2
+   },
+   "texto": "Há exatamente 2 culpados na coluna C."
+  },
+  "B1": {
+   "tipo": "direcao",
+   "params": {
+    "alvo": 9,
+    "direcao": "esquerda",
+    "valor": "culpado"
+   },
+   "texto": "Todos à esquerda de Duda são culpados."
+  },
+  "C1": {
+   "tipo": "vizinhos",
+   "params": {
+    "alvo": 8,
+    "n": 1
+   },
+   "texto": "Gabi tem exatamente 1 culpado entre os vizinhos."
+  },
+  "D1": {
+   "tipo": "vizinhos",
+   "params": {
+    "alvo": 16,
+    "n": 0
+   },
+   "texto": "Lu não tem nenhum culpado entre os vizinhos."
+  },
+  "A2": {
+   "tipo": "contagem",
+   "params": {
+    "area": {
+     "tipo": "linha",
+     "valor": 1
+    },
+    "n": 1
+   },
+   "texto": "Há exatamente 1 culpado na linha 1."
+  },
+  "B2": {
+   "tipo": "profissao",
+   "params": {
+    "profissao": "do RH",
+    "membros": [
+     2,
+     8,
+     17
+    ],
+    "n": 1
+   },
+   "texto": "Entre quem é do RH, há exatamente 1 culpado."
+  },
+  "C2": {
+   "tipo": "contagem",
+   "params": {
+    "area": {
+     "tipo": "coluna",
+     "valor": "B"
+    },
+    "n": 1
+   },
+   "texto": "Há exatamente 1 culpado na coluna B."
+  },
+  "D2": {
+   "tipo": "direcao",
+   "params": {
+    "alvo": 10,
+    "direcao": "direita",
+    "valor": "inocente"
+   },
+   "texto": "Todos à direita de Bia são inocentes."
+  },
+  "A3": {
+   "tipo": "vizinhos",
+   "params": {
+    "alvo": 7,
+    "n": 2
+   },
+   "texto": "Caio tem exatamente 2 culpados entre os vizinhos."
+  },
+  "B3": {
+   "tipo": "entre",
+   "params": {
+    "a": 7,
+    "b": 15,
+    "n": 0
+   },
+   "texto": "Não há nenhum culpado entre Caio e Rosa."
+  },
+  "C3": {
+   "tipo": "contagem",
+   "params": {
+    "area": {
+     "tipo": "borda"
+    },
+    "n": 5
+   },
+   "texto": "Há exatamente 5 culpados na borda."
+  },
+  "D3": {
+   "tipo": "direcao",
+   "params": {
+    "alvo": 13,
+    "direcao": "abaixo",
+    "valor": "inocente"
+   },
+   "texto": "Todos abaixo de Neide são inocentes."
+  },
+  "A4": {
+   "tipo": "entre",
+   "params": {
+    "a": 4,
+    "b": 6,
+    "n": 0
+   },
+   "texto": "Não há nenhum culpado entre Cida e Dani."
+  },
+  "B4": {
+   "tipo": "entre",
+   "params": {
+    "a": 6,
+    "b": 18,
+    "n": 1
+   },
+   "texto": "Há exatamente 1 culpado entre Dani e Kel."
+  },
+  "C4": {
+   "tipo": "contagem",
+   "params": {
+    "area": {
+     "tipo": "linha",
+     "valor": 3
+    },
+    "n": 2
+   },
+   "texto": "Há exatamente 2 culpados na linha 3."
+  },
+  "D4": {
+   "tipo": "entre",
+   "params": {
+    "a": 4,
+    "b": 16,
+    "n": 1
+   },
+   "texto": "Há exatamente 1 culpado entre Cida e Lu."
+  },
+  "A5": {
+   "tipo": "vizinhos",
+   "params": {
+    "alvo": 19,
+    "n": 0
+   },
+   "texto": "Vera não tem nenhum culpado entre os vizinhos."
+  },
+  "B5": {
+   "tipo": "contagem",
+   "params": {
+    "area": {
+     "tipo": "linha",
+     "valor": 4
+    },
+    "n": 0
+   },
+   "texto": "Não há nenhum culpado na linha 4."
+  },
+  "C5": {
+   "tipo": "contagem",
+   "params": {
+    "area": {
+     "tipo": "linha",
+     "valor": 5
+    },
+    "n": 1
+   },
+   "texto": "Há exatamente 1 culpado na linha 5."
+  },
+  "D5": {
+   "tipo": "vizinhos",
+   "params": {
+    "alvo": 9,
+    "n": 4
+   },
+   "texto": "Duda tem exatamente 4 culpados entre os vizinhos."
+  }
+ },
+ "solucao": "7hzt"
+}

@@ -1,0 +1,309 @@
+{
+ "versao": 1,
+ "dia_do_ciclo": 38,
+ "dificuldade": "medio",
+ "cenario": "firma",
+ "cenario_nome": "A firma",
+ "titulo": "Quem comeu o bolo do chefe?",
+ "personagens": [
+  {
+   "pos": "A1",
+   "nome": "Beto",
+   "profissao": "do RH"
+  },
+  {
+   "pos": "B1",
+   "nome": "Dani",
+   "profissao": "da TI"
+  },
+  {
+   "pos": "C1",
+   "nome": "Caio",
+   "profissao": "do estágio"
+  },
+  {
+   "pos": "D1",
+   "nome": "Neide",
+   "profissao": "da TI"
+  },
+  {
+   "pos": "A2",
+   "nome": "Lu",
+   "profissao": "do RH"
+  },
+  {
+   "pos": "B2",
+   "nome": "Tião",
+   "profissao": "da copa"
+  },
+  {
+   "pos": "C2",
+   "nome": "Rafa",
+   "profissao": "do estágio"
+  },
+  {
+   "pos": "D2",
+   "nome": "Paulo",
+   "profissao": "da contabilidade"
+  },
+  {
+   "pos": "A3",
+   "nome": "Rosa",
+   "profissao": "da contabilidade"
+  },
+  {
+   "pos": "B3",
+   "nome": "Lia",
+   "profissao": "de vendas"
+  },
+  {
+   "pos": "C3",
+   "nome": "Marcão",
+   "profissao": "do RH"
+  },
+  {
+   "pos": "D3",
+   "nome": "Iva",
+   "profissao": "da TI"
+  },
+  {
+   "pos": "A4",
+   "nome": "Nando",
+   "profissao": "do RH"
+  },
+  {
+   "pos": "B4",
+   "nome": "Toninho",
+   "profissao": "da contabilidade"
+  },
+  {
+   "pos": "C4",
+   "nome": "Fábio",
+   "profissao": "de vendas"
+  },
+  {
+   "pos": "D4",
+   "nome": "Bia",
+   "profissao": "do estágio"
+  },
+  {
+   "pos": "A5",
+   "nome": "Gabi",
+   "profissao": "de vendas"
+  },
+  {
+   "pos": "B5",
+   "nome": "Sil",
+   "profissao": "da contabilidade"
+  },
+  {
+   "pos": "C5",
+   "nome": "Cida",
+   "profissao": "da copa"
+  },
+  {
+   "pos": "D5",
+   "nome": "Zé",
+   "profissao": "da copa"
+  }
+ ],
+ "inicial": "B4",
+ "pistas": {
+  "A1": {
+   "tipo": "direcao",
+   "params": {
+    "alvo": 9,
+    "direcao": "acima",
+    "valor": "inocente"
+   },
+   "texto": "Todos acima de Lia são inocentes."
+  },
+  "B1": {
+   "tipo": "vizinhos",
+   "params": {
+    "alvo": 12,
+    "n": 3
+   },
+   "texto": "Nando tem exatamente 3 culpados entre os vizinhos."
+  },
+  "C1": {
+   "tipo": "conexao",
+   "params": {
+    "area": {
+     "tipo": "linha",
+     "valor": 1
+    }
+   },
+   "texto": "Todos os culpados da linha 1 estão conectados."
+  },
+  "D1": {
+   "tipo": "paridade",
+   "params": {
+    "area": {
+     "tipo": "borda"
+    },
+    "impar": false
+   },
+   "texto": "Há um número par de culpados na borda."
+  },
+  "A2": {
+   "tipo": "vizinhos",
+   "params": {
+    "alvo": 15,
+    "n": 1
+   },
+   "texto": "Bia tem exatamente 1 culpado entre os vizinhos."
+  },
+  "B2": {
+   "tipo": "contagem",
+   "params": {
+    "area": {
+     "tipo": "borda"
+    },
+    "n": 4
+   },
+   "texto": "Há exatamente 4 culpados na borda."
+  },
+  "C2": {
+   "tipo": "direcao",
+   "params": {
+    "alvo": 6,
+    "direcao": "direita",
+    "valor": "inocente"
+   },
+   "texto": "Todos à direita de mim são inocentes."
+  },
+  "D2": {
+   "tipo": "profissao",
+   "params": {
+    "profissao": "da contabilidade",
+    "membros": [
+     7,
+     8,
+     13,
+     17
+    ],
+    "n": 1
+   },
+   "texto": "Entre quem é da contabilidade, há exatamente 1 culpado."
+  },
+  "A3": {
+   "tipo": "direcao",
+   "params": {
+    "alvo": 13,
+    "direcao": "direita",
+    "valor": "culpado"
+   },
+   "texto": "Todos à direita de Toninho são culpados."
+  },
+  "B3": {
+   "tipo": "conexao",
+   "params": {
+    "area": {
+     "tipo": "linha",
+     "valor": 4
+    }
+   },
+   "texto": "Todos os culpados da linha 4 estão conectados."
+  },
+  "C3": {
+   "tipo": "paridade",
+   "params": {
+    "area": {
+     "tipo": "linha",
+     "valor": 5
+    },
+    "impar": true
+   },
+   "texto": "Há um número ímpar de culpados na linha 5."
+  },
+  "D3": {
+   "tipo": "direcao",
+   "params": {
+    "alvo": 15,
+    "direcao": "abaixo",
+    "valor": "inocente"
+   },
+   "texto": "Todos abaixo de Bia são inocentes."
+  },
+  "A4": {
+   "tipo": "vizinhos",
+   "params": {
+    "alvo": 10,
+    "n": 5
+   },
+   "texto": "Marcão tem exatamente 5 culpados entre os vizinhos."
+  },
+  "B4": {
+   "tipo": "direcao",
+   "params": {
+    "alvo": 9,
+    "direcao": "esquerda",
+    "valor": "inocente"
+   },
+   "texto": "Todos à esquerda de Lia são inocentes."
+  },
+  "C4": {
+   "tipo": "entre",
+   "params": {
+    "a": 12,
+    "b": 15,
+    "n": 2
+   },
+   "texto": "Há exatamente 2 culpados entre Nando e Bia."
+  },
+  "D4": {
+   "tipo": "entre",
+   "params": {
+    "a": 0,
+    "b": 12,
+    "n": 0
+   },
+   "texto": "Não há nenhum culpado entre Beto e Nando."
+  },
+  "A5": {
+   "tipo": "maioria",
+   "params": {
+    "area": {
+     "tipo": "coluna",
+     "valor": "A"
+    },
+    "valor": "inocente"
+   },
+   "texto": "Há mais inocentes que culpados na coluna A."
+  },
+  "B5": {
+   "tipo": "vizinhos",
+   "params": {
+    "alvo": 17,
+    "n": 3
+   },
+   "texto": "Tenho exatamente 3 culpados entre os vizinhos."
+  },
+  "C5": {
+   "tipo": "profissao",
+   "params": {
+    "profissao": "de vendas",
+    "membros": [
+     9,
+     14,
+     16
+    ],
+    "n": 3
+   },
+   "texto": "Entre quem é de vendas, há exatamente 3 culpados."
+  },
+  "D5": {
+   "tipo": "contagem",
+   "params": {
+    "area": {
+     "tipo": "coluna",
+     "valor": "C"
+    },
+    "n": 3
+   },
+   "texto": "Há exatamente 3 culpados na coluna C."
+  }
+ },
+ "solucao": "amxn"
+}

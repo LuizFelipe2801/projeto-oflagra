@@ -1,0 +1,314 @@
+{
+ "versao": 1,
+ "dia_do_ciclo": 228,
+ "dificuldade": "medio",
+ "cenario": "familia",
+ "cenario_nome": "O grupo da família",
+ "titulo": "Quem mandou a corrente de bom dia às 5 da manhã?",
+ "personagens": [
+  {
+   "pos": "A1",
+   "nome": "Mila",
+   "profissao": "dos tios"
+  },
+  {
+   "pos": "B1",
+   "nome": "Lara",
+   "profissao": "dos tios"
+  },
+  {
+   "pos": "C1",
+   "nome": "Júnior",
+   "profissao": "dos sobrinhos"
+  },
+  {
+   "pos": "D1",
+   "nome": "Marcelo",
+   "profissao": "dos cunhados"
+  },
+  {
+   "pos": "A2",
+   "nome": "Sérgio",
+   "profissao": "dos cunhados"
+  },
+  {
+   "pos": "B2",
+   "nome": "Lenita",
+   "profissao": "dos primos"
+  },
+  {
+   "pos": "C2",
+   "nome": "Vânia",
+   "profissao": "dos sobrinhos"
+  },
+  {
+   "pos": "D2",
+   "nome": "Carmem",
+   "profissao": "dos netos"
+  },
+  {
+   "pos": "A3",
+   "nome": "Vô Zeca",
+   "profissao": "dos netos"
+  },
+  {
+   "pos": "B3",
+   "nome": "Eduardo",
+   "profissao": "dos netos"
+  },
+  {
+   "pos": "C3",
+   "nome": "Luana",
+   "profissao": "dos sobrinhos"
+  },
+  {
+   "pos": "D3",
+   "nome": "Tetê",
+   "profissao": "dos avós"
+  },
+  {
+   "pos": "A4",
+   "nome": "Cadu",
+   "profissao": "dos avós"
+  },
+  {
+   "pos": "B4",
+   "nome": "Priscila",
+   "profissao": "dos avós"
+  },
+  {
+   "pos": "C4",
+   "nome": "Pedro",
+   "profissao": "dos primos"
+  },
+  {
+   "pos": "D4",
+   "nome": "Gil",
+   "profissao": "dos tios"
+  },
+  {
+   "pos": "A5",
+   "nome": "Tio Nelson",
+   "profissao": "dos avós"
+  },
+  {
+   "pos": "B5",
+   "nome": "Betinho",
+   "profissao": "dos primos"
+  },
+  {
+   "pos": "C5",
+   "nome": "Vó Dirce",
+   "profissao": "dos cunhados"
+  },
+  {
+   "pos": "D5",
+   "nome": "Bruninha",
+   "profissao": "dos sobrinhos"
+  }
+ ],
+ "inicial": "A5",
+ "pistas": {
+  "A1": {
+   "tipo": "vizinhos",
+   "params": {
+    "alvo": 11,
+    "n": 3
+   },
+   "texto": "Tetê tem exatamente 3 culpados entre os vizinhos."
+  },
+  "B1": {
+   "tipo": "profissao",
+   "params": {
+    "profissao": "dos tios",
+    "membros": [
+     0,
+     1,
+     15
+    ],
+    "n": 3
+   },
+   "texto": "Entre quem é dos tios, há exatamente 3 culpados."
+  },
+  "C1": {
+   "tipo": "contagem",
+   "params": {
+    "area": {
+     "tipo": "coluna",
+     "valor": "B"
+    },
+    "n": 2
+   },
+   "texto": "Há exatamente 2 culpados na coluna B."
+  },
+  "D1": {
+   "tipo": "direcao",
+   "params": {
+    "alvo": 9,
+    "direcao": "direita",
+    "valor": "culpado"
+   },
+   "texto": "Todos à direita de Eduardo são culpados."
+  },
+  "A2": {
+   "tipo": "paridade",
+   "params": {
+    "area": {
+     "tipo": "linha",
+     "valor": 3
+    },
+    "impar": true
+   },
+   "texto": "Há um número ímpar de culpados na linha 3."
+  },
+  "B2": {
+   "tipo": "vizinhos",
+   "params": {
+    "alvo": 14,
+    "n": 6
+   },
+   "texto": "Pedro tem exatamente 6 culpados entre os vizinhos."
+  },
+  "C2": {
+   "tipo": "direcao",
+   "params": {
+    "alvo": 13,
+    "direcao": "esquerda",
+    "valor": "culpado"
+   },
+   "texto": "Todos à esquerda de Priscila são culpados."
+  },
+  "D2": {
+   "tipo": "vizinhos",
+   "params": {
+    "alvo": 10,
+    "n": 4
+   },
+   "texto": "Luana tem exatamente 4 culpados entre os vizinhos."
+  },
+  "A3": {
+   "tipo": "direcao",
+   "params": {
+    "alvo": 6,
+    "direcao": "abaixo",
+    "valor": "culpado"
+   },
+   "texto": "Todos abaixo de Vânia são culpados."
+  },
+  "B3": {
+   "tipo": "profissao",
+   "params": {
+    "profissao": "dos primos",
+    "membros": [
+     5,
+     14,
+     17
+    ],
+    "n": 1
+   },
+   "texto": "Entre quem é dos primos, há exatamente 1 culpado."
+  },
+  "C3": {
+   "tipo": "vizinhos",
+   "params": {
+    "alvo": 7,
+    "n": 2
+   },
+   "texto": "Carmem tem exatamente 2 culpados entre os vizinhos."
+  },
+  "D3": {
+   "tipo": "vizinhos",
+   "params": {
+    "alvo": 6,
+    "n": 4
+   },
+   "texto": "Vânia tem exatamente 4 culpados entre os vizinhos."
+  },
+  "A4": {
+   "tipo": "profissao",
+   "params": {
+    "profissao": "dos sobrinhos",
+    "membros": [
+     2,
+     6,
+     10,
+     19
+    ],
+    "n": 2
+   },
+   "texto": "Entre quem é dos sobrinhos, há exatamente 2 culpados."
+  },
+  "B4": {
+   "tipo": "comparacao",
+   "params": {
+    "a": 18,
+    "b": 8
+   },
+   "texto": "Vó Dirce tem mais vizinhos culpados que Vô Zeca."
+  },
+  "C4": {
+   "tipo": "conexao",
+   "params": {
+    "area": {
+     "tipo": "coluna",
+     "valor": "C"
+    }
+   },
+   "texto": "Todos os culpados da coluna C estão conectados."
+  },
+  "D4": {
+   "tipo": "profissao",
+   "params": {
+    "profissao": "dos cunhados",
+    "membros": [
+     3,
+     4,
+     18
+    ],
+    "n": 1
+   },
+   "texto": "Entre quem é dos cunhados, há exatamente 1 culpado."
+  },
+  "A5": {
+   "tipo": "direcao",
+   "params": {
+    "alvo": 8,
+    "direcao": "direita",
+    "valor": "culpado"
+   },
+   "texto": "Todos à direita de Vô Zeca são culpados."
+  },
+  "B5": {
+   "tipo": "entre",
+   "params": {
+    "a": 1,
+    "b": 9,
+    "n": 0
+   },
+   "texto": "Não há nenhum culpado entre Lara e Eduardo."
+  },
+  "C5": {
+   "tipo": "vizinhos",
+   "params": {
+    "alvo": 18,
+    "n": 3
+   },
+   "texto": "Tenho exatamente 3 culpados entre os vizinhos."
+  },
+  "D5": {
+   "tipo": "profissao",
+   "params": {
+    "profissao": "dos avós",
+    "membros": [
+     11,
+     12,
+     13,
+     16
+    ],
+    "n": 2
+   },
+   "texto": "Entre quem é dos avós, há exatamente 2 culpados."
+  }
+ },
+ "solucao": "lgqj"
+}

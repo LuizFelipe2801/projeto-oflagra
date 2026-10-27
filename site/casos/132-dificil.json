@@ -1,0 +1,296 @@
+{
+ "versao": 1,
+ "dia_do_ciclo": 132,
+ "dificuldade": "dificil",
+ "cenario": "onibus",
+ "cenario_nome": "O ônibus",
+ "titulo": "Quem esqueceu de dar o sinal?",
+ "personagens": [
+  {
+   "pos": "A1",
+   "nome": "Josefa",
+   "profissao": "do ponto final"
+  },
+  {
+   "pos": "B1",
+   "nome": "Rosângela",
+   "profissao": "do banco da frente"
+  },
+  {
+   "pos": "C1",
+   "nome": "Zenaide",
+   "profissao": "da catraca"
+  },
+  {
+   "pos": "D1",
+   "nome": "Nivaldo",
+   "profissao": "do ponto final"
+  },
+  {
+   "pos": "A2",
+   "nome": "Conceição",
+   "profissao": "da janela"
+  },
+  {
+   "pos": "B2",
+   "nome": "Creusa",
+   "profissao": "do fundão"
+  },
+  {
+   "pos": "C2",
+   "nome": "Hélio",
+   "profissao": "do fundão"
+  },
+  {
+   "pos": "D2",
+   "nome": "Ronaldo",
+   "profissao": "da janela"
+  },
+  {
+   "pos": "A3",
+   "nome": "Seu Manoel",
+   "profissao": "do banco da frente"
+  },
+  {
+   "pos": "B3",
+   "nome": "Denílson",
+   "profissao": "do corredor"
+  },
+  {
+   "pos": "C3",
+   "nome": "Dona Rita",
+   "profissao": "do corredor"
+  },
+  {
+   "pos": "D3",
+   "nome": "Leila",
+   "profissao": "da catraca"
+  },
+  {
+   "pos": "A4",
+   "nome": "Edmilson",
+   "profissao": "da catraca"
+  },
+  {
+   "pos": "B4",
+   "nome": "Eliane",
+   "profissao": "do fundão"
+  },
+  {
+   "pos": "C4",
+   "nome": "Josué",
+   "profissao": "do corredor"
+  },
+  {
+   "pos": "D4",
+   "nome": "Adilson",
+   "profissao": "da catraca"
+  },
+  {
+   "pos": "A5",
+   "nome": "Dalila",
+   "profissao": "da janela"
+  },
+  {
+   "pos": "B5",
+   "nome": "Valmir",
+   "profissao": "do ponto final"
+  },
+  {
+   "pos": "C5",
+   "nome": "Terezinha",
+   "profissao": "do fundão"
+  },
+  {
+   "pos": "D5",
+   "nome": "Cícero",
+   "profissao": "do banco da frente"
+  }
+ ],
+ "inicial": "A5",
+ "pistas": {
+  "A1": {
+   "tipo": "comparacao",
+   "params": {
+    "a": 6,
+    "b": 15
+   },
+   "texto": "Hélio tem mais vizinhos culpados que Adilson."
+  },
+  "B1": {
+   "tipo": "comparacao",
+   "params": {
+    "a": 9,
+    "b": 19
+   },
+   "texto": "Denílson tem mais vizinhos culpados que Cícero."
+  },
+  "C1": {
+   "tipo": "profissao",
+   "params": {
+    "profissao": "do fundão",
+    "membros": [
+     5,
+     6,
+     13,
+     18
+    ],
+    "n": 0
+   },
+   "texto": "Entre quem é do fundão, não há nenhum culpado."
+  },
+  "D1": {
+   "tipo": "comparacao",
+   "params": {
+    "a": 10,
+    "b": 8
+   },
+   "texto": "Dona Rita tem mais vizinhos culpados que Seu Manoel."
+  },
+  "A2": {
+   "tipo": "entre",
+   "params": {
+    "a": 4,
+    "b": 6,
+    "n": 0
+   },
+   "texto": "Não há nenhum culpado entre mim e Hélio."
+  },
+  "B2": {
+   "tipo": "entre",
+   "params": {
+    "a": 5,
+    "b": 13,
+    "n": 1
+   },
+   "texto": "Há exatamente 1 culpado entre mim e Eliane."
+  },
+  "C2": {
+   "tipo": "vizinhos",
+   "params": {
+    "alvo": 19,
+    "n": 1
+   },
+   "texto": "Cícero tem exatamente 1 culpado entre os vizinhos."
+  },
+  "D2": {
+   "tipo": "vizinhos",
+   "params": {
+    "alvo": 10,
+    "n": 3
+   },
+   "texto": "Dona Rita tem exatamente 3 culpados entre os vizinhos."
+  },
+  "A3": {
+   "tipo": "comparacao",
+   "params": {
+    "a": 4,
+    "b": 0
+   },
+   "texto": "Conceição tem mais vizinhos culpados que Josefa."
+  },
+  "B3": {
+   "tipo": "entre",
+   "params": {
+    "a": 1,
+    "b": 3,
+    "n": 0
+   },
+   "texto": "Não há nenhum culpado entre Rosângela e Nivaldo."
+  },
+  "C3": {
+   "tipo": "vizinhos",
+   "params": {
+    "alvo": 8,
+    "n": 1
+   },
+   "texto": "Seu Manoel tem exatamente 1 culpado entre os vizinhos."
+  },
+  "D3": {
+   "tipo": "vizinhos",
+   "params": {
+    "alvo": 11,
+    "n": 1
+   },
+   "texto": "Tenho exatamente 1 culpado entre os vizinhos."
+  },
+  "A4": {
+   "tipo": "comparacao",
+   "params": {
+    "a": 1,
+    "b": 3
+   },
+   "texto": "Rosângela tem mais vizinhos culpados que Nivaldo."
+  },
+  "B4": {
+   "tipo": "maioria",
+   "params": {
+    "area": {
+     "tipo": "coluna",
+     "valor": "D"
+    },
+    "valor": "inocente"
+   },
+   "texto": "Há mais inocentes que culpados na coluna D."
+  },
+  "C4": {
+   "tipo": "direcao",
+   "params": {
+    "alvo": 13,
+    "direcao": "abaixo",
+    "valor": "culpado"
+   },
+   "texto": "Todos abaixo de Eliane são culpados."
+  },
+  "D4": {
+   "tipo": "maioria",
+   "params": {
+    "area": {
+     "tipo": "linha",
+     "valor": 4
+    },
+    "valor": "inocente"
+   },
+   "texto": "Há mais inocentes que culpados na linha 4."
+  },
+  "A5": {
+   "tipo": "profissao",
+   "params": {
+    "profissao": "da janela",
+    "membros": [
+     4,
+     7,
+     16
+    ],
+    "n": 0
+   },
+   "texto": "Entre quem é da janela, não há nenhum culpado."
+  },
+  "B5": {
+   "tipo": "comparacao",
+   "params": {
+    "a": 15,
+    "b": 7
+   },
+   "texto": "Adilson tem mais vizinhos culpados que Ronaldo."
+  },
+  "C5": {
+   "tipo": "entre",
+   "params": {
+    "a": 2,
+    "b": 10,
+    "n": 0
+   },
+   "texto": "Não há nenhum culpado entre Zenaide e Dona Rita."
+  },
+  "D5": {
+   "tipo": "vizinhos",
+   "params": {
+    "alvo": 0,
+    "n": 1
+   },
+   "texto": "Josefa tem exatamente 1 culpado entre os vizinhos."
+  }
+ },
+ "solucao": "dd3l"
+}

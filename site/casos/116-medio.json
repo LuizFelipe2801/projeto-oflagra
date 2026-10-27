@@ -1,0 +1,304 @@
+{
+ "versao": 1,
+ "dia_do_ciclo": 116,
+ "dificuldade": "medio",
+ "cenario": "academia",
+ "cenario_nome": "A academia",
+ "titulo": "Quem trocou a música do som?",
+ "personagens": [
+  {
+   "pos": "A1",
+   "nome": "Márcio",
+   "profissao": "da nutrição"
+  },
+  {
+   "pos": "B1",
+   "nome": "Bruna",
+   "profissao": "da nutrição"
+  },
+  {
+   "pos": "C1",
+   "nome": "Everton",
+   "profissao": "da musculação"
+  },
+  {
+   "pos": "D1",
+   "nome": "Yuri",
+   "profissao": "da recepção"
+  },
+  {
+   "pos": "A2",
+   "nome": "Thales",
+   "profissao": "da recepção"
+  },
+  {
+   "pos": "B2",
+   "nome": "Melissa",
+   "profissao": "da musculação"
+  },
+  {
+   "pos": "C2",
+   "nome": "Elisa",
+   "profissao": "do spinning"
+  },
+  {
+   "pos": "D2",
+   "nome": "Raíssa",
+   "profissao": "da recepção"
+  },
+  {
+   "pos": "A3",
+   "nome": "Kevin",
+   "profissao": "do spinning"
+  },
+  {
+   "pos": "B3",
+   "nome": "Bárbara",
+   "profissao": "da esteira"
+  },
+  {
+   "pos": "C3",
+   "nome": "Ingrid",
+   "profissao": "da limpeza"
+  },
+  {
+   "pos": "D3",
+   "nome": "Douglas",
+   "profissao": "do spinning"
+  },
+  {
+   "pos": "A4",
+   "nome": "Franciele",
+   "profissao": "da nutrição"
+  },
+  {
+   "pos": "B4",
+   "nome": "Diogo",
+   "profissao": "do spinning"
+  },
+  {
+   "pos": "C4",
+   "nome": "Giovana",
+   "profissao": "da esteira"
+  },
+  {
+   "pos": "D4",
+   "nome": "Caio",
+   "profissao": "da limpeza"
+  },
+  {
+   "pos": "A5",
+   "nome": "Taís",
+   "profissao": "da esteira"
+  },
+  {
+   "pos": "B5",
+   "nome": "Sabrina",
+   "profissao": "da esteira"
+  },
+  {
+   "pos": "C5",
+   "nome": "Alex",
+   "profissao": "da limpeza"
+  },
+  {
+   "pos": "D5",
+   "nome": "Otávio",
+   "profissao": "da musculação"
+  }
+ ],
+ "inicial": "D1",
+ "pistas": {
+  "A1": {
+   "tipo": "paridade",
+   "params": {
+    "area": {
+     "tipo": "linha",
+     "valor": 2
+    },
+    "impar": false
+   },
+   "texto": "Há um número par de culpados na linha 2."
+  },
+  "B1": {
+   "tipo": "entre",
+   "params": {
+    "a": 9,
+    "b": 17,
+    "n": 0
+   },
+   "texto": "Não há nenhum culpado entre Bárbara e Sabrina."
+  },
+  "C1": {
+   "tipo": "vizinhos",
+   "params": {
+    "alvo": 4,
+    "n": 3
+   },
+   "texto": "Thales tem exatamente 3 culpados entre os vizinhos."
+  },
+  "D1": {
+   "tipo": "direcao",
+   "params": {
+    "alvo": 5,
+    "direcao": "esquerda",
+    "valor": "inocente"
+   },
+   "texto": "Todos à esquerda de Melissa são inocentes."
+  },
+  "A2": {
+   "tipo": "entre",
+   "params": {
+    "a": 7,
+    "b": 15,
+    "n": 1
+   },
+   "texto": "Há exatamente 1 culpado entre Raíssa e Caio."
+  },
+  "B2": {
+   "tipo": "vizinhos",
+   "params": {
+    "alvo": 7,
+    "n": 4
+   },
+   "texto": "Raíssa tem exatamente 4 culpados entre os vizinhos."
+  },
+  "C2": {
+   "tipo": "contagem",
+   "params": {
+    "area": {
+     "tipo": "coluna",
+     "valor": "C"
+    },
+    "n": 3
+   },
+   "texto": "Há exatamente 3 culpados na coluna C."
+  },
+  "D2": {
+   "tipo": "paridade",
+   "params": {
+    "area": {
+     "tipo": "linha",
+     "valor": 3
+    },
+    "impar": true
+   },
+   "texto": "Há um número ímpar de culpados na linha 3."
+  },
+  "A3": {
+   "tipo": "entre",
+   "params": {
+    "a": 0,
+    "b": 2,
+    "n": 1
+   },
+   "texto": "Há exatamente 1 culpado entre Márcio e Everton."
+  },
+  "B3": {
+   "tipo": "vizinhos",
+   "params": {
+    "alvo": 19,
+    "n": 0
+   },
+   "texto": "Otávio não tem nenhum culpado entre os vizinhos."
+  },
+  "C3": {
+   "tipo": "conexao",
+   "params": {
+    "area": {
+     "tipo": "coluna",
+     "valor": "D"
+    }
+   },
+   "texto": "Todos os culpados da coluna D estão conectados."
+  },
+  "D3": {
+   "tipo": "entre",
+   "params": {
+    "a": 13,
+    "b": 15,
+    "n": 0
+   },
+   "texto": "Não há nenhum culpado entre Diogo e Caio."
+  },
+  "A4": {
+   "tipo": "paridade",
+   "params": {
+    "area": {
+     "tipo": "coluna",
+     "valor": "B"
+    },
+    "impar": true
+   },
+   "texto": "Há um número ímpar de culpados na coluna B."
+  },
+  "B4": {
+   "tipo": "direcao",
+   "params": {
+    "alvo": 2,
+    "direcao": "esquerda",
+    "valor": "culpado"
+   },
+   "texto": "Todos à esquerda de Everton são culpados."
+  },
+  "C4": {
+   "tipo": "entre",
+   "params": {
+    "a": 11,
+    "b": 19,
+    "n": 0
+   },
+   "texto": "Não há nenhum culpado entre Douglas e Otávio."
+  },
+  "D4": {
+   "tipo": "entre",
+   "params": {
+    "a": 4,
+    "b": 6,
+    "n": 0
+   },
+   "texto": "Não há nenhum culpado entre Thales e Elisa."
+  },
+  "A5": {
+   "tipo": "contagem",
+   "params": {
+    "area": {
+     "tipo": "linha",
+     "valor": 4
+    },
+    "n": 1
+   },
+   "texto": "Há exatamente 1 culpado na linha 4."
+  },
+  "B5": {
+   "tipo": "vizinhos",
+   "params": {
+    "alvo": 1,
+    "n": 3
+   },
+   "texto": "Bruna tem exatamente 3 culpados entre os vizinhos."
+  },
+  "C5": {
+   "tipo": "contagem",
+   "params": {
+    "area": {
+     "tipo": "linha",
+     "valor": 5
+    },
+    "n": 2
+   },
+   "texto": "Há exatamente 2 culpados na linha 5."
+  },
+  "D5": {
+   "tipo": "conexao",
+   "params": {
+    "area": {
+     "tipo": "coluna",
+     "valor": "C"
+    }
+   },
+   "texto": "Todos os culpados da coluna C estão conectados."
+  }
+ },
+ "solucao": "4llv"
+}

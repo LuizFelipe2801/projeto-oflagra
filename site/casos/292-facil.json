@@ -1,0 +1,309 @@
+{
+ "versao": 1,
+ "dia_do_ciclo": 292,
+ "dificuldade": "facil",
+ "cenario": "familia",
+ "cenario_nome": "O grupo da família",
+ "titulo": "Quem vazou a surpresa do aniversário?",
+ "personagens": [
+  {
+   "pos": "A1",
+   "nome": "Lara",
+   "profissao": "dos cunhados"
+  },
+  {
+   "pos": "B1",
+   "nome": "Júnior",
+   "profissao": "dos tios"
+  },
+  {
+   "pos": "C1",
+   "nome": "Gil",
+   "profissao": "dos tios"
+  },
+  {
+   "pos": "D1",
+   "nome": "Pedro",
+   "profissao": "dos cunhados"
+  },
+  {
+   "pos": "A2",
+   "nome": "Sérgio",
+   "profissao": "dos avós"
+  },
+  {
+   "pos": "B2",
+   "nome": "Marcelo",
+   "profissao": "dos sobrinhos"
+  },
+  {
+   "pos": "C2",
+   "nome": "Eduardo",
+   "profissao": "dos tios"
+  },
+  {
+   "pos": "D2",
+   "nome": "Tia Cleusa",
+   "profissao": "dos primos"
+  },
+  {
+   "pos": "A3",
+   "nome": "Vânia",
+   "profissao": "dos avós"
+  },
+  {
+   "pos": "B3",
+   "nome": "Bruninha",
+   "profissao": "dos netos"
+  },
+  {
+   "pos": "C3",
+   "nome": "Tio Nelson",
+   "profissao": "dos sobrinhos"
+  },
+  {
+   "pos": "D3",
+   "nome": "Vô Zeca",
+   "profissao": "dos sobrinhos"
+  },
+  {
+   "pos": "A4",
+   "nome": "Vó Dirce",
+   "profissao": "dos netos"
+  },
+  {
+   "pos": "B4",
+   "nome": "Andréia",
+   "profissao": "dos cunhados"
+  },
+  {
+   "pos": "C4",
+   "nome": "Carmem",
+   "profissao": "dos netos"
+  },
+  {
+   "pos": "D4",
+   "nome": "Mila",
+   "profissao": "dos avós"
+  },
+  {
+   "pos": "A5",
+   "nome": "Nando",
+   "profissao": "dos primos"
+  },
+  {
+   "pos": "B5",
+   "nome": "Luana",
+   "profissao": "dos sobrinhos"
+  },
+  {
+   "pos": "C5",
+   "nome": "Tetê",
+   "profissao": "dos cunhados"
+  },
+  {
+   "pos": "D5",
+   "nome": "Betinho",
+   "profissao": "dos primos"
+  }
+ ],
+ "inicial": "C1",
+ "pistas": {
+  "A1": {
+   "tipo": "vizinhos",
+   "params": {
+    "alvo": 10,
+    "n": 3
+   },
+   "texto": "Tio Nelson tem exatamente 3 culpados entre os vizinhos."
+  },
+  "B1": {
+   "tipo": "direcao",
+   "params": {
+    "alvo": 10,
+    "direcao": "direita",
+    "valor": "inocente"
+   },
+   "texto": "Todos à direita de Tio Nelson são inocentes."
+  },
+  "C1": {
+   "tipo": "direcao",
+   "params": {
+    "alvo": 5,
+    "direcao": "esquerda",
+    "valor": "inocente"
+   },
+   "texto": "Todos à esquerda de Marcelo são inocentes."
+  },
+  "D1": {
+   "tipo": "vizinhos",
+   "params": {
+    "alvo": 9,
+    "n": 1
+   },
+   "texto": "Bruninha tem exatamente 1 culpado entre os vizinhos."
+  },
+  "A2": {
+   "tipo": "profissao",
+   "params": {
+    "profissao": "dos tios",
+    "membros": [
+     1,
+     2,
+     6
+    ],
+    "n": 1
+   },
+   "texto": "Entre quem é dos tios, há exatamente 1 culpado."
+  },
+  "B2": {
+   "tipo": "profissao",
+   "params": {
+    "profissao": "dos avós",
+    "membros": [
+     4,
+     8,
+     15
+    ],
+    "n": 0
+   },
+   "texto": "Entre quem é dos avós, não há nenhum culpado."
+  },
+  "C2": {
+   "tipo": "entre",
+   "params": {
+    "a": 1,
+    "b": 9,
+    "n": 0
+   },
+   "texto": "Não há nenhum culpado entre Júnior e Bruninha."
+  },
+  "D2": {
+   "tipo": "profissao",
+   "params": {
+    "profissao": "dos sobrinhos",
+    "membros": [
+     5,
+     10,
+     11,
+     17
+    ],
+    "n": 0
+   },
+   "texto": "Entre quem é dos sobrinhos, não há nenhum culpado."
+  },
+  "A3": {
+   "tipo": "entre",
+   "params": {
+    "a": 5,
+    "b": 17,
+    "n": 2
+   },
+   "texto": "Há exatamente 2 culpados entre Marcelo e Luana."
+  },
+  "B3": {
+   "tipo": "profissao",
+   "params": {
+    "profissao": "dos primos",
+    "membros": [
+     7,
+     16,
+     19
+    ],
+    "n": 1
+   },
+   "texto": "Entre quem é dos primos, há exatamente 1 culpado."
+  },
+  "C3": {
+   "tipo": "contagem",
+   "params": {
+    "area": {
+     "tipo": "linha",
+     "valor": 4
+    },
+    "n": 1
+   },
+   "texto": "Há exatamente 1 culpado na linha 4."
+  },
+  "D3": {
+   "tipo": "direcao",
+   "params": {
+    "alvo": 9,
+    "direcao": "direita",
+    "valor": "inocente"
+   },
+   "texto": "Todos à direita de Bruninha são inocentes."
+  },
+  "A4": {
+   "tipo": "direcao",
+   "params": {
+    "alvo": 17,
+    "direcao": "esquerda",
+    "valor": "inocente"
+   },
+   "texto": "Todos à esquerda de Luana são inocentes."
+  },
+  "B4": {
+   "tipo": "direcao",
+   "params": {
+    "alvo": 6,
+    "direcao": "direita",
+    "valor": "culpado"
+   },
+   "texto": "Todos à direita de Eduardo são culpados."
+  },
+  "C4": {
+   "tipo": "vizinhos",
+   "params": {
+    "alvo": 8,
+    "n": 2
+   },
+   "texto": "Vânia tem exatamente 2 culpados entre os vizinhos."
+  },
+  "D4": {
+   "tipo": "direcao",
+   "params": {
+    "alvo": 18,
+    "direcao": "direita",
+    "valor": "inocente"
+   },
+   "texto": "Todos à direita de Tetê são inocentes."
+  },
+  "A5": {
+   "tipo": "contagem",
+   "params": {
+    "area": {
+     "tipo": "borda"
+    },
+    "n": 4
+   },
+   "texto": "Há exatamente 4 culpados na borda."
+  },
+  "B5": {
+   "tipo": "direcao",
+   "params": {
+    "alvo": 7,
+    "direcao": "acima",
+    "valor": "inocente"
+   },
+   "texto": "Todos acima de Tia Cleusa são inocentes."
+  },
+  "C5": {
+   "tipo": "vizinhos",
+   "params": {
+    "alvo": 16,
+    "n": 1
+   },
+   "texto": "Nando tem exatamente 1 culpado entre os vizinhos."
+  },
+  "D5": {
+   "tipo": "vizinhos",
+   "params": {
+    "alvo": 19,
+    "n": 1
+   },
+   "texto": "Tenho exatamente 1 culpado entre os vizinhos."
+  }
+ },
+ "solucao": "ere4"
+}

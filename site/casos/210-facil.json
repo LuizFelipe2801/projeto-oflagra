@@ -1,0 +1,300 @@
+{
+ "versao": 1,
+ "dia_do_ciclo": 210,
+ "dificuldade": "facil",
+ "cenario": "firma",
+ "cenario_nome": "A firma",
+ "titulo": "Quem comeu o bolo do chefe?",
+ "personagens": [
+  {
+   "pos": "A1",
+   "nome": "Sil",
+   "profissao": "da contabilidade"
+  },
+  {
+   "pos": "B1",
+   "nome": "Rafa",
+   "profissao": "do RH"
+  },
+  {
+   "pos": "C1",
+   "nome": "Vera",
+   "profissao": "da copa"
+  },
+  {
+   "pos": "D1",
+   "nome": "Marcão",
+   "profissao": "da copa"
+  },
+  {
+   "pos": "A2",
+   "nome": "Fábio",
+   "profissao": "de vendas"
+  },
+  {
+   "pos": "B2",
+   "nome": "Caio",
+   "profissao": "da copa"
+  },
+  {
+   "pos": "C2",
+   "nome": "Duda",
+   "profissao": "do RH"
+  },
+  {
+   "pos": "D2",
+   "nome": "Gabi",
+   "profissao": "da TI"
+  },
+  {
+   "pos": "A3",
+   "nome": "Rosa",
+   "profissao": "do RH"
+  },
+  {
+   "pos": "B3",
+   "nome": "Toninho",
+   "profissao": "do estágio"
+  },
+  {
+   "pos": "C3",
+   "nome": "Dani",
+   "profissao": "da contabilidade"
+  },
+  {
+   "pos": "D3",
+   "nome": "Paulo",
+   "profissao": "de vendas"
+  },
+  {
+   "pos": "A4",
+   "nome": "Bia",
+   "profissao": "do estágio"
+  },
+  {
+   "pos": "B4",
+   "nome": "Juju",
+   "profissao": "do estágio"
+  },
+  {
+   "pos": "C4",
+   "nome": "Nando",
+   "profissao": "de vendas"
+  },
+  {
+   "pos": "D4",
+   "nome": "Beto",
+   "profissao": "da copa"
+  },
+  {
+   "pos": "A5",
+   "nome": "Neide",
+   "profissao": "da contabilidade"
+  },
+  {
+   "pos": "B5",
+   "nome": "Lu",
+   "profissao": "da TI"
+  },
+  {
+   "pos": "C5",
+   "nome": "Zé",
+   "profissao": "da TI"
+  },
+  {
+   "pos": "D5",
+   "nome": "Kel",
+   "profissao": "da TI"
+  }
+ ],
+ "inicial": "D5",
+ "pistas": {
+  "A1": {
+   "tipo": "entre",
+   "params": {
+    "a": 5,
+    "b": 17,
+    "n": 0
+   },
+   "texto": "Não há nenhum culpado entre Caio e Lu."
+  },
+  "B1": {
+   "tipo": "profissao",
+   "params": {
+    "profissao": "da TI",
+    "membros": [
+     7,
+     17,
+     18,
+     19
+    ],
+    "n": 1
+   },
+   "texto": "Entre quem é da TI, há exatamente 1 culpado."
+  },
+  "C1": {
+   "tipo": "vizinhos",
+   "params": {
+    "alvo": 11,
+    "n": 1
+   },
+   "texto": "Paulo tem exatamente 1 culpado entre os vizinhos."
+  },
+  "D1": {
+   "tipo": "vizinhos",
+   "params": {
+    "alvo": 8,
+    "n": 2
+   },
+   "texto": "Rosa tem exatamente 2 culpados entre os vizinhos."
+  },
+  "A2": {
+   "tipo": "vizinhos",
+   "params": {
+    "alvo": 6,
+    "n": 4
+   },
+   "texto": "Duda tem exatamente 4 culpados entre os vizinhos."
+  },
+  "B2": {
+   "tipo": "vizinhos",
+   "params": {
+    "alvo": 9,
+    "n": 3
+   },
+   "texto": "Toninho tem exatamente 3 culpados entre os vizinhos."
+  },
+  "C2": {
+   "tipo": "vizinhos",
+   "params": {
+    "alvo": 2,
+    "n": 2
+   },
+   "texto": "Vera tem exatamente 2 culpados entre os vizinhos."
+  },
+  "D2": {
+   "tipo": "contagem",
+   "params": {
+    "area": {
+     "tipo": "coluna",
+     "valor": "A"
+    },
+    "n": 1
+   },
+   "texto": "Há exatamente 1 culpado na coluna A."
+  },
+  "A3": {
+   "tipo": "profissao",
+   "params": {
+    "profissao": "do estágio",
+    "membros": [
+     9,
+     12,
+     13
+    ],
+    "n": 1
+   },
+   "texto": "Entre quem é do estágio, há exatamente 1 culpado."
+  },
+  "B3": {
+   "tipo": "conexao",
+   "params": {
+    "area": {
+     "tipo": "linha",
+     "valor": 1
+    }
+   },
+   "texto": "Todos os culpados da linha 1 estão conectados."
+  },
+  "C3": {
+   "tipo": "contagem",
+   "params": {
+    "area": {
+     "tipo": "coluna",
+     "valor": "D"
+    },
+    "n": 1
+   },
+   "texto": "Há exatamente 1 culpado na coluna D."
+  },
+  "D3": {
+   "tipo": "direcao",
+   "params": {
+    "alvo": 11,
+    "direcao": "abaixo",
+    "valor": "inocente"
+   },
+   "texto": "Todos abaixo de mim são inocentes."
+  },
+  "A4": {
+   "tipo": "vizinhos",
+   "params": {
+    "alvo": 17,
+    "n": 1
+   },
+   "texto": "Lu tem exatamente 1 culpado entre os vizinhos."
+  },
+  "B4": {
+   "tipo": "entre",
+   "params": {
+    "a": 0,
+    "b": 12,
+    "n": 0
+   },
+   "texto": "Não há nenhum culpado entre Sil e Bia."
+  },
+  "C4": {
+   "tipo": "vizinhos",
+   "params": {
+    "alvo": 4,
+    "n": 1
+   },
+   "texto": "Fábio tem exatamente 1 culpado entre os vizinhos."
+  },
+  "D4": {
+   "tipo": "direcao",
+   "params": {
+    "alvo": 1,
+    "direcao": "esquerda",
+    "valor": "inocente"
+   },
+   "texto": "Todos à esquerda de Rafa são inocentes."
+  },
+  "A5": {
+   "tipo": "vizinhos",
+   "params": {
+    "alvo": 16,
+    "n": 2
+   },
+   "texto": "Tenho exatamente 2 culpados entre os vizinhos."
+  },
+  "B5": {
+   "tipo": "direcao",
+   "params": {
+    "alvo": 3,
+    "direcao": "abaixo",
+    "valor": "inocente"
+   },
+   "texto": "Todos abaixo de Marcão são inocentes."
+  },
+  "C5": {
+   "tipo": "entre",
+   "params": {
+    "a": 9,
+    "b": 11,
+    "n": 1
+   },
+   "texto": "Há exatamente 1 culpado entre Toninho e Paulo."
+  },
+  "D5": {
+   "tipo": "direcao",
+   "params": {
+    "alvo": 8,
+    "direcao": "acima",
+    "valor": "inocente"
+   },
+   "texto": "Todos acima de Rosa são inocentes."
+  }
+ },
+ "solucao": "cyqf"
+}

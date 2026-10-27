@@ -47,6 +47,6 @@ Observação de conteúdo: as profissões são sorteadas sem considerar o gêner
 
 Medição do CT-07 (Node 24, 100 casos difíceis, no pior momento, que é o início, com 1 pista e 19 desconhecidos): verificação da jogada em até 36 ms; cálculo da dica em até 63 ms. Em aparelho 4× mais lento, a jogada fica perto de 150 ms: acima do limite de RNF-003. A alternativa prevista em [05-Arquitetura](05-Arquitetura.md#tratamento-de-erros) (manter a lista de soluções e filtrar a cada jogada) já é o que `partida.js` faz depois da primeira revelação; a medição real em Android de entrada decide se é preciso otimizar o início.
 
-Geração do ciclo: GERACAO_LOG
+Geração do ciclo completo (`npm run gerar -- --dias 365 --saida site/casos`): 1.095 casos em 1.139 s (19 min), sem falha. Validação (`npm run validar -- --pasta site/casos`): 1.095 casos conferidos, nenhum problema.
 
 [Inclua a saída dos testes automatizados e prints ou gravações dos testes manuais]

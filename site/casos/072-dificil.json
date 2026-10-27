@@ -1,0 +1,324 @@
+{
+ "versao": 1,
+ "dia_do_ciclo": 72,
+ "dificuldade": "dificil",
+ "cenario": "onibus",
+ "cenario_nome": "O ônibus",
+ "titulo": "Quem esqueceu de dar o sinal?",
+ "personagens": [
+  {
+   "pos": "A1",
+   "nome": "Josué",
+   "profissao": "do banco da frente"
+  },
+  {
+   "pos": "B1",
+   "nome": "Denílson",
+   "profissao": "da janela"
+  },
+  {
+   "pos": "C1",
+   "nome": "Ieda",
+   "profissao": "da catraca"
+  },
+  {
+   "pos": "D1",
+   "nome": "Jaílson",
+   "profissao": "da janela"
+  },
+  {
+   "pos": "A2",
+   "nome": "Valmir",
+   "profissao": "do fundão"
+  },
+  {
+   "pos": "B2",
+   "nome": "Marlúcia",
+   "profissao": "da janela"
+  },
+  {
+   "pos": "C2",
+   "nome": "Nivaldo",
+   "profissao": "do corredor"
+  },
+  {
+   "pos": "D2",
+   "nome": "Rosângela",
+   "profissao": "do fundão"
+  },
+  {
+   "pos": "A3",
+   "nome": "Adilson",
+   "profissao": "do fundão"
+  },
+  {
+   "pos": "B3",
+   "nome": "Josefa",
+   "profissao": "do banco da frente"
+  },
+  {
+   "pos": "C3",
+   "nome": "Dalila",
+   "profissao": "da catraca"
+  },
+  {
+   "pos": "D3",
+   "nome": "Hélio",
+   "profissao": "da janela"
+  },
+  {
+   "pos": "A4",
+   "nome": "Leila",
+   "profissao": "do corredor"
+  },
+  {
+   "pos": "B4",
+   "nome": "Terezinha",
+   "profissao": "da catraca"
+  },
+  {
+   "pos": "C4",
+   "nome": "Dona Rita",
+   "profissao": "do ponto final"
+  },
+  {
+   "pos": "D4",
+   "nome": "Ronaldo",
+   "profissao": "do fundão"
+  },
+  {
+   "pos": "A5",
+   "nome": "Agnaldo",
+   "profissao": "do ponto final"
+  },
+  {
+   "pos": "B5",
+   "nome": "Zenaide",
+   "profissao": "do banco da frente"
+  },
+  {
+   "pos": "C5",
+   "nome": "Conceição",
+   "profissao": "do corredor"
+  },
+  {
+   "pos": "D5",
+   "nome": "Creusa",
+   "profissao": "do ponto final"
+  }
+ ],
+ "inicial": "A1",
+ "pistas": {
+  "A1": {
+   "tipo": "direcao",
+   "params": {
+    "alvo": 6,
+    "direcao": "acima",
+    "valor": "inocente"
+   },
+   "texto": "Todos acima de Nivaldo são inocentes."
+  },
+  "B1": {
+   "tipo": "profissao",
+   "params": {
+    "profissao": "do corredor",
+    "membros": [
+     6,
+     12,
+     18
+    ],
+    "n": 1
+   },
+   "texto": "Entre quem é do corredor, há exatamente 1 culpado."
+  },
+  "C1": {
+   "tipo": "vizinhos",
+   "params": {
+    "alvo": 2,
+    "n": 0
+   },
+   "texto": "Não tenho nenhum culpado entre os vizinhos."
+  },
+  "D1": {
+   "tipo": "maioria",
+   "params": {
+    "area": {
+     "tipo": "coluna",
+     "valor": "A"
+    },
+    "valor": "culpado"
+   },
+   "texto": "Há mais culpados que inocentes na coluna A."
+  },
+  "A2": {
+   "tipo": "vizinhos",
+   "params": {
+    "alvo": 16,
+    "n": 2
+   },
+   "texto": "Agnaldo tem exatamente 2 culpados entre os vizinhos."
+  },
+  "B2": {
+   "tipo": "maioria",
+   "params": {
+    "area": {
+     "tipo": "coluna",
+     "valor": "B"
+    },
+    "valor": "inocente"
+   },
+   "texto": "Há mais inocentes que culpados na coluna B."
+  },
+  "C2": {
+   "tipo": "paridade",
+   "params": {
+    "area": {
+     "tipo": "borda"
+    },
+    "impar": false
+   },
+   "texto": "Há um número par de culpados na borda."
+  },
+  "D2": {
+   "tipo": "entre",
+   "params": {
+    "a": 2,
+    "b": 14,
+    "n": 1
+   },
+   "texto": "Há exatamente 1 culpado entre Ieda e Dona Rita."
+  },
+  "A3": {
+   "tipo": "comparacao",
+   "params": {
+    "a": 5,
+    "b": 3
+   },
+   "texto": "Marlúcia tem mais vizinhos culpados que Jaílson."
+  },
+  "B3": {
+   "tipo": "comparacao",
+   "params": {
+    "a": 1,
+    "b": 3
+   },
+   "texto": "Denílson tem mais vizinhos culpados que Jaílson."
+  },
+  "C3": {
+   "tipo": "maioria",
+   "params": {
+    "area": {
+     "tipo": "linha",
+     "valor": 5
+    },
+    "valor": "inocente"
+   },
+   "texto": "Há mais inocentes que culpados na linha 5."
+  },
+  "D3": {
+   "tipo": "profissao",
+   "params": {
+    "profissao": "da janela",
+    "membros": [
+     1,
+     3,
+     5,
+     11
+    ],
+    "n": 1
+   },
+   "texto": "Entre quem é da janela, há exatamente 1 culpado."
+  },
+  "A4": {
+   "tipo": "comparacao",
+   "params": {
+    "a": 12,
+    "b": 16
+   },
+   "texto": "Tenho mais vizinhos culpados que Agnaldo."
+  },
+  "B4": {
+   "tipo": "profissao",
+   "params": {
+    "profissao": "do fundão",
+    "membros": [
+     4,
+     7,
+     8,
+     15
+    ],
+    "n": 1
+   },
+   "texto": "Entre quem é do fundão, há exatamente 1 culpado."
+  },
+  "C4": {
+   "tipo": "profissao",
+   "params": {
+    "profissao": "da catraca",
+    "membros": [
+     2,
+     10,
+     13
+    ],
+    "n": 2
+   },
+   "texto": "Entre quem é da catraca, há exatamente 2 culpados."
+  },
+  "D4": {
+   "tipo": "contagem",
+   "params": {
+    "area": {
+     "tipo": "coluna",
+     "valor": "B"
+    },
+    "n": 2
+   },
+   "texto": "Há exatamente 2 culpados na coluna B."
+  },
+  "A5": {
+   "tipo": "paridade",
+   "params": {
+    "area": {
+     "tipo": "linha",
+     "valor": 2
+    },
+    "impar": true
+   },
+   "texto": "Há um número ímpar de culpados na linha 2."
+  },
+  "B5": {
+   "tipo": "maioria",
+   "params": {
+    "area": {
+     "tipo": "linha",
+     "valor": 1
+    },
+    "valor": "inocente"
+   },
+   "texto": "Há mais inocentes que culpados na linha 1."
+  },
+  "C5": {
+   "tipo": "profissao",
+   "params": {
+    "profissao": "do banco da frente",
+    "membros": [
+     0,
+     9,
+     17
+    ],
+    "n": 1
+   },
+   "texto": "Entre quem é do banco da frente, há exatamente 1 culpado."
+  },
+  "D5": {
+   "tipo": "entre",
+   "params": {
+    "a": 2,
+    "b": 18,
+    "n": 1
+   },
+   "texto": "Há exatamente 1 culpado entre Ieda e Conceição."
+  }
+ },
+ "solucao": "j1gx"
+}

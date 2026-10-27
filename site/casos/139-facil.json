@@ -1,0 +1,309 @@
+{
+ "versao": 1,
+ "dia_do_ciclo": 139,
+ "dificuldade": "facil",
+ "cenario": "junina",
+ "cenario_nome": "A festa junina",
+ "titulo": "Quem apagou a fogueira antes da hora?",
+ "personagens": [
+  {
+   "pos": "A1",
+   "nome": "Bia",
+   "profissao": "da pescaria"
+  },
+  {
+   "pos": "B1",
+   "nome": "Mariquinha",
+   "profissao": "da barraca de pamonha"
+  },
+  {
+   "pos": "C1",
+   "nome": "Zito",
+   "profissao": "da fogueira"
+  },
+  {
+   "pos": "D1",
+   "nome": "Seu Chico",
+   "profissao": "da barraca de pamonha"
+  },
+  {
+   "pos": "A2",
+   "nome": "Dorinha",
+   "profissao": "da fogueira"
+  },
+  {
+   "pos": "B2",
+   "nome": "Dona Benta",
+   "profissao": "do correio elegante"
+  },
+  {
+   "pos": "C2",
+   "nome": "Zefa",
+   "profissao": "da fogueira"
+  },
+  {
+   "pos": "D2",
+   "nome": "Ritinha",
+   "profissao": "da pescaria"
+  },
+  {
+   "pos": "A3",
+   "nome": "Ciro",
+   "profissao": "da quadrilha"
+  },
+  {
+   "pos": "B3",
+   "nome": "Jacó",
+   "profissao": "da quadrilha"
+  },
+  {
+   "pos": "C3",
+   "nome": "Juvenal",
+   "profissao": "do correio elegante"
+  },
+  {
+   "pos": "D3",
+   "nome": "Dedé",
+   "profissao": "do som"
+  },
+  {
+   "pos": "A4",
+   "nome": "Cotinha",
+   "profissao": "do som"
+  },
+  {
+   "pos": "B4",
+   "nome": "Zé Pedro",
+   "profissao": "da fogueira"
+  },
+  {
+   "pos": "C4",
+   "nome": "Bastião",
+   "profissao": "do correio elegante"
+  },
+  {
+   "pos": "D4",
+   "nome": "Quinzinho",
+   "profissao": "da pescaria"
+  },
+  {
+   "pos": "A5",
+   "nome": "Fia",
+   "profissao": "do correio elegante"
+  },
+  {
+   "pos": "B5",
+   "nome": "Nenê",
+   "profissao": "do som"
+  },
+  {
+   "pos": "C5",
+   "nome": "Rosinha",
+   "profissao": "da quadrilha"
+  },
+  {
+   "pos": "D5",
+   "nome": "Tonico",
+   "profissao": "da barraca de pamonha"
+  }
+ ],
+ "inicial": "D3",
+ "pistas": {
+  "A1": {
+   "tipo": "profissao",
+   "params": {
+    "profissao": "da barraca de pamonha",
+    "membros": [
+     1,
+     3,
+     19
+    ],
+    "n": 1
+   },
+   "texto": "Entre quem é da barraca de pamonha, há exatamente 1 culpado."
+  },
+  "B1": {
+   "tipo": "vizinhos",
+   "params": {
+    "alvo": 8,
+    "n": 3
+   },
+   "texto": "Ciro tem exatamente 3 culpados entre os vizinhos."
+  },
+  "C1": {
+   "tipo": "entre",
+   "params": {
+    "a": 0,
+    "b": 8,
+    "n": 0
+   },
+   "texto": "Não há nenhum culpado entre Bia e Ciro."
+  },
+  "D1": {
+   "tipo": "contagem",
+   "params": {
+    "area": {
+     "tipo": "coluna",
+     "valor": "A"
+    },
+    "n": 1
+   },
+   "texto": "Há exatamente 1 culpado na coluna A."
+  },
+  "A2": {
+   "tipo": "direcao",
+   "params": {
+    "alvo": 13,
+    "direcao": "abaixo",
+    "valor": "inocente"
+   },
+   "texto": "Todos abaixo de Zé Pedro são inocentes."
+  },
+  "B2": {
+   "tipo": "direcao",
+   "params": {
+    "alvo": 9,
+    "direcao": "esquerda",
+    "valor": "inocente"
+   },
+   "texto": "Todos à esquerda de Jacó são inocentes."
+  },
+  "C2": {
+   "tipo": "profissao",
+   "params": {
+    "profissao": "da pescaria",
+    "membros": [
+     0,
+     7,
+     15
+    ],
+    "n": 0
+   },
+   "texto": "Entre quem é da pescaria, não há nenhum culpado."
+  },
+  "D2": {
+   "tipo": "vizinhos",
+   "params": {
+    "alvo": 5,
+    "n": 3
+   },
+   "texto": "Dona Benta tem exatamente 3 culpados entre os vizinhos."
+  },
+  "A3": {
+   "tipo": "direcao",
+   "params": {
+    "alvo": 12,
+    "direcao": "abaixo",
+    "valor": "inocente"
+   },
+   "texto": "Todos abaixo de Cotinha são inocentes."
+  },
+  "B3": {
+   "tipo": "vizinhos",
+   "params": {
+    "alvo": 16,
+    "n": 1
+   },
+   "texto": "Fia tem exatamente 1 culpado entre os vizinhos."
+  },
+  "C3": {
+   "tipo": "direcao",
+   "params": {
+    "alvo": 12,
+    "direcao": "acima",
+    "valor": "inocente"
+   },
+   "texto": "Todos acima de Cotinha são inocentes."
+  },
+  "D3": {
+   "tipo": "contagem",
+   "params": {
+    "area": {
+     "tipo": "coluna",
+     "valor": "D"
+    },
+    "n": 0
+   },
+   "texto": "Não há nenhum culpado na coluna D."
+  },
+  "A4": {
+   "tipo": "vizinhos",
+   "params": {
+    "alvo": 15,
+    "n": 2
+   },
+   "texto": "Quinzinho tem exatamente 2 culpados entre os vizinhos."
+  },
+  "B4": {
+   "tipo": "direcao",
+   "params": {
+    "alvo": 5,
+    "direcao": "acima",
+    "valor": "culpado"
+   },
+   "texto": "Todos acima de Dona Benta são culpados."
+  },
+  "C4": {
+   "tipo": "entre",
+   "params": {
+    "a": 0,
+    "b": 2,
+    "n": 1
+   },
+   "texto": "Há exatamente 1 culpado entre Bia e Zito."
+  },
+  "D4": {
+   "tipo": "contagem",
+   "params": {
+    "area": {
+     "tipo": "borda"
+    },
+    "n": 2
+   },
+   "texto": "Há exatamente 2 culpados na borda."
+  },
+  "A5": {
+   "tipo": "profissao",
+   "params": {
+    "profissao": "do som",
+    "membros": [
+     11,
+     12,
+     17
+    ],
+    "n": 1
+   },
+   "texto": "Entre quem é do som, há exatamente 1 culpado."
+  },
+  "B5": {
+   "tipo": "entre",
+   "params": {
+    "a": 16,
+    "b": 18,
+    "n": 0
+   },
+   "texto": "Não há nenhum culpado entre Fia e Rosinha."
+  },
+  "C5": {
+   "tipo": "contagem",
+   "params": {
+    "area": {
+     "tipo": "linha",
+     "valor": 4
+    },
+    "n": 2
+   },
+   "texto": "Há exatamente 2 culpados na linha 4."
+  },
+  "D5": {
+   "tipo": "entre",
+   "params": {
+    "a": 6,
+    "b": 18,
+    "n": 2
+   },
+   "texto": "Há exatamente 2 culpados entre Zefa e Rosinha."
+  }
+ },
+ "solucao": "g6np"
+}

@@ -1,0 +1,312 @@
+{
+ "versao": 1,
+ "dia_do_ciclo": 87,
+ "dificuldade": "facil",
+ "cenario": "escola",
+ "cenario_nome": "A escola",
+ "titulo": "Quem trocou os lanches da turma?",
+ "personagens": [
+  {
+   "pos": "A1",
+   "nome": "Isis",
+   "profissao": "da cozinha"
+  },
+  {
+   "pos": "B1",
+   "nome": "Caio",
+   "profissao": "da diretoria"
+  },
+  {
+   "pos": "C1",
+   "nome": "Theo",
+   "profissao": "da turma A"
+  },
+  {
+   "pos": "D1",
+   "nome": "Sofia",
+   "profissao": "da turma B"
+  },
+  {
+   "pos": "A2",
+   "nome": "Bento",
+   "profissao": "do pátio"
+  },
+  {
+   "pos": "B2",
+   "nome": "Laura",
+   "profissao": "da turma B"
+  },
+  {
+   "pos": "C2",
+   "nome": "Gael",
+   "profissao": "da turma A"
+  },
+  {
+   "pos": "D2",
+   "nome": "Clara",
+   "profissao": "do pátio"
+  },
+  {
+   "pos": "A3",
+   "nome": "Valentina",
+   "profissao": "do pátio"
+  },
+  {
+   "pos": "B3",
+   "nome": "Helena",
+   "profissao": "do pátio"
+  },
+  {
+   "pos": "C3",
+   "nome": "Murilo",
+   "profissao": "da diretoria"
+  },
+  {
+   "pos": "D3",
+   "nome": "Alice",
+   "profissao": "da turma A"
+  },
+  {
+   "pos": "A4",
+   "nome": "Manu",
+   "profissao": "da cozinha"
+  },
+  {
+   "pos": "B4",
+   "nome": "Lívia",
+   "profissao": "da biblioteca"
+  },
+  {
+   "pos": "C4",
+   "nome": "Davi",
+   "profissao": "da cozinha"
+  },
+  {
+   "pos": "D4",
+   "nome": "Enzo",
+   "profissao": "da diretoria"
+  },
+  {
+   "pos": "A5",
+   "nome": "Heitor",
+   "profissao": "da turma B"
+  },
+  {
+   "pos": "B5",
+   "nome": "Arthur",
+   "profissao": "da biblioteca"
+  },
+  {
+   "pos": "C5",
+   "nome": "Cecília",
+   "profissao": "da biblioteca"
+  },
+  {
+   "pos": "D5",
+   "nome": "Miguel",
+   "profissao": "da turma A"
+  }
+ ],
+ "inicial": "C3",
+ "pistas": {
+  "A1": {
+   "tipo": "contagem",
+   "params": {
+    "area": {
+     "tipo": "linha",
+     "valor": 3
+    },
+    "n": 1
+   },
+   "texto": "Há exatamente 1 culpado na linha 3."
+  },
+  "B1": {
+   "tipo": "direcao",
+   "params": {
+    "alvo": 11,
+    "direcao": "abaixo",
+    "valor": "inocente"
+   },
+   "texto": "Todos abaixo de Alice são inocentes."
+  },
+  "C1": {
+   "tipo": "direcao",
+   "params": {
+    "alvo": 15,
+    "direcao": "abaixo",
+    "valor": "inocente"
+   },
+   "texto": "Todos abaixo de Enzo são inocentes."
+  },
+  "D1": {
+   "tipo": "entre",
+   "params": {
+    "a": 10,
+    "b": 18,
+    "n": 1
+   },
+   "texto": "Há exatamente 1 culpado entre Murilo e Cecília."
+  },
+  "A2": {
+   "tipo": "entre",
+   "params": {
+    "a": 0,
+    "b": 16,
+    "n": 0
+   },
+   "texto": "Não há nenhum culpado entre Isis e Heitor."
+  },
+  "B2": {
+   "tipo": "contagem",
+   "params": {
+    "area": {
+     "tipo": "borda"
+    },
+    "n": 4
+   },
+   "texto": "Há exatamente 4 culpados na borda."
+  },
+  "C2": {
+   "tipo": "vizinhos",
+   "params": {
+    "alvo": 11,
+    "n": 2
+   },
+   "texto": "Alice tem exatamente 2 culpados entre os vizinhos."
+  },
+  "D2": {
+   "tipo": "direcao",
+   "params": {
+    "alvo": 12,
+    "direcao": "abaixo",
+    "valor": "culpado"
+   },
+   "texto": "Todos abaixo de Manu são culpados."
+  },
+  "A3": {
+   "tipo": "profissao",
+   "params": {
+    "profissao": "da turma B",
+    "membros": [
+     3,
+     5,
+     16
+    ],
+    "n": 2
+   },
+   "texto": "Entre quem é da turma B, há exatamente 2 culpados."
+  },
+  "B3": {
+   "tipo": "vizinhos",
+   "params": {
+    "alvo": 4,
+    "n": 0
+   },
+   "texto": "Bento não tem nenhum culpado entre os vizinhos."
+  },
+  "C3": {
+   "tipo": "profissao",
+   "params": {
+    "profissao": "da diretoria",
+    "membros": [
+     1,
+     10,
+     15
+    ],
+    "n": 0
+   },
+   "texto": "Entre quem é da diretoria, não há nenhum culpado."
+  },
+  "D3": {
+   "tipo": "contagem",
+   "params": {
+    "area": {
+     "tipo": "coluna",
+     "valor": "B"
+    },
+    "n": 0
+   },
+   "texto": "Não há nenhum culpado na coluna B."
+  },
+  "A4": {
+   "tipo": "profissao",
+   "params": {
+    "profissao": "do pátio",
+    "membros": [
+     4,
+     7,
+     8,
+     9
+    ],
+    "n": 0
+   },
+   "texto": "Entre quem é do pátio, não há nenhum culpado."
+  },
+  "B4": {
+   "tipo": "vizinhos",
+   "params": {
+    "alvo": 10,
+    "n": 3
+   },
+   "texto": "Murilo tem exatamente 3 culpados entre os vizinhos."
+  },
+  "C4": {
+   "tipo": "vizinhos",
+   "params": {
+    "alvo": 16,
+    "n": 0
+   },
+   "texto": "Heitor não tem nenhum culpado entre os vizinhos."
+  },
+  "D4": {
+   "tipo": "profissao",
+   "params": {
+    "profissao": "da turma A",
+    "membros": [
+     2,
+     6,
+     11,
+     19
+    ],
+    "n": 2
+   },
+   "texto": "Entre quem é da turma A, há exatamente 2 culpados."
+  },
+  "A5": {
+   "tipo": "direcao",
+   "params": {
+    "alvo": 16,
+    "direcao": "acima",
+    "valor": "inocente"
+   },
+   "texto": "Todos acima de mim são inocentes."
+  },
+  "B5": {
+   "tipo": "vizinhos",
+   "params": {
+    "alvo": 6,
+    "n": 2
+   },
+   "texto": "Gael tem exatamente 2 culpados entre os vizinhos."
+  },
+  "C5": {
+   "tipo": "entre",
+   "params": {
+    "a": 0,
+    "b": 3,
+    "n": 0
+   },
+   "texto": "Não há nenhum culpado entre Isis e Sofia."
+  },
+  "D5": {
+   "tipo": "entre",
+   "params": {
+    "a": 1,
+    "b": 13,
+    "n": 0
+   },
+   "texto": "Não há nenhum culpado entre Caio e Lívia."
+  }
+ },
+ "solucao": "a27l"
+}

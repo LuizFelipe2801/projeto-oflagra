@@ -1,0 +1,312 @@
+{
+ "versao": 1,
+ "dia_do_ciclo": 311,
+ "dificuldade": "medio",
+ "cenario": "escola",
+ "cenario_nome": "A escola",
+ "titulo": "Quem escondeu o apagador?",
+ "personagens": [
+  {
+   "pos": "A1",
+   "nome": "Lorena",
+   "profissao": "da cozinha"
+  },
+  {
+   "pos": "B1",
+   "nome": "Pedrinho",
+   "profissao": "da turma A"
+  },
+  {
+   "pos": "C1",
+   "nome": "Caio",
+   "profissao": "da turma A"
+  },
+  {
+   "pos": "D1",
+   "nome": "Alice",
+   "profissao": "da turma B"
+  },
+  {
+   "pos": "A2",
+   "nome": "Lívia",
+   "profissao": "da turma B"
+  },
+  {
+   "pos": "B2",
+   "nome": "Arthur",
+   "profissao": "da turma B"
+  },
+  {
+   "pos": "C2",
+   "nome": "Clara",
+   "profissao": "da diretoria"
+  },
+  {
+   "pos": "D2",
+   "nome": "Cecília",
+   "profissao": "do pátio"
+  },
+  {
+   "pos": "A3",
+   "nome": "Theo",
+   "profissao": "da turma A"
+  },
+  {
+   "pos": "B3",
+   "nome": "Murilo",
+   "profissao": "do pátio"
+  },
+  {
+   "pos": "C3",
+   "nome": "Bento",
+   "profissao": "do pátio"
+  },
+  {
+   "pos": "D3",
+   "nome": "Helena",
+   "profissao": "da biblioteca"
+  },
+  {
+   "pos": "A4",
+   "nome": "Miguel",
+   "profissao": "da cozinha"
+  },
+  {
+   "pos": "B4",
+   "nome": "Manu",
+   "profissao": "da turma A"
+  },
+  {
+   "pos": "C4",
+   "nome": "Isis",
+   "profissao": "da diretoria"
+  },
+  {
+   "pos": "D4",
+   "nome": "Enzo",
+   "profissao": "da biblioteca"
+  },
+  {
+   "pos": "A5",
+   "nome": "Sofia",
+   "profissao": "da diretoria"
+  },
+  {
+   "pos": "B5",
+   "nome": "Davi",
+   "profissao": "da turma B"
+  },
+  {
+   "pos": "C5",
+   "nome": "Heitor",
+   "profissao": "da biblioteca"
+  },
+  {
+   "pos": "D5",
+   "nome": "Benício",
+   "profissao": "da cozinha"
+  }
+ ],
+ "inicial": "A1",
+ "pistas": {
+  "A1": {
+   "tipo": "entre",
+   "params": {
+    "a": 9,
+    "b": 17,
+    "n": 0
+   },
+   "texto": "Não há nenhum culpado entre Murilo e Davi."
+  },
+  "B1": {
+   "tipo": "contagem",
+   "params": {
+    "area": {
+     "tipo": "coluna",
+     "valor": "B"
+    },
+    "n": 1
+   },
+   "texto": "Há exatamente 1 culpado na coluna B."
+  },
+  "C1": {
+   "tipo": "vizinhos",
+   "params": {
+    "alvo": 12,
+    "n": 0
+   },
+   "texto": "Miguel não tem nenhum culpado entre os vizinhos."
+  },
+  "D1": {
+   "tipo": "vizinhos",
+   "params": {
+    "alvo": 0,
+    "n": 2
+   },
+   "texto": "Lorena tem exatamente 2 culpados entre os vizinhos."
+  },
+  "A2": {
+   "tipo": "profissao",
+   "params": {
+    "profissao": "da diretoria",
+    "membros": [
+     6,
+     14,
+     16
+    ],
+    "n": 1
+   },
+   "texto": "Entre quem é da diretoria, há exatamente 1 culpado."
+  },
+  "B2": {
+   "tipo": "direcao",
+   "params": {
+    "alvo": 3,
+    "direcao": "abaixo",
+    "valor": "inocente"
+   },
+   "texto": "Todos abaixo de Alice são inocentes."
+  },
+  "C2": {
+   "tipo": "profissao",
+   "params": {
+    "profissao": "da turma B",
+    "membros": [
+     3,
+     4,
+     5,
+     17
+    ],
+    "n": 2
+   },
+   "texto": "Entre quem é da turma B, há exatamente 2 culpados."
+  },
+  "D2": {
+   "tipo": "direcao",
+   "params": {
+    "alvo": 11,
+    "direcao": "abaixo",
+    "valor": "inocente"
+   },
+   "texto": "Todos abaixo de Helena são inocentes."
+  },
+  "A3": {
+   "tipo": "direcao",
+   "params": {
+    "alvo": 14,
+    "direcao": "direita",
+    "valor": "inocente"
+   },
+   "texto": "Todos à direita de Isis são inocentes."
+  },
+  "B3": {
+   "tipo": "contagem",
+   "params": {
+    "area": {
+     "tipo": "linha",
+     "valor": 2
+    },
+    "n": 1
+   },
+   "texto": "Há exatamente 1 culpado na linha 2."
+  },
+  "C3": {
+   "tipo": "vizinhos",
+   "params": {
+    "alvo": 17,
+    "n": 3
+   },
+   "texto": "Davi tem exatamente 3 culpados entre os vizinhos."
+  },
+  "D3": {
+   "tipo": "contagem",
+   "params": {
+    "area": {
+     "tipo": "linha",
+     "valor": 1
+    },
+    "n": 2
+   },
+   "texto": "Há exatamente 2 culpados na linha 1."
+  },
+  "A4": {
+   "tipo": "contagem",
+   "params": {
+    "area": {
+     "tipo": "linha",
+     "valor": 4
+    },
+    "n": 2
+   },
+   "texto": "Há exatamente 2 culpados na linha 4."
+  },
+  "B4": {
+   "tipo": "entre",
+   "params": {
+    "a": 3,
+    "b": 19,
+    "n": 0
+   },
+   "texto": "Não há nenhum culpado entre Alice e Benício."
+  },
+  "C4": {
+   "tipo": "direcao",
+   "params": {
+    "alvo": 18,
+    "direcao": "direita",
+    "valor": "inocente"
+   },
+   "texto": "Todos à direita de Heitor são inocentes."
+  },
+  "D4": {
+   "tipo": "paridade",
+   "params": {
+    "area": {
+     "tipo": "coluna",
+     "valor": "D"
+    },
+    "impar": true
+   },
+   "texto": "Há um número ímpar de culpados na coluna D."
+  },
+  "A5": {
+   "tipo": "vizinhos",
+   "params": {
+    "alvo": 18,
+    "n": 1
+   },
+   "texto": "Heitor tem exatamente 1 culpado entre os vizinhos."
+  },
+  "B5": {
+   "tipo": "contagem",
+   "params": {
+    "area": {
+     "tipo": "linha",
+     "valor": 5
+    },
+    "n": 1
+   },
+   "texto": "Há exatamente 1 culpado na linha 5."
+  },
+  "C5": {
+   "tipo": "vizinhos",
+   "params": {
+    "alvo": 14,
+    "n": 2
+   },
+   "texto": "Isis tem exatamente 2 culpados entre os vizinhos."
+  },
+  "D5": {
+   "tipo": "maioria",
+   "params": {
+    "area": {
+     "tipo": "linha",
+     "valor": 2
+    },
+    "valor": "inocente"
+   },
+   "texto": "Há mais inocentes que culpados na linha 2."
+  }
+ },
+ "solucao": "d7wd"
+}

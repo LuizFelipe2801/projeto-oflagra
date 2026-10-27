@@ -1,0 +1,296 @@
+{
+ "versao": 1,
+ "dia_do_ciclo": 104,
+ "dificuldade": "facil",
+ "cenario": "onibus",
+ "cenario_nome": "O ônibus",
+ "titulo": "Quem esqueceu de dar o sinal?",
+ "personagens": [
+  {
+   "pos": "A1",
+   "nome": "Ieda",
+   "profissao": "do fundão"
+  },
+  {
+   "pos": "B1",
+   "nome": "Cícero",
+   "profissao": "do banco da frente"
+  },
+  {
+   "pos": "C1",
+   "nome": "Seu Manoel",
+   "profissao": "do banco da frente"
+  },
+  {
+   "pos": "D1",
+   "nome": "Adilson",
+   "profissao": "do ponto final"
+  },
+  {
+   "pos": "A2",
+   "nome": "Josué",
+   "profissao": "do ponto final"
+  },
+  {
+   "pos": "B2",
+   "nome": "Dalila",
+   "profissao": "do fundão"
+  },
+  {
+   "pos": "C2",
+   "nome": "Dona Rita",
+   "profissao": "da janela"
+  },
+  {
+   "pos": "D2",
+   "nome": "Marlúcia",
+   "profissao": "do fundão"
+  },
+  {
+   "pos": "A3",
+   "nome": "Edmilson",
+   "profissao": "do banco da frente"
+  },
+  {
+   "pos": "B3",
+   "nome": "Denílson",
+   "profissao": "do ponto final"
+  },
+  {
+   "pos": "C3",
+   "nome": "Rosângela",
+   "profissao": "do corredor"
+  },
+  {
+   "pos": "D3",
+   "nome": "Eliane",
+   "profissao": "do ponto final"
+  },
+  {
+   "pos": "A4",
+   "nome": "Conceição",
+   "profissao": "da janela"
+  },
+  {
+   "pos": "B4",
+   "nome": "Valmir",
+   "profissao": "da janela"
+  },
+  {
+   "pos": "C4",
+   "nome": "Jaílson",
+   "profissao": "da catraca"
+  },
+  {
+   "pos": "D4",
+   "nome": "Ronaldo",
+   "profissao": "da catraca"
+  },
+  {
+   "pos": "A5",
+   "nome": "Nivaldo",
+   "profissao": "do fundão"
+  },
+  {
+   "pos": "B5",
+   "nome": "Creusa",
+   "profissao": "do corredor"
+  },
+  {
+   "pos": "C5",
+   "nome": "Terezinha",
+   "profissao": "da catraca"
+  },
+  {
+   "pos": "D5",
+   "nome": "Josefa",
+   "profissao": "do corredor"
+  }
+ ],
+ "inicial": "B3",
+ "pistas": {
+  "A1": {
+   "tipo": "contagem",
+   "params": {
+    "area": {
+     "tipo": "borda"
+    },
+    "n": 6
+   },
+   "texto": "Há exatamente 6 culpados na borda."
+  },
+  "B1": {
+   "tipo": "vizinhos",
+   "params": {
+    "alvo": 7,
+    "n": 0
+   },
+   "texto": "Marlúcia não tem nenhum culpado entre os vizinhos."
+  },
+  "C1": {
+   "tipo": "direcao",
+   "params": {
+    "alvo": 7,
+    "direcao": "abaixo",
+    "valor": "inocente"
+   },
+   "texto": "Todos abaixo de Marlúcia são inocentes."
+  },
+  "D1": {
+   "tipo": "profissao",
+   "params": {
+    "profissao": "do ponto final",
+    "membros": [
+     3,
+     4,
+     9,
+     11
+    ],
+    "n": 0
+   },
+   "texto": "Entre quem é do ponto final, não há nenhum culpado."
+  },
+  "A2": {
+   "tipo": "vizinhos",
+   "params": {
+    "alvo": 4,
+    "n": 3
+   },
+   "texto": "Tenho exatamente 3 culpados entre os vizinhos."
+  },
+  "B2": {
+   "tipo": "vizinhos",
+   "params": {
+    "alvo": 2,
+    "n": 3
+   },
+   "texto": "Seu Manoel tem exatamente 3 culpados entre os vizinhos."
+  },
+  "C2": {
+   "tipo": "direcao",
+   "params": {
+    "alvo": 15,
+    "direcao": "abaixo",
+    "valor": "inocente"
+   },
+   "texto": "Todos abaixo de Ronaldo são inocentes."
+  },
+  "D2": {
+   "tipo": "vizinhos",
+   "params": {
+    "alvo": 19,
+    "n": 1
+   },
+   "texto": "Josefa tem exatamente 1 culpado entre os vizinhos."
+  },
+  "A3": {
+   "tipo": "direcao",
+   "params": {
+    "alvo": 10,
+    "direcao": "direita",
+    "valor": "inocente"
+   },
+   "texto": "Todos à direita de Rosângela são inocentes."
+  },
+  "B3": {
+   "tipo": "direcao",
+   "params": {
+    "alvo": 8,
+    "direcao": "direita",
+    "valor": "inocente"
+   },
+   "texto": "Todos à direita de Edmilson são inocentes."
+  },
+  "C3": {
+   "tipo": "entre",
+   "params": {
+    "a": 2,
+    "b": 10,
+    "n": 0
+   },
+   "texto": "Não há nenhum culpado entre mim e Seu Manoel."
+  },
+  "D3": {
+   "tipo": "direcao",
+   "params": {
+    "alvo": 6,
+    "direcao": "acima",
+    "valor": "inocente"
+   },
+   "texto": "Todos acima de Dona Rita são inocentes."
+  },
+  "A4": {
+   "tipo": "profissao",
+   "params": {
+    "profissao": "da janela",
+    "membros": [
+     6,
+     12,
+     13
+    ],
+    "n": 2
+   },
+   "texto": "Entre quem é da janela, há exatamente 2 culpados."
+  },
+  "B4": {
+   "tipo": "vizinhos",
+   "params": {
+    "alvo": 17,
+    "n": 4
+   },
+   "texto": "Creusa tem exatamente 4 culpados entre os vizinhos."
+  },
+  "C4": {
+   "tipo": "direcao",
+   "params": {
+    "alvo": 13,
+    "direcao": "esquerda",
+    "valor": "culpado"
+   },
+   "texto": "Todos à esquerda de Valmir são culpados."
+  },
+  "D4": {
+   "tipo": "direcao",
+   "params": {
+    "alvo": 14,
+    "direcao": "abaixo",
+    "valor": "culpado"
+   },
+   "texto": "Todos abaixo de Jaílson são culpados."
+  },
+  "A5": {
+   "tipo": "vizinhos",
+   "params": {
+    "alvo": 9,
+    "n": 3
+   },
+   "texto": "Denílson tem exatamente 3 culpados entre os vizinhos."
+  },
+  "B5": {
+   "tipo": "vizinhos",
+   "params": {
+    "alvo": 10,
+    "n": 3
+   },
+   "texto": "Rosângela tem exatamente 3 culpados entre os vizinhos."
+  },
+  "C5": {
+   "tipo": "vizinhos",
+   "params": {
+    "alvo": 0,
+    "n": 2
+   },
+   "texto": "Ieda tem exatamente 2 culpados entre os vizinhos."
+  },
+  "D5": {
+   "tipo": "entre",
+   "params": {
+    "a": 0,
+    "b": 2,
+    "n": 1
+   },
+   "texto": "Há exatamente 1 culpado entre Ieda e Seu Manoel."
+  }
+ },
+ "solucao": "8v88"
+}

@@ -1,0 +1,304 @@
+{
+ "versao": 1,
+ "dia_do_ciclo": 279,
+ "dificuldade": "medio",
+ "cenario": "junina",
+ "cenario_nome": "A festa junina",
+ "titulo": "Quem comeu a pamonha da quermesse?",
+ "personagens": [
+  {
+   "pos": "A1",
+   "nome": "Jacó",
+   "profissao": "da fogueira"
+  },
+  {
+   "pos": "B1",
+   "nome": "Cotinha",
+   "profissao": "da quadrilha"
+  },
+  {
+   "pos": "C1",
+   "nome": "Dorinha",
+   "profissao": "da quadrilha"
+  },
+  {
+   "pos": "D1",
+   "nome": "Rosinha",
+   "profissao": "da pescaria"
+  },
+  {
+   "pos": "A2",
+   "nome": "Juvenal",
+   "profissao": "da pescaria"
+  },
+  {
+   "pos": "B2",
+   "nome": "Lourival",
+   "profissao": "da barraca de pamonha"
+  },
+  {
+   "pos": "C2",
+   "nome": "Seu Chico",
+   "profissao": "do som"
+  },
+  {
+   "pos": "D2",
+   "nome": "Nenê",
+   "profissao": "da barraca de pamonha"
+  },
+  {
+   "pos": "A3",
+   "nome": "Zito",
+   "profissao": "do som"
+  },
+  {
+   "pos": "B3",
+   "nome": "Dedé",
+   "profissao": "do correio elegante"
+  },
+  {
+   "pos": "C3",
+   "nome": "Fia",
+   "profissao": "da quadrilha"
+  },
+  {
+   "pos": "D3",
+   "nome": "Dita",
+   "profissao": "da barraca de pamonha"
+  },
+  {
+   "pos": "A4",
+   "nome": "Bia",
+   "profissao": "do correio elegante"
+  },
+  {
+   "pos": "B4",
+   "nome": "Zé Pedro",
+   "profissao": "do correio elegante"
+  },
+  {
+   "pos": "C4",
+   "nome": "Tonico",
+   "profissao": "da fogueira"
+  },
+  {
+   "pos": "D4",
+   "nome": "Zefa",
+   "profissao": "da fogueira"
+  },
+  {
+   "pos": "A5",
+   "nome": "Bastião",
+   "profissao": "da barraca de pamonha"
+  },
+  {
+   "pos": "B5",
+   "nome": "Ciro",
+   "profissao": "da fogueira"
+  },
+  {
+   "pos": "C5",
+   "nome": "Luzia",
+   "profissao": "do som"
+  },
+  {
+   "pos": "D5",
+   "nome": "Ritinha",
+   "profissao": "da pescaria"
+  }
+ ],
+ "inicial": "D5",
+ "pistas": {
+  "A1": {
+   "tipo": "comparacao",
+   "params": {
+    "a": 17,
+    "b": 18
+   },
+   "texto": "Ciro tem mais vizinhos culpados que Luzia."
+  },
+  "B1": {
+   "tipo": "conexao",
+   "params": {
+    "area": {
+     "tipo": "linha",
+     "valor": 4
+    }
+   },
+   "texto": "Todos os culpados da linha 4 estão conectados."
+  },
+  "C1": {
+   "tipo": "direcao",
+   "params": {
+    "alvo": 6,
+    "direcao": "acima",
+    "valor": "inocente"
+   },
+   "texto": "Todos acima de Seu Chico são inocentes."
+  },
+  "D1": {
+   "tipo": "vizinhos",
+   "params": {
+    "alvo": 5,
+    "n": 3
+   },
+   "texto": "Lourival tem exatamente 3 culpados entre os vizinhos."
+  },
+  "A2": {
+   "tipo": "contagem",
+   "params": {
+    "area": {
+     "tipo": "linha",
+     "valor": 4
+    },
+    "n": 2
+   },
+   "texto": "Há exatamente 2 culpados na linha 4."
+  },
+  "B2": {
+   "tipo": "vizinhos",
+   "params": {
+    "alvo": 15,
+    "n": 1
+   },
+   "texto": "Zefa tem exatamente 1 culpado entre os vizinhos."
+  },
+  "C2": {
+   "tipo": "contagem",
+   "params": {
+    "area": {
+     "tipo": "linha",
+     "valor": 1
+    },
+    "n": 2
+   },
+   "texto": "Há exatamente 2 culpados na linha 1."
+  },
+  "D2": {
+   "tipo": "paridade",
+   "params": {
+    "area": {
+     "tipo": "coluna",
+     "valor": "A"
+    },
+    "impar": true
+   },
+   "texto": "Há um número ímpar de culpados na coluna A."
+  },
+  "A3": {
+   "tipo": "vizinhos",
+   "params": {
+    "alvo": 3,
+    "n": 1
+   },
+   "texto": "Rosinha tem exatamente 1 culpado entre os vizinhos."
+  },
+  "B3": {
+   "tipo": "comparacao",
+   "params": {
+    "a": 10,
+    "b": 17
+   },
+   "texto": "Fia tem mais vizinhos culpados que Ciro."
+  },
+  "C3": {
+   "tipo": "vizinhos",
+   "params": {
+    "alvo": 12,
+    "n": 3
+   },
+   "texto": "Bia tem exatamente 3 culpados entre os vizinhos."
+  },
+  "D3": {
+   "tipo": "vizinhos",
+   "params": {
+    "alvo": 0,
+    "n": 3
+   },
+   "texto": "Jacó tem exatamente 3 culpados entre os vizinhos."
+  },
+  "A4": {
+   "tipo": "profissao",
+   "params": {
+    "profissao": "da barraca de pamonha",
+    "membros": [
+     5,
+     7,
+     11,
+     16
+    ],
+    "n": 3
+   },
+   "texto": "Entre quem é da barraca de pamonha, há exatamente 3 culpados."
+  },
+  "B4": {
+   "tipo": "direcao",
+   "params": {
+    "alvo": 5,
+    "direcao": "acima",
+    "valor": "culpado"
+   },
+   "texto": "Todos acima de Lourival são culpados."
+  },
+  "C4": {
+   "tipo": "conexao",
+   "params": {
+    "area": {
+     "tipo": "coluna",
+     "valor": "B"
+    }
+   },
+   "texto": "Todos os culpados da coluna B estão conectados."
+  },
+  "D4": {
+   "tipo": "profissao",
+   "params": {
+    "profissao": "do correio elegante",
+    "membros": [
+     9,
+     12,
+     13
+    ],
+    "n": 3
+   },
+   "texto": "Entre quem é do correio elegante, há exatamente 3 culpados."
+  },
+  "A5": {
+   "tipo": "vizinhos",
+   "params": {
+    "alvo": 9,
+    "n": 4
+   },
+   "texto": "Dedé tem exatamente 4 culpados entre os vizinhos."
+  },
+  "B5": {
+   "tipo": "comparacao",
+   "params": {
+    "a": 5,
+    "b": 15
+   },
+   "texto": "Lourival tem mais vizinhos culpados que Zefa."
+  },
+  "C5": {
+   "tipo": "contagem",
+   "params": {
+    "area": {
+     "tipo": "coluna",
+     "valor": "A"
+    },
+    "n": 3
+   },
+   "texto": "Há exatamente 3 culpados na coluna A."
+  },
+  "D5": {
+   "tipo": "entre",
+   "params": {
+    "a": 4,
+    "b": 6,
+    "n": 1
+   },
+   "texto": "Há exatamente 1 culpado entre Juvenal e Seu Chico."
+  }
+ },
+ "solucao": "955k"
+}

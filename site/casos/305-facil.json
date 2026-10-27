@@ -1,0 +1,299 @@
+{
+ "versao": 1,
+ "dia_do_ciclo": 305,
+ "dificuldade": "facil",
+ "cenario": "feira",
+ "cenario_nome": "A feira",
+ "titulo": "Quem trocou as placas de preço?",
+ "personagens": [
+  {
+   "pos": "A1",
+   "nome": "Edna",
+   "profissao": "da freguesia"
+  },
+  {
+   "pos": "B1",
+   "nome": "Lúcia",
+   "profissao": "da pamonha"
+  },
+  {
+   "pos": "C1",
+   "nome": "Dona Marta",
+   "profissao": "da freguesia"
+  },
+  {
+   "pos": "D1",
+   "nome": "Joaquim",
+   "profissao": "do pastel"
+  },
+  {
+   "pos": "A2",
+   "nome": "Olga",
+   "profissao": "da verdura"
+  },
+  {
+   "pos": "B2",
+   "nome": "Dalva",
+   "profissao": "da verdura"
+  },
+  {
+   "pos": "C2",
+   "nome": "Graça",
+   "profissao": "da banca de frutas"
+  },
+  {
+   "pos": "D2",
+   "nome": "Elias",
+   "profissao": "da banca de frutas"
+  },
+  {
+   "pos": "A3",
+   "nome": "Célia",
+   "profissao": "do peixe"
+  },
+  {
+   "pos": "B3",
+   "nome": "Benedito",
+   "profissao": "da freguesia"
+  },
+  {
+   "pos": "C3",
+   "nome": "Orlando",
+   "profissao": "da pamonha"
+  },
+  {
+   "pos": "D3",
+   "nome": "Geraldo",
+   "profissao": "da freguesia"
+  },
+  {
+   "pos": "A4",
+   "nome": "Ivo",
+   "profissao": "do pastel"
+  },
+  {
+   "pos": "B4",
+   "nome": "Jurandir",
+   "profissao": "da pamonha"
+  },
+  {
+   "pos": "C4",
+   "nome": "Mirtes",
+   "profissao": "da banca de frutas"
+  },
+  {
+   "pos": "D4",
+   "nome": "Ademir",
+   "profissao": "do peixe"
+  },
+  {
+   "pos": "A5",
+   "nome": "Seu Jorge",
+   "profissao": "do pastel"
+  },
+  {
+   "pos": "B5",
+   "nome": "Zilda",
+   "profissao": "da banca de frutas"
+  },
+  {
+   "pos": "C5",
+   "nome": "Neusa",
+   "profissao": "do peixe"
+  },
+  {
+   "pos": "D5",
+   "nome": "Nilton",
+   "profissao": "da verdura"
+  }
+ ],
+ "inicial": "A1",
+ "pistas": {
+  "A1": {
+   "tipo": "direcao",
+   "params": {
+    "alvo": 10,
+    "direcao": "acima",
+    "valor": "inocente"
+   },
+   "texto": "Todos acima de Orlando são inocentes."
+  },
+  "B1": {
+   "tipo": "direcao",
+   "params": {
+    "alvo": 1,
+    "direcao": "direita",
+    "valor": "inocente"
+   },
+   "texto": "Todos à direita de mim são inocentes."
+  },
+  "C1": {
+   "tipo": "contagem",
+   "params": {
+    "area": {
+     "tipo": "borda"
+    },
+    "n": 6
+   },
+   "texto": "Há exatamente 6 culpados na borda."
+  },
+  "D1": {
+   "tipo": "vizinhos",
+   "params": {
+    "alvo": 8,
+    "n": 3
+   },
+   "texto": "Célia tem exatamente 3 culpados entre os vizinhos."
+  },
+  "A2": {
+   "tipo": "direcao",
+   "params": {
+    "alvo": 12,
+    "direcao": "abaixo",
+    "valor": "inocente"
+   },
+   "texto": "Todos abaixo de Ivo são inocentes."
+  },
+  "B2": {
+   "tipo": "direcao",
+   "params": {
+    "alvo": 13,
+    "direcao": "abaixo",
+    "valor": "culpado"
+   },
+   "texto": "Todos abaixo de Jurandir são culpados."
+  },
+  "C2": {
+   "tipo": "direcao",
+   "params": {
+    "alvo": 13,
+    "direcao": "acima",
+    "valor": "inocente"
+   },
+   "texto": "Todos acima de Jurandir são inocentes."
+  },
+  "D2": {
+   "tipo": "vizinhos",
+   "params": {
+    "alvo": 4,
+    "n": 1
+   },
+   "texto": "Olga tem exatamente 1 culpado entre os vizinhos."
+  },
+  "A3": {
+   "tipo": "vizinhos",
+   "params": {
+    "alvo": 5,
+    "n": 3
+   },
+   "texto": "Dalva tem exatamente 3 culpados entre os vizinhos."
+  },
+  "B3": {
+   "tipo": "vizinhos",
+   "params": {
+    "alvo": 15,
+    "n": 1
+   },
+   "texto": "Ademir tem exatamente 1 culpado entre os vizinhos."
+  },
+  "C3": {
+   "tipo": "vizinhos",
+   "params": {
+    "alvo": 0,
+    "n": 1
+   },
+   "texto": "Edna tem exatamente 1 culpado entre os vizinhos."
+  },
+  "D3": {
+   "tipo": "profissao",
+   "params": {
+    "profissao": "da freguesia",
+    "membros": [
+     0,
+     2,
+     9,
+     11
+    ],
+    "n": 0
+   },
+   "texto": "Entre quem é da freguesia, não há nenhum culpado."
+  },
+  "A4": {
+   "tipo": "direcao",
+   "params": {
+    "alvo": 4,
+    "direcao": "acima",
+    "valor": "inocente"
+   },
+   "texto": "Todos acima de Olga são inocentes."
+  },
+  "B4": {
+   "tipo": "vizinhos",
+   "params": {
+    "alvo": 19,
+    "n": 1
+   },
+   "texto": "Nilton tem exatamente 1 culpado entre os vizinhos."
+  },
+  "C4": {
+   "tipo": "direcao",
+   "params": {
+    "alvo": 10,
+    "direcao": "direita",
+    "valor": "inocente"
+   },
+   "texto": "Todos à direita de Orlando são inocentes."
+  },
+  "D4": {
+   "tipo": "profissao",
+   "params": {
+    "profissao": "da banca de frutas",
+    "membros": [
+     6,
+     7,
+     14,
+     17
+    ],
+    "n": 2
+   },
+   "texto": "Entre quem é da banca de frutas, há exatamente 2 culpados."
+  },
+  "A5": {
+   "tipo": "entre",
+   "params": {
+    "a": 4,
+    "b": 16,
+    "n": 2
+   },
+   "texto": "Há exatamente 2 culpados entre mim e Olga."
+  },
+  "B5": {
+   "tipo": "direcao",
+   "params": {
+    "alvo": 9,
+    "direcao": "acima",
+    "valor": "inocente"
+   },
+   "texto": "Todos acima de Benedito são inocentes."
+  },
+  "C5": {
+   "tipo": "direcao",
+   "params": {
+    "alvo": 2,
+    "direcao": "esquerda",
+    "valor": "inocente"
+   },
+   "texto": "Todos à esquerda de Dona Marta são inocentes."
+  },
+  "D5": {
+   "tipo": "direcao",
+   "params": {
+    "alvo": 17,
+    "direcao": "direita",
+    "valor": "inocente"
+   },
+   "texto": "Todos à direita de Zilda são inocentes."
+  }
+ },
+ "solucao": "je3y"
+}

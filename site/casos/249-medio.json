@@ -1,0 +1,318 @@
+{
+ "versao": 1,
+ "dia_do_ciclo": 249,
+ "dificuldade": "medio",
+ "cenario": "churrasco",
+ "cenario_nome": "O churrasco",
+ "titulo": "Quem bebeu o guaraná das crianças?",
+ "personagens": [
+  {
+   "pos": "A1",
+   "nome": "Bebeto",
+   "profissao": "da piscina"
+  },
+  {
+   "pos": "B1",
+   "nome": "Rose",
+   "profissao": "da cozinha"
+  },
+  {
+   "pos": "C1",
+   "nome": "Tati",
+   "profissao": "da churrasqueira"
+  },
+  {
+   "pos": "D1",
+   "nome": "Dudu",
+   "profissao": "da cozinha"
+  },
+  {
+   "pos": "A2",
+   "nome": "Dedé",
+   "profissao": "do som"
+  },
+  {
+   "pos": "B2",
+   "nome": "Tia Zélia",
+   "profissao": "da mesa de doces"
+  },
+  {
+   "pos": "C2",
+   "nome": "Mel",
+   "profissao": "do som"
+  },
+  {
+   "pos": "D2",
+   "nome": "Nina",
+   "profissao": "do som"
+  },
+  {
+   "pos": "A3",
+   "nome": "Léo",
+   "profissao": "da mesa de doces"
+  },
+  {
+   "pos": "B3",
+   "nome": "Teté",
+   "profissao": "do som"
+  },
+  {
+   "pos": "C3",
+   "nome": "Guto",
+   "profissao": "da piscina"
+  },
+  {
+   "pos": "D3",
+   "nome": "Lalá",
+   "profissao": "da churrasqueira"
+  },
+  {
+   "pos": "A4",
+   "nome": "Tio Beto",
+   "profissao": "da churrasqueira"
+  },
+  {
+   "pos": "B4",
+   "nome": "Bela",
+   "profissao": "da piscina"
+  },
+  {
+   "pos": "C4",
+   "nome": "Lili",
+   "profissao": "da vizinhança"
+  },
+  {
+   "pos": "D4",
+   "nome": "Ciça",
+   "profissao": "da mesa de doces"
+  },
+  {
+   "pos": "A5",
+   "nome": "Carol",
+   "profissao": "da mesa de doces"
+  },
+  {
+   "pos": "B5",
+   "nome": "Kiko",
+   "profissao": "da vizinhança"
+  },
+  {
+   "pos": "C5",
+   "nome": "Pepê",
+   "profissao": "da cozinha"
+  },
+  {
+   "pos": "D5",
+   "nome": "Nando",
+   "profissao": "da vizinhança"
+  }
+ ],
+ "inicial": "D1",
+ "pistas": {
+  "A1": {
+   "tipo": "direcao",
+   "params": {
+    "alvo": 9,
+    "direcao": "direita",
+    "valor": "culpado"
+   },
+   "texto": "Todos à direita de Teté são culpados."
+  },
+  "B1": {
+   "tipo": "vizinhos",
+   "params": {
+    "alvo": 17,
+    "n": 2
+   },
+   "texto": "Kiko tem exatamente 2 culpados entre os vizinhos."
+  },
+  "C1": {
+   "tipo": "comparacao",
+   "params": {
+    "a": 5,
+    "b": 8
+   },
+   "texto": "Tia Zélia tem mais vizinhos culpados que Léo."
+  },
+  "D1": {
+   "tipo": "direcao",
+   "params": {
+    "alvo": 6,
+    "direcao": "esquerda",
+    "valor": "inocente"
+   },
+   "texto": "Todos à esquerda de Mel são inocentes."
+  },
+  "A2": {
+   "tipo": "profissao",
+   "params": {
+    "profissao": "do som",
+    "membros": [
+     4,
+     6,
+     7,
+     9
+    ],
+    "n": 3
+   },
+   "texto": "Entre quem é do som, há exatamente 3 culpados."
+  },
+  "B2": {
+   "tipo": "entre",
+   "params": {
+    "a": 0,
+    "b": 3,
+    "n": 1
+   },
+   "texto": "Há exatamente 1 culpado entre Bebeto e Dudu."
+  },
+  "C2": {
+   "tipo": "contagem",
+   "params": {
+    "area": {
+     "tipo": "linha",
+     "valor": 1
+    },
+    "n": 2
+   },
+   "texto": "Há exatamente 2 culpados na linha 1."
+  },
+  "D2": {
+   "tipo": "direcao",
+   "params": {
+    "alvo": 12,
+    "direcao": "abaixo",
+    "valor": "inocente"
+   },
+   "texto": "Todos abaixo de Tio Beto são inocentes."
+  },
+  "A3": {
+   "tipo": "contagem",
+   "params": {
+    "area": {
+     "tipo": "coluna",
+     "valor": "A"
+    },
+    "n": 2
+   },
+   "texto": "Há exatamente 2 culpados na coluna A."
+  },
+  "B3": {
+   "tipo": "entre",
+   "params": {
+    "a": 2,
+    "b": 18,
+    "n": 3
+   },
+   "texto": "Há exatamente 3 culpados entre Tati e Pepê."
+  },
+  "C3": {
+   "tipo": "conexao",
+   "params": {
+    "area": {
+     "tipo": "linha",
+     "valor": 3
+    }
+   },
+   "texto": "Todos os culpados da linha 3 estão conectados."
+  },
+  "D3": {
+   "tipo": "profissao",
+   "params": {
+    "profissao": "da vizinhança",
+    "membros": [
+     14,
+     17,
+     19
+    ],
+    "n": 3
+   },
+   "texto": "Entre quem é da vizinhança, há exatamente 3 culpados."
+  },
+  "A4": {
+   "tipo": "direcao",
+   "params": {
+    "alvo": 14,
+    "direcao": "abaixo",
+    "valor": "inocente"
+   },
+   "texto": "Todos abaixo de Lili são inocentes."
+  },
+  "B4": {
+   "tipo": "paridade",
+   "params": {
+    "area": {
+     "tipo": "coluna",
+     "valor": "D"
+    },
+    "impar": false
+   },
+   "texto": "Há um número par de culpados na coluna D."
+  },
+  "C4": {
+   "tipo": "conexao",
+   "params": {
+    "area": {
+     "tipo": "coluna",
+     "valor": "A"
+    }
+   },
+   "texto": "Todos os culpados da coluna A estão conectados."
+  },
+  "D4": {
+   "tipo": "profissao",
+   "params": {
+    "profissao": "da mesa de doces",
+    "membros": [
+     5,
+     8,
+     15,
+     16
+    ],
+    "n": 1
+   },
+   "texto": "Entre quem é da mesa de doces, há exatamente 1 culpado."
+  },
+  "A5": {
+   "tipo": "comparacao",
+   "params": {
+    "a": 10,
+    "b": 8
+   },
+   "texto": "Guto tem mais vizinhos culpados que Léo."
+  },
+  "B5": {
+   "tipo": "comparacao",
+   "params": {
+    "a": 10,
+    "b": 11
+   },
+   "texto": "Guto tem mais vizinhos culpados que Lalá."
+  },
+  "C5": {
+   "tipo": "profissao",
+   "params": {
+    "profissao": "da churrasqueira",
+    "membros": [
+     2,
+     11,
+     12
+    ],
+    "n": 2
+   },
+   "texto": "Entre quem é da churrasqueira, há exatamente 2 culpados."
+  },
+  "D5": {
+   "tipo": "paridade",
+   "params": {
+    "area": {
+     "tipo": "linha",
+     "valor": 3
+    },
+    "impar": false
+   },
+   "texto": "Há um número par de culpados na linha 3."
+  }
+ },
+ "solucao": "ckob"
+}

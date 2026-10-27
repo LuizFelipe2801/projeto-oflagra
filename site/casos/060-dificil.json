@@ -1,0 +1,317 @@
+{
+ "versao": 1,
+ "dia_do_ciclo": 60,
+ "dificuldade": "dificil",
+ "cenario": "onibus",
+ "cenario_nome": "O ônibus",
+ "titulo": "Quem passou de novo com o cartão do amigo?",
+ "personagens": [
+  {
+   "pos": "A1",
+   "nome": "Adilson",
+   "profissao": "do banco da frente"
+  },
+  {
+   "pos": "B1",
+   "nome": "Nivaldo",
+   "profissao": "do corredor"
+  },
+  {
+   "pos": "C1",
+   "nome": "Rosângela",
+   "profissao": "do corredor"
+  },
+  {
+   "pos": "D1",
+   "nome": "Leila",
+   "profissao": "do fundão"
+  },
+  {
+   "pos": "A2",
+   "nome": "Agnaldo",
+   "profissao": "da catraca"
+  },
+  {
+   "pos": "B2",
+   "nome": "Zenaide",
+   "profissao": "do banco da frente"
+  },
+  {
+   "pos": "C2",
+   "nome": "Valmir",
+   "profissao": "do corredor"
+  },
+  {
+   "pos": "D2",
+   "nome": "Ieda",
+   "profissao": "da catraca"
+  },
+  {
+   "pos": "A3",
+   "nome": "Terezinha",
+   "profissao": "do ponto final"
+  },
+  {
+   "pos": "B3",
+   "nome": "Josefa",
+   "profissao": "do banco da frente"
+  },
+  {
+   "pos": "C3",
+   "nome": "Denílson",
+   "profissao": "da janela"
+  },
+  {
+   "pos": "D3",
+   "nome": "Eliane",
+   "profissao": "do fundão"
+  },
+  {
+   "pos": "A4",
+   "nome": "Jaílson",
+   "profissao": "da catraca"
+  },
+  {
+   "pos": "B4",
+   "nome": "Creusa",
+   "profissao": "do ponto final"
+  },
+  {
+   "pos": "C4",
+   "nome": "Edmilson",
+   "profissao": "do fundão"
+  },
+  {
+   "pos": "D4",
+   "nome": "Dona Rita",
+   "profissao": "da janela"
+  },
+  {
+   "pos": "A5",
+   "nome": "Seu Manoel",
+   "profissao": "do ponto final"
+  },
+  {
+   "pos": "B5",
+   "nome": "Dalila",
+   "profissao": "da janela"
+  },
+  {
+   "pos": "C5",
+   "nome": "Hélio",
+   "profissao": "do fundão"
+  },
+  {
+   "pos": "D5",
+   "nome": "Josué",
+   "profissao": "do ponto final"
+  }
+ ],
+ "inicial": "C3",
+ "pistas": {
+  "A1": {
+   "tipo": "direcao",
+   "params": {
+    "alvo": 10,
+    "direcao": "abaixo",
+    "valor": "culpado"
+   },
+   "texto": "Todos abaixo de Denílson são culpados."
+  },
+  "B1": {
+   "tipo": "profissao",
+   "params": {
+    "profissao": "da catraca",
+    "membros": [
+     4,
+     7,
+     12
+    ],
+    "n": 1
+   },
+   "texto": "Entre quem é da catraca, há exatamente 1 culpado."
+  },
+  "C1": {
+   "tipo": "profissao",
+   "params": {
+    "profissao": "do fundão",
+    "membros": [
+     3,
+     11,
+     14,
+     18
+    ],
+    "n": 2
+   },
+   "texto": "Entre quem é do fundão, há exatamente 2 culpados."
+  },
+  "D1": {
+   "tipo": "entre",
+   "params": {
+    "a": 1,
+    "b": 3,
+    "n": 1
+   },
+   "texto": "Há exatamente 1 culpado entre mim e Nivaldo."
+  },
+  "A2": {
+   "tipo": "vizinhos",
+   "params": {
+    "alvo": 10,
+    "n": 4
+   },
+   "texto": "Denílson tem exatamente 4 culpados entre os vizinhos."
+  },
+  "B2": {
+   "tipo": "comparacao",
+   "params": {
+    "a": 12,
+    "b": 8
+   },
+   "texto": "Jaílson tem mais vizinhos culpados que Terezinha."
+  },
+  "C2": {
+   "tipo": "profissao",
+   "params": {
+    "profissao": "do banco da frente",
+    "membros": [
+     0,
+     5,
+     9
+    ],
+    "n": 3
+   },
+   "texto": "Entre quem é do banco da frente, há exatamente 3 culpados."
+  },
+  "D2": {
+   "tipo": "entre",
+   "params": {
+    "a": 1,
+    "b": 9,
+    "n": 1
+   },
+   "texto": "Há exatamente 1 culpado entre Nivaldo e Josefa."
+  },
+  "A3": {
+   "tipo": "comparacao",
+   "params": {
+    "a": 1,
+    "b": 3
+   },
+   "texto": "Nivaldo tem mais vizinhos culpados que Leila."
+  },
+  "B3": {
+   "tipo": "maioria",
+   "params": {
+    "area": {
+     "tipo": "coluna",
+     "valor": "C"
+    },
+    "valor": "culpado"
+   },
+   "texto": "Há mais culpados que inocentes na coluna C."
+  },
+  "C3": {
+   "tipo": "entre",
+   "params": {
+    "a": 5,
+    "b": 7,
+    "n": 1
+   },
+   "texto": "Há exatamente 1 culpado entre Zenaide e Ieda."
+  },
+  "D3": {
+   "tipo": "maioria",
+   "params": {
+    "area": {
+     "tipo": "linha",
+     "valor": 1
+    },
+    "valor": "culpado"
+   },
+   "texto": "Há mais culpados que inocentes na linha 1."
+  },
+  "A4": {
+   "tipo": "contagem",
+   "params": {
+    "area": {
+     "tipo": "coluna",
+     "valor": "D"
+    },
+    "n": 0
+   },
+   "texto": "Não há nenhum culpado na coluna D."
+  },
+  "B4": {
+   "tipo": "entre",
+   "params": {
+    "a": 0,
+    "b": 2,
+    "n": 1
+   },
+   "texto": "Há exatamente 1 culpado entre Adilson e Rosângela."
+  },
+  "C4": {
+   "tipo": "profissao",
+   "params": {
+    "profissao": "do ponto final",
+    "membros": [
+     8,
+     13,
+     16,
+     19
+    ],
+    "n": 2
+   },
+   "texto": "Entre quem é do ponto final, há exatamente 2 culpados."
+  },
+  "D4": {
+   "tipo": "direcao",
+   "params": {
+    "alvo": 10,
+    "direcao": "direita",
+    "valor": "inocente"
+   },
+   "texto": "Todos à direita de Denílson são inocentes."
+  },
+  "A5": {
+   "tipo": "comparacao",
+   "params": {
+    "a": 4,
+    "b": 14
+   },
+   "texto": "Agnaldo tem mais vizinhos culpados que Edmilson."
+  },
+  "B5": {
+   "tipo": "contagem",
+   "params": {
+    "area": {
+     "tipo": "linha",
+     "valor": 2
+    },
+    "n": 2
+   },
+   "texto": "Há exatamente 2 culpados na linha 2."
+  },
+  "C5": {
+   "tipo": "maioria",
+   "params": {
+    "area": {
+     "tipo": "linha",
+     "valor": 5
+    },
+    "valor": "culpado"
+   },
+   "texto": "Há mais culpados que inocentes na linha 5."
+  },
+  "D5": {
+   "tipo": "comparacao",
+   "params": {
+    "a": 2,
+    "b": 7
+   },
+   "texto": "Rosângela tem mais vizinhos culpados que Ieda."
+  }
+ },
+ "solucao": "krh1"
+}

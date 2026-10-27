@@ -1,0 +1,45 @@
+{
+  "id": "feira",
+  "nome": "A feira",
+  "travessuras": [
+    "Quem trocou as placas de preço?",
+    "Quem levou o troco da banca errada?",
+    "Quem derrubou a pilha de laranjas?"
+  ],
+  "profissoes": [
+    "da banca de frutas",
+    "da verdura",
+    "do pastel",
+    "do peixe",
+    "da pamonha",
+    "da freguesia"
+  ],
+  "nomes": [
+    "Seu Jorge",
+    "Dona Marta",
+    "Nilton",
+    "Zilda",
+    "Benedito",
+    "Rute",
+    "Joaquim",
+    "Célia",
+    "Ivo",
+    "Graça",
+    "Geraldo",
+    "Dalva",
+    "Orlando",
+    "Mirtes",
+    "Jurandir",
+    "Edna",
+    "Elias",
+    "Lúcia",
+    "Amauri",
+    "Neusa",
+    "Ademir",
+    "Irene",
+    "Waldir",
+    "Olga"
+  ],
+  "culpado": "culpado",
+  "inocente": "inocente"
+}

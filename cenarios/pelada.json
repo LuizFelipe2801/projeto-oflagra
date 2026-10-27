@@ -1,0 +1,45 @@
+{
+  "id": "pelada",
+  "nome": "A pelada",
+  "travessuras": [
+    "Quem sumiu com a bola?",
+    "Quem furou a rede do gol?",
+    "Quem levou o colete errado para casa?"
+  ],
+  "profissoes": [
+    "do ataque",
+    "da defesa",
+    "do gol",
+    "da arquibancada",
+    "da arbitragem",
+    "do banco"
+  ],
+  "nomes": [
+    "Bola",
+    "Magrão",
+    "Serginho",
+    "Betão",
+    "Careca",
+    "Russo",
+    "Baixinho",
+    "Paulinho",
+    "Vitão",
+    "Fê",
+    "Xande",
+    "Jonas",
+    "Ivan",
+    "Mateus",
+    "Dodô",
+    "Dudinha",
+    "Tonho",
+    "Mano",
+    "Cris",
+    "Dino",
+    "Jota",
+    "Peixe",
+    "Nando",
+    "Lelê"
+  ],
+  "culpado": "culpado",
+  "inocente": "inocente"
+}

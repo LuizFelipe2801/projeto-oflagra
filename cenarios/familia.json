@@ -1,0 +1,45 @@
+{
+  "id": "familia",
+  "nome": "O grupo da família",
+  "travessuras": [
+    "Quem mandou o áudio de cinco minutos?",
+    "Quem mandou a corrente de bom dia às 5 da manhã?",
+    "Quem vazou a surpresa do aniversário?"
+  ],
+  "profissoes": [
+    "dos avós",
+    "dos tios",
+    "dos primos",
+    "dos sobrinhos",
+    "dos cunhados",
+    "dos netos"
+  ],
+  "nomes": [
+    "Vó Dirce",
+    "Vô Zeca",
+    "Tia Cleusa",
+    "Tio Nelson",
+    "Priscila",
+    "Júnior",
+    "Andréia",
+    "Marcelo",
+    "Luana",
+    "Eduardo",
+    "Vânia",
+    "Sérgio",
+    "Lara",
+    "Pedro",
+    "Bruninha",
+    "Jorge",
+    "Mila",
+    "Cadu",
+    "Carmem",
+    "Betinho",
+    "Tetê",
+    "Gil",
+    "Nando",
+    "Lenita"
+  ],
+  "culpado": "culpado",
+  "inocente": "inocente"
+}

@@ -1,0 +1,45 @@
+{
+  "id": "salao",
+  "nome": "O salão",
+  "travessuras": [
+    "Quem trocou a cor da tinta?",
+    "Quem sumiu com o secador?",
+    "Quem deixou a chapinha ligada?"
+  ],
+  "profissoes": [
+    "do corte",
+    "das unhas",
+    "da recepção",
+    "da clientela",
+    "da tintura",
+    "da escova"
+  ],
+  "nomes": [
+    "Dona Lê",
+    "Vanessa",
+    "Adriana",
+    "Jaque",
+    "Pri",
+    "Mari",
+    "Soraia",
+    "Simone",
+    "Tati",
+    "Nádia",
+    "Mônica",
+    "Rosana",
+    "Ju",
+    "Cláudia",
+    "Rebeca",
+    "Carla",
+    "Marcela",
+    "Débora",
+    "Elaine",
+    "Vivi",
+    "Gleice",
+    "Regina",
+    "Aline",
+    "Michele"
+  ],
+  "culpado": "culpado",
+  "inocente": "inocente"
+}

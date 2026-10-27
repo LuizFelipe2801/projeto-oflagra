@@ -1,0 +1,45 @@
+{
+  "id": "junina",
+  "nome": "A festa junina",
+  "travessuras": [
+    "Quem comeu a pamonha da quermesse?",
+    "Quem apagou a fogueira antes da hora?",
+    "Quem trocou as cartas do correio elegante?"
+  ],
+  "profissoes": [
+    "da quadrilha",
+    "da barraca de pamonha",
+    "do correio elegante",
+    "da pescaria",
+    "da fogueira",
+    "do som"
+  ],
+  "nomes": [
+    "Seu Chico",
+    "Dona Benta",
+    "Zefa",
+    "Tonico",
+    "Mariquinha",
+    "Juvenal",
+    "Fia",
+    "Bastião",
+    "Dedé",
+    "Rosinha",
+    "Nenê",
+    "Quinzinho",
+    "Ritinha",
+    "Zé Pedro",
+    "Dita",
+    "Lourival",
+    "Cotinha",
+    "Jacó",
+    "Bia",
+    "Zito",
+    "Luzia",
+    "Nico",
+    "Dorinha",
+    "Ciro"
+  ],
+  "culpado": "culpado",
+  "inocente": "inocente"
+}

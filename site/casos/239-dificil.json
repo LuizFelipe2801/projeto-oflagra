@@ -1,0 +1,300 @@
+{
+ "versao": 1,
+ "dia_do_ciclo": 239,
+ "dificuldade": "dificil",
+ "cenario": "junina",
+ "cenario_nome": "A festa junina",
+ "titulo": "Quem trocou as cartas do correio elegante?",
+ "personagens": [
+  {
+   "pos": "A1",
+   "nome": "Zefa",
+   "profissao": "da fogueira"
+  },
+  {
+   "pos": "B1",
+   "nome": "Ciro",
+   "profissao": "da barraca de pamonha"
+  },
+  {
+   "pos": "C1",
+   "nome": "Rosinha",
+   "profissao": "do som"
+  },
+  {
+   "pos": "D1",
+   "nome": "Ritinha",
+   "profissao": "do som"
+  },
+  {
+   "pos": "A2",
+   "nome": "Lourival",
+   "profissao": "da pescaria"
+  },
+  {
+   "pos": "B2",
+   "nome": "Zito",
+   "profissao": "da fogueira"
+  },
+  {
+   "pos": "C2",
+   "nome": "Luzia",
+   "profissao": "do correio elegante"
+  },
+  {
+   "pos": "D2",
+   "nome": "Jacó",
+   "profissao": "da barraca de pamonha"
+  },
+  {
+   "pos": "A3",
+   "nome": "Juvenal",
+   "profissao": "da fogueira"
+  },
+  {
+   "pos": "B3",
+   "nome": "Mariquinha",
+   "profissao": "da pescaria"
+  },
+  {
+   "pos": "C3",
+   "nome": "Bastião",
+   "profissao": "da fogueira"
+  },
+  {
+   "pos": "D3",
+   "nome": "Dona Benta",
+   "profissao": "da quadrilha"
+  },
+  {
+   "pos": "A4",
+   "nome": "Cotinha",
+   "profissao": "do som"
+  },
+  {
+   "pos": "B4",
+   "nome": "Dorinha",
+   "profissao": "do correio elegante"
+  },
+  {
+   "pos": "C4",
+   "nome": "Zé Pedro",
+   "profissao": "do correio elegante"
+  },
+  {
+   "pos": "D4",
+   "nome": "Tonico",
+   "profissao": "da quadrilha"
+  },
+  {
+   "pos": "A5",
+   "nome": "Fia",
+   "profissao": "da quadrilha"
+  },
+  {
+   "pos": "B5",
+   "nome": "Quinzinho",
+   "profissao": "da barraca de pamonha"
+  },
+  {
+   "pos": "C5",
+   "nome": "Bia",
+   "profissao": "da pescaria"
+  },
+  {
+   "pos": "D5",
+   "nome": "Dita",
+   "profissao": "da barraca de pamonha"
+  }
+ ],
+ "inicial": "A4",
+ "pistas": {
+  "A1": {
+   "tipo": "vizinhos",
+   "params": {
+    "alvo": 3,
+    "n": 2
+   },
+   "texto": "Ritinha tem exatamente 2 culpados entre os vizinhos."
+  },
+  "B1": {
+   "tipo": "entre",
+   "params": {
+    "a": 2,
+    "b": 14,
+    "n": 1
+   },
+   "texto": "Há exatamente 1 culpado entre Rosinha e Zé Pedro."
+  },
+  "C1": {
+   "tipo": "maioria",
+   "params": {
+    "area": {
+     "tipo": "borda"
+    },
+    "valor": "inocente"
+   },
+   "texto": "Há mais inocentes que culpados na borda."
+  },
+  "D1": {
+   "tipo": "profissao",
+   "params": {
+    "profissao": "do correio elegante",
+    "membros": [
+     6,
+     13,
+     14
+    ],
+    "n": 1
+   },
+   "texto": "Entre quem é do correio elegante, há exatamente 1 culpado."
+  },
+  "A2": {
+   "tipo": "entre",
+   "params": {
+    "a": 1,
+    "b": 17,
+    "n": 0
+   },
+   "texto": "Não há nenhum culpado entre Ciro e Quinzinho."
+  },
+  "B2": {
+   "tipo": "paridade",
+   "params": {
+    "area": {
+     "tipo": "borda"
+    },
+    "impar": true
+   },
+   "texto": "Há um número ímpar de culpados na borda."
+  },
+  "C2": {
+   "tipo": "contagem",
+   "params": {
+    "area": {
+     "tipo": "linha",
+     "valor": 1
+    },
+    "n": 1
+   },
+   "texto": "Há exatamente 1 culpado na linha 1."
+  },
+  "D2": {
+   "tipo": "maioria",
+   "params": {
+    "area": {
+     "tipo": "coluna",
+     "valor": "A"
+    },
+    "valor": "culpado"
+   },
+   "texto": "Há mais culpados que inocentes na coluna A."
+  },
+  "A3": {
+   "tipo": "maioria",
+   "params": {
+    "area": {
+     "tipo": "coluna",
+     "valor": "C"
+    },
+    "valor": "inocente"
+   },
+   "texto": "Há mais inocentes que culpados na coluna C."
+  },
+  "B3": {
+   "tipo": "comparacao",
+   "params": {
+    "a": 7,
+    "b": 6
+   },
+   "texto": "Jacó tem mais vizinhos culpados que Luzia."
+  },
+  "C3": {
+   "tipo": "direcao",
+   "params": {
+    "alvo": 17,
+    "direcao": "direita",
+    "valor": "inocente"
+   },
+   "texto": "Todos à direita de Quinzinho são inocentes."
+  },
+  "D3": {
+   "tipo": "comparacao",
+   "params": {
+    "a": 16,
+    "b": 18
+   },
+   "texto": "Fia tem mais vizinhos culpados que Bia."
+  },
+  "A4": {
+   "tipo": "entre",
+   "params": {
+    "a": 7,
+    "b": 15,
+    "n": 0
+   },
+   "texto": "Não há nenhum culpado entre Jacó e Tonico."
+  },
+  "B4": {
+   "tipo": "comparacao",
+   "params": {
+    "a": 12,
+    "b": 17
+   },
+   "texto": "Cotinha tem mais vizinhos culpados que Quinzinho."
+  },
+  "C4": {
+   "tipo": "conexao",
+   "params": {
+    "area": {
+     "tipo": "coluna",
+     "valor": "A"
+    }
+   },
+   "texto": "Todos os culpados da coluna A estão conectados."
+  },
+  "D4": {
+   "tipo": "conexao",
+   "params": {
+    "area": {
+     "tipo": "coluna",
+     "valor": "C"
+    }
+   },
+   "texto": "Todos os culpados da coluna C estão conectados."
+  },
+  "A5": {
+   "tipo": "comparacao",
+   "params": {
+    "a": 16,
+    "b": 14
+   },
+   "texto": "Tenho mais vizinhos culpados que Zé Pedro."
+  },
+  "B5": {
+   "tipo": "comparacao",
+   "params": {
+    "a": 10,
+    "b": 19
+   },
+   "texto": "Bastião tem mais vizinhos culpados que Dita."
+  },
+  "C5": {
+   "tipo": "comparacao",
+   "params": {
+    "a": 1,
+    "b": 3
+   },
+   "texto": "Ciro tem mais vizinhos culpados que Ritinha."
+  },
+  "D5": {
+   "tipo": "vizinhos",
+   "params": {
+    "alvo": 4,
+    "n": 1
+   },
+   "texto": "Lourival tem exatamente 1 culpado entre os vizinhos."
+  }
+ },
+ "solucao": "b5mi"
+}

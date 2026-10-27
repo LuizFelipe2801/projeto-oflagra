@@ -27,4 +27,26 @@ A especificação pede 1.000 casos nos CT-02 a CT-04; a contagem completa fica p
 
 Observação de conteúdo: as profissões são sorteadas sem considerar o gênero do nome (por exemplo, "Theo (professora)"). A correção é nos cenários, no Plano 2.
 
+---
+
+### Execução: 2026-10-27 — versão 0.4.0
+
+| Caso de teste | Resultado | Observação |
+|---|---|---|
+| CT-01 Geometria da grade | Passou | `testes/grade.test.js` |
+| CT-02 Pistas verdadeiras | Passou | Ciclo completo: 1.095 casos conferidos pelo validador, nenhuma pista falsa |
+| CT-03 Solução única e sem chute | Passou | Ciclo completo: 1.095 casos resolvidos pelo jogador perfeito |
+| CT-04 Classificação de dificuldade | Passou | Ciclo completo: 365 casos por nível, todos na dificuldade declarada |
+| CT-05 Recusa de chute | Passou | `testes/verificador.test.js` e `testes/partida.test.js` (recusa sem contar erro) |
+| CT-06 Reprodutibilidade | Parcial | Um caso por nível comparado no mesmo processo (`testes/caso.test.js`); o ciclo gerado duas vezes fica para a publicação |
+| CT-07 Desempenho do verificador | Passou no Node | Ver medição abaixo; a medição em Android de entrada fica para a publicação |
+| CT-08 Partida completa no celular | Passou (automatizado) | Chrome headless em 390 px: caso fácil #1 jogado até o fim pela solução, 86 recusas, 0 erros, 0 erros de console |
+| CT-09 Resultado compartilhado | Parcial | Texto gerado bate com o formato das regras (`testes/resultado.test.js`); colar no WhatsApp fica para a publicação |
+| CT-10 Acessibilidade | Parcial | Grade com `role="grid"`, setas no teclado, estado anunciado por texto e símbolo, alvos de 48 px, modo escuro e `prefers-reduced-motion`; leitor de tela ainda não testado |
+| CT-11 Teste com pessoas de fora | Pendente | Depende da publicação |
+
+Medição do CT-07 (Node 24, 100 casos difíceis, no pior momento, que é o início, com 1 pista e 19 desconhecidos): verificação da jogada em até 36 ms; cálculo da dica em até 63 ms. Em aparelho 4× mais lento, a jogada fica perto de 150 ms: acima do limite de RNF-003. A alternativa prevista em [05-Arquitetura](05-Arquitetura.md#tratamento-de-erros) (manter a lista de soluções e filtrar a cada jogada) já é o que `partida.js` faz depois da primeira revelação; a medição real em Android de entrada decide se é preciso otimizar o início.
+
+Geração do ciclo completo (`npm run gerar -- --dias 365 --saida site/casos`): 1.095 casos em 1.139 s (19 min), sem falha. Validação (`npm run validar -- --pasta site/casos`): 1.095 casos conferidos, nenhum problema.
+
 [Inclua a saída dos testes automatizados e prints ou gravações dos testes manuais]

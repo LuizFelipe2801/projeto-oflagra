@@ -1,5 +1,18 @@
 # Histórico de versões
 
+## [0.4.0] - 2026-10-27
+
+### Adicionado
+- Site jogável em `site/`: escolha da dificuldade, grade de 20 personagens, marcação sem chute, dicas em dois níveis, progresso e sequência no navegador, resultado para o WhatsApp, regras e estatísticas.
+- Ciclo completo de 365 dias gerado e validado em `site/casos/` (1.095 casos).
+- Nove cenários novos: feira, churrasco, pelada, salão, república, grupo da família, festa junina, academia e ônibus (12 no total).
+- `nucleo/deducao.js`: o passo de dedução sai do gerador para o núcleo, porque a dica do site precisa dele.
+- Comandos `npm run sincronizar` e `npm run site`; workflows de testes e de publicação no GitHub Pages.
+- Plano 2 em `documentos/planos/`.
+
+### Alterado
+- Profissões dos cenários em forma neutra ("da copa", "do RH") e campo `cenario_nome` no arquivo de caso.
+
 ## [0.3.0] - 2026-10-05
 
 ### Adicionado

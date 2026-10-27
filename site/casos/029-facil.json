@@ -1,0 +1,324 @@
+{
+ "versao": 1,
+ "dia_do_ciclo": 29,
+ "dificuldade": "facil",
+ "cenario": "feira",
+ "cenario_nome": "A feira",
+ "titulo": "Quem levou o troco da banca errada?",
+ "personagens": [
+  {
+   "pos": "A1",
+   "nome": "Jurandir",
+   "profissao": "do peixe"
+  },
+  {
+   "pos": "B1",
+   "nome": "Edna",
+   "profissao": "do pastel"
+  },
+  {
+   "pos": "C1",
+   "nome": "Seu Jorge",
+   "profissao": "do pastel"
+  },
+  {
+   "pos": "D1",
+   "nome": "Mirtes",
+   "profissao": "da pamonha"
+  },
+  {
+   "pos": "A2",
+   "nome": "Waldir",
+   "profissao": "da pamonha"
+  },
+  {
+   "pos": "B2",
+   "nome": "Zilda",
+   "profissao": "da freguesia"
+  },
+  {
+   "pos": "C2",
+   "nome": "Amauri",
+   "profissao": "da freguesia"
+  },
+  {
+   "pos": "D2",
+   "nome": "Dona Marta",
+   "profissao": "da verdura"
+  },
+  {
+   "pos": "A3",
+   "nome": "Rute",
+   "profissao": "da pamonha"
+  },
+  {
+   "pos": "B3",
+   "nome": "Geraldo",
+   "profissao": "da banca de frutas"
+  },
+  {
+   "pos": "C3",
+   "nome": "Joaquim",
+   "profissao": "da verdura"
+  },
+  {
+   "pos": "D3",
+   "nome": "Orlando",
+   "profissao": "da banca de frutas"
+  },
+  {
+   "pos": "A4",
+   "nome": "Lúcia",
+   "profissao": "da verdura"
+  },
+  {
+   "pos": "B4",
+   "nome": "Graça",
+   "profissao": "da banca de frutas"
+  },
+  {
+   "pos": "C4",
+   "nome": "Neusa",
+   "profissao": "do pastel"
+  },
+  {
+   "pos": "D4",
+   "nome": "Irene",
+   "profissao": "da freguesia"
+  },
+  {
+   "pos": "A5",
+   "nome": "Olga",
+   "profissao": "do peixe"
+  },
+  {
+   "pos": "B5",
+   "nome": "Célia",
+   "profissao": "do pastel"
+  },
+  {
+   "pos": "C5",
+   "nome": "Elias",
+   "profissao": "do peixe"
+  },
+  {
+   "pos": "D5",
+   "nome": "Ademir",
+   "profissao": "do peixe"
+  }
+ ],
+ "inicial": "A5",
+ "pistas": {
+  "A1": {
+   "tipo": "direcao",
+   "params": {
+    "alvo": 13,
+    "direcao": "acima",
+    "valor": "culpado"
+   },
+   "texto": "Todos acima de Graça são culpados."
+  },
+  "B1": {
+   "tipo": "profissao",
+   "params": {
+    "profissao": "da banca de frutas",
+    "membros": [
+     9,
+     11,
+     13
+    ],
+    "n": 2
+   },
+   "texto": "Entre quem é da banca de frutas, há exatamente 2 culpados."
+  },
+  "C1": {
+   "tipo": "contagem",
+   "params": {
+    "area": {
+     "tipo": "coluna",
+     "valor": "C"
+    },
+    "n": 2
+   },
+   "texto": "Há exatamente 2 culpados na coluna C."
+  },
+  "D1": {
+   "tipo": "contagem",
+   "params": {
+    "area": {
+     "tipo": "linha",
+     "valor": 5
+    },
+    "n": 2
+   },
+   "texto": "Há exatamente 2 culpados na linha 5."
+  },
+  "A2": {
+   "tipo": "profissao",
+   "params": {
+    "profissao": "do peixe",
+    "membros": [
+     0,
+     16,
+     18,
+     19
+    ],
+    "n": 2
+   },
+   "texto": "Entre quem é do peixe, há exatamente 2 culpados."
+  },
+  "B2": {
+   "tipo": "direcao",
+   "params": {
+    "alvo": 5,
+    "direcao": "esquerda",
+    "valor": "inocente"
+   },
+   "texto": "Todos à esquerda de mim são inocentes."
+  },
+  "C2": {
+   "tipo": "direcao",
+   "params": {
+    "alvo": 7,
+    "direcao": "acima",
+    "valor": "inocente"
+   },
+   "texto": "Todos acima de Dona Marta são inocentes."
+  },
+  "D2": {
+   "tipo": "vizinhos",
+   "params": {
+    "alvo": 2,
+    "n": 2
+   },
+   "texto": "Seu Jorge tem exatamente 2 culpados entre os vizinhos."
+  },
+  "A3": {
+   "tipo": "profissao",
+   "params": {
+    "profissao": "da pamonha",
+    "membros": [
+     3,
+     4,
+     8
+    ],
+    "n": 1
+   },
+   "texto": "Entre quem é da pamonha, há exatamente 1 culpado."
+  },
+  "B3": {
+   "tipo": "contagem",
+   "params": {
+    "area": {
+     "tipo": "linha",
+     "valor": 2
+    },
+    "n": 1
+   },
+   "texto": "Há exatamente 1 culpado na linha 2."
+  },
+  "C3": {
+   "tipo": "entre",
+   "params": {
+    "a": 7,
+    "b": 19,
+    "n": 0
+   },
+   "texto": "Não há nenhum culpado entre Dona Marta e Ademir."
+  },
+  "D3": {
+   "tipo": "direcao",
+   "params": {
+    "alvo": 4,
+    "direcao": "acima",
+    "valor": "inocente"
+   },
+   "texto": "Todos acima de Waldir são inocentes."
+  },
+  "A4": {
+   "tipo": "contagem",
+   "params": {
+    "area": {
+     "tipo": "linha",
+     "valor": 4
+    },
+    "n": 2
+   },
+   "texto": "Há exatamente 2 culpados na linha 4."
+  },
+  "B4": {
+   "tipo": "contagem",
+   "params": {
+    "area": {
+     "tipo": "linha",
+     "valor": 3
+    },
+    "n": 3
+   },
+   "texto": "Há exatamente 3 culpados na linha 3."
+  },
+  "C4": {
+   "tipo": "profissao",
+   "params": {
+    "profissao": "do pastel",
+    "membros": [
+     1,
+     2,
+     14,
+     17
+    ],
+    "n": 2
+   },
+   "texto": "Entre quem é do pastel, há exatamente 2 culpados."
+  },
+  "D4": {
+   "tipo": "profissao",
+   "params": {
+    "profissao": "da verdura",
+    "membros": [
+     7,
+     10,
+     12
+    ],
+    "n": 1
+   },
+   "texto": "Entre quem é da verdura, há exatamente 1 culpado."
+  },
+  "A5": {
+   "tipo": "entre",
+   "params": {
+    "a": 7,
+    "b": 15,
+    "n": 0
+   },
+   "texto": "Não há nenhum culpado entre Dona Marta e Irene."
+  },
+  "B5": {
+   "tipo": "vizinhos",
+   "params": {
+    "alvo": 3,
+    "n": 0
+   },
+   "texto": "Mirtes não tem nenhum culpado entre os vizinhos."
+  },
+  "C5": {
+   "tipo": "direcao",
+   "params": {
+    "alvo": 6,
+    "direcao": "direita",
+    "valor": "inocente"
+   },
+   "texto": "Todos à direita de Amauri são inocentes."
+  },
+  "D5": {
+   "tipo": "entre",
+   "params": {
+    "a": 3,
+    "b": 11,
+    "n": 0
+   },
+   "texto": "Não há nenhum culpado entre Mirtes e Orlando."
+  }
+ },
+ "solucao": "ion7"
+}

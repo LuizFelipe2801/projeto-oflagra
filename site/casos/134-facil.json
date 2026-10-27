@@ -1,0 +1,300 @@
+{
+ "versao": 1,
+ "dia_do_ciclo": 134,
+ "dificuldade": "facil",
+ "cenario": "condominio",
+ "cenario_nome": "O condomínio",
+ "titulo": "Quem largou o lixo no corredor?",
+ "personagens": [
+  {
+   "pos": "A1",
+   "nome": "Gilberto",
+   "profissao": "do conselho"
+  },
+  {
+   "pos": "B1",
+   "nome": "Fernanda",
+   "profissao": "da portaria"
+  },
+  {
+   "pos": "C1",
+   "nome": "Renan",
+   "profissao": "da limpeza"
+  },
+  {
+   "pos": "D1",
+   "nome": "Valdir",
+   "profissao": "da cobertura"
+  },
+  {
+   "pos": "A2",
+   "nome": "Sueli",
+   "profissao": "do térreo"
+  },
+  {
+   "pos": "B2",
+   "nome": "Patrícia",
+   "profissao": "da portaria"
+  },
+  {
+   "pos": "C2",
+   "nome": "Antônio",
+   "profissao": "de entregas"
+  },
+  {
+   "pos": "D2",
+   "nome": "Marlene",
+   "profissao": "do conselho"
+  },
+  {
+   "pos": "A3",
+   "nome": "Kátia",
+   "profissao": "do conselho"
+  },
+  {
+   "pos": "B3",
+   "nome": "Robson",
+   "profissao": "de entregas"
+  },
+  {
+   "pos": "C3",
+   "nome": "Márcio",
+   "profissao": "da cobertura"
+  },
+  {
+   "pos": "D3",
+   "nome": "Jéssica",
+   "profissao": "de entregas"
+  },
+  {
+   "pos": "A4",
+   "nome": "Cleide",
+   "profissao": "do térreo"
+  },
+  {
+   "pos": "B4",
+   "nome": "Osvaldo",
+   "profissao": "da limpeza"
+  },
+  {
+   "pos": "C4",
+   "nome": "Igor",
+   "profissao": "da cobertura"
+  },
+  {
+   "pos": "D4",
+   "nome": "Helena",
+   "profissao": "da limpeza"
+  },
+  {
+   "pos": "A5",
+   "nome": "Thiago",
+   "profissao": "do térreo"
+  },
+  {
+   "pos": "B5",
+   "nome": "Tânia",
+   "profissao": "de entregas"
+  },
+  {
+   "pos": "C5",
+   "nome": "Bruna",
+   "profissao": "da portaria"
+  },
+  {
+   "pos": "D5",
+   "nome": "Edson",
+   "profissao": "do térreo"
+  }
+ ],
+ "inicial": "C4",
+ "pistas": {
+  "A1": {
+   "tipo": "vizinhos",
+   "params": {
+    "alvo": 15,
+    "n": 3
+   },
+   "texto": "Helena tem exatamente 3 culpados entre os vizinhos."
+  },
+  "B1": {
+   "tipo": "vizinhos",
+   "params": {
+    "alvo": 16,
+    "n": 1
+   },
+   "texto": "Thiago tem exatamente 1 culpado entre os vizinhos."
+  },
+  "C1": {
+   "tipo": "conexao",
+   "params": {
+    "area": {
+     "tipo": "linha",
+     "valor": 2
+    }
+   },
+   "texto": "Todos os culpados da linha 2 estão conectados."
+  },
+  "D1": {
+   "tipo": "vizinhos",
+   "params": {
+    "alvo": 0,
+    "n": 2
+   },
+   "texto": "Gilberto tem exatamente 2 culpados entre os vizinhos."
+  },
+  "A2": {
+   "tipo": "profissao",
+   "params": {
+    "profissao": "do térreo",
+    "membros": [
+     4,
+     12,
+     16,
+     19
+    ],
+    "n": 3
+   },
+   "texto": "Entre quem é do térreo, há exatamente 3 culpados."
+  },
+  "B2": {
+   "tipo": "vizinhos",
+   "params": {
+    "alvo": 5,
+    "n": 3
+   },
+   "texto": "Tenho exatamente 3 culpados entre os vizinhos."
+  },
+  "C2": {
+   "tipo": "vizinhos",
+   "params": {
+    "alvo": 2,
+    "n": 1
+   },
+   "texto": "Renan tem exatamente 1 culpado entre os vizinhos."
+  },
+  "D2": {
+   "tipo": "contagem",
+   "params": {
+    "area": {
+     "tipo": "linha",
+     "valor": 5
+    },
+    "n": 3
+   },
+   "texto": "Há exatamente 3 culpados na linha 5."
+  },
+  "A3": {
+   "tipo": "direcao",
+   "params": {
+    "alvo": 10,
+    "direcao": "abaixo",
+    "valor": "inocente"
+   },
+   "texto": "Todos abaixo de Márcio são inocentes."
+  },
+  "B3": {
+   "tipo": "vizinhos",
+   "params": {
+    "alvo": 9,
+    "n": 3
+   },
+   "texto": "Tenho exatamente 3 culpados entre os vizinhos."
+  },
+  "C3": {
+   "tipo": "contagem",
+   "params": {
+    "area": {
+     "tipo": "linha",
+     "valor": 1
+    },
+    "n": 1
+   },
+   "texto": "Há exatamente 1 culpado na linha 1."
+  },
+  "D3": {
+   "tipo": "contagem",
+   "params": {
+    "area": {
+     "tipo": "borda"
+    },
+    "n": 7
+   },
+   "texto": "Há exatamente 7 culpados na borda."
+  },
+  "A4": {
+   "tipo": "contagem",
+   "params": {
+    "area": {
+     "tipo": "coluna",
+     "valor": "A"
+    },
+    "n": 3
+   },
+   "texto": "Há exatamente 3 culpados na coluna A."
+  },
+  "B4": {
+   "tipo": "entre",
+   "params": {
+    "a": 0,
+    "b": 8,
+    "n": 1
+   },
+   "texto": "Há exatamente 1 culpado entre Gilberto e Kátia."
+  },
+  "C4": {
+   "tipo": "direcao",
+   "params": {
+    "alvo": 14,
+    "direcao": "esquerda",
+    "valor": "inocente"
+   },
+   "texto": "Todos à esquerda de mim são inocentes."
+  },
+  "D4": {
+   "tipo": "direcao",
+   "params": {
+    "alvo": 10,
+    "direcao": "esquerda",
+    "valor": "inocente"
+   },
+   "texto": "Todos à esquerda de Márcio são inocentes."
+  },
+  "A5": {
+   "tipo": "vizinhos",
+   "params": {
+    "alvo": 1,
+    "n": 3
+   },
+   "texto": "Fernanda tem exatamente 3 culpados entre os vizinhos."
+  },
+  "B5": {
+   "tipo": "direcao",
+   "params": {
+    "alvo": 14,
+    "direcao": "direita",
+    "valor": "culpado"
+   },
+   "texto": "Todos à direita de Igor são culpados."
+  },
+  "C5": {
+   "tipo": "direcao",
+   "params": {
+    "alvo": 0,
+    "direcao": "direita",
+    "valor": "inocente"
+   },
+   "texto": "Todos à direita de Gilberto são inocentes."
+  },
+  "D5": {
+   "tipo": "direcao",
+   "params": {
+    "alvo": 13,
+    "direcao": "abaixo",
+    "valor": "culpado"
+   },
+   "texto": "Todos abaixo de Osvaldo são culpados."
+  }
+ },
+ "solucao": "a35"
+}

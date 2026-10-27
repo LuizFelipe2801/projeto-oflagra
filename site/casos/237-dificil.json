@@ -1,0 +1,329 @@
+{
+ "versao": 1,
+ "dia_do_ciclo": 237,
+ "dificuldade": "dificil",
+ "cenario": "feira",
+ "cenario_nome": "A feira",
+ "titulo": "Quem derrubou a pilha de laranjas?",
+ "personagens": [
+  {
+   "pos": "A1",
+   "nome": "Dalva",
+   "profissao": "da banca de frutas"
+  },
+  {
+   "pos": "B1",
+   "nome": "Mirtes",
+   "profissao": "da banca de frutas"
+  },
+  {
+   "pos": "C1",
+   "nome": "Edna",
+   "profissao": "da freguesia"
+  },
+  {
+   "pos": "D1",
+   "nome": "Nilton",
+   "profissao": "da verdura"
+  },
+  {
+   "pos": "A2",
+   "nome": "Olga",
+   "profissao": "da pamonha"
+  },
+  {
+   "pos": "B2",
+   "nome": "Seu Jorge",
+   "profissao": "da freguesia"
+  },
+  {
+   "pos": "C2",
+   "nome": "Rute",
+   "profissao": "da verdura"
+  },
+  {
+   "pos": "D2",
+   "nome": "Lúcia",
+   "profissao": "do peixe"
+  },
+  {
+   "pos": "A3",
+   "nome": "Amauri",
+   "profissao": "da freguesia"
+  },
+  {
+   "pos": "B3",
+   "nome": "Zilda",
+   "profissao": "do pastel"
+  },
+  {
+   "pos": "C3",
+   "nome": "Ademir",
+   "profissao": "da verdura"
+  },
+  {
+   "pos": "D3",
+   "nome": "Graça",
+   "profissao": "da pamonha"
+  },
+  {
+   "pos": "A4",
+   "nome": "Waldir",
+   "profissao": "do peixe"
+  },
+  {
+   "pos": "B4",
+   "nome": "Joaquim",
+   "profissao": "da verdura"
+  },
+  {
+   "pos": "C4",
+   "nome": "Célia",
+   "profissao": "da freguesia"
+  },
+  {
+   "pos": "D4",
+   "nome": "Geraldo",
+   "profissao": "do peixe"
+  },
+  {
+   "pos": "A5",
+   "nome": "Jurandir",
+   "profissao": "do pastel"
+  },
+  {
+   "pos": "B5",
+   "nome": "Neusa",
+   "profissao": "da pamonha"
+  },
+  {
+   "pos": "C5",
+   "nome": "Elias",
+   "profissao": "da banca de frutas"
+  },
+  {
+   "pos": "D5",
+   "nome": "Benedito",
+   "profissao": "do pastel"
+  }
+ ],
+ "inicial": "B5",
+ "pistas": {
+  "A1": {
+   "tipo": "comparacao",
+   "params": {
+    "a": 17,
+    "b": 14
+   },
+   "texto": "Neusa tem mais vizinhos culpados que Célia."
+  },
+  "B1": {
+   "tipo": "paridade",
+   "params": {
+    "area": {
+     "tipo": "linha",
+     "valor": 4
+    },
+    "impar": true
+   },
+   "texto": "Há um número ímpar de culpados na linha 4."
+  },
+  "C1": {
+   "tipo": "paridade",
+   "params": {
+    "area": {
+     "tipo": "linha",
+     "valor": 1
+    },
+    "impar": true
+   },
+   "texto": "Há um número ímpar de culpados na linha 1."
+  },
+  "D1": {
+   "tipo": "comparacao",
+   "params": {
+    "a": 9,
+    "b": 1
+   },
+   "texto": "Zilda tem mais vizinhos culpados que Mirtes."
+  },
+  "A2": {
+   "tipo": "paridade",
+   "params": {
+    "area": {
+     "tipo": "linha",
+     "valor": 2
+    },
+    "impar": false
+   },
+   "texto": "Há um número par de culpados na linha 2."
+  },
+  "B2": {
+   "tipo": "paridade",
+   "params": {
+    "area": {
+     "tipo": "linha",
+     "valor": 3
+    },
+    "impar": false
+   },
+   "texto": "Há um número par de culpados na linha 3."
+  },
+  "C2": {
+   "tipo": "maioria",
+   "params": {
+    "area": {
+     "tipo": "linha",
+     "valor": 5
+    },
+    "valor": "inocente"
+   },
+   "texto": "Há mais inocentes que culpados na linha 5."
+  },
+  "D2": {
+   "tipo": "maioria",
+   "params": {
+    "area": {
+     "tipo": "linha",
+     "valor": 4
+    },
+    "valor": "culpado"
+   },
+   "texto": "Há mais culpados que inocentes na linha 4."
+  },
+  "A3": {
+   "tipo": "vizinhos",
+   "params": {
+    "alvo": 14,
+    "n": 2
+   },
+   "texto": "Célia tem exatamente 2 culpados entre os vizinhos."
+  },
+  "B3": {
+   "tipo": "entre",
+   "params": {
+    "a": 0,
+    "b": 16,
+    "n": 0
+   },
+   "texto": "Não há nenhum culpado entre Dalva e Jurandir."
+  },
+  "C3": {
+   "tipo": "profissao",
+   "params": {
+    "profissao": "do pastel",
+    "membros": [
+     9,
+     16,
+     19
+    ],
+    "n": 1
+   },
+   "texto": "Entre quem é do pastel, há exatamente 1 culpado."
+  },
+  "D3": {
+   "tipo": "profissao",
+   "params": {
+    "profissao": "da freguesia",
+    "membros": [
+     2,
+     5,
+     8,
+     14
+    ],
+    "n": 2
+   },
+   "texto": "Entre quem é da freguesia, há exatamente 2 culpados."
+  },
+  "A4": {
+   "tipo": "paridade",
+   "params": {
+    "area": {
+     "tipo": "linha",
+     "valor": 5
+    },
+    "impar": true
+   },
+   "texto": "Há um número ímpar de culpados na linha 5."
+  },
+  "B4": {
+   "tipo": "paridade",
+   "params": {
+    "area": {
+     "tipo": "coluna",
+     "valor": "C"
+    },
+    "impar": true
+   },
+   "texto": "Há um número ímpar de culpados na coluna C."
+  },
+  "C4": {
+   "tipo": "profissao",
+   "params": {
+    "profissao": "da verdura",
+    "membros": [
+     3,
+     6,
+     10,
+     13
+    ],
+    "n": 3
+   },
+   "texto": "Entre quem é da verdura, há exatamente 3 culpados."
+  },
+  "D4": {
+   "tipo": "maioria",
+   "params": {
+    "area": {
+     "tipo": "coluna",
+     "valor": "A"
+    },
+    "valor": "inocente"
+   },
+   "texto": "Há mais inocentes que culpados na coluna A."
+  },
+  "A5": {
+   "tipo": "profissao",
+   "params": {
+    "profissao": "da pamonha",
+    "membros": [
+     4,
+     11,
+     17
+    ],
+    "n": 0
+   },
+   "texto": "Entre quem é da pamonha, não há nenhum culpado."
+  },
+  "B5": {
+   "tipo": "entre",
+   "params": {
+    "a": 8,
+    "b": 11,
+    "n": 0
+   },
+   "texto": "Não há nenhum culpado entre Amauri e Graça."
+  },
+  "C5": {
+   "tipo": "direcao",
+   "params": {
+    "alvo": 16,
+    "direcao": "direita",
+    "valor": "inocente"
+   },
+   "texto": "Todos à direita de Jurandir são inocentes."
+  },
+  "D5": {
+   "tipo": "maioria",
+   "params": {
+    "area": {
+     "tipo": "coluna",
+     "valor": "B"
+    },
+    "valor": "inocente"
+   },
+   "texto": "Há mais inocentes que culpados na coluna B."
+  }
+ },
+ "solucao": "5wz6"
+}

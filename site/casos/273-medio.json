@@ -1,0 +1,309 @@
+{
+ "versao": 1,
+ "dia_do_ciclo": 273,
+ "dificuldade": "medio",
+ "cenario": "churrasco",
+ "cenario_nome": "O churrasco",
+ "titulo": "Quem queimou a picanha?",
+ "personagens": [
+  {
+   "pos": "A1",
+   "nome": "Nando",
+   "profissao": "do som"
+  },
+  {
+   "pos": "B1",
+   "nome": "Carol",
+   "profissao": "da churrasqueira"
+  },
+  {
+   "pos": "C1",
+   "nome": "Bebeto",
+   "profissao": "da churrasqueira"
+  },
+  {
+   "pos": "D1",
+   "nome": "Juca",
+   "profissao": "do som"
+  },
+  {
+   "pos": "A2",
+   "nome": "Kiko",
+   "profissao": "da cozinha"
+  },
+  {
+   "pos": "B2",
+   "nome": "Dedé",
+   "profissao": "do som"
+  },
+  {
+   "pos": "C2",
+   "nome": "Vini",
+   "profissao": "da piscina"
+  },
+  {
+   "pos": "D2",
+   "nome": "Ciça",
+   "profissao": "da mesa de doces"
+  },
+  {
+   "pos": "A3",
+   "nome": "Dinho",
+   "profissao": "da cozinha"
+  },
+  {
+   "pos": "B3",
+   "nome": "Dudu",
+   "profissao": "do som"
+  },
+  {
+   "pos": "C3",
+   "nome": "Mel",
+   "profissao": "da churrasqueira"
+  },
+  {
+   "pos": "D3",
+   "nome": "Lili",
+   "profissao": "da piscina"
+  },
+  {
+   "pos": "A4",
+   "nome": "Pepê",
+   "profissao": "da mesa de doces"
+  },
+  {
+   "pos": "B4",
+   "nome": "Léo",
+   "profissao": "da cozinha"
+  },
+  {
+   "pos": "C4",
+   "nome": "Rose",
+   "profissao": "da cozinha"
+  },
+  {
+   "pos": "D4",
+   "nome": "Bela",
+   "profissao": "da vizinhança"
+  },
+  {
+   "pos": "A5",
+   "nome": "Lalá",
+   "profissao": "da piscina"
+  },
+  {
+   "pos": "B5",
+   "nome": "Nina",
+   "profissao": "da vizinhança"
+  },
+  {
+   "pos": "C5",
+   "nome": "Tati",
+   "profissao": "da vizinhança"
+  },
+  {
+   "pos": "D5",
+   "nome": "Tio Beto",
+   "profissao": "da mesa de doces"
+  }
+ ],
+ "inicial": "D3",
+ "pistas": {
+  "A1": {
+   "tipo": "vizinhos",
+   "params": {
+    "alvo": 9,
+    "n": 4
+   },
+   "texto": "Dudu tem exatamente 4 culpados entre os vizinhos."
+  },
+  "B1": {
+   "tipo": "vizinhos",
+   "params": {
+    "alvo": 12,
+    "n": 2
+   },
+   "texto": "Pepê tem exatamente 2 culpados entre os vizinhos."
+  },
+  "C1": {
+   "tipo": "entre",
+   "params": {
+    "a": 4,
+    "b": 6,
+    "n": 1
+   },
+   "texto": "Há exatamente 1 culpado entre Kiko e Vini."
+  },
+  "D1": {
+   "tipo": "entre",
+   "params": {
+    "a": 0,
+    "b": 3,
+    "n": 0
+   },
+   "texto": "Não há nenhum culpado entre mim e Nando."
+  },
+  "A2": {
+   "tipo": "direcao",
+   "params": {
+    "alvo": 4,
+    "direcao": "acima",
+    "valor": "culpado"
+   },
+   "texto": "Todos acima de mim são culpados."
+  },
+  "B2": {
+   "tipo": "direcao",
+   "params": {
+    "alvo": 12,
+    "direcao": "direita",
+    "valor": "inocente"
+   },
+   "texto": "Todos à direita de Pepê são inocentes."
+  },
+  "C2": {
+   "tipo": "comparacao",
+   "params": {
+    "a": 5,
+    "b": 14
+   },
+   "texto": "Dedé tem mais vizinhos culpados que Rose."
+  },
+  "D2": {
+   "tipo": "profissao",
+   "params": {
+    "profissao": "da cozinha",
+    "membros": [
+     4,
+     8,
+     13,
+     14
+    ],
+    "n": 1
+   },
+   "texto": "Entre quem é da cozinha, há exatamente 1 culpado."
+  },
+  "A3": {
+   "tipo": "profissao",
+   "params": {
+    "profissao": "da vizinhança",
+    "membros": [
+     15,
+     17,
+     18
+    ],
+    "n": 0
+   },
+   "texto": "Entre quem é da vizinhança, não há nenhum culpado."
+  },
+  "B3": {
+   "tipo": "direcao",
+   "params": {
+    "alvo": 6,
+    "direcao": "direita",
+    "valor": "inocente"
+   },
+   "texto": "Todos à direita de Vini são inocentes."
+  },
+  "C3": {
+   "tipo": "profissao",
+   "params": {
+    "profissao": "da piscina",
+    "membros": [
+     6,
+     11,
+     16
+    ],
+    "n": 2
+   },
+   "texto": "Entre quem é da piscina, há exatamente 2 culpados."
+  },
+  "D3": {
+   "tipo": "profissao",
+   "params": {
+    "profissao": "da churrasqueira",
+    "membros": [
+     1,
+     2,
+     10
+    ],
+    "n": 0
+   },
+   "texto": "Entre quem é da churrasqueira, não há nenhum culpado."
+  },
+  "A4": {
+   "tipo": "vizinhos",
+   "params": {
+    "alvo": 19,
+    "n": 0
+   },
+   "texto": "Tio Beto não tem nenhum culpado entre os vizinhos."
+  },
+  "B4": {
+   "tipo": "direcao",
+   "params": {
+    "alvo": 17,
+    "direcao": "esquerda",
+    "valor": "inocente"
+   },
+   "texto": "Todos à esquerda de Nina são inocentes."
+  },
+  "C4": {
+   "tipo": "contagem",
+   "params": {
+    "area": {
+     "tipo": "coluna",
+     "valor": "D"
+    },
+    "n": 2
+   },
+   "texto": "Há exatamente 2 culpados na coluna D."
+  },
+  "D4": {
+   "tipo": "direcao",
+   "params": {
+    "alvo": 12,
+    "direcao": "abaixo",
+    "valor": "inocente"
+   },
+   "texto": "Todos abaixo de Pepê são inocentes."
+  },
+  "A5": {
+   "tipo": "contagem",
+   "params": {
+    "area": {
+     "tipo": "coluna",
+     "valor": "B"
+    },
+    "n": 2
+   },
+   "texto": "Há exatamente 2 culpados na coluna B."
+  },
+  "B5": {
+   "tipo": "direcao",
+   "params": {
+    "alvo": 1,
+    "direcao": "direita",
+    "valor": "inocente"
+   },
+   "texto": "Todos à direita de Carol são inocentes."
+  },
+  "C5": {
+   "tipo": "vizinhos",
+   "params": {
+    "alvo": 15,
+    "n": 2
+   },
+   "texto": "Bela tem exatamente 2 culpados entre os vizinhos."
+  },
+  "D5": {
+   "tipo": "vizinhos",
+   "params": {
+    "alvo": 18,
+    "n": 1
+   },
+   "texto": "Tati tem exatamente 1 culpado entre os vizinhos."
+  }
+ },
+ "solucao": "apth"
+}

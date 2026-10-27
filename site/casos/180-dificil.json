@@ -1,0 +1,308 @@
+{
+ "versao": 1,
+ "dia_do_ciclo": 180,
+ "dificuldade": "dificil",
+ "cenario": "onibus",
+ "cenario_nome": "O ônibus",
+ "titulo": "Quem passou de novo com o cartão do amigo?",
+ "personagens": [
+  {
+   "pos": "A1",
+   "nome": "Marlúcia",
+   "profissao": "do corredor"
+  },
+  {
+   "pos": "B1",
+   "nome": "Adilson",
+   "profissao": "da catraca"
+  },
+  {
+   "pos": "C1",
+   "nome": "Conceição",
+   "profissao": "do ponto final"
+  },
+  {
+   "pos": "D1",
+   "nome": "Rosângela",
+   "profissao": "da catraca"
+  },
+  {
+   "pos": "A2",
+   "nome": "Ieda",
+   "profissao": "do corredor"
+  },
+  {
+   "pos": "B2",
+   "nome": "Creusa",
+   "profissao": "do corredor"
+  },
+  {
+   "pos": "C2",
+   "nome": "Josefa",
+   "profissao": "do ponto final"
+  },
+  {
+   "pos": "D2",
+   "nome": "Cícero",
+   "profissao": "do fundão"
+  },
+  {
+   "pos": "A3",
+   "nome": "Denílson",
+   "profissao": "da janela"
+  },
+  {
+   "pos": "B3",
+   "nome": "Nivaldo",
+   "profissao": "da janela"
+  },
+  {
+   "pos": "C3",
+   "nome": "Valmir",
+   "profissao": "do banco da frente"
+  },
+  {
+   "pos": "D3",
+   "nome": "Eliane",
+   "profissao": "do banco da frente"
+  },
+  {
+   "pos": "A4",
+   "nome": "Edmilson",
+   "profissao": "do banco da frente"
+  },
+  {
+   "pos": "B4",
+   "nome": "Dalila",
+   "profissao": "do ponto final"
+  },
+  {
+   "pos": "C4",
+   "nome": "Jaílson",
+   "profissao": "do corredor"
+  },
+  {
+   "pos": "D4",
+   "nome": "Ronaldo",
+   "profissao": "da catraca"
+  },
+  {
+   "pos": "A5",
+   "nome": "Terezinha",
+   "profissao": "do fundão"
+  },
+  {
+   "pos": "B5",
+   "nome": "Seu Manoel",
+   "profissao": "da janela"
+  },
+  {
+   "pos": "C5",
+   "nome": "Leila",
+   "profissao": "da janela"
+  },
+  {
+   "pos": "D5",
+   "nome": "Josué",
+   "profissao": "do fundão"
+  }
+ ],
+ "inicial": "C5",
+ "pistas": {
+  "A1": {
+   "tipo": "comparacao",
+   "params": {
+    "a": 10,
+    "b": 16
+   },
+   "texto": "Valmir tem mais vizinhos culpados que Terezinha."
+  },
+  "B1": {
+   "tipo": "contagem",
+   "params": {
+    "area": {
+     "tipo": "linha",
+     "valor": 1
+    },
+    "n": 0
+   },
+   "texto": "Não há nenhum culpado na linha 1."
+  },
+  "C1": {
+   "tipo": "profissao",
+   "params": {
+    "profissao": "da janela",
+    "membros": [
+     8,
+     9,
+     17,
+     18
+    ],
+    "n": 1
+   },
+   "texto": "Entre quem é da janela, há exatamente 1 culpado."
+  },
+  "D1": {
+   "tipo": "maioria",
+   "params": {
+    "area": {
+     "tipo": "coluna",
+     "valor": "A"
+    },
+    "valor": "inocente"
+   },
+   "texto": "Há mais inocentes que culpados na coluna A."
+  },
+  "A2": {
+   "tipo": "contagem",
+   "params": {
+    "area": {
+     "tipo": "coluna",
+     "valor": "A"
+    },
+    "n": 2
+   },
+   "texto": "Há exatamente 2 culpados na coluna A."
+  },
+  "B2": {
+   "tipo": "comparacao",
+   "params": {
+    "a": 4,
+    "b": 0
+   },
+   "texto": "Ieda tem mais vizinhos culpados que Marlúcia."
+  },
+  "C2": {
+   "tipo": "paridade",
+   "params": {
+    "area": {
+     "tipo": "coluna",
+     "valor": "B"
+    },
+    "impar": false
+   },
+   "texto": "Há um número par de culpados na coluna B."
+  },
+  "D2": {
+   "tipo": "comparacao",
+   "params": {
+    "a": 8,
+    "b": 4
+   },
+   "texto": "Denílson tem mais vizinhos culpados que Ieda."
+  },
+  "A3": {
+   "tipo": "entre",
+   "params": {
+    "a": 2,
+    "b": 18,
+    "n": 2
+   },
+   "texto": "Há exatamente 2 culpados entre Conceição e Leila."
+  },
+  "B3": {
+   "tipo": "comparacao",
+   "params": {
+    "a": 17,
+    "b": 19
+   },
+   "texto": "Seu Manoel tem mais vizinhos culpados que Josué."
+  },
+  "C3": {
+   "tipo": "paridade",
+   "params": {
+    "area": {
+     "tipo": "coluna",
+     "valor": "C"
+    },
+    "impar": false
+   },
+   "texto": "Há um número par de culpados na coluna C."
+  },
+  "D3": {
+   "tipo": "maioria",
+   "params": {
+    "area": {
+     "tipo": "borda"
+    },
+    "valor": "inocente"
+   },
+   "texto": "Há mais inocentes que culpados na borda."
+  },
+  "A4": {
+   "tipo": "contagem",
+   "params": {
+    "area": {
+     "tipo": "linha",
+     "valor": 3
+    },
+    "n": 1
+   },
+   "texto": "Há exatamente 1 culpado na linha 3."
+  },
+  "B4": {
+   "tipo": "comparacao",
+   "params": {
+    "a": 6,
+    "b": 15
+   },
+   "texto": "Josefa tem mais vizinhos culpados que Ronaldo."
+  },
+  "C4": {
+   "tipo": "contagem",
+   "params": {
+    "area": {
+     "tipo": "borda"
+    },
+    "n": 3
+   },
+   "texto": "Há exatamente 3 culpados na borda."
+  },
+  "D4": {
+   "tipo": "entre",
+   "params": {
+    "a": 1,
+    "b": 13,
+    "n": 2
+   },
+   "texto": "Há exatamente 2 culpados entre Adilson e Dalila."
+  },
+  "A5": {
+   "tipo": "maioria",
+   "params": {
+    "area": {
+     "tipo": "linha",
+     "valor": 1
+    },
+    "valor": "inocente"
+   },
+   "texto": "Há mais inocentes que culpados na linha 1."
+  },
+  "B5": {
+   "tipo": "entre",
+   "params": {
+    "a": 0,
+    "b": 3,
+    "n": 0
+   },
+   "texto": "Não há nenhum culpado entre Marlúcia e Rosângela."
+  },
+  "C5": {
+   "tipo": "vizinhos",
+   "params": {
+    "alvo": 19,
+    "n": 2
+   },
+   "texto": "Josué tem exatamente 2 culpados entre os vizinhos."
+  },
+  "D5": {
+   "tipo": "comparacao",
+   "params": {
+    "a": 10,
+    "b": 2
+   },
+   "texto": "Valmir tem mais vizinhos culpados que Conceição."
+  }
+ },
+ "solucao": "lbsv"
+}

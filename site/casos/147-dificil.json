@@ -1,0 +1,318 @@
+{
+ "versao": 1,
+ "dia_do_ciclo": 147,
+ "dificuldade": "dificil",
+ "cenario": "salao",
+ "cenario_nome": "O salão",
+ "titulo": "Quem deixou a chapinha ligada?",
+ "personagens": [
+  {
+   "pos": "A1",
+   "nome": "Simone",
+   "profissao": "da recepção"
+  },
+  {
+   "pos": "B1",
+   "nome": "Aline",
+   "profissao": "da clientela"
+  },
+  {
+   "pos": "C1",
+   "nome": "Regina",
+   "profissao": "da clientela"
+  },
+  {
+   "pos": "D1",
+   "nome": "Gleice",
+   "profissao": "da tintura"
+  },
+  {
+   "pos": "A2",
+   "nome": "Cláudia",
+   "profissao": "da escova"
+  },
+  {
+   "pos": "B2",
+   "nome": "Ju",
+   "profissao": "da clientela"
+  },
+  {
+   "pos": "C2",
+   "nome": "Soraia",
+   "profissao": "do corte"
+  },
+  {
+   "pos": "D2",
+   "nome": "Marcela",
+   "profissao": "da recepção"
+  },
+  {
+   "pos": "A3",
+   "nome": "Mari",
+   "profissao": "da tintura"
+  },
+  {
+   "pos": "B3",
+   "nome": "Pri",
+   "profissao": "do corte"
+  },
+  {
+   "pos": "C3",
+   "nome": "Jaque",
+   "profissao": "da escova"
+  },
+  {
+   "pos": "D3",
+   "nome": "Michele",
+   "profissao": "das unhas"
+  },
+  {
+   "pos": "A4",
+   "nome": "Adriana",
+   "profissao": "da clientela"
+  },
+  {
+   "pos": "B4",
+   "nome": "Vanessa",
+   "profissao": "da tintura"
+  },
+  {
+   "pos": "C4",
+   "nome": "Rebeca",
+   "profissao": "do corte"
+  },
+  {
+   "pos": "D4",
+   "nome": "Elaine",
+   "profissao": "da recepção"
+  },
+  {
+   "pos": "A5",
+   "nome": "Nádia",
+   "profissao": "das unhas"
+  },
+  {
+   "pos": "B5",
+   "nome": "Tati",
+   "profissao": "da tintura"
+  },
+  {
+   "pos": "C5",
+   "nome": "Carla",
+   "profissao": "da escova"
+  },
+  {
+   "pos": "D5",
+   "nome": "Dona Lê",
+   "profissao": "das unhas"
+  }
+ ],
+ "inicial": "C3",
+ "pistas": {
+  "A1": {
+   "tipo": "comparacao",
+   "params": {
+    "a": 8,
+    "b": 14
+   },
+   "texto": "Mari tem mais vizinhos culpados que Rebeca."
+  },
+  "B1": {
+   "tipo": "maioria",
+   "params": {
+    "area": {
+     "tipo": "coluna",
+     "valor": "D"
+    },
+    "valor": "inocente"
+   },
+   "texto": "Há mais inocentes que culpados na coluna D."
+  },
+  "C1": {
+   "tipo": "profissao",
+   "params": {
+    "profissao": "da clientela",
+    "membros": [
+     1,
+     2,
+     5,
+     12
+    ],
+    "n": 2
+   },
+   "texto": "Entre quem é da clientela, há exatamente 2 culpados."
+  },
+  "D1": {
+   "tipo": "paridade",
+   "params": {
+    "area": {
+     "tipo": "coluna",
+     "valor": "A"
+    },
+    "impar": true
+   },
+   "texto": "Há um número ímpar de culpados na coluna A."
+  },
+  "A2": {
+   "tipo": "paridade",
+   "params": {
+    "area": {
+     "tipo": "linha",
+     "valor": 4
+    },
+    "impar": true
+   },
+   "texto": "Há um número ímpar de culpados na linha 4."
+  },
+  "B2": {
+   "tipo": "maioria",
+   "params": {
+    "area": {
+     "tipo": "coluna",
+     "valor": "A"
+    },
+    "valor": "culpado"
+   },
+   "texto": "Há mais culpados que inocentes na coluna A."
+  },
+  "C2": {
+   "tipo": "comparacao",
+   "params": {
+    "a": 1,
+    "b": 10
+   },
+   "texto": "Aline tem mais vizinhos culpados que Jaque."
+  },
+  "D2": {
+   "tipo": "contagem",
+   "params": {
+    "area": {
+     "tipo": "coluna",
+     "valor": "B"
+    },
+    "n": 2
+   },
+   "texto": "Há exatamente 2 culpados na coluna B."
+  },
+  "A3": {
+   "tipo": "entre",
+   "params": {
+    "a": 0,
+    "b": 16,
+    "n": 1
+   },
+   "texto": "Há exatamente 1 culpado entre Simone e Nádia."
+  },
+  "B3": {
+   "tipo": "contagem",
+   "params": {
+    "area": {
+     "tipo": "coluna",
+     "valor": "A"
+    },
+    "n": 3
+   },
+   "texto": "Há exatamente 3 culpados na coluna A."
+  },
+  "C3": {
+   "tipo": "direcao",
+   "params": {
+    "alvo": 7,
+    "direcao": "abaixo",
+    "valor": "inocente"
+   },
+   "texto": "Todos abaixo de Marcela são inocentes."
+  },
+  "D3": {
+   "tipo": "vizinhos",
+   "params": {
+    "alvo": 5,
+    "n": 3
+   },
+   "texto": "Ju tem exatamente 3 culpados entre os vizinhos."
+  },
+  "A4": {
+   "tipo": "profissao",
+   "params": {
+    "profissao": "da escova",
+    "membros": [
+     4,
+     10,
+     18
+    ],
+    "n": 1
+   },
+   "texto": "Entre quem é da escova, há exatamente 1 culpado."
+  },
+  "B4": {
+   "tipo": "entre",
+   "params": {
+    "a": 7,
+    "b": 19,
+    "n": 0
+   },
+   "texto": "Não há nenhum culpado entre Marcela e Dona Lê."
+  },
+  "C4": {
+   "tipo": "paridade",
+   "params": {
+    "area": {
+     "tipo": "borda"
+    },
+    "impar": true
+   },
+   "texto": "Há um número ímpar de culpados na borda."
+  },
+  "D4": {
+   "tipo": "comparacao",
+   "params": {
+    "a": 13,
+    "b": 10
+   },
+   "texto": "Vanessa tem mais vizinhos culpados que Jaque."
+  },
+  "A5": {
+   "tipo": "direcao",
+   "params": {
+    "alvo": 8,
+    "direcao": "direita",
+    "valor": "inocente"
+   },
+   "texto": "Todos à direita de Mari são inocentes."
+  },
+  "B5": {
+   "tipo": "contagem",
+   "params": {
+    "area": {
+     "tipo": "linha",
+     "valor": 3
+    },
+    "n": 0
+   },
+   "texto": "Não há nenhum culpado na linha 3."
+  },
+  "C5": {
+   "tipo": "profissao",
+   "params": {
+    "profissao": "da recepção",
+    "membros": [
+     0,
+     7,
+     15
+    ],
+    "n": 1
+   },
+   "texto": "Entre quem é da recepção, há exatamente 1 culpado."
+  },
+  "D5": {
+   "tipo": "direcao",
+   "params": {
+    "alvo": 13,
+    "direcao": "abaixo",
+    "valor": "culpado"
+   },
+   "texto": "Todos abaixo de Vanessa são culpados."
+  }
+ },
+ "solucao": "f4on"
+}

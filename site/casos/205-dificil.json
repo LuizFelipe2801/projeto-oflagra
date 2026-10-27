@@ -1,0 +1,327 @@
+{
+ "versao": 1,
+ "dia_do_ciclo": 205,
+ "dificuldade": "dificil",
+ "cenario": "pelada",
+ "cenario_nome": "A pelada",
+ "titulo": "Quem furou a rede do gol?",
+ "personagens": [
+  {
+   "pos": "A1",
+   "nome": "Betão",
+   "profissao": "da defesa"
+  },
+  {
+   "pos": "B1",
+   "nome": "Tonho",
+   "profissao": "do ataque"
+  },
+  {
+   "pos": "C1",
+   "nome": "Jota",
+   "profissao": "do gol"
+  },
+  {
+   "pos": "D1",
+   "nome": "Bola",
+   "profissao": "da arquibancada"
+  },
+  {
+   "pos": "A2",
+   "nome": "Nando",
+   "profissao": "do banco"
+  },
+  {
+   "pos": "B2",
+   "nome": "Lelê",
+   "profissao": "da arquibancada"
+  },
+  {
+   "pos": "C2",
+   "nome": "Fê",
+   "profissao": "da defesa"
+  },
+  {
+   "pos": "D2",
+   "nome": "Serginho",
+   "profissao": "do banco"
+  },
+  {
+   "pos": "A3",
+   "nome": "Russo",
+   "profissao": "da defesa"
+  },
+  {
+   "pos": "B3",
+   "nome": "Dudinha",
+   "profissao": "da arquibancada"
+  },
+  {
+   "pos": "C3",
+   "nome": "Peixe",
+   "profissao": "da arbitragem"
+  },
+  {
+   "pos": "D3",
+   "nome": "Paulinho",
+   "profissao": "da arbitragem"
+  },
+  {
+   "pos": "A4",
+   "nome": "Jonas",
+   "profissao": "do banco"
+  },
+  {
+   "pos": "B4",
+   "nome": "Dodô",
+   "profissao": "do ataque"
+  },
+  {
+   "pos": "C4",
+   "nome": "Careca",
+   "profissao": "do gol"
+  },
+  {
+   "pos": "D4",
+   "nome": "Baixinho",
+   "profissao": "da defesa"
+  },
+  {
+   "pos": "A5",
+   "nome": "Dino",
+   "profissao": "do gol"
+  },
+  {
+   "pos": "B5",
+   "nome": "Ivan",
+   "profissao": "do ataque"
+  },
+  {
+   "pos": "C5",
+   "nome": "Magrão",
+   "profissao": "da arquibancada"
+  },
+  {
+   "pos": "D5",
+   "nome": "Mateus",
+   "profissao": "da arbitragem"
+  }
+ ],
+ "inicial": "B1",
+ "pistas": {
+  "A1": {
+   "tipo": "paridade",
+   "params": {
+    "area": {
+     "tipo": "linha",
+     "valor": 3
+    },
+    "impar": false
+   },
+   "texto": "Há um número par de culpados na linha 3."
+  },
+  "B1": {
+   "tipo": "entre",
+   "params": {
+    "a": 4,
+    "b": 12,
+    "n": 1
+   },
+   "texto": "Há exatamente 1 culpado entre Nando e Jonas."
+  },
+  "C1": {
+   "tipo": "comparacao",
+   "params": {
+    "a": 9,
+    "b": 5
+   },
+   "texto": "Dudinha tem mais vizinhos culpados que Lelê."
+  },
+  "D1": {
+   "tipo": "profissao",
+   "params": {
+    "profissao": "do gol",
+    "membros": [
+     2,
+     14,
+     16
+    ],
+    "n": 1
+   },
+   "texto": "Entre quem é do gol, há exatamente 1 culpado."
+  },
+  "A2": {
+   "tipo": "vizinhos",
+   "params": {
+    "alvo": 10,
+    "n": 3
+   },
+   "texto": "Peixe tem exatamente 3 culpados entre os vizinhos."
+  },
+  "B2": {
+   "tipo": "comparacao",
+   "params": {
+    "a": 12,
+    "b": 16
+   },
+   "texto": "Jonas tem mais vizinhos culpados que Dino."
+  },
+  "C2": {
+   "tipo": "conexao",
+   "params": {
+    "area": {
+     "tipo": "linha",
+     "valor": 3
+    }
+   },
+   "texto": "Todos os culpados da linha 3 estão conectados."
+  },
+  "D2": {
+   "tipo": "profissao",
+   "params": {
+    "profissao": "da arquibancada",
+    "membros": [
+     3,
+     5,
+     9,
+     18
+    ],
+    "n": 2
+   },
+   "texto": "Entre quem é da arquibancada, há exatamente 2 culpados."
+  },
+  "A3": {
+   "tipo": "profissao",
+   "params": {
+    "profissao": "da defesa",
+    "membros": [
+     0,
+     6,
+     8,
+     15
+    ],
+    "n": 1
+   },
+   "texto": "Entre quem é da defesa, há exatamente 1 culpado."
+  },
+  "B3": {
+   "tipo": "vizinhos",
+   "params": {
+    "alvo": 15,
+    "n": 1
+   },
+   "texto": "Baixinho tem exatamente 1 culpado entre os vizinhos."
+  },
+  "C3": {
+   "tipo": "profissao",
+   "params": {
+    "profissao": "do ataque",
+    "membros": [
+     1,
+     13,
+     17
+    ],
+    "n": 2
+   },
+   "texto": "Entre quem é do ataque, há exatamente 2 culpados."
+  },
+  "D3": {
+   "tipo": "paridade",
+   "params": {
+    "area": {
+     "tipo": "coluna",
+     "valor": "D"
+    },
+    "impar": true
+   },
+   "texto": "Há um número ímpar de culpados na coluna D."
+  },
+  "A4": {
+   "tipo": "comparacao",
+   "params": {
+    "a": 5,
+    "b": 15
+   },
+   "texto": "Lelê tem mais vizinhos culpados que Baixinho."
+  },
+  "B4": {
+   "tipo": "maioria",
+   "params": {
+    "area": {
+     "tipo": "linha",
+     "valor": 1
+    },
+    "valor": "inocente"
+   },
+   "texto": "Há mais inocentes que culpados na linha 1."
+  },
+  "C4": {
+   "tipo": "maioria",
+   "params": {
+    "area": {
+     "tipo": "linha",
+     "valor": 5
+    },
+    "valor": "inocente"
+   },
+   "texto": "Há mais inocentes que culpados na linha 5."
+  },
+  "D4": {
+   "tipo": "conexao",
+   "params": {
+    "area": {
+     "tipo": "coluna",
+     "valor": "B"
+    }
+   },
+   "texto": "Todos os culpados da coluna B estão conectados."
+  },
+  "A5": {
+   "tipo": "maioria",
+   "params": {
+    "area": {
+     "tipo": "coluna",
+     "valor": "D"
+    },
+    "valor": "inocente"
+   },
+   "texto": "Há mais inocentes que culpados na coluna D."
+  },
+  "B5": {
+   "tipo": "profissao",
+   "params": {
+    "profissao": "do banco",
+    "membros": [
+     4,
+     7,
+     12
+    ],
+    "n": 0
+   },
+   "texto": "Entre quem é do banco, não há nenhum culpado."
+  },
+  "C5": {
+   "tipo": "paridade",
+   "params": {
+    "area": {
+     "tipo": "linha",
+     "valor": 2
+    },
+    "impar": false
+   },
+   "texto": "Há um número par de culpados na linha 2."
+  },
+  "D5": {
+   "tipo": "maioria",
+   "params": {
+    "area": {
+     "tipo": "coluna",
+     "valor": "B"
+    },
+    "valor": "culpado"
+   },
+   "texto": "Há mais culpados que inocentes na coluna B."
+  }
+ },
+ "solucao": "eq41"
+}

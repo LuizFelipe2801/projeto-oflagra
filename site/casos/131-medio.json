@@ -1,0 +1,303 @@
+{
+ "versao": 1,
+ "dia_do_ciclo": 131,
+ "dificuldade": "medio",
+ "cenario": "escola",
+ "cenario_nome": "A escola",
+ "titulo": "Quem escondeu o apagador?",
+ "personagens": [
+  {
+   "pos": "A1",
+   "nome": "Enzo",
+   "profissao": "da diretoria"
+  },
+  {
+   "pos": "B1",
+   "nome": "Caio",
+   "profissao": "do pátio"
+  },
+  {
+   "pos": "C1",
+   "nome": "Cecília",
+   "profissao": "da cozinha"
+  },
+  {
+   "pos": "D1",
+   "nome": "Miguel",
+   "profissao": "da turma B"
+  },
+  {
+   "pos": "A2",
+   "nome": "Manu",
+   "profissao": "da biblioteca"
+  },
+  {
+   "pos": "B2",
+   "nome": "Heitor",
+   "profissao": "da diretoria"
+  },
+  {
+   "pos": "C2",
+   "nome": "Clara",
+   "profissao": "da cozinha"
+  },
+  {
+   "pos": "D2",
+   "nome": "Laura",
+   "profissao": "da turma A"
+  },
+  {
+   "pos": "A3",
+   "nome": "Isis",
+   "profissao": "do pátio"
+  },
+  {
+   "pos": "B3",
+   "nome": "Davi",
+   "profissao": "da turma A"
+  },
+  {
+   "pos": "C3",
+   "nome": "Lorena",
+   "profissao": "da biblioteca"
+  },
+  {
+   "pos": "D3",
+   "nome": "Theo",
+   "profissao": "da turma B"
+  },
+  {
+   "pos": "A4",
+   "nome": "Helena",
+   "profissao": "do pátio"
+  },
+  {
+   "pos": "B4",
+   "nome": "Bento",
+   "profissao": "do pátio"
+  },
+  {
+   "pos": "C4",
+   "nome": "Benício",
+   "profissao": "da diretoria"
+  },
+  {
+   "pos": "D4",
+   "nome": "Sofia",
+   "profissao": "da turma A"
+  },
+  {
+   "pos": "A5",
+   "nome": "Pedrinho",
+   "profissao": "da turma B"
+  },
+  {
+   "pos": "B5",
+   "nome": "Maitê",
+   "profissao": "da diretoria"
+  },
+  {
+   "pos": "C5",
+   "nome": "Valentina",
+   "profissao": "da cozinha"
+  },
+  {
+   "pos": "D5",
+   "nome": "Arthur",
+   "profissao": "da biblioteca"
+  }
+ ],
+ "inicial": "A2",
+ "pistas": {
+  "A1": {
+   "tipo": "vizinhos",
+   "params": {
+    "alvo": 4,
+    "n": 3
+   },
+   "texto": "Manu tem exatamente 3 culpados entre os vizinhos."
+  },
+  "B1": {
+   "tipo": "comparacao",
+   "params": {
+    "a": 10,
+    "b": 4
+   },
+   "texto": "Lorena tem mais vizinhos culpados que Manu."
+  },
+  "C1": {
+   "tipo": "contagem",
+   "params": {
+    "area": {
+     "tipo": "linha",
+     "valor": 2
+    },
+    "n": 2
+   },
+   "texto": "Há exatamente 2 culpados na linha 2."
+  },
+  "D1": {
+   "tipo": "contagem",
+   "params": {
+    "area": {
+     "tipo": "coluna",
+     "valor": "C"
+    },
+    "n": 2
+   },
+   "texto": "Há exatamente 2 culpados na coluna C."
+  },
+  "A2": {
+   "tipo": "entre",
+   "params": {
+    "a": 5,
+    "b": 7,
+    "n": 0
+   },
+   "texto": "Não há nenhum culpado entre Heitor e Laura."
+  },
+  "B2": {
+   "tipo": "profissao",
+   "params": {
+    "profissao": "da biblioteca",
+    "membros": [
+     4,
+     10,
+     19
+    ],
+    "n": 0
+   },
+   "texto": "Entre quem é da biblioteca, não há nenhum culpado."
+  },
+  "C2": {
+   "tipo": "direcao",
+   "params": {
+    "alvo": 14,
+    "direcao": "abaixo",
+    "valor": "inocente"
+   },
+   "texto": "Todos abaixo de Benício são inocentes."
+  },
+  "D2": {
+   "tipo": "vizinhos",
+   "params": {
+    "alvo": 13,
+    "n": 4
+   },
+   "texto": "Bento tem exatamente 4 culpados entre os vizinhos."
+  },
+  "A3": {
+   "tipo": "vizinhos",
+   "params": {
+    "alvo": 10,
+    "n": 4
+   },
+   "texto": "Lorena tem exatamente 4 culpados entre os vizinhos."
+  },
+  "B3": {
+   "tipo": "vizinhos",
+   "params": {
+    "alvo": 16,
+    "n": 1
+   },
+   "texto": "Pedrinho tem exatamente 1 culpado entre os vizinhos."
+  },
+  "C3": {
+   "tipo": "vizinhos",
+   "params": {
+    "alvo": 2,
+    "n": 2
+   },
+   "texto": "Cecília tem exatamente 2 culpados entre os vizinhos."
+  },
+  "D3": {
+   "tipo": "entre",
+   "params": {
+    "a": 5,
+    "b": 17,
+    "n": 0
+   },
+   "texto": "Não há nenhum culpado entre Heitor e Maitê."
+  },
+  "A4": {
+   "tipo": "contagem",
+   "params": {
+    "area": {
+     "tipo": "linha",
+     "valor": 4
+    },
+    "n": 2
+   },
+   "texto": "Há exatamente 2 culpados na linha 4."
+  },
+  "B4": {
+   "tipo": "comparacao",
+   "params": {
+    "a": 10,
+    "b": 0
+   },
+   "texto": "Lorena tem mais vizinhos culpados que Enzo."
+  },
+  "C4": {
+   "tipo": "contagem",
+   "params": {
+    "area": {
+     "tipo": "coluna",
+     "valor": "A"
+    },
+    "n": 4
+   },
+   "texto": "Há exatamente 4 culpados na coluna A."
+  },
+  "D4": {
+   "tipo": "vizinhos",
+   "params": {
+    "alvo": 19,
+    "n": 1
+   },
+   "texto": "Arthur tem exatamente 1 culpado entre os vizinhos."
+  },
+  "A5": {
+   "tipo": "profissao",
+   "params": {
+    "profissao": "da diretoria",
+    "membros": [
+     0,
+     5,
+     14,
+     17
+    ],
+    "n": 3
+   },
+   "texto": "Entre quem é da diretoria, há exatamente 3 culpados."
+  },
+  "B5": {
+   "tipo": "direcao",
+   "params": {
+    "alvo": 9,
+    "direcao": "esquerda",
+    "valor": "culpado"
+   },
+   "texto": "Todos à esquerda de Davi são culpados."
+  },
+  "C5": {
+   "tipo": "direcao",
+   "params": {
+    "alvo": 15,
+    "direcao": "abaixo",
+    "valor": "inocente"
+   },
+   "texto": "Todos abaixo de Sofia são inocentes."
+  },
+  "D5": {
+   "tipo": "entre",
+   "params": {
+    "a": 11,
+    "b": 19,
+    "n": 0
+   },
+   "texto": "Não há nenhum culpado entre mim e Theo."
+  }
+ },
+ "solucao": "ex5m"
+}

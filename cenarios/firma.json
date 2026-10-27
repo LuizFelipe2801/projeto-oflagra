@@ -6,9 +6,40 @@
     "Quem deixou a impressora sem papel?",
     "Quem esqueceu a marmita na geladeira?"
   ],
-  "profissoes": ["copeira", "estagiário", "contador", "RH", "TI", "vendedora"],
-  "nomes": ["Cida", "Zé", "Bia", "Caio", "Lu", "Rosa", "Tião", "Duda", "Neide", "Beto", "Juju", "Marcão",
-    "Sil", "Rafa", "Lia", "Toninho", "Vera", "Gabi", "Nando", "Dani", "Fábio", "Kel", "Paulo", "Iva"],
+  "profissoes": [
+    "da copa",
+    "do estágio",
+    "da contabilidade",
+    "do RH",
+    "da TI",
+    "de vendas"
+  ],
+  "nomes": [
+    "Cida",
+    "Zé",
+    "Bia",
+    "Caio",
+    "Lu",
+    "Rosa",
+    "Tião",
+    "Duda",
+    "Neide",
+    "Beto",
+    "Juju",
+    "Marcão",
+    "Sil",
+    "Rafa",
+    "Lia",
+    "Toninho",
+    "Vera",
+    "Gabi",
+    "Nando",
+    "Dani",
+    "Fábio",
+    "Kel",
+    "Paulo",
+    "Iva"
+  ],
   "culpado": "culpado",
   "inocente": "inocente"
 }

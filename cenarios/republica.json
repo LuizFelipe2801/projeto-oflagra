@@ -1,0 +1,45 @@
+{
+  "id": "republica",
+  "nome": "A república",
+  "travessuras": [
+    "Quem deixou a louça na pia de novo?",
+    "Quem comeu o pudim com nome na geladeira?",
+    "Quem usou a toalha dos outros?"
+  ],
+  "profissoes": [
+    "do quarto 1",
+    "do quarto 2",
+    "do quarto 3",
+    "da sala",
+    "de intercâmbio",
+    "da faxina"
+  ],
+  "nomes": [
+    "Pati",
+    "Rodrigo",
+    "Camila",
+    "Fernando",
+    "Bia",
+    "Lucas",
+    "Marina",
+    "Diego",
+    "Natália",
+    "Felipe",
+    "Carla",
+    "Gustavo",
+    "Letícia",
+    "Bruno",
+    "Amanda",
+    "Rafael",
+    "Paula",
+    "Henrique",
+    "Isabela",
+    "Vítor",
+    "Larissa",
+    "Daniel",
+    "Tainá",
+    "Leandro"
+  ],
+  "culpado": "culpado",
+  "inocente": "inocente"
+}

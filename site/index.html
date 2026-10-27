@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Flagra</title>
+  <meta name="description" content="Jogo diário de dedução lógica. Três casos por dia, vinte personagens, uma travessura. Todo mundo fala a verdade: descubra quem é culpado sem chutar.">
+  <meta name="color-scheme" content="light dark">
+  <meta name="theme-color" content="#F2C200">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%23F2C200'/%3E%3Ctext x='16' y='23' font-size='20' font-family='sans-serif' font-weight='700' text-anchor='middle' fill='%231B1C1A'%3EF%3C/text%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400&display=swap">
+  <link rel="stylesheet" href="css/estilo.css">
+</head>
+<body>
+  <a class="pular" href="#grade">Ir para a grade</a>
+
+  <header class="topo">
+    <p class="marca"><span class="marca-nome">Flagra</span> <span id="numero-do-caso" class="marca-numero"></span></p>
+    <nav class="topo-acoes" aria-label="Menu">
+      <button type="button" id="botao-estatisticas" class="botao botao-quieto">Estatísticas</button>
+      <button type="button" id="botao-regras" class="botao botao-quieto">Regras</button>
+    </nav>
+  </header>
+
+  <main>
+    <section class="dificuldades" aria-label="Dificuldade">
+      <div class="segmentos" role="radiogroup" aria-label="Escolha a dificuldade">
+        <button type="button" role="radio" data-dificuldade="facil" aria-checked="false">Fácil<span class="segmento-estado"></span></button>
+        <button type="button" role="radio" data-dificuldade="medio" aria-checked="false">Médio<span class="segmento-estado"></span></button>
+        <button type="button" role="radio" data-dificuldade="dificil" aria-checked="false">Difícil<span class="segmento-estado"></span></button>
+      </div>
+    </section>
+
+    <section class="caso" aria-labelledby="titulo-do-caso">
+      <p id="cenario-do-caso" class="caso-cenario"></p>
+      <h1 id="titulo-do-caso" class="caso-titulo">Carregando o caso de hoje…</h1>
+    </section>
+
+    <div id="erro-de-carga" class="erro-de-carga" hidden>
+      <p id="erro-texto"></p>
+      <button type="button" id="botao-ontem" class="botao">Jogar o caso de ontem</button>
+    </div>
+
+    <section class="jogo" id="jogo" hidden>
+      <div class="placar" aria-live="polite">
+        <span id="placar-erros">0 erros</span>
+        <span class="placar-separador" aria-hidden="true">·</span>
+        <span id="placar-dicas">0 dicas</span>
+      </div>
+
+      <div id="grade" class="grade" role="grid" aria-label="Personagens: 4 colunas, A a D, e 5 linhas, 1 a 5"></div>
+
+      <div id="aviso" class="aviso" role="status" aria-live="polite"></div>
+
+      <div id="painel" class="painel" hidden>
+        <p class="painel-quem"><strong id="painel-nome"></strong> <span id="painel-profissao"></span></p>
+        <div class="painel-botoes">
+          <button type="button" id="botao-culpado" class="botao botao-culpado"><span class="simbolo" aria-hidden="true">✕</span> Culpado</button>
+          <button type="button" id="botao-inocente" class="botao botao-inocente"><span class="simbolo" aria-hidden="true">✓</span> Inocente</button>
+        </div>
+        <button type="button" id="botao-fechar-painel" class="botao botao-quieto">Cancelar</button>
+      </div>
+
+      <div class="ferramentas">
+        <button type="button" id="botao-dica" class="botao botao-dica">Dica</button>
+        <p id="dica-texto" class="dica-texto" aria-live="polite"></p>
+      </div>
+
+      <section class="pistas" aria-labelledby="pistas-titulo">
+        <h2 id="pistas-titulo" class="pistas-titulo">Pistas reveladas</h2>
+        <p class="pistas-ajuda">Todo mundo fala a verdade. Toque numa pista para achar quem falou.</p>
+        <ol id="lista-de-pistas" class="lista-de-pistas"></ol>
+      </section>
+
+      <p class="rodape-jogo"><button type="button" id="botao-resultado" class="botao botao-quieto" hidden>Ver resultado</button></p>
+    </section>
+  </main>
+
+  <footer class="rodape">
+    <p>Flagra é um passatempo gratuito, sem cadastro e sem anúncio. Nada que você faz aqui sai do seu aparelho.</p>
+  </footer>
+
+  <dialog id="dialogo-regras" class="dialogo" aria-labelledby="regras-titulo">
+    <form method="dialog" class="dialogo-conteudo">
+      <h2 id="regras-titulo">Como se joga</h2>
+      <p>Aconteceu uma travessura. Vinte pessoas estão na grade e <strong>todas falam a verdade</strong>. Seu trabalho é descobrir quem é culpado e quem é inocente, só pela lógica.</p>
+      <ol class="regras-lista">
+        <li>O caso começa com uma pessoa revelada e a pista dela.</li>
+        <li>Toque numa pessoa e marque <strong>culpado</strong> ou <strong>inocente</strong>.</li>
+        <li>Se as pistas ainda não permitem ter certeza, o jogo recusa a marcação e nada é contado. <strong>Não dá para chutar.</strong></li>
+        <li>Acertou? A pessoa revela a pista dela. Errou? Conta um erro, e você tenta de novo.</li>
+        <li>Travou? Peça uma dica: a primeira aponta as pistas que ajudam; a segunda aponta quem já dá para resolver.</li>
+        <li>O caso termina quando as vinte pessoas estão marcadas. Aí você compartilha o resultado, sem revelar a solução.</li>
+      </ol>
+      <h3>Palavras das pistas</h3>
+      <dl class="regras-termos">
+        <dt>Vizinhos</dt><dd>As até 8 pessoas ao redor, contando as diagonais.</dd>
+        <dt>Acima, abaixo, à esquerda, à direita</dt><dd>Todo mundo naquela direção, na mesma coluna ou linha, em qualquer distância.</dd>
+        <dt>Entre</dt><dd>Quem está no meio de duas pessoas, na mesma linha ou coluna, sem contar as duas.</dd>
+        <dt>Conectados</dt><dd>Uma corrente de pessoas ligadas pelos lados, sem diagonal e sem ninguém de outro tipo no meio.</dd>
+        <dt>Borda</dt><dd>Quem está na linha 1, na linha 5, na coluna A ou na coluna D.</dd>
+      </dl>
+      <p class="regras-nota">A profissão de ninguém diz nada sobre culpa, a não ser que uma pista fale dela. Não há relógio: jogue no seu tempo.</p>
+      <button type="submit" class="botao botao-principal" autofocus>Entendi, vamos lá</button>
+    </form>
+  </dialog>
+
+  <dialog id="dialogo-resultado" class="dialogo" aria-labelledby="resultado-titulo">
+    <form method="dialog" class="dialogo-conteudo">
+      <h2 id="resultado-titulo">Caso encerrado</h2>
+      <p id="resultado-resumo" class="resultado-resumo"></p>
+      <pre id="resultado-texto" class="resultado-texto" aria-label="Resultado para compartilhar"></pre>
+      <p id="resultado-sequencia" class="resultado-sequencia"></p>
+      <div class="dialogo-botoes">
+        <button type="button" id="botao-copiar" class="botao botao-principal">Copiar resultado</button>
+        <button type="button" id="botao-compartilhar" class="botao" hidden>Compartilhar</button>
+      </div>
+      <p id="resultado-aviso" class="resultado-aviso" aria-live="polite"></p>
+      <p class="resultado-proximo">Os outros níveis de hoje continuam abertos. Um caso novo chega à meia-noite.</p>
+      <button type="submit" class="botao botao-quieto">Fechar</button>
+    </form>
+  </dialog>
+
+  <dialog id="dialogo-estatisticas" class="dialogo" aria-labelledby="estatisticas-titulo">
+    <form method="dialog" class="dialogo-conteudo">
+      <h2 id="estatisticas-titulo">Suas estatísticas</h2>
+      <p id="estatisticas-sequencia" class="estatisticas-sequencia"></p>
+      <table class="estatisticas-tabela">
+        <thead><tr><th scope="col">Nível</th><th scope="col">Casos</th><th scope="col">Sem erro</th></tr></thead>
+        <tbody id="estatisticas-corpo"></tbody>
+      </table>
+      <p class="regras-nota">Tudo fica só neste navegador. Limpar os dados do site apaga as estatísticas.</p>
+      <button type="submit" class="botao botao-quieto" autofocus>Fechar</button>
+    </form>
+  </dialog>
+
+  <script type="module" src="js/app.js"></script>
+</body>
+</html>

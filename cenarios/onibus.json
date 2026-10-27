@@ -1,0 +1,45 @@
+{
+  "id": "onibus",
+  "nome": "O ônibus",
+  "travessuras": [
+    "Quem esqueceu de dar o sinal?",
+    "Quem deixou a janela aberta na chuva?",
+    "Quem passou de novo com o cartão do amigo?"
+  ],
+  "profissoes": [
+    "do banco da frente",
+    "do fundão",
+    "do corredor",
+    "da janela",
+    "da catraca",
+    "do ponto final"
+  ],
+  "nomes": [
+    "Seu Manoel",
+    "Dona Rita",
+    "Jaílson",
+    "Creusa",
+    "Denílson",
+    "Marlúcia",
+    "Adilson",
+    "Eliane",
+    "Cícero",
+    "Rosângela",
+    "Valmir",
+    "Ieda",
+    "Josué",
+    "Terezinha",
+    "Agnaldo",
+    "Leila",
+    "Ronaldo",
+    "Conceição",
+    "Edmilson",
+    "Dalila",
+    "Hélio",
+    "Josefa",
+    "Nivaldo",
+    "Zenaide"
+  ],
+  "culpado": "culpado",
+  "inocente": "inocente"
+}

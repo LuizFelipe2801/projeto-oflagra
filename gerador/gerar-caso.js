@@ -91,7 +91,7 @@ export function gerarCaso({ dia, dificuldade, cenarios, maxTentativas = 200 }) {
     const r = simular({ solucao, inicial, pistas });
     if (r.resolvido && r.dificuldade === alvo && pistas.every((p) => compilar(p)(solucao))) {
       return {
-        dia, dificuldade, cenario: cenario.id, titulo: rng.escolher(cenario.travessuras),
+        dia, dificuldade, cenario: cenario.id, cenarioNome: cenario.nome, titulo: rng.escolher(cenario.travessuras),
         personagens, solucao, inicial, pistas, tentativas: t + 1,
       };
     }

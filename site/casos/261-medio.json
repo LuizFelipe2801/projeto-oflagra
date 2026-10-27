@@ -1,0 +1,319 @@
+{
+ "versao": 1,
+ "dia_do_ciclo": 261,
+ "dificuldade": "medio",
+ "cenario": "churrasco",
+ "cenario_nome": "O churrasco",
+ "titulo": "Quem deixou a carne no sol?",
+ "personagens": [
+  {
+   "pos": "A1",
+   "nome": "Pepê",
+   "profissao": "do som"
+  },
+  {
+   "pos": "B1",
+   "nome": "Tio Beto",
+   "profissao": "da piscina"
+  },
+  {
+   "pos": "C1",
+   "nome": "Jajá",
+   "profissao": "da piscina"
+  },
+  {
+   "pos": "D1",
+   "nome": "Tia Zélia",
+   "profissao": "da cozinha"
+  },
+  {
+   "pos": "A2",
+   "nome": "Nina",
+   "profissao": "da cozinha"
+  },
+  {
+   "pos": "B2",
+   "nome": "Bela",
+   "profissao": "da churrasqueira"
+  },
+  {
+   "pos": "C2",
+   "nome": "Lili",
+   "profissao": "da mesa de doces"
+  },
+  {
+   "pos": "D2",
+   "nome": "Ciça",
+   "profissao": "da cozinha"
+  },
+  {
+   "pos": "A3",
+   "nome": "Kiko",
+   "profissao": "da mesa de doces"
+  },
+  {
+   "pos": "B3",
+   "nome": "Rose",
+   "profissao": "da mesa de doces"
+  },
+  {
+   "pos": "C3",
+   "nome": "Bebeto",
+   "profissao": "da vizinhança"
+  },
+  {
+   "pos": "D3",
+   "nome": "Lalá",
+   "profissao": "da churrasqueira"
+  },
+  {
+   "pos": "A4",
+   "nome": "Teté",
+   "profissao": "do som"
+  },
+  {
+   "pos": "B4",
+   "nome": "Léo",
+   "profissao": "do som"
+  },
+  {
+   "pos": "C4",
+   "nome": "Dedé",
+   "profissao": "da piscina"
+  },
+  {
+   "pos": "D4",
+   "nome": "Tati",
+   "profissao": "da churrasqueira"
+  },
+  {
+   "pos": "A5",
+   "nome": "Carol",
+   "profissao": "da vizinhança"
+  },
+  {
+   "pos": "B5",
+   "nome": "Mel",
+   "profissao": "da mesa de doces"
+  },
+  {
+   "pos": "C5",
+   "nome": "Dinho",
+   "profissao": "do som"
+  },
+  {
+   "pos": "D5",
+   "nome": "Dudu",
+   "profissao": "da vizinhança"
+  }
+ ],
+ "inicial": "C4",
+ "pistas": {
+  "A1": {
+   "tipo": "profissao",
+   "params": {
+    "profissao": "da piscina",
+    "membros": [
+     1,
+     2,
+     14
+    ],
+    "n": 2
+   },
+   "texto": "Entre quem é da piscina, há exatamente 2 culpados."
+  },
+  "B1": {
+   "tipo": "comparacao",
+   "params": {
+    "a": 13,
+    "b": 18
+   },
+   "texto": "Léo tem mais vizinhos culpados que Dinho."
+  },
+  "C1": {
+   "tipo": "entre",
+   "params": {
+    "a": 9,
+    "b": 11,
+    "n": 1
+   },
+   "texto": "Há exatamente 1 culpado entre Rose e Lalá."
+  },
+  "D1": {
+   "tipo": "contagem",
+   "params": {
+    "area": {
+     "tipo": "coluna",
+     "valor": "A"
+    },
+    "n": 1
+   },
+   "texto": "Há exatamente 1 culpado na coluna A."
+  },
+  "A2": {
+   "tipo": "maioria",
+   "params": {
+    "area": {
+     "tipo": "coluna",
+     "valor": "D"
+    },
+    "valor": "culpado"
+   },
+   "texto": "Há mais culpados que inocentes na coluna D."
+  },
+  "B2": {
+   "tipo": "direcao",
+   "params": {
+    "alvo": 17,
+    "direcao": "esquerda",
+    "valor": "culpado"
+   },
+   "texto": "Todos à esquerda de Mel são culpados."
+  },
+  "C2": {
+   "tipo": "vizinhos",
+   "params": {
+    "alvo": 3,
+    "n": 1
+   },
+   "texto": "Tia Zélia tem exatamente 1 culpado entre os vizinhos."
+  },
+  "D2": {
+   "tipo": "profissao",
+   "params": {
+    "profissao": "da churrasqueira",
+    "membros": [
+     5,
+     11,
+     15
+    ],
+    "n": 2
+   },
+   "texto": "Entre quem é da churrasqueira, há exatamente 2 culpados."
+  },
+  "A3": {
+   "tipo": "vizinhos",
+   "params": {
+    "alvo": 1,
+    "n": 1
+   },
+   "texto": "Tio Beto tem exatamente 1 culpado entre os vizinhos."
+  },
+  "B3": {
+   "tipo": "direcao",
+   "params": {
+    "alvo": 1,
+    "direcao": "esquerda",
+    "valor": "inocente"
+   },
+   "texto": "Todos à esquerda de Tio Beto são inocentes."
+  },
+  "C3": {
+   "tipo": "contagem",
+   "params": {
+    "area": {
+     "tipo": "coluna",
+     "valor": "C"
+    },
+    "n": 2
+   },
+   "texto": "Há exatamente 2 culpados na coluna C."
+  },
+  "D3": {
+   "tipo": "entre",
+   "params": {
+    "a": 1,
+    "b": 13,
+    "n": 2
+   },
+   "texto": "Há exatamente 2 culpados entre Tio Beto e Léo."
+  },
+  "A4": {
+   "tipo": "paridade",
+   "params": {
+    "area": {
+     "tipo": "coluna",
+     "valor": "A"
+    },
+    "impar": true
+   },
+   "texto": "Há um número ímpar de culpados na coluna A."
+  },
+  "B4": {
+   "tipo": "vizinhos",
+   "params": {
+    "alvo": 14,
+    "n": 4
+   },
+   "texto": "Dedé tem exatamente 4 culpados entre os vizinhos."
+  },
+  "C4": {
+   "tipo": "direcao",
+   "params": {
+    "alvo": 9,
+    "direcao": "acima",
+    "valor": "culpado"
+   },
+   "texto": "Todos acima de Rose são culpados."
+  },
+  "D4": {
+   "tipo": "comparacao",
+   "params": {
+    "a": 2,
+    "b": 3
+   },
+   "texto": "Jajá tem mais vizinhos culpados que Tia Zélia."
+  },
+  "A5": {
+   "tipo": "maioria",
+   "params": {
+    "area": {
+     "tipo": "linha",
+     "valor": 5
+    },
+    "valor": "inocente"
+   },
+   "texto": "Há mais inocentes que culpados na linha 5."
+  },
+  "B5": {
+   "tipo": "profissao",
+   "params": {
+    "profissao": "da mesa de doces",
+    "membros": [
+     6,
+     8,
+     9,
+     17
+    ],
+    "n": 1
+   },
+   "texto": "Entre quem é da mesa de doces, há exatamente 1 culpado."
+  },
+  "C5": {
+   "tipo": "maioria",
+   "params": {
+    "area": {
+     "tipo": "linha",
+     "valor": 4
+    },
+    "valor": "culpado"
+   },
+   "texto": "Há mais culpados que inocentes na linha 4."
+  },
+  "D5": {
+   "tipo": "profissao",
+   "params": {
+    "profissao": "do som",
+    "membros": [
+     0,
+     12,
+     13,
+     18
+    ],
+    "n": 1
+   },
+   "texto": "Entre quem é do som, há exatamente 1 culpado."
+  }
+ },
+ "solucao": "hq2l"
+}

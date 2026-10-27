@@ -1,0 +1,45 @@
+{
+  "id": "churrasco",
+  "nome": "O churrasco",
+  "travessuras": [
+    "Quem queimou a picanha?",
+    "Quem bebeu o guaraná das crianças?",
+    "Quem deixou a carne no sol?"
+  ],
+  "profissoes": [
+    "da churrasqueira",
+    "da cozinha",
+    "da piscina",
+    "do som",
+    "da mesa de doces",
+    "da vizinhança"
+  ],
+  "nomes": [
+    "Tio Beto",
+    "Tia Zélia",
+    "Dudu",
+    "Carol",
+    "Vini",
+    "Tati",
+    "Jajá",
+    "Dedé",
+    "Léo",
+    "Mel",
+    "Ciça",
+    "Guto",
+    "Nina",
+    "Bebeto",
+    "Lalá",
+    "Juca",
+    "Rose",
+    "Kiko",
+    "Dinho",
+    "Teté",
+    "Pepê",
+    "Lili",
+    "Nando",
+    "Bela"
+  ],
+  "culpado": "culpado",
+  "inocente": "inocente"
+}

@@ -1,0 +1,293 @@
+{
+ "versao": 1,
+ "dia_do_ciclo": 123,
+ "dificuldade": "dificil",
+ "cenario": "salao",
+ "cenario_nome": "O salão",
+ "titulo": "Quem deixou a chapinha ligada?",
+ "personagens": [
+  {
+   "pos": "A1",
+   "nome": "Nádia",
+   "profissao": "da clientela"
+  },
+  {
+   "pos": "B1",
+   "nome": "Vivi",
+   "profissao": "da escova"
+  },
+  {
+   "pos": "C1",
+   "nome": "Dona Lê",
+   "profissao": "do corte"
+  },
+  {
+   "pos": "D1",
+   "nome": "Rebeca",
+   "profissao": "do corte"
+  },
+  {
+   "pos": "A2",
+   "nome": "Adriana",
+   "profissao": "da clientela"
+  },
+  {
+   "pos": "B2",
+   "nome": "Rosana",
+   "profissao": "da clientela"
+  },
+  {
+   "pos": "C2",
+   "nome": "Cláudia",
+   "profissao": "das unhas"
+  },
+  {
+   "pos": "D2",
+   "nome": "Michele",
+   "profissao": "da recepção"
+  },
+  {
+   "pos": "A3",
+   "nome": "Aline",
+   "profissao": "das unhas"
+  },
+  {
+   "pos": "B3",
+   "nome": "Débora",
+   "profissao": "da recepção"
+  },
+  {
+   "pos": "C3",
+   "nome": "Soraia",
+   "profissao": "da recepção"
+  },
+  {
+   "pos": "D3",
+   "nome": "Regina",
+   "profissao": "da tintura"
+  },
+  {
+   "pos": "A4",
+   "nome": "Jaque",
+   "profissao": "da tintura"
+  },
+  {
+   "pos": "B4",
+   "nome": "Vanessa",
+   "profissao": "das unhas"
+  },
+  {
+   "pos": "C4",
+   "nome": "Tati",
+   "profissao": "da tintura"
+  },
+  {
+   "pos": "D4",
+   "nome": "Elaine",
+   "profissao": "da recepção"
+  },
+  {
+   "pos": "A5",
+   "nome": "Carla",
+   "profissao": "do corte"
+  },
+  {
+   "pos": "B5",
+   "nome": "Ju",
+   "profissao": "da escova"
+  },
+  {
+   "pos": "C5",
+   "nome": "Mônica",
+   "profissao": "da escova"
+  },
+  {
+   "pos": "D5",
+   "nome": "Simone",
+   "profissao": "da tintura"
+  }
+ ],
+ "inicial": "C5",
+ "pistas": {
+  "A1": {
+   "tipo": "comparacao",
+   "params": {
+    "a": 13,
+    "b": 10
+   },
+   "texto": "Vanessa tem mais vizinhos culpados que Soraia."
+  },
+  "B1": {
+   "tipo": "conexao",
+   "params": {
+    "area": {
+     "tipo": "linha",
+     "valor": 3
+    }
+   },
+   "texto": "Todos os culpados da linha 3 estão conectados."
+  },
+  "C1": {
+   "tipo": "comparacao",
+   "params": {
+    "a": 6,
+    "b": 11
+   },
+   "texto": "Cláudia tem mais vizinhos culpados que Regina."
+  },
+  "D1": {
+   "tipo": "vizinhos",
+   "params": {
+    "alvo": 3,
+    "n": 0
+   },
+   "texto": "Não tenho nenhum culpado entre os vizinhos."
+  },
+  "A2": {
+   "tipo": "vizinhos",
+   "params": {
+    "alvo": 4,
+    "n": 1
+   },
+   "texto": "Tenho exatamente 1 culpado entre os vizinhos."
+  },
+  "B2": {
+   "tipo": "comparacao",
+   "params": {
+    "a": 13,
+    "b": 17
+   },
+   "texto": "Vanessa tem mais vizinhos culpados que Ju."
+  },
+  "C2": {
+   "tipo": "maioria",
+   "params": {
+    "area": {
+     "tipo": "linha",
+     "valor": 3
+    },
+    "valor": "culpado"
+   },
+   "texto": "Há mais culpados que inocentes na linha 3."
+  },
+  "D2": {
+   "tipo": "direcao",
+   "params": {
+    "alvo": 5,
+    "direcao": "abaixo",
+    "valor": "culpado"
+   },
+   "texto": "Todos abaixo de Rosana são culpados."
+  },
+  "A3": {
+   "tipo": "comparacao",
+   "params": {
+    "a": 10,
+    "b": 7
+   },
+   "texto": "Soraia tem mais vizinhos culpados que Michele."
+  },
+  "B3": {
+   "tipo": "vizinhos",
+   "params": {
+    "alvo": 5,
+    "n": 2
+   },
+   "texto": "Rosana tem exatamente 2 culpados entre os vizinhos."
+  },
+  "C3": {
+   "tipo": "conexao",
+   "params": {
+    "area": {
+     "tipo": "linha",
+     "valor": 5
+    }
+   },
+   "texto": "Todos os culpados da linha 5 estão conectados."
+  },
+  "D3": {
+   "tipo": "vizinhos",
+   "params": {
+    "alvo": 14,
+    "n": 6
+   },
+   "texto": "Tati tem exatamente 6 culpados entre os vizinhos."
+  },
+  "A4": {
+   "tipo": "entre",
+   "params": {
+    "a": 3,
+    "b": 19,
+    "n": 1
+   },
+   "texto": "Há exatamente 1 culpado entre Rebeca e Simone."
+  },
+  "B4": {
+   "tipo": "comparacao",
+   "params": {
+    "a": 12,
+    "b": 5
+   },
+   "texto": "Jaque tem mais vizinhos culpados que Rosana."
+  },
+  "C4": {
+   "tipo": "contagem",
+   "params": {
+    "area": {
+     "tipo": "coluna",
+     "valor": "B"
+    },
+    "n": 3
+   },
+   "texto": "Há exatamente 3 culpados na coluna B."
+  },
+  "D4": {
+   "tipo": "vizinhos",
+   "params": {
+    "alvo": 15,
+    "n": 3
+   },
+   "texto": "Tenho exatamente 3 culpados entre os vizinhos."
+  },
+  "A5": {
+   "tipo": "conexao",
+   "params": {
+    "area": {
+     "tipo": "coluna",
+     "valor": "B"
+    }
+   },
+   "texto": "Todos os culpados da coluna B estão conectados."
+  },
+  "B5": {
+   "tipo": "entre",
+   "params": {
+    "a": 0,
+    "b": 16,
+    "n": 0
+   },
+   "texto": "Não há nenhum culpado entre Nádia e Carla."
+  },
+  "C5": {
+   "tipo": "contagem",
+   "params": {
+    "area": {
+     "tipo": "coluna",
+     "valor": "A"
+    },
+    "n": 0
+   },
+   "texto": "Não há nenhum culpado na coluna A."
+  },
+  "D5": {
+   "tipo": "entre",
+   "params": {
+    "a": 4,
+    "b": 12,
+    "n": 0
+   },
+   "texto": "Não há nenhum culpado entre Adriana e Jaque."
+  }
+ },
+ "solucao": "bg70"
+}

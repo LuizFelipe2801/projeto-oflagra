@@ -1,0 +1,301 @@
+{
+ "versao": 1,
+ "dia_do_ciclo": 6,
+ "dificuldade": "dificil",
+ "cenario": "condominio",
+ "cenario_nome": "O condomínio",
+ "titulo": "Quem deixou o portão da garagem aberto?",
+ "personagens": [
+  {
+   "pos": "A1",
+   "nome": "Marlene",
+   "profissao": "de entregas"
+  },
+  {
+   "pos": "B1",
+   "nome": "Tânia",
+   "profissao": "do conselho"
+  },
+  {
+   "pos": "C1",
+   "nome": "Helena",
+   "profissao": "da portaria"
+  },
+  {
+   "pos": "D1",
+   "nome": "Márcio",
+   "profissao": "da portaria"
+  },
+  {
+   "pos": "A2",
+   "nome": "Valdir",
+   "profissao": "do térreo"
+  },
+  {
+   "pos": "B2",
+   "nome": "Wesley",
+   "profissao": "de entregas"
+  },
+  {
+   "pos": "C2",
+   "nome": "Lurdes",
+   "profissao": "da limpeza"
+  },
+  {
+   "pos": "D2",
+   "nome": "Robson",
+   "profissao": "de entregas"
+  },
+  {
+   "pos": "A3",
+   "nome": "Thiago",
+   "profissao": "do térreo"
+  },
+  {
+   "pos": "B3",
+   "nome": "Sônia",
+   "profissao": "da portaria"
+  },
+  {
+   "pos": "C3",
+   "nome": "Jéssica",
+   "profissao": "da cobertura"
+  },
+  {
+   "pos": "D3",
+   "nome": "Patrícia",
+   "profissao": "da limpeza"
+  },
+  {
+   "pos": "A4",
+   "nome": "Bruna",
+   "profissao": "do térreo"
+  },
+  {
+   "pos": "B4",
+   "nome": "Renan",
+   "profissao": "do conselho"
+  },
+  {
+   "pos": "C4",
+   "nome": "Antônio",
+   "profissao": "da cobertura"
+  },
+  {
+   "pos": "D4",
+   "nome": "Nair",
+   "profissao": "do conselho"
+  },
+  {
+   "pos": "A5",
+   "nome": "Cleide",
+   "profissao": "da limpeza"
+  },
+  {
+   "pos": "B5",
+   "nome": "Edson",
+   "profissao": "da cobertura"
+  },
+  {
+   "pos": "C5",
+   "nome": "Gilberto",
+   "profissao": "de entregas"
+  },
+  {
+   "pos": "D5",
+   "nome": "Igor",
+   "profissao": "da portaria"
+  }
+ ],
+ "inicial": "C4",
+ "pistas": {
+  "A1": {
+   "tipo": "maioria",
+   "params": {
+    "area": {
+     "tipo": "borda"
+    },
+    "valor": "culpado"
+   },
+   "texto": "Há mais culpados que inocentes na borda."
+  },
+  "B1": {
+   "tipo": "vizinhos",
+   "params": {
+    "alvo": 16,
+    "n": 0
+   },
+   "texto": "Cleide não tem nenhum culpado entre os vizinhos."
+  },
+  "C1": {
+   "tipo": "direcao",
+   "params": {
+    "alvo": 4,
+    "direcao": "direita",
+    "valor": "inocente"
+   },
+   "texto": "Todos à direita de Valdir são inocentes."
+  },
+  "D1": {
+   "tipo": "comparacao",
+   "params": {
+    "a": 13,
+    "b": 14
+   },
+   "texto": "Renan tem mais vizinhos culpados que Antônio."
+  },
+  "A2": {
+   "tipo": "paridade",
+   "params": {
+    "area": {
+     "tipo": "coluna",
+     "valor": "D"
+    },
+    "impar": true
+   },
+   "texto": "Há um número ímpar de culpados na coluna D."
+  },
+  "B2": {
+   "tipo": "direcao",
+   "params": {
+    "alvo": 4,
+    "direcao": "acima",
+    "valor": "culpado"
+   },
+   "texto": "Todos acima de Valdir são culpados."
+  },
+  "C2": {
+   "tipo": "profissao",
+   "params": {
+    "profissao": "do térreo",
+    "membros": [
+     4,
+     8,
+     12
+    ],
+    "n": 2
+   },
+   "texto": "Entre quem é do térreo, há exatamente 2 culpados."
+  },
+  "D2": {
+   "tipo": "direcao",
+   "params": {
+    "alvo": 9,
+    "direcao": "abaixo",
+    "valor": "inocente"
+   },
+   "texto": "Todos abaixo de Sônia são inocentes."
+  },
+  "A3": {
+   "tipo": "comparacao",
+   "params": {
+    "a": 9,
+    "b": 10
+   },
+   "texto": "Sônia tem mais vizinhos culpados que Jéssica."
+  },
+  "B3": {
+   "tipo": "vizinhos",
+   "params": {
+    "alvo": 3,
+    "n": 0
+   },
+   "texto": "Márcio não tem nenhum culpado entre os vizinhos."
+  },
+  "C3": {
+   "tipo": "entre",
+   "params": {
+    "a": 8,
+    "b": 11,
+    "n": 2
+   },
+   "texto": "Há exatamente 2 culpados entre Thiago e Patrícia."
+  },
+  "D3": {
+   "tipo": "profissao",
+   "params": {
+    "profissao": "da cobertura",
+    "membros": [
+     10,
+     14,
+     17
+    ],
+    "n": 2
+   },
+   "texto": "Entre quem é da cobertura, há exatamente 2 culpados."
+  },
+  "A4": {
+   "tipo": "comparacao",
+   "params": {
+    "a": 18,
+    "b": 16
+   },
+   "texto": "Gilberto tem mais vizinhos culpados que Cleide."
+  },
+  "B4": {
+   "tipo": "entre",
+   "params": {
+    "a": 3,
+    "b": 15,
+    "n": 0
+   },
+   "texto": "Não há nenhum culpado entre Márcio e Nair."
+  },
+  "C4": {
+   "tipo": "direcao",
+   "params": {
+    "alvo": 6,
+    "direcao": "direita",
+    "valor": "inocente"
+   },
+   "texto": "Todos à direita de Lurdes são inocentes."
+  },
+  "D4": {
+   "tipo": "direcao",
+   "params": {
+    "alvo": 14,
+    "direcao": "esquerda",
+    "valor": "inocente"
+   },
+   "texto": "Todos à esquerda de Antônio são inocentes."
+  },
+  "A5": {
+   "tipo": "paridade",
+   "params": {
+    "area": {
+     "tipo": "linha",
+     "valor": 1
+    },
+    "impar": false
+   },
+   "texto": "Há um número par de culpados na linha 1."
+  },
+  "B5": {
+   "tipo": "comparacao",
+   "params": {
+    "a": 15,
+    "b": 11
+   },
+   "texto": "Nair tem mais vizinhos culpados que Patrícia."
+  },
+  "C5": {
+   "tipo": "entre",
+   "params": {
+    "a": 2,
+    "b": 18,
+    "n": 2
+   },
+   "texto": "Há exatamente 2 culpados entre mim e Helena."
+  },
+  "D5": {
+   "tipo": "direcao",
+   "params": {
+    "alvo": 14,
+    "direcao": "direita",
+    "valor": "culpado"
+   },
+   "texto": "Todos à direita de Antônio são culpados."
+  }
+ },
+ "solucao": "kjsf"
+}
